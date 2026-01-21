@@ -14,9 +14,9 @@ Once CLUE-encoded, documents become directly operable by top-tier LLMs. This ele
 
 ## 2. Output Deliverables
 
-**Output Name:** Structured Meaning Form (*SM Form*)
+**Output Name:** Structured Meaning Form (*SM Form*) or CLUE Forms
 
-An **SM Form** is the CLUE-encoded version of the original document. It retains the exact wording but overlays a stable semantic scaffolding that LLMs can directly reason over.
+An **SM Form** or **CLUE Form** is the CLUE-encoded version of the original document. It retains the exact wording but overlays a stable semantic scaffolding that LLMs can directly reason over.
 
 ### Key Benefits:
 
@@ -48,7 +48,7 @@ CLUE enforces structure *upstream*, eliminating ambiguity before the LLM sees th
 
 ## 4. What CLUE Does
 
-CLUE encodes a source document into an SM Form that:
+CLUE encodes a source document into an CLUE Form that:
 
 - Clause-aligns each statement into a formal surface representation
 - Exposes semantic roles: **subject**, **predicate**, **object**, **adjunct**
@@ -105,7 +105,7 @@ CLUE is **not a model**. It does not interpret, infer, or analyze—it creates t
   - Client provides documents (TXT, DOCX, PDF, etc.)
 2. **CLUE Encoding**
   
-  - Text is rendered into SM Form with explicit clause structure and semantic roles
+  - Text is rendered into CLUE Form with explicit clause structure and semantic roles
 3. **Verification**
   
   - Deterministic checks ensure faithfulness and structural compliance
@@ -186,7 +186,7 @@ Use the repository’s [Issues](../../issues) page or the contact channel in the
 
 ### 1. Service Description
 
-The **Provider** offers a transformation service that converts input documents into **CLUE Profiles** (Structured Meaning Forms). These documents:
+The **Provider** offers a transformation service that converts input documents into **SM Forms** (Structured Meaning Forms). These documents:
 
 - Retain original language
 - Add clause structure, semantic roles, and cross-references
@@ -199,7 +199,7 @@ The **Provider** offers a transformation service that converts input documents i
 The Provider will:
 
 - Accept pre-agreed document formats (TXT, DOCX, PDF)
-- Generate and validate CLUE Profiles for structural integrity
+- Generate and validate SM Forms for structural integrity
 - Preserve original language without paraphrasing or rewriting
 - Deliver outputs in agreed format and timeframe
 
@@ -209,7 +209,7 @@ The Provider will:
 
 The Provider **disclaims liability** for:
 
-- Interpretations or decisions based on CLUE Profiles
+- Interpretations or decisions based on SM Forms
 - LLM or AI system behaviors using CLUE data
 - Analytical errors by third-party systems
 - Legal or operational consequences from SM Form usage
@@ -219,7 +219,7 @@ The Provider **disclaims liability** for:
 
 ### 4. Legal Status
 
-- CLUE Profiles are **not legal documents**
+- SM Forms are **not legal documents**
 - No warranty is given regarding legal or regulatory use
 - No claims of fitness for any specific mission or domain
 
