@@ -1,3 +1,30 @@
+## 🚀 Quick Peek: Try CLUE in Action
+
+Want to see CLUE in action in under a minute?
+
+1. **Copy the file** `sm-forms/GNSS-SM.txt`  
+  → This is the CLUE-encoded version of the *Book of Genesis*.
+  
+2. **Upload it to** [**KIMI K-2**](https://kimi.moonshot.cn/)  
+  → No fine-tuning or prompt engineering needed.
+  
+3. **Start asking anything**, like:
+  
+  - "Summarize the timeline of events in Genesis"
+    
+  - "Who are all the descendants of Abraham?"
+    
+  - "Create a Mermaid diagram of the major biblical periods"
+    
+  - "Map character interactions during the flood narrative"
+    
+  - "List promises and covenants clause by clause"
+    
+
+Because it's CLUE-encoded, the model can **reason with structure** — not just language.
+
+---
+
 # CLUE: Clause-Level Unified Encoding
 
 **From Unstructured Text to Structured Machine Thinking**
