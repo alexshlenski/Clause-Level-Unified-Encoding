@@ -1,3 +1,16 @@
+<div style="color:red">
+
+**CLUE is the right tool when:**
+- you must analyze or audit more long, complex documents than available human resources allow  
+- those documents directly inform decisions in legal, financial, intelligence, or market-competitive domains  
+- every analytical claim must be traceable to its immediate source  
+- analytical errors carry material, legal, or organizational risk  
+- time constraints and document complexity make manual analysis impractical  
+
+</div>
+
+---
+
 ## 🚀 Quick Peek: Try CLUE in Action
 
 Want to see CLUE in action in under a minute?
