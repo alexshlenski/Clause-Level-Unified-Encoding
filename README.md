@@ -11,7 +11,7 @@
 
 Want to see CLUE in action in under a minute?
 
-1. **Copy the file** [**SM Form "Genesis"**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/sm-forms/GNSS-SM.txt)  
+1. **Copy the file** [**SM Form "Genesis"**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/GNSS-SM.txt)  
   → This is the CLUE-encoded version of the *Book of Genesis*.
   
 2. **Upload it to** [**KIMI K-2**](https://kimi.moonshot.cn/)  
