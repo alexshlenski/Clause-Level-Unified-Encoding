@@ -11,7 +11,7 @@
 
 Want to see CLUE in action in under a minute?
 
-1. **Copy the file** [**SM Form "Genesis"**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/GNSS-CLUE.txt)  
+1. **Copy the file** [**CLUE Form "Genesis"**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/GNSS-CLUE.txt)  
   → This is the CLUE-encoded version of the *Book of Genesis*.
   
 2. **Upload it to** [**Claude Sonnet 4.5**](https://claude.ai/)  
@@ -28,9 +28,10 @@ Want to see CLUE in action in under a minute?
   - "Map character interactions during the flood narrative"
     
   - "List promises and covenants clause by clause"
-    
 
 Because it's CLUE-encoded, the model can **reason with structure** — not just language.
+
+A new demo CLUE Form recenly added: [**Behavioral Health During the COVID-19 Pandemic"**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/BHVM-CLUE.txt) 
 
 ---
 
