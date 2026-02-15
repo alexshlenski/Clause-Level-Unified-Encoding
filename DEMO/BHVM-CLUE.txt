@@ -1,0 +1,927 @@
+================================================================
+RENIXA COGNITIVE FOUNDATION, INC. | CLUE FORM v1.2 OFFICIAL HEADER
+----------------------------------------------------------------
+Header text is part of the parsing protocol.
+Any upstream alteration invalidates downstream processing.
+
+Each module MUST preserve its XREF identifier
+in format [DOCID|NNNNN].
+================================================================
+Syntax:
+d:x| <SEGMENTS>
+
+x ∈ {t, s}
+t = transactional (event present)
+s = stative (no state transition)
+
+Segments are tagged atomic units:
++A = active agent
+O  = object/theme
+T  = transition/action
+D  = stative predicate
+Cl = locative
+Cs = subordinate clause
+Cc = causal connector
+Ct = temporal connector
+Cp = purpose
+Cy = qualifier
+Ca = adjunct
+Cm = manner
+Cd = degree
+================================================================
+END OF THE OFFICIAL HEADER
+================================================================
+
+[BHVM-NRM|00001]
+d:t| +A<Circumstances surrounding the Coronavirus Disease 2019 (COVID-19) pandemic>—including O<mitigation strategies> Cp<to prevent spread of the virus>—T<appear to have adversely affected> -A<the mental health> Cs<of many Americans>.
+
+[BHVM-NRM|00002]
+d:t| Cc<According to some studies>, +A<Americans> T<experienced> O<elevated levels> Cs<of emotional distress>, O<anxiety>, O<depression>, O<substance use>, and O<drug-related overdoses> Ct<in 2020 and 2021> Cy<compared with the same time period in previous years>.
+
+[BHVM-NRM|00003]
+d:t| O<Various stressors related to the pandemic> T<may have contributed> O<to decreased mental well-being>, Cs<such as fears> Cp<about contracting the virus>, O<anxiety> Cp<about its health effects>, O<social isolation> Cc<due to physical distancing measures>, O<financial stress> Cc<due to the economic consequences of the pandemic>, O<grief and bereavement> Cc<due to the death of a loved one>, O<exposure> Cs<to pandemic-related media coverage>, and O<interruptions> Cs<to substance use treatment and mental health care>.
+
+[BHVM-NRM|00004]
+d:t| O<The physical distancing measures and temporary stay-at-home orders> Cs<used during the COVID-19 pandemic> T<have changed> -A<service delivery> Cs<for mental health and substance treatment>.
+
+[BHVM-NRM|00005]
+d:s| O<Such changes> T<include> O<relaxing privacy requirements> Cs<required by the Health Insurance Portability and Accountability Act (HIPAA) rules> and O<increasing the use> Cp<to deliver behavioral health treatment and services> Cs<of telehealth>.
+
+[BHVM-NRM|00006]
+d:t| +A<Some states> T<have employed> O<other methods> Cs<of service delivery> Ca<(e.g., mobile units)> Cp<for treatments> O<that> T<cannot be administered> Cm<via telehealth>, Cs<such as medication-assisted treatment (MAT) for opioid use disorder>.
+
+[BHVM-NRM|00007]
+d:t| +A<Congress> T<has appropriated> O<additional funding> Cs<for behavioral health-related activities> Ct<during the pandemic> Cs<in a series of supplemental funding measures>—Cs<such as the Coronavirus Aid, Relief, and Economic Security (CARES) Act (P.L. 116-136)>—and O<the American Rescue Plan Act of 2021 (ARPA; P.L. 117-2) budget reconciliation measure>.
+
+[BHVM-NRM|00008]
+d:t| O<Behavioral health changes> Ct<during the COVID-19 pandemic> T<pose> O<a number of issues> Cp<for Congress to consider>.
+
+[BHVM-NRM|00009]
+d:t| Ct<As the pandemic continues>, +A<the federal government> T<may consider> O<whether> T<to extend> or T<make permanent> O<some of the regulatory changes> Cs<to behavioral health treatment>.
+
+[BHVM-NRM|00010]
+d:t| Cc<In addition>, +A<Congress> and +A<other government institutions> Cs<at the federal, state, and local levels> T<may consider> O<the potential mental health effects> Cs<of COVID-related policies> Cs<such as stay-at-home orders and asynchronous learning for students>.
+
+[BHVM-NRM|00011]
+d:s| O<Other considerations> T<include> O<oversight> Cs<of the supplemental funding> and O<of federally supported behavioral health activities> Ct<during the pandemic and beyond>.
+
+[BHVM-NRM|00012]
+d:t| +A<Circumstances surrounding the Coronavirus Disease 2019 (COVID-19) pandemic>—including O<lifestyle changes> Cp<instituted to prevent spread of the virus>—T<appear to have adversely affected> -A<the mental health> Cs<of many Americans>.
+
+[BHVM-NRM|00013]
+d:t| O<Some studies> T<show> O<that> +A<Americans> T<experienced> O<elevated levels> Cs<of emotional distress>, O<anxiety>, O<depression>, O<substance use>, and O<drug-related overdoses> Ct<in 2020 and 2021> Cy<compared with the same time periods in previous years>.
+
+[BHVM-NRM|00014]
+d:t| O<Various stressors related to the pandemic> T<may have contributed> O<to decreased mental well-being>, Cs<such as fears> Cp<about contracting the virus>, O<anxiety> Cp<about its health effects>, O<social isolation> Cc<due to physical distancing measures>, O<financial stress> Cc<due to the ensuing economic consequences of the pandemic>, O<grief and bereavement> Cc<due to the death of a loved one>, O<exposure> Cs<to pandemic-related media coverage>, and O<interruptions> Cs<to substance use treatment and mental health care>.
+
+[BHVM-NRM|00015]
+d:t| O<Physical distancing measures and temporary stay-at-home orders> Cs<associated with the COVID-19 pandemic> T<have required> O<changes> Cs<in service delivery> Cs<for mental health and substance use (collectively known as behavioral health) treatment>.
+
+[BHVM-NRM|00016]
+d:s| O<Such changes> T<include> O<relaxing privacy requirements> Cs<required by the Health Insurance Portability and Accountability Act (HIPAA) rules> and O<increasing the use> Cs<of telehealth> Cp<to deliver behavioral health treatment and services>.
+
+[BHVM-NRM|00017]
+d:t| +A<Some states> T<have employed> O<other methods> Cs<of service delivery> Ca<(e.g., mobile units)> Cp<for treatments> O<that> T<cannot be administered> Cm<via telehealth>, Cs<such as medication-assisted treatment (MAT) for opioid use disorder (OUD)>.
+
+[BHVM-NRM|00018]
+d:t| +A<Congress> T<has appropriated> O<additional funding> Cs<for behavioral health-related activities> Ct<during the pandemic> Cs<through several of the COVID-19-related supplemental funding measures>.
+
+[BHVM-NRM|00019]
+d:t| O<The third COVID-19 supplemental appropriations act enacted by Congress>—O<the Coronavirus Aid, Relief, and Economic Security (CARES) Act (P.L. 116-136)>—T<appropriated> O<$425 million> Cp<to the Substance Abuse and Mental Health Services Administration (SAMHSA)> Cl<within the Department of Health and Human Services (HHS)>.
+
+[BHVM-NRM|00020]
+d:t| O<The fifth COVID supplemental funding measure (Consolidated Appropriations Act, 2021; P.L. 116-260)> T<appropriated> O<$4.25 billion> Cp<to SAMHSA> Cs<in supplemental COVID-related funding>.
+
+[BHVM-NRM|00021]
+d:t| Ct<In March 2021>, O<a budget reconciliation measure developed in response to the pandemic>—O<the American Rescue Plan Act of 2021 (ARPA; P.L. 117-2)>—T<appropriated> O<$3.64 billion> Cp<to SAMHSA> Cp<for behavioral health activities>.
+
+[BHVM-NRM|00022]
+d:t| Ct<As the COVID-19 pandemic continues>, +A<the federal government> T<may consider> O<whether> T<to extend> or T<make permanent> O<some of the regulatory changes> Cs<to behavioral health treatment delivery>.
+
+[BHVM-NRM|00023]
+d:t| Cc<In addition>, +A<Congress> and +A<other government institutions> Cs<at the federal, state, and local level> T<may consider> O<the mental health consequences> Cs<of COVID-related policies> Cs<such as stay-at-home orders and school reopenings>.
+
+[BHVM-NRM|00024]
+d:s| O<Other considerations> T<include> O<determining allocation> Cs<of the pandemic-related funding> and O<oversight> Cs<of federally supported behavioral health activities> Ct<during the pandemic and beyond>.
+
+[BHVM-NRM|00025]
+d:t| O<This report> T<provides> O<an overview> Cs<of mental health and substance use> Ct<during the COVID-19 pandemic>.
+
+[BHVM-NRM|00026]
+d:t| O<This report> T<provides> O<an overview> Cs<of changes> T<made> Cp<to behavioral health services and related regulations>.
+
+[BHVM-NRM|00027]
+d:t| O<This report> T<provides> O<an overview> Cs<of issues> Cp<for Congress to consider>.
+
+[BHVM-NRM|00028]
+d:t| O<Data> Cs<from multiple sources> T<suggest> O<that> O<mental health symptoms and substance use> T<have increased> Ct<since the beginning of the COVID-19 pandemic>.
+
+[BHVM-NRM|00029]
+d:s| O<These symptoms> T<include> O<emotional distress and anxiety>.
+
+[BHVM-NRM|00030]
+d:s| O<These symptoms> T<include> O<depression>.
+
+[BHVM-NRM|00031]
+d:s| O<These symptoms> T<include> O<trauma-related conditions>.
+
+[BHVM-NRM|00032]
+d:s| O<Substance use> D<refers to> O<the number of individuals> T<using> O<substances> Cs<such as alcohol or illicit drugs> and O<the frequency and quantities> Cs<of use>.
+
+[BHVM-NRM|00033]
+d:s| Cm<Typically>, O<comprehensive national morbidity and mortality data> Cs<on mental health conditions, substance use, associated hospitalizations, and substance-related overdose deaths> T<take> O<months> Cp<to compile and report>.
+
+[BHVM-NRM|00034]
+d:s| O<Comprehensive national data> Cp<for 2020> T<were not yet available> Ct<at the time of the report>.
+
+[BHVM-NRM|00035]
+d:t| +A<Several organizations>, Cs<including multiple federal agencies>, T<have used> O<short surveys and rapid data reporting> Cp<to monitor mental health symptoms and substance use> Ct<during the COVID-19 pandemic>.
+
+[BHVM-NRM|00036]
+d:s| O<Methodological differences> Cs<between these surveys and perennial surveys> T<make> O<comparisons> Cs<between years> Cd<imperfect>.
+
+[BHVM-NRM|00037]
+d:t| O<Most of the 2020 data> T<suggest> O<an increase> Cs<in behavioral health morbidity> Cl<in the United States> Ct<over the course of the COVID-19 pandemic>.
+
+[BHVM-NRM|00038]
+d:t| O<Data> T<collected> Cs<from multiple surveys> Ct<during the COVID-19 pandemic> T<suggest> O<that> +A<Americans> T<experienced> O<increased stress and symptoms> Cs<of mental health conditions>.
+
+[BHVM-NRM|00039]
+d:t| Ct<In a survey conducted in April 2020>, +A<the State Health Access Data Assistance Center (SHADAC)>—O<a program of the Robert Wood Johnson Foundation>—T<found> O<that> O<over 90% of U.S. adults> T<reported> O<experiencing additional levels> Cs<of stress> T<caused> Cc<by the COVID-19 pandemic>.
+
+[BHVM-NRM|00040]
+d:t| Cc<In this context>, O<stress> D<refers to> O<psychological stress>, O<which> T<occurs> Ct<when> +A<individuals> T<believe> O<that> O<the consequences> Cs<of a situation> T<outweigh> O<their ability> Cp<to adequately cope with it>.
+
+[BHVM-NRM|00041]
+d:s| O<Reactions> Cs<to stressors> T<may include> O<fear and concern> Cs<about the future>, O<tension and irritability>, O<sadness or depression>, or O<feeling powerless or overwhelmed>.
+
+[BHVM-NRM|00042]
+d:t| Cr<Without adequate coping strategies>, O<stress> T<can have> O<detrimental effects> Cs<on mental health>.
+
+[BHVM-NRM|00043]
+d:s| O<Coping strategies> D<include> O<any behavioral, social, or cognitive techniques> T<used> Cp<to mitigate the effects> Cs<of stress>.
+
+[BHVM-NRM|00044]
+d:t| O<Coping strategies> T<can be> O<adaptive>, T<meaning> O<they> T<promote> O<better overall functioning> Ca<(e.g., social connections, physical activities, hobbies, and good sleep hygiene)>.
+
+[BHVM-NRM|00045]
+d:t| O<Coping strategies> T<can be> O<maladaptive>, T<meaning> O<they> T<are> O<more likely> Cp<to result in worse overall functioning> Ca<(e.g., substance use, excessive screen time, and risky behaviors)>.
+
+[BHVM-NRM|00046]
+d:t| Cr<Although maladaptive coping strategies> T<may reduce> O<stress> Ct<in the moment>, O<they> T<may exacerbate> O<problems> Ct<in the long term>.
+
+[BHVM-NRM|00047]
+d:t| O<Many individuals> T<experiencing> O<stress> T<may have> O<adequate coping strategies>, T<meaning> O<that> O<stress> T<is present> but T<does not impair> O<their daily functioning>.
+
+[BHVM-NRM|00048]
+d:t| Cp<For other individuals>, O<stress>—and O<in particular stress> T<caused> Cc<by the pandemic>—T<may have> O<detrimental effects> Cs<on their mental health>.
+
+[BHVM-NRM|00049]
+d:t| O<A nationally representative survey> T<conducted> Cs<by the Kaiser Family Foundation (KFF)> Ct<throughout the pandemic> T<found> O<that> O<an increasing number> Cs<of Americans> T<reported> O<that> O<pandemic-related stress> T<was affecting> O<their mental health>.
+
+[BHVM-NRM|00050]
+d:t| Ct<In March 2020>, O<32% of respondents> T<felt> O<that> O<worry or stress> Cs<related to coronavirus> T<had> O<a negative impact> Cs<on their mental health>.
+
+[BHVM-NRM|00051]
+d:t| Ct<In April 2020>, O<that number> T<rose> O<to 45%>.
+
+[BHVM-NRM|00052]
+d:t| Ct<In July 2020>, O<53% of respondents> T<reported> O<that> O<pandemic-related stress> T<was affecting> O<their mental health>.
+
+[BHVM-NRM|00053]
+d:t| Cp<In some cases>, O<extreme or prolonged stress> T<can lead> O<to mental health disorders>.
+
+[BHVM-NRM|00054]
+d:t| Cc<According to data> T<collected> Cs<by the National Center for Health Statistics (NCHS)>, O<the percentage> Cs<of Americans> T<experiencing> O<symptoms> Cs<of a mental health disorder> T<appears to have increased> Ct<during the COVID-19 pandemic>.
+
+[BHVM-NRM|00055]
+d:t| O<NCHS>—O<a research agency> Cl<under the Centers for Disease Control and Prevention (CDC)>—T<partnered> Cp<with the U.S. Census Bureau> Cp<on the Household Pulse Survey> Cp<to monitor the social and economic effects> Cs<of the pandemic> Cs<on American households>.
+
+[BHVM-NRM|00056]
+d:t| O<The nationally representative survey> T<collected> O<data> Cs<on employment status, food security, housing, physical and mental health, access to health care (including mental health care), and education disruption> Ct<during the coronavirus pandemic>.
+
+[BHVM-NRM|00057]
+d:s| O<NCHS survey questions> T<were designed> Cp<to obtain information> Cs<on the frequency> Cs<of anxiety and depression symptoms>.
+
+[BHVM-NRM|00058]
+d:s| O<Symptoms> Cs<of anxiety disorder and depressive disorder> T<were> Cd<higher> Cl<in the United States> Ct<during April–June (Q2) of 2020> Cy<compared with the same period in 2019>.
+
+[BHVM-NRM|00059]
+d:t| O<More than one in three adults> T<experienced> O<symptoms> Cs<of anxiety, depression, or both> Ct<in 2020> Cy<compared with one in 10 in 2019>.
+
+[BHVM-NRM|00060]
+d:t| O<Subsequent data> T<have shown> O<that> O<the 2020 second quarter rates> T<increased> Ct<through the final quarter of 2020>.
+
+[BHVM-NRM|00061]
+d:t| Ct<In February 2021>, O<over 40% of U.S. adults> T<had experienced> O<symptoms> Cs<of an anxiety or a depressive disorder> Ct<during the past seven days>.
+
+[BHVM-NRM|00062]
+d:t| O<Some data> Cs<from this survey> T<suggest> O<that> Ct<as the number of COVID-19 cases has decreased nationally and pandemic-related restrictions have been lifted>, O<symptoms> Cs<of anxiety and depression> T<have shown> O<modest declines>.
+
+[BHVM-NRM|00063]
+d:s| O<Other indicators> Cs<of psychological distress> T<appear> O<elevated> Ct<during the first phases of the pandemic>.
+
+[BHVM-NRM|00064]
+d:t| Cp<For example>, O<CDC analysis> Cs<of national emergency department (ED) visits> T<showed> O<that> O<socioeconomic and psychosocial-related visits> T<increased> Ct<during April 2020> Cy<(compared with April 2019)>, while O<total ED visits> T<decreased> Cd<over 40%>.
+
+[BHVM-NRM|00065]
+d:s| O<Socioeconomic or psychosocial factors> T<were> O<one> Cs<of a few categories> Cs<of ED visits> O<that> T<increased>.
+
+[BHVM-NRM|00066]
+d:t| O<Most of the 200 common diagnostic causes> Cs<of ED visits> T<decreased> Ct<during that same time>.
+
+[BHVM-NRM|00067]
+d:t| O<Other research> T<suggests> O<that> O<ED visits> Cs<for mental health conditions> T<may have decreased> Ct<during the first few months of the pandemic>, Cd<to a lesser extent> Cy<than overall ED visits>.
+
+[BHVM-NRM|00068]
+d:t| Cc<In addition to common symptoms> Cs<of COVID-19> Ca<(such as upper respiratory tract infections, fever, or acute respiratory distress)>, O<COVID-19> T<can cause> O<psychiatric symptoms>.
+
+[BHVM-NRM|00069]
+d:t| O<Research and clinical case reports> T<have described> O<mental health symptoms> Cs<of COVID-19> O<that> T<include> O<anxiety and depression>.
+
+[BHVM-NRM|00070]
+d:s| O<These items> T<include> O<altered mental status> Ca<(e.g., confusion, delirium, and agitation)>.
+
+[BHVM-NRM|00071]
+d:s| O<These items> T<include> O<psychosis> Ca<(e.g., delusions, hallucinations, and paranoia)>.
+
+[BHVM-NRM|00072]
+d:s| O<These items> T<include> O<post-traumatic stress>.
+
+[BHVM-NRM|00073]
+d:s| O<These items> T<include> O<impaired memory>.
+
+[BHVM-NRM|00074]
+d:s| O<These items> T<include> O<insomnia>.
+
+[BHVM-NRM|00075]
+d:s| O<Most individuals> T<diagnosed> Cs<with COVID-19> T<do not experience> O<any mental health issues>.
+
+[BHVM-NRM|00076]
+d:t| Cc<However>, Cp<for some individuals> Ca<(especially those with severe COVID-19 infections)>, O<psychiatric symptoms> T<can appear> Ct<during the acute illness or post-illness stages>.
+
+[BHVM-NRM|00077]
+d:s| O<The causes> Cs<of psychiatric symptoms of COVID-19> D<are> O<unclear>.
+
+[BHVM-NRM|00078]
+d:t| O<Some research> T<suggests> O<that> O<infection> T<can have> O<possible neurological effects> and T<cause> O<inflammation> Cs<of the brain>.
+
+[BHVM-NRM|00079]
+d:t| Cc<In addition>, O<the experience> Cs<of having COVID-19> T<may lead> O<to altered mood, post-traumatic stress, or other mental health symptoms>.
+
+[BHVM-NRM|00080]
+d:t| O<Studies> T<report> O<worsening> Cs<of symptoms> Cp<for COVID-19 patients with preexisting psychiatric disorders>.
+
+[BHVM-NRM|00081]
+d:t| O<Individuals> Cs<with no history of mental illness> T<have displayed> O<psychiatric symptoms> Ct<during and after the illness>.
+
+[BHVM-NRM|00082]
+d:t| O<An international study> T<following> O<284 patients> T<found> O<that> O<over a third (34.5%)> T<reported> O<clinically significant post-traumatic stress symptoms, anxiety, and or depression> Ct<nearly two months after a COVID-19 diagnosis>.
+
+[BHVM-NRM|00083]
+d:s| O<The presence> Cs<of psychiatric symptoms> Ct<during COVID-19> D<is> O<consistent> Cs<with prior research> Cs<on other coronavirus infections>, O<which> T<found> O<that> O<confusion, impaired memory, depressed mood, anxiety, and insomnia> T<are> O<common symptoms>.
+
+[BHVM-NRM|00084]
+d:t| O<Some evidence> T<suggests> O<that> O<suicidal thoughts> T<may have increased> Ct<during the pandemic>.
+
+[BHVM-NRM|00085]
+d:t| O<One CDC analysis> T<found> O<that> Ct<during the pandemic> O<approximately twice as many U.S. adults> T<reported> O<serious consideration> Cs<of suicide> Ct<in the previous 30 days> Cy<compared with 2018 (10.7% versus 4.3%)>.
+
+[BHVM-NRM|00086]
+d:s| O<The National Suicide Prevention Lifeline> T<did not report> O<increases> Cs<in call volume>.
+
+[BHVM-NRM|00087]
+d:t| O<The Disaster Distress Helpline> Ca<(part of the Suicide Lifeline)> T<experienced> O<a 335% increase> Cs<in calls> Ct<during the first five months of the pandemic>.
+
+[BHVM-NRM|00088]
+d:s| O<The effects> Cs<of the pandemic> Cs<on suicide attempts and suicide deaths> D<are> O<unclear>.
+
+[BHVM-NRM|00089]
+d:s| O<Suicide mortality> T<appears to have decreased> Cy<compared with previous years>.
+
+[BHVM-NRM|00090]
+d:s| O<An increase> Cs<in suicidal thoughts> T<does not necessarily equate to> O<an increase> Cs<in suicide attempts or suicide deaths>.
+
+[BHVM-NRM|00091]
+d:t| O<Research> Cs<from CDC> T<shows> O<a decrease> Cs<in emergency department (ED) visits> Cs<for suicide attempts> Ct<between March and October 2020> Cy<compared with the same period in 2019>, but O<to a lesser extent> Cy<than overall ED visits>.
+
+[BHVM-NRM|00092]
+d:t| O<Preliminary national suicide mortality data> Cl<in the United States> Cp<for 2020> T<show> O<that> O<suicide deaths> Cl<in the United States> T<may have decreased> Ct<in 2020> Cy<compared with the three previous years>.
+
+[BHVM-NRM|00093]
+d:s| Cc<In addition>, O<regional differences> T<may account for> O<changes> Cs<in suicide mortality>.
+
+[BHVM-NRM|00094]
+d:t| Cp<For example>, O<some individual states and municipalities> T<have reported> O<stable rates> Cs<in suicide deaths> Ct<during the pandemic>, whereas O<others> T<have reported> O<decreased rates>.
+
+[BHVM-NRM|00095]
+d:s| O<There> T<may be> O<demographic differences> Cs<in suicide rates> Ct<during the pandemic> also.
+
+[BHVM-NRM|00100]
+d:t| Ct<During the pandemic>, O<Nora Volkow>—O<Director of the National Institute on Drug Abuse (NIDA) at the National Institutes of Health (NIH)>—T<stated> O<that> O<all of these aspects> Cs<of the pandemic> T<are translating> O<into much more stress>.
+
+[BHVM-NRM|00101]
+d:t| O<Stress>, Cc<as we know>, D<is> O<one> Cs<of the factors> O<that> T<leads> O<people> Cp<to relapse>.
+
+[BHVM-NRM|00102]
+d:t| O<Stress> D<is> O<also a factor> O<that> T<leads> O<many> Cp<to increase consumption> Cs<of drugs>.
+
+[BHVM-NRM|00103]
+d:t| Cs<In reporting data> Cs<from the Household Pulse Survey>, +A<CDC> T<indicated> O<that> O<13% of U.S. adults> T<started> or T<increased> O<substance use> Ct<in the first few months of the pandemic> Cp<to cope with stress> Cs<related to COVID-19>.
+
+[BHVM-NRM|00104]
+d:t| O<Increased substance use> T<can lead> O<to the development or exacerbation> Cs<of substance use disorders>, O<increased health conditions>, or O<premature death>.
+
+[BHVM-NRM|00105]
+d:t| Cc<In addition>, O<COVID-19 mitigation measures> T<might lead> O<persons> T<using> O<opioids or other substances> Cp<to do so> Cm<in higher-risk ways>, Cs<such as alone or without access to overdose reversal medications such as naloxone>.
+
+[BHVM-NRM|00106]
+d:s| O<Comprehensive national data> Cs<on drug-related overdoses and overdose deaths> Ct<during the pandemic> D<are> O<not yet available>.
+
+[BHVM-NRM|00107]
+d:t| O<Preliminary data> Cs<from the Office of National Drug Control Policy (ONDCP)> T<suggest> O<increases> Cs<in drug-related overdoses> Ct<during the first few months of the pandemic>.
+
+[BHVM-NRM|00108]
+d:t| O<The Overdose Detection Mapping Application Program (ODMAP)>—O<an ONDCP surveillance system> O<that> T<tracks> O<suspected overdose data> Cm<nationally> Cm<in near real-time>—T<reported> O<an increase> Cs<of 11%> Cs<in fatal overdoses> and O<a 19% increase> Cs<in nonfatal overdoses> Ct<from March through May 2020> Cy<compared with the same months in 2019>.
+
+[BHVM-NRM|00109]
+d:t| O<Nearly 62% of participating counties> T<reported> O<increases> Ct<from March to May 2020>.
+
+[BHVM-NRM|00110]
+d:t| O<Other areas> T<have reported> O<stable rates> Cs<of overdose deaths>.
+
+[BHVM-NRM|00111]
+d:t| O<ODMAP overdose submissions> T<appeared> Cp<to be trending upward> Ct<prior to the onset of the pandemic>, T<making> O<it> O<difficult> Cp<to determine the effects> Cs<of the pandemic and mitigation measures> Cm<using these data>.
+
+[BHVM-NRM|00112]
+d:t| O<CDC> Cm<also> T<noted> O<an increase> Cs<in drug-related overdose deaths> Ct<in the beginning of the COVID-19 pandemic>.
+
+[BHVM-NRM|00113]
+d:t| Cy<Similar to the ODMAP data>, O<the CDC data> T<showed> O<that> O<overdose deaths> T<were> O<already increasing> Ct<in the months preceding the pandemic>.
+
+[BHVM-NRM|00114]
+d:t| Cc<However>, O<CDC data> T<showed> O<the rate> Cs<of overdose deaths> T<accelerating> Ct<after the pandemic began>.
+
+[BHVM-NRM|00115]
+d:t| Cs<In an analysis> Cs<of provisional CDC mortality data>, O<the National Institute for Health Care Management> T<found> O<that> O<the rise> D<is> Cd<particularly notable> Cp<for deaths> T<involving> O<synthetic opioids>.
+
+[BHVM-NRM|00116]
+d:t| Cc<In addition>, O<the institute> T<reported> O<increases> Cs<in deaths> T<involving> O<commonly prescribed opioids and heroin>—O<both> O<which> T<had been declining> Ct<in recent years>.
+
+[BHVM-NRM|00117]
+d:t| Cs<When examining emergency department (ED) visits>, +A<CDC> T<found> O<a higher number> Cs<of drug overdoses>—O<including opioid overdoses>—Ct<between March and October 2020> Cy<compared with the same period in 2019>.
+
+[BHVM-NRM|00118]
+d:t| Cm<Taken together>, O<the ODMAP and CDC data> T<suggest> O<that> O<drug-related overdoses and overdose deaths> T<have increased> Ct<during the COVID-19 pandemic>.
+
+[BHVM-NRM|00119]
+d:s| O<Individuals> Cs<with substance use disorders> D<may be> O<at higher risk> Cp<of contracting SARS-CoV-2> Cc<due to unstable housing situations, high incarceration rates, or inability to physically distance themselves>.
+
+[BHVM-NRM|00120]
+d:t| Cc<In addition>, O<individuals> Cs<with substance use disorders> D<may be> O<at higher risk> Cp<for complications> Cs<of COVID-19> Cc<because substance use> T<can suppress> O<the immune system> or T<inhibit> O<respiratory functioning>.
+
+[BHVM-NRM|00121]
+d:t| O<Pandemic-related physical distancing measures> T<may prevent> O<individuals> Cs<in need of substance use disorder treatment> Cp<from accessing services>.
+
+[BHVM-NRM|00122]
+d:t| O<Lack> Cs<of access to effective treatment> T<may lead> O<to relapse> and T<increase> O<risk> Cs<of overdose and death>.
+
+[BHVM-NRM|00123]
+d:t| Ct<During the pandemic>, O<many harm reduction and overdose prevention and response activities> T<have been suspended> or T<are operating> O<at a reduced capacity>.
+
+[BHVM-NRM|00124]
+d:s| O<Substance use disorder treatment services> T<involving> O<physical interactions> T<have been> O<most affected> Cc<by the pandemic>.
+
+[BHVM-NRM|00125]
+d:s| Cp<For example>, O<it> D<has been> O<difficult> Cp<for individuals> Cp<to access peer-led programs> Cs<such as Alcoholics Anonymous and Narcotics Anonymous>.
+
+[BHVM-NRM|00126]
+d:t| O<These programs> T<provide> O<individuals> Cs<with substance use disorders> Cp<with supports> Cs<such as mentoring and a social support system> O<that> D<are> O<considered fundamental> Cp<for recovery>.
+
+[BHVM-NRM|00127]
+d:t| O<The National Association of County and City Health Officials (NACCHO)> T<identified> O<the following disruptions> Cs<to overdose prevention services> O<reduced harm reduction programs>, Cs<such as syringe service programs>.
+
+[BHVM-NRM|00128]
+d:t| O<The National Association of County and City Health Officials (NACCHO)> T<identified> O<the following disruptions> Cs<to overdose prevention services> O<greater difficulties> Cp<connecting to individuals> O<who> T<have experienced> O<overdose>, Ca<including through peer recovery specialist programs and warm handoffs in the emergency department>.
+
+[BHVM-NRM|00129]
+d:t| O<The National Association of County and City Health Officials (NACCHO)> T<identified> O<the following disruptions> Cs<to overdose prevention services> O<challenges> Cp<sharing best practices information> Cp<with providers> and Cp<disseminating provider education>.
+
+[BHVM-NRM|00130]
+d:t| O<The National Association of County and City Health Officials (NACCHO)> T<identified> O<the following disruptions> Cs<to overdose prevention services> O<barriers> Cp<to accessing medication-assisted treatment>.
+
+[BHVM-NRM|00131]
+d:t| O<The National Association of County and City Health Officials (NACCHO)> T<identified> O<the following disruptions> Cs<to overdose prevention services> O<complications> Cs<in overdose prevention messaging>.
+
+[BHVM-NRM|00132]
+d:t| O<A National Council for Behavioral Health survey> Cs<of 3,400 behavioral health provider organizations> T<reported> O<that> Cr<although 52% of facilities> T<reported> O<an increase> Cs<in demand for services> Ct<during the first six months of the pandemic>, O<over 54%> T<had cut back> O<their programs>.
+
+[BHVM-NRM|00133]
+d:t| Cs<In a follow-up survey> Ct<in January 2021>, O<45% of organizations> T<reported> Cp<closing programs> Cc<due to COVID-19>, while O<the percentage> T<reporting> O<a demand> Cs<for services> T<increased> O<to 67%>.
+
+[BHVM-NRM|00134]
+d:t| Cr<While the use> Cs<of telehealth services> T<has increased> Ct<throughout the pandemic>, O<an analysis> Cs<by the Commonwealth Fund> T<showed> O<that> O<weekly visits> Cp<to behavioral health providers> T<remain> O<below their baseline prepandemic levels>.
+
+[BHVM-NRM|00135]
+d:t| Cr<Although certain services> T<can be provided> Cm<effectively> Cp<through virtual telehealth platforms>, O<some patients and providers> T<have questioned> O<whether virtual sessions> T<can impart> O<the same benefits> Cs<of in-person services>—Cd<particularly group therapy and peer-led programs>.
+
+[BHVM-NRM|00136]
+d:s| Cc<Moreover>, O<scientific research> Cs<on telehealth> D<is> O<nascent>, and O<questions> T<remain> Cs<regarding the effectiveness> Cs<of telehealth modalities> Cp<for certain populations and mental health conditions>.
+
+[BHVM-NRM|00137]
+d:t| Ct<In April 2021>, O<the Government Accountability Office (GAO)> T<published> O<a report> Cs<on the effects> Cs<of the COVID-19 pandemic> Cs<on patient access> Cs<to behavioral health services>.
+
+[BHVM-NRM|00138]
+d:t| O<GAO> T<found> O<that> O<long-standing unmet needs> Cs<for behavioral health services> T<persisted> and T<were> Cm<often> O<worsened> Cc<by new challenges> Cs<associated with the pandemic>.
+
+[BHVM-NRM|00139]
+d:s| O<Certain groups> T<appear> O<to be disproportionately affected> Cc<by increases> Cs<in behavioral health issues> Cs<associated with the COVID-19 pandemic>.
+
+[BHVM-NRM|00140]
+d:t| O<The 2020 Household Pulse data> T<showed> O<differences> Cs<in symptoms> Cs<of anxiety and depression> Cp<by education level, income level, age, ethnicity, and household job loss>.
+
+[BHVM-NRM|00141]
+d:t| Cp<For example>, O<45% of individuals> Cs<in a household> O<that> T<experienced> O<job loss> T<had> O<symptoms> Cs<of anxiety or depressive disorder> Cy<compared with 27% of those> Cs<in households> Cr<without job loss> (Figure 4).
+
+[BHVM-NRM|00142]
+d:s| O<Mental health symptoms> T<appear> Cd<particularly stratified> Cp<by education level and income>.
+
+[BHVM-NRM|00143]
+d:t| Cp<For instance>, O<44% of individuals> Cs<with less than a high school education> T<exhibited> O<symptoms> Cs<of an anxiety or depressive disorder> Cy<compared with 29% of individuals> Cs<with a bachelor's degree or higher> (Figure 5).
+
+[BHVM-NRM|00144]
+d:t| O<Over 50% of individuals> T<making> O<less than $25,000 annually> T<exhibited> O<symptoms> Cs<of one or both mental health conditions> Cy<compared with 35% of those> T<making> O<$50,000-$75,000> and O<23% of those> Cs<with an income above $150,000> (Figure A-1).
+
+[BHVM-NRM|00145]
+d:t| O<Another CDC survey> T<conducted> Ct<in June 2020> T<reflected> O<similar mental health differences> Cp<by age, caregiver status, and employment status and type>.
+
+[BHVM-NRM|00146]
+d:t| Cp<For example>, O<at least one adverse mental or behavioral health symptom> T<was reported> Cp<by more than half of respondents> O<who> T<were> O<aged 18–24 (74.9%) and 25–44 (51.9%)>, as well as O<those> O<who> T<were> O<essential workers (54.0%) or unpaid caregivers for adults (66.6%)>.
+
+[BHVM-NRM|00147]
+d:t| Cs<In this survey>, O<the percentage> Cs<of respondents> O<who> T<reported> O<having seriously considered suicide> Ct<in the past 30 days> D<(10.7%) was> Cd<significantly higher> Cp<among respondents> O<aged 18–24 (25.5%)>, O<certain minority racial and ethnic groups>, O<unpaid caregivers for adults (30.7%)>, and O<essential workers (21.7%)>.
+
+[BHVM-NRM|00148]
+d:t| Cm<Overall>, O<data> Cs<from CDC> T<indicate> O<that> O<mental health symptoms> Cs<associated with the early phases of the COVID-19 pandemic> T<may have disproportionately affected> O<young adults (aged 18-24)>.
+
+[BHVM-NRM|00149]
+d:t| Cm<Overall>, O<data> Cs<from CDC> T<indicate> O<that> O<mental health symptoms> Cs<associated with the early phases of the COVID-19 pandemic> T<may have disproportionately affected> O<Black or Latino and Hispanic individuals>.
+
+[BHVM-NRM|00150]
+d:t| Cm<Overall>, O<data> Cs<from CDC> T<indicate> O<that> O<mental health symptoms> Cs<associated with the early phases of the COVID-19 pandemic> T<may have disproportionately affected> O<essential workers>.
+
+[BHVM-NRM|00151]
+d:t| Cm<Overall>, O<data> Cs<from CDC> T<indicate> O<that> O<mental health symptoms> Cs<associated with the early phases of the COVID-19 pandemic> T<may have disproportionately affected> O<unpaid caregivers for adults>.
+
+[BHVM-NRM|00152]
+d:t| Cm<Overall>, O<data> Cs<from CDC> T<indicate> O<that> O<mental health symptoms> Cs<associated with the early phases of the COVID-19 pandemic> T<may have disproportionately affected> O<unemployed individuals>.
+
+[BHVM-NRM|00153]
+d:t| Cm<Overall>, O<data> Cs<from CDC> T<indicate> O<that> O<mental health symptoms> Cs<associated with the early phases of the COVID-19 pandemic> T<may have disproportionately affected> O<individuals> Cs<with low income levels>.
+
+[BHVM-NRM|00154]
+d:t| Cm<Overall>, O<data> Cs<from CDC> T<indicate> O<that> O<mental health symptoms> Cs<associated with the early phases of the COVID-19 pandemic> T<may have disproportionately affected> O<individuals> Cs<with less than a high school diploma>.
+
+[BHVM-NRM|00155]
+d:t| O<The disproportionate stress—and subsequent behavioral health issues—for some groups> T<could be influenced> Cc<by several factors>.
+
+[BHVM-NRM|00156]
+d:t| O<The economic consequences> Cs<of the pandemic> T<have resulted> O<in significant financial strain> Cp<for many individuals>.
+
+[BHVM-NRM|00157]
+d:t| O<The KFF July 2020 Health Tracking Poll> T<revealed> O<that> O<75%> Cs<of the people> O<who> T<indicated> O<that> O<pandemic-related stress> T<had caused> O<adverse effects> Cs<on their mental health> T<reported> O<difficulties> Cp<affording household expenses>.
+
+[BHVM-NRM|00158]
+d:t| O<This correlation> Cs<between financial strain and mental health> T<differed> Cp<between groups>.
+
+[BHVM-NRM|00159]
+d:t| Cp<For example>, O<roughly seven in 10 Black adults and individuals> O<who> T<had difficulty paying household bills> Ct<in the past three months> Cc<due to the financial impact of coronavirus> T<said> O<that> O<stress and worry> Cs<related to the pandemic> T<had> O<a negative impact> Cs<on their mental health>.
+
+[BHVM-NRM|00160]
+d:t| O<Fears> Cs<of contracting the virus>—Cd<especially for those at high risk>—T<could increase> O<stress and symptoms> Cs<of anxiety and depression>.
+
+[BHVM-NRM|00161]
+d:s| O<Essential workers>, Cp<for instance>, D<are> Cm<generally> O<required> Cp<to work outside of their home> and T<may be unable> Cp<to practice physical distancing>.
+
+[BHVM-NRM|00162]
+d:t| Cm<Consequently>, O<essential workers> D<are> O<at increased risk> Cp<of contracting coronavirus> and T<exposing> O<other members> Cs<of their household> Cp<to it>.
+
+[BHVM-NRM|00163]
+d:s| Cc<According to a KFF June 2020 analysis>, O<essential workers> D<were> O<more likely> Cy<than nonessential workers> Cp<to report symptoms> Cs<of anxiety or depressive disorder> (42% vs. 30%, respectively).
+
+[BHVM-NRM|00164]
+d:s| Cc<According to a KFF June 2020 analysis>, O<essential workers> D<were> O<more likely> Cy<than nonessential workers> Cp<to start or increase substance use> (25% vs. 11%).
+
+[BHVM-NRM|00165]
+d:s| Cc<According to a KFF June 2020 analysis>, O<essential workers> D<were> O<more likely> Cy<than nonessential workers> Cp<to consider suicide> Ct<in the past 30 days> (22% vs. 8%).
+
+[BHVM-NRM|00166]
+d:t| O<Other factors> T<contribute> O<to differences> Cs<in behavioral health issues> Cp<between groups>, Cs<such as the amount> Cs<of COVID-19-related stressors> T<experienced> and O<access> Cp<to effective resources> Cp<for coping with pandemic-related stress>.
+
+[BHVM-NRM|00167]
+d:t| Cp<For example>, O<one study> T<found> O<that> O<U.S. adults> O<who> T<experienced> O<more COVID-19-related stressors> Cy<than other adults> T<had> O<a greater incidence> Cs<of depressive symptoms>.
+
+[BHVM-NRM|00168]
+d:t| Cc<In addition>, O<groups> T<differ> Cs<in their use> Cs<of adaptive and maladaptive coping strategies>.
+
+[BHVM-NRM|00169]
+d:t| O<The SHADAC survey> T<found> O<variations> Cs<in coping responses> Cp<by age, sex, education, health status, and income>.
+
+[BHVM-NRM|00170]
+d:t| O<Groups> Cs<with higher risks> Cp<for pandemic-related stressors> T<also reported> O<coping responses> T<associated> Cs<with greater health risks>.
+
+[BHVM-NRM|00171]
+d:t| O<The survey> T<found> O<higher alcohol consumption> Cp<among younger adults>.
+
+[BHVM-NRM|00172]
+d:t| O<The survey> T<found> O<more unhealthy eating habits> Cp<among women>.
+
+[BHVM-NRM|00173]
+d:t| O<The survey> T<found> O<higher tobacco use> Cp<among individuals> Cs<with less education>.
+
+[BHVM-NRM|00174]
+d:s| Cm<Conversely>, O<people> Cs<with higher incomes> D<were> O<more likely> Cp<to report healthier coping strategies>, Cs<such as increased exercise>.
+
+[BHVM-NRM|00175]
+d:t| O<Such variations> T<can compound> O<behavioral health disparities> Cp<among groups>.
+
+[BHVM-NRM|00176]
+d:t| O<Groups> Cs<with fewer stressors> T<may employ> O<healthy coping strategies>.
+
+[BHVM-NRM|00177]
+d:t| O<Groups> Cp<at higher risk> Cs<for pandemic-related mental health symptoms> T<may use> O<coping mechanisms> O<that> T<further jeopardize> O<their health>.
+
+[BHVM-NRM|00178]
+d:t| O<Data> Cs<from multiple sources> T<suggest> O<that> O<mental health issues and substance use rates> T<have increased> Ct<during the COVID-19 pandemic>.
+
+[BHVM-NRM|00179]
+d:t| O<A greater number> Cs<of Americans> T<are experiencing> O<stress and symptoms> Cs<of mental health conditions> Cy<than in previous years>.
+
+[BHVM-NRM|00180]
+d:t| O<Mental health conditions> T<are disproportionately affecting> O<specific populations>, Ca<especially young adults, Black and Hispanic persons, essential workers, unpaid caregivers for adults, and households that have experienced job loss, among others>.
+
+[BHVM-NRM|00181]
+d:s| O<Substance use rates> T<appear to have increased> Ct<during the COVID-19 pandemic>.
+
+[BHVM-NRM|00182]
+d:t| O<More than one in 10 adults> T<started> or T<increased> O<substance use> Cp<to cope with stress> Cs<related to COVID-19>.
+
+[BHVM-NRM|00183]
+d:s| O<National drug-related overdose data> D<remain> O<limited>.
+
+[BHVM-NRM|00184]
+d:s| O<Some overdose metrics>—Cs<such as emergency department visits and ODMAP-suspected overdose submissions>—T<appeared> Cp<to be increasing> Ct<before the COVID-19 pandemic>.
+
+[BHVM-NRM|00185]
+d:s| Cp<As a result>, T<determining> O<the effects> Cs<of the pandemic and related mitigation efforts> Cs<on drug-related overdose rates> D<is> O<difficult>.
+
+[BHVM-NRM|00186]
+d:t| Cr<Regardless of the underlying causes>, O<data> T<suggest> O<that> O<substance use rates and drug-related overdoses> T<increased> Ct<during the pandemic in 2020>.
+
+[BHVM-NRM|00187]
+d:t| Cp<For individuals> Cs<in need of mental health or substance use disorder treatment>, O<pandemic-related physical distancing measures> T<may have made> O<it> O<difficult> Cp<to access services>.
+
+[BHVM-NRM|00188]
+d:t| O<An estimated 10%-20% of individuals> Cs<in need of mental health services> Ct<during the pandemic> T<did not receive> O<them>.
+
+[BHVM-NRM|00189]
+d:t| O<The behavioral health consequences> Cs<of the COVID-19 pandemic> T<may extend> O<beyond the public health emergency itself>.
+
+[BHVM-NRM|00190]
+d:t| O<Many individuals> T<experiencing> O<pandemic-related stress> T<may readjust> Ct<when the event is over>.
+
+[BHVM-NRM|00191]
+d:t| O<Other individuals> T<may be left> Cp<with mental health conditions and substance use disorders> O<that> T<outlast> O<the pandemic>.
+
+[BHVM-NRM|00192]
+d:t| O<Substance use disorders and mental health conditions> T<spurred> Cc<by the pandemic> T<could have> O<lasting effects> Cs<on morbidity and mortality>.
+
+[BHVM-NRM|00193]
+d:t| O<A projected analysis> Cs<by the Wellbeing Trust> T<estimated> O<that> O<the pandemic> T<could influence> O<between 27,644 and 154,037 additional behavioral health-related deaths> Ct<over the next decade>.
+
+[BHVM-NRM|00194]
+d:t| Cr<Except for during the COVID-19 pandemic>, O<most mental health treatment> D<is> Cm<typically> O<administered> Cl<in outpatient settings> O<where> +A<patients> T<visit> O<providers> Cl<in brick-and-mortar offices, clinics, hospitals, or specialty facilities>.
+
+[BHVM-NRM|00195]
+d:s| O<Treatment visits> T<may occur> Cp<on a regular basis> Ca<(e.g., weekly and monthly)>.
+
+[BHVM-NRM|00196]
+d:s| O<Treatment visits> T<may occur> Cp<as a single, one-time visit> Ca<(such as for an evaluation)>.
+
+[BHVM-NRM|00197]
+d:s| O<Treatment visits> T<may occur> Cp<in discrete episodes> Cp<as full-day or overnight visits> Cp<as part of more intensive service> Cs<like intensive outpatient, residential, or partial hospitalization programs>.
+
+[BHVM-NRM|00198]
+d:t| Ct<As technology has advanced>, O<some behavioral health treatment providers> T<have used> O<telehealth (or telemedicine) modalities> Cs<such as video conferencing> Cp<to deliver services>.
+
+[BHVM-NRM|00199]
+d:s| O<Behavioral health services> Cl<via telehealth (known as telebehavioral health)> D<are provided> Cm<through live video and mobile telephone calls or applications>.
+
+[BHVM-NRM|00200]
+d:s| O<Substance use disorder treatment> T<works> Cm<similarly> Ct<in most instances>, Ca<with exceptions> Cp<for interventions> T<using> O<frequent administration> Cs<of medications>, Cs<such as medication-assisted treatment (MAT) for opioid use disorder (OUD)>.
+
+[BHVM-NRM|00201]
+d:s| Cp<For MAT> O<that> T<uses> O<opioid agonist treatments> Cs<such as methadone and buprenorphine>, O<patients> D<are required> Cc<by law> Cp<to attend in person> Cp<for at least the initial visit for buprenorphine>, and Cp<daily for methadone>.
+
+[BHVM-NRM|00202]
+d:s| O<Methadone> D<is administered> Cp<on a daily basis> Cl<in federally certified opioid treatment programs (OTPs; also known as methadone clinics)>, Ca<with some short-term take-home doses allowed for stable patients>.
+
+[BHVM-NRM|00203]
+d:t| O<Physical distancing measures and temporary stay-at-home orders> Cs<associated with the COVID-19 pandemic> T<have required> O<changes> Cs<in service delivery> Cp<for mental health and substance use treatment>.
+
+[BHVM-NRM|00204]
+d:s| O<Such changes> T<include> O<relaxing privacy requirements> Cs<required by the Health Insurance Portability and Accountability Act (HIPAA) rules> and O<increasing the use> Cs<of telehealth> Cp<to deliver behavioral health treatment and services>.
+
+[BHVM-NRM|00205]
+d:t| Cc<In addition>, +A<some states> T<have employed> O<other methods> Cs<of service delivery> Ca<(e.g., mobile units)> Cp<for treatments> O<that> T<cannot be administered> Cm<via telehealth>, Cs<such as MAT for OUD>.
+
+[BHVM-NRM|00206]
+d:t| Ct<On March 13, 2020>, +A<the HHS Secretary> T<implemented> O<the Section 1135 waiver authority> Cs<from the Social Security Act> Cp<in an effort> Cp<to ensure> O<that> O<sufficient health care services> D<are available> Cp<to individuals> T<enrolled> Cs<in Medicare, Medicaid, and Children's Health Insurance Program (CHIP)>.
+
+[BHVM-NRM|00207]
+d:t| Cm<Using this new authority>, O<which> T<was authorized> Cc<by the Coronavirus Preparedness and Response Supplemental Appropriations Act, 2020 (P.L. 116-123)> and O<other COVID-19 related acts>, +A<the HHS Secretary> T<waived> or T<modified> O<telebehavioral health-related participation requirements> Cs<under programs> T<administered> Cs<by the Centers for Medicare and Medicaid Services (CMS)>.
+
+[BHVM-NRM|00208]
+d:t| Cp<For instance>, +A<CMS> T<announced> O<that> O<it> T<would reimburse> Cp<for audio-only behavioral health telephone visits>.
+
+[BHVM-NRM|00209]
+d:t| O<Other federal agencies> T<have also addressed> O<telebehavioral health services> Cs<relative to their missions>.
+
+[BHVM-NRM|00210]
+d:t| Cp<For example>, O<the Health Resources and Services Administration (HRSA)> Cs<of HHS> T<continued> Cp<to administer demonstration programs> Cp<aimed at assessing whether telehealth networks> T<can improve> O<access> Cs<to behavioral health> Cl<in rural and frontier communities> Cs<under the Substance Abuse Treatment Network Grant Program and Evidence-Based Tele-Behavioral Health Network Grant Program>.
+
+[BHVM-NRM|00211]
+d:t| O<The Department of Veterans Affairs> T<expanded> O<telebehavioral health care services> Cp<to veterans> Cc<by entering into short-term agreements> Cp<with telecommunications companies> and Cp<through mobile applications> Cs<such as COVID Coach and Mindfulness Coach>.
+
+[BHVM-NRM|00212]
+d:t| Ca<In conjunction with the federal government>, +A<some states> T<have waived> or T<modified> O<laws and reimbursement policies> Cs<on telebehavioral health> Ct<during the COVID-19 pandemic>.
+
+[BHVM-NRM|00213]
+d:t| Ct<Since the pandemic began>, O<behavioral health service providers> T<have substantially increased> O<the use> Cs<of telehealth>.
+
+[BHVM-NRM|00214]
+d:s| Cc<However>, O<the increase> Cs<in telehealth use> D<does not appear> Cp<to have offset clinic closures or other reductions> Cs<to treatment service capacity> Cd<enough> Cp<to adequately meet the demand> Cs<for services> Ct<during the pandemic>.
+
+[BHVM-NRM|00215]
+d:t| O<A KFF poll> T<found> O<that> O<nearly a quarter> Cs<of adults> Cs<with symptoms> Cs<of anxiety or depressive disorders> T<reported> O<an unmet need> Cp<for counseling or therapy> Ct<throughout the pandemic>.
+
+[BHVM-NRM|00216]
+d:s| O<The Controlled Substances Act> D<includes> O<limits> Cs<on prescribing controlled substances> Cm<over the internet>.
+
+[BHVM-NRM|00217]
+d:s| Cp<For example>, O<patients> T<initiating MAT> Cp<with buprenorphine> Cp<for opioid use disorder (OUD)> D<are typically required> Cp<to attend an initial examination> Cm<in person>.
+
+[BHVM-NRM|00218]
+d:t| Cp<For the duration> Cs<of the public health emergency>, O<SAMHSA and the Drug Enforcement Administration (DEA)> T<are allowing> O<prescriptions> Cp<for buprenorphine> Cp<for OUD> Cp<to a new patient> Cm<via telemedicine (including telephone)> Cp<without an initial in-person examination>.
+
+[BHVM-NRM|00219]
+d:t| Ct<In April 2021>, +A<HHS> T<published> O<practice guidelines> Cp<for administering buprenorphine> Cs<for OUD>.
+
+[BHVM-NRM|00220]
+d:t| O<These new guidelines> T<exempt> O<eligible practitioners> Cp<from certification prerequisites> T<previously required> Cp<to treat patients> Cp<with buprenorphine>.
+
+[BHVM-NRM|00221]
+d:t| Cc<According to HHS>, O<this exemption> T<addresses> O<reported barriers> Cp<to expanding access> Cs<to buprenorphine treatment>.
+
+[BHVM-NRM|00222]
+d:s| O<The exemptions> Cs<in these guidelines> D<are not subject> Cp<to the public health emergency declaration>.
+
+[BHVM-NRM|00223]
+d:s| Cm<Typically>, O<most individuals> T<receiving methadone treatment> D<must travel> Cp<to brick-and-mortar OTPs> Cp<on a daily basis> Cp<to receive their dose> Ca<(with some exceptions for stable and long-term patients)>.
+
+[BHVM-NRM|00224]
+d:t| Ct<During the pandemic>, O<SAMHSA and DEA> T<are allowing> O<stable patients> Cp<to receive up to 28 days of take-home medication>.
+
+[BHVM-NRM|00225]
+d:t| O<DEA> Cm<also> T<is allowing> O<alternative methods> Cp<for delivery> Cs<of methadone> Cp<to patients> Cs<under stay-at-home orders>.
+
+[BHVM-NRM|00226]
+d:t| O<DEA> Cm<also> T<is allowing> O<interstate prescribing privileges> Cp<for providers>.
+
+[BHVM-NRM|00227]
+d:t| O<DEA>—O<the agency> O<that> T<provides> O<registrations> Cp<to operate OTPs>—T<had previously published> O<a proposed rule> Cp<allowing these facilities> Cp<to operate a mobile component> Cp<to administer methadone>.
+
+[BHVM-NRM|00228]
+d:t| Cc<Given the large number> Cs<of people> T<seeking> O<COVID-19 treatment, testing, and vaccination>, O<individuals' interactions> Cs<with the health care and public health system> T<have increased>, Ca<both virtually and in person>, Ct<during the COVID-19 pandemic>.
+
+[BHVM-NRM|00229]
+d:s| Cp<As a result>, O<a significant amount> Cs<of clinical and related demographic and other data> D<have been generated>.
+
+[BHVM-NRM|00230]
+d:t| O<A coordinated response> Cs<to the pandemic> D<has> Ct<in many cases> T<relied> O<on efforts> Cp<to share health care and public health information> Cm<in new ways and more readily>, and Cp<to overcome barriers> Cs<associated with doing so>.
+
+[BHVM-NRM|00231]
+d:t| O<Such efforts> T<have resulted> O<in certain changes> Cp<to how existing privacy requirements> D<are enforced> and O<highlighted other potential changes>.
+
+[BHVM-NRM|00232]
+d:t| Cc<In response to the COVID-19 pandemic>, O<the Office for Civil Rights (OCR)> Cl<in HHS>, O<the agency> T<responsible> Cp<for administering and enforcing the HIPAA rules>, T<released> O<numerous guidance documents> and T<published> O<notices> Cs<of enforcement discretion> Cp<to support sharing of health information> or Cp<to clarify how such information> T<may be shared> Cs<per requirements> Cs<of the rules>.
+
+[BHVM-NRM|00233]
+d:s| O<These actions> D<are> Cm<generally> O<linked and limited> Cp<to the COVID-19 pandemic>.
+
+[BHVM-NRM|00234]
+d:s| O<Some announcements>, Cs<such as those> T<involving requirements> Cs<related to sharing of health information> Cl<in the context of telehealth>, D<may be> Cd<particularly relevant> Cp<for individuals> Cs<with behavioral health conditions>.
+
+[BHVM-NRM|00235]
+d:t| Cc<In addition>, O<OCR> T<publicly released> O<a notice> Cs<of proposed rulemaking> Cl<on the HHS website> Ct<in December 2020> O<that> T<would make> O<numerous changes> Cp<to the HIPAA rules>.
+
+[BHVM-NRM|00236]
+d:s| O<Federal parity law> D<does not require> O<private health insurance, Medicaid, or CHIP> Cp<to offer mental health benefits> Cr<(although other areas of federal law mandate such benefits in some cases)>.
+
+[BHVM-NRM|00237]
+d:t| Cm<Rather>, Cr<when both mental health benefits and medical or surgical benefits> D<are offered>, O<federal parity law> T<generally prohibits> O<insurers> Cp<from imposing more restrictive limits>—Ca<including quantitative and nonquantitative treatment limitations>—Cp<on the mental health benefits>.
+
+[BHVM-NRM|00238]
+d:t| O<A provision> Cs<in the Consolidated Appropriations Act, 2021 (P.L. 116-260)> T<attempts> Cp<to strengthen federal oversight> Cs<of insurers' compliance> Cp<with mental health parity laws and regulations> Cc<by requiring group health plans and health insurance issuers> Cp<to perform and document comparative analyses> Cs<of nonquantitative treatment limitations> Cp<for mental health and substance use disorder benefits and medical and surgical benefits>.
+
+[BHVM-NRM|00239]
+d:t| O<The provision> T<requires> O<HHS and the Department of Labor> Cp<to request and review at least 20 comparative analyses> Cp<from group health plans and health insurance issuers> O<that> T<may involve> O<a violation or a complaint> Cs<regarding noncompliance> Cp<with mental health parity requirements>.
+
+[BHVM-NRM|00240]
+d:s| O<The information> Cs<in the comparative analyses> D<is to be used> Cp<to determine compliance>, as well as Cp<develop guidance> Cp<to help group health plans and health insurance issuers> Cp<comply with mental health parity requirements>.
+
+[BHVM-NRM|00241]
+d:t| O<The COVID-19 pandemic> T<has limited> O<in-person health service visits> and T<caused> O<economic hardships>, T<resulting in behavioral health clinic closures and other reductions> Cs<to treatment service capacity>.
+
+[BHVM-NRM|00242]
+d:t| Cc<In response to this decreasing capacity>, +A<Congress> T<sought> Cp<to address high demand> Cs<for mental health and substance use disorder treatment services> Cp<through emergency financial support> Cs<for behavioral health activities> T<provided> Cl<in three of the supplemental COVID-19 funding laws>.
+
+[BHVM-NRM|00243]
+d:t| O<The CARES Act> T<appropriated> O<$425 million> Cp<to SAMHSA> Cp<to support behavioral health services> Ct<during the pandemic>.
+
+[BHVM-NRM|00244]
+d:t| O<This amount> T<included> O<$250 million> Cp<for the Certified Community Behavioral Health Clinic (CCBHC) Expansion grant program> and O<$50 million> Cp<for suicide prevention>.
+
+[BHVM-NRM|00245]
+d:t| O<Of the remaining total>, O<$110 million> T<went> Cp<to states> Cp<in the form of emergency grants> Cp<to provide crisis intervention services, mental and substance use disorder treatment, and other related recovery supports> Cp<for children and adults> T<affected> Cc<by the COVID-19 pandemic>.
+
+[BHVM-NRM|00246]
+d:t| O<SAMHSA> T<gave> O<states> O<significant flexibility> Cp<in how to use these funds> Cp<to support behavioral health-related activities>.
+
+[BHVM-NRM|00247]
+d:t| Cc<In addition>, +A<Congress> T<established> O<the Provider Relief Fund (PRF)> Cs<in the CARES Act>.
+
+[BHVM-NRM|00248]
+d:t| O<The measure> T<appropriated> O<$100 billion> Cp<"to reimburse, through grants or other mechanisms, eligible health care providers for health care related expenses or lost revenues that are attributable to coronavirus.">.
+
+[BHVM-NRM|00249]
+d:t| O<The PRF> T<provides> O<grants> Cp<to eligible health care providers>.
+
+[BHVM-NRM|00250]
+d:t| O<Funds> D<do not have to be repaid> Cr<as long as the provider> T<meets> O<the PRF's terms and conditions>.
+
+[BHVM-NRM|00251]
+d:t| O<The Paycheck Protection Program and Health Care Enhancement Act (PPPHCEA, P.L. 116-139)>—O<the fourth COVID-19 supplemental measure>—T<added> O<an additional $75 billion> Cp<to the PRF>.
+
+[BHVM-NRM|00252]
+d:t| O<The Protecting Access to Medicare Act of 2014 (P.L. 113-193)> T<created> O<a program> Cp<to improve community-based behavioral health services> Cp<through a demonstration program>.
+
+[BHVM-NRM|00253]
+d:t| O<Certified community behavioral health clinics (CCBHCs)> D<are> O<facilities> T<operated> Cc<by nonprofit organizations and governmental or tribal entities> O<that> T<offer> O<a comprehensive range> Cs<of services>, Ca<including risk assessment, outpatient mental health and substance use treatment, case management, psychiatric rehabilitation services, peer and family supports, 24-hour crisis management, and primary care medical services, among others>.
+
+[BHVM-NRM|00254]
+d:t| O<Federal funding> T<provided> Cp<through the CCBHC program> T<helps> O<community behavioral health clinics> Cp<provide the services required for certification>.
+
+[BHVM-NRM|00255]
+d:s| Cp<To be certified>, O<CCBHCs> D<are required> Cp<to maintain partnerships> Cp<with other health and social service providers>.
+
+[BHVM-NRM|00256]
+d:t| Ct<In 2015>, O<24 states> T<received> O<planning grants>, and Ct<in 2016>, O<eight states> D<were selected> Cp<to participate in the initial demonstration program>.
+
+[BHVM-NRM|00257]
+d:t| O<HRSA> T<has supported> O<grantees> Cp<in their efforts> Cp<to provide or expand access> Cs<to behavioral health services>.
+
+[BHVM-NRM|00258]
+d:t| O<The agency> T<has also focused> Cp<on increasing access> Cs<to telebehavioral health services> and T<supported> O<providers> Cp<through its administration> Cs<of the Provider Relief Fund>.
+
+[BHVM-NRM|00259]
+d:t| O<NIH> T<has granted> O<COVID-19 specific research awards> Cp<for behavioral health research> and T<internally conducted research> Cs<related to the behavioral health impacts> Cs<of the COVID-19 pandemic>.
+
+[BHVM-NRM|00260]
+d:t| O<The HHS Office of the Assistant Secretary for Preparedness and Response (ASPR)> T<deployed> O<20 National Disaster Medical System mental health specialists>, Ca<both in-person and virtually>, Cp<to help address behavioral health needs> Cs<related to the COVID-19 pandemic>.
+
+[BHVM-NRM|00261]
+d:t| O<The Commissioned Corps> T<deployed> O<behavioral health officers> Cp<in support> Cs<of the COVID-19 pandemic response>.
+
+[BHVM-NRM|00262]
+d:t| O<The Federal Emergency Management Agency (FEMA) and SAMHSA> T<awarded> O<grants> Cp<to 48 states> Cp<through its Crisis Counseling Assistance and Training Program (CCP)>.
+
+[BHVM-NRM|00263]
+d:t| Ct<On October 3, 2020>, +A<President Trump> T<signed> O<an executive order> T<creating> O<a Coronavirus Mental Health Working Group> Cp<to outline a plan> Cp<for improving the federal mental health response>.
+
+[BHVM-NRM|00264]
+d:t| O<Congress and the executive branch of the federal government>—Ca<in addition to state and local governments>—T<continue to face> O<decisions> Cs<related to the COVID-19 pandemic>, Ca<including those> T<affecting behavioral health treatment and prevention>.
+
+[BHVM-NRM|00265]
+n:s| Cl<Below>, D<are> O<select behavioral health-related issues> O<Congress> T<may consider> Ct<during the pandemic and beyond>.
+
+[BHVM-NRM|00266]
+d:s| O<One issue> Cp<for Congress and the executive branch> D<is> O<how long> Cp<to maintain changes> Cs<to substance use disorder (SUD) service delivery> Ct<after the pandemic>.
+
+[BHVM-NRM|00267]
+d:t| Cp<For the most part>, O<the federal government> T<defers> Cp<to states> and T<lets> O<them> T<regulate> O<the practice> Cs<of medicine>.
+
+[BHVM-NRM|00268]
+d:s| O<One exception> T<pertains> Cp<to using the controlled substances methadone and buprenorphine> Cl<in medication-assisted treatment (MAT)> Cp<for opioid use disorder>.
+
+[BHVM-NRM|00269]
+d:s| O<Regulations> Cs<on methadone and buprenorphine>—Cs<such as the use of telehealth in MAT>—D<are rooted> Cc<in concerns> Cs<about diversion> Cs<of these substances>.
+
+[BHVM-NRM|00270]
+d:t| O<Some public health experts and policymakers> T<have advocated> Cp<for permanently allowing the telehealth and substance use disorder treatment exceptions> T<instituted> Ct<during the pandemic>.
+
+[BHVM-NRM|00271]
+d:t| O<Some> T<have argued> O<that> O<the pre-pandemic regulations> D<are> O<overly restrictive> and T<inhibit> O<access> Cs<to SUD treatment> Cs<such as MAT>.
+
+[BHVM-NRM|00272]
+d:t| O<Others> T<have claimed> O<that> T<making medications> Cs<such as buprenorphine and methadone> O<more accessible> T<will increase> O<diversion> Cs<of these substances> and T<lead> O<to adverse consequences>.
+
+[BHVM-NRM|00273]
+d:t| O<DEA> T<has stated> O<that> Cr<without congressional action>, O<the exceptions> O<that> O<DEA> T<has issued> Ct<during the pandemic> Cs<related to telemedicine and substance use disorder treatment through MAT> T<will expire> Ct<at the end> Cs<of the public health emergency declarations>.
+
+[BHVM-NRM|00274]
+d:t| Ct<In May 2020>, O<a group> Cs<of Members> Cs<of the House of Representatives> T<encouraged> O<greater data collection> Cp<to inform decisions> Cs<regarding which, if any, of the pandemic flexibilities> D<should be made permanent>.
+
+[BHVM-NRM|00275]
+d:t| O<Exceptions> Cs<to SUD treatment provision> Ct<during the pandemic> T<could create> O<a naturalistic experiment> Cs<on the effects> Cs<of these temporary policies>.
+
+[BHVM-NRM|00276]
+d:t| O<Research> T<could provide> O<insights> Cs<on possible consequences> Cs<of providing greater flexibilities>, Cs<such as increased accessibility to MAT, increased diversion, or both>.
+
+[BHVM-NRM|00277]
+d:t| Ct<In April 2021>, O<ONDCP> T<released> O<its annual drug policy priorities>, T<stating> O<it> T<would evaluate and explore making permanent the emergency provisions> T<implemented> Ct<during the pandemic>.
+
+[BHVM-NRM|00278]
+d:t| O<Executive agencies> D<may have> O<the authority> Cp<to make certain changes permanent>, while O<others> D<would require> O<statutory changes> T<made> Cc<by Congress>.
+
+[BHVM-NRM|00279]
+d:t| Cs<In its brief report> Cs<on behavioral health services> Ct<during the pandemic>, O<GAO> T<noted> O<that> O<most of the stakeholder groups> O<it> T<interviewed> Ca<(composed mostly of hospital system associations)> T<reported> O<positive effects> Cs<of increased use of and payment for telehealth>.
+
+[BHVM-NRM|00280]
+d:t| O<Stakeholders> T<believed> O<that> O<these changes> T<improved> O<access> Cs<to behavioral health services> Cp<for many patients> O<not requiring in-person services> and T<resulted> O<in fewer missed appointments>.
+
+[BHVM-NRM|00281]
+d:t| Cp<For example>, O<one stakeholder group> T<described> O<telehealth> D<as> O<being particularly effective> Cp<for certain types> Cs<of treatment>, Ca<including outpatient and follow-up visits>.
+
+[BHVM-NRM|00282]
+d:t| O<Some stakeholders> T<expressed> O<concerns> Cs<regarding telehealth>, Ca<such as a reduced ability to diagnose patients through audio-only visits, challenges with patient access to broadband internet, and limitations to delivering certain group therapy sessions>.
+
+[BHVM-NRM|00283]
+d:t| O<Stakeholders> Cm<generally> T<supported> O<continuing telehealth flexibilities> Ct<after the pandemic>.
+
+[BHVM-NRM|00284]
+d:t| Cc<However>, O<stakeholders> T<differed> Cp<on which flexibilities to continue> and Cp<whether to apply them in a limited way>.
+
+[BHVM-NRM|00285]
+d:t| O<Some stakeholders> T<recommended> O<maintaining audio-only services and access across state lines>.
+
+[BHVM-NRM|00286]
+d:t| O<Other stakeholders> T<recommended> O<maintaining telehealth reimbursement> Cp<at parity with in-person services>.
+
+[BHVM-NRM|00287]
+d:t| O<Other stakeholders> T<recommended> O<continuing relaxed requirements> Cs<related to HIPAA enforcement discretion>.
+
+[BHVM-NRM|00288]
+d:s| O<Federal parity law> D<does not require> O<private health insurance, Medicaid, or CHIP> Cp<to offer mental health benefits> Cr<when not otherwise required by law>.
+
+[BHVM-NRM|00289]
+d:t| Cr<When mental health benefits and medical or surgical benefits> D<are offered>, O<federal parity law> T<generally prohibits> O<more restrictive limits> Cp<on mental health benefits>.
+
+[BHVM-NRM|00290]
+d:t| O<Congress> T<may consider> O<the extent> Cp<to which changes> Cs<in parity oversight> T<affect> O<access> Cs<to behavioral health care>.
+
+[BHVM-NRM|00291]
+d:t| O<Congress> T<may consider> O<whether pandemic-related telehealth flexibilities> D<should be extended or made permanent>.
+
+[BHVM-NRM|00292]
+d:t| O<Congress> T<may consider> O<whether exceptions> Cp<for prescribing buprenorphine and dispensing methadone> D<should be extended or made permanent>.
+
+[BHVM-NRM|00293]
+d:t| O<Congress> T<may consider> O<whether relaxed HIPAA enforcement discretion> Cs<related to telehealth> D<should be extended or made permanent>.
+
+[BHVM-NRM|00294]
+d:t| O<Congress> T<may consider> O<oversight> Cs<of supplemental behavioral health funding and distribution of these funds>.
+
+[BHVM-NRM|00295]
+d:t| O<Congress> T<may consider> O<oversight> Cs<of federal behavioral health activities> Ct<during the pandemic and beyond>.
+
+[BHVM-NRM|00296]
+d:t| O<Congress> T<may consider> O<how to address unmet behavioral health needs> O<that> T<persisted> and T<were worsened> Cc<by the pandemic>.
+
+[BHVM-NRM|00297]
+d:t| O<Congress> T<may consider> O<disparities> Cs<in mental health symptoms and substance use> Cp<across groups>.
+
+[BHVM-NRM|00298]
+d:t| Cp<For example>, O<CDC data> T<show> O<that> O<mental distress and substance use> T<have disproportionally affected> O<younger individuals, individuals with lower educational attainment and income, essential workers and unemployed individuals, and communities of color, among others>.
+
+[BHVM-NRM|00299]
+d:t| O<One analysis> T<suggested> O<that> D<"the emotional costs of the pandemic are much higher for the poor and vulnerable than they are for the rich, heightening deep pre-existing inequities in well-being in the U.S and many other countries.">.
+
+[BHVM-NRM|00300]
+d:t| O<Congress> T<could consider> O<the disproportionate impact> Cs<of the pandemic> Cp<on certain groups> Ct<when directing behavioral health-related efforts> Ct<during the pandemic>.
+
+[BHVM-NRM|00301]
+d:t| O<Reaching these groups> T<may involve> O<special consideration> Cs<regarding availability of services, access to behavioral health resources, requirements for cultural competencies, and sustainability of benefits>.
+
+[BHVM-NRM|00302]
+d:t| Ct<As Congress> T<conducts> O<oversight> Cs<on federal efforts> Cp<to address mental health and substance use>, O<it> T<may consider> O<the extent> Cp<to which these endeavors> T<reach> O<the populations> Cs<most in need>.
