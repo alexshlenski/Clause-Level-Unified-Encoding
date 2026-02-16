@@ -1,5 +1,6 @@
-## A COMPLETE PROTOCL OF A SESSION WITH KIMI K2.5 ANALYZING THE CRS DOCUMENT
-## Behavioral Health During the COVID-19 Pandemic: Overview and Issues for Congress
+## A COMPLETE RECORDING OF A SESSION WITH KIMI K2.5 ANALYZING THE CRS DOCUMENT
+
+## [Behavioral Health During the COVID-19 Pandemic: Overview and Issues for Congress](https://www.congress.gov/crs-product/R46831?q=%7B%22search%22%3A%22covid19%22%7D&s=3&r=14)
 
 **_read the CLUE form and report the findings_**
 
@@ -725,3 +726,4 @@ At **1MB**, the CLUE form provides **decisive advantages**:
   
 
 The **CLUE form is not merely "pre-tagged"**—it is **pre-computed**, shifting O(n²) semantic operations to O(1) tag lookups. At 1MB, this architectural difference determines **analytical feasibility**.
+
