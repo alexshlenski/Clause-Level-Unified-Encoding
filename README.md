@@ -1,9 +1,15 @@
-⚠️ **CLUE is the only tool with no other choice when:**
-- you must analyze or audit more long, complex documents than available human resources allow  
-- those documents directly inform decisions in legal, financial, intelligence, or market-competitive domains  
-- every analytical claim must be traceable to its immediate source  
-- analytical errors carry material, legal, or organizational risk  
-- time constraints and document complexity make manual analysis impractical  
+⚠️ **CLUE becomes critical when:**
+
+organizations must analyze more long, complex documents than available human resources allow
+
+- those documents directly inform decisions in legal, financial, intelligence, or market-competitive domains
+  
+
+every analytical claim must be traceable to its immediate source
+
+analytical errors carry material, legal, or organizational risk
+
+time constraints and document complexity make manual analysis impractical
 
 ---
 
@@ -11,61 +17,102 @@
 
 Want to see CLUE in action in under a minute?
 
-1. **Copy the file** [**CLUE Form "Genesis"**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/GNSS-CLUE.txt)  
+1. **Copy the file** [**CLUE Trascript "Genesis"**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/GNSS-CLUE.txt)  
   → This is the CLUE-encoded version of the *Book of Genesis*.
   
 2. **Upload it to** [**Claude Sonnet 4.6**](https://claude.ai/)  
-  → No fine-tuning or prompt engineering needed.
+  → No fine-tuning or prompt engineering required.
   
-3. **Start asking anything**, like:
+3. **Start asking questions**, for example:
   
   - "Summarize the timeline of events in Genesis"
-    
   - "Who are all the descendants of Abraham?"
-    
   - "Create a Mermaid diagram of the major biblical periods"
-    
   - "Map character interactions during the flood narrative"
-    
   - "List promises and covenants clause by clause"
 
-Because it's CLUE-encoded, the model can **reason with structure** — not just language.
+Because it is CLUE-encoded, the model can **reason with explicit structure** rather than reconstructing events from raw narrative text.
 
-A new demo CLUE Form recenly added: [**Behavioral Health During the COVID-19 Pandemic"**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/BHVM-CLUE.txt) 
+**Additional demo corpus:**  
+[**Behavioral Health During the COVID-19 Pandemic**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/BHVM-CLUE.txt)
 
 ---
 
 # CLUE: Clause-Level Unified Encoding
 
-**From Unstructured Text to Structured Machine Thinking**
+**From Unstructured Text to Structured Machine Reasoning**
 
 ---
 
 ## 1. Purpose
 
-**CLUE** (Clause-Level Unified Encoding) is a novel technology that transforms unstructured English language documents into *deterministic, clause-resolved surfaces*. These retain human readability while exposing latent logic, temporal structures, dependencies, and interactions—without altering the original content.
+**CLUE** (Clause-Level Unified Encoding) is a technology that transforms unstructured English language documents into **deterministic, clause-resolved semantic surfaces**.
 
-Once CLUE-encoded, documents become directly operable by top-tier LLMs. This elevates the LLM from a conversational interface to a field-ready analytical mainframe—without training, fine-tuning, or prompt engineering. Simply put, the structure becomes the strategy.
+These surfaces preserve the original wording while exposing latent logic, temporal order, dependencies, and interactions between entities.
 
----
+Once CLUE-encoded, documents become directly operable by top-tier LLMs.  
+The model no longer needs to reconstruct events from narrative text during inference.
 
-## 2. Output Deliverables
+Instead, the document already exposes its semantic structure.
 
-**Output Name:** Structured Meaning Form (*SM Form*) or CLUE Forms
-
-An **SM Form** or **CLUE Form** is the CLUE-encoded version of the original document. It retains the exact wording but overlays a stable semantic scaffolding that LLMs can directly reason over.
-
-### Key Benefits:
-
-- No need for NLP parsing, co-reference resolution, or inference gymnastics.
-- SM Forms reduce token waste and hallucination risk.
-- Inference is limited to aligning encoded semantics with LLM-held world knowledge.
+In practice this allows the LLM to operate less like a chatbot and more like an analytical engine working over structured evidence.
 
 ---
 
-## 3. Primary Consumers of CLUE
+## 2. Why This Works
 
-CLUE is purpose-built for organizations handling high volumes of operational text, such as:
+Large language models struggle with long documents because semantic relationships must be reconstructed from natural language during inference.
+
+Narrative text hides:
+
+- event boundaries
+- actor roles
+- causal links
+- temporal order
+
+CLUE externalizes this structure before the model sees the text.
+
+The document is converted into a **clause-aligned semantic surface** where each statement exposes:
+
+- actors
+- actions
+- objects
+- contextual relations
+
+This reduces ambiguity and allows the model to operate directly on explicit event structure instead of inferring it from tokens.
+
+---
+
+## 3. Output Deliverables
+
+**Output Name:** **CLUE Transcript**
+
+A CLUE Transcript preserves the exact wording of the original document while adding a stable semantic scaffolding.
+
+This scaffolding enables LLMs to reason over:
+
+- events
+- actors
+- timelines
+- dependencies
+
+without altering the underlying language.
+
+### Key Benefits
+
+- No NLP parsing pipelines required
+- No co-reference resolution required
+- Reduced hallucination risk
+- Lower token waste
+- Explicit traceability from claim → source clause
+
+Inference is limited to aligning encoded semantics with the model’s internal world knowledge.
+
+---
+
+## 4. Primary Consumers of CLUE
+
+CLUE is designed for environments handling large volumes of operational text, including:
 
 - Intelligence reports
 - Mission debriefs
@@ -73,208 +120,169 @@ CLUE is purpose-built for organizations handling high volumes of operational tex
 - Investigative narratives
 - Compliance logs
 
-These domains often suffer from:
+These domains frequently face:
 
-- Analyst overload
-- Model drift and hallucination
-- Lack of traceability
+- analyst overload
+- unreliable LLM outputs on long text
+- lack of traceability between conclusions and evidence
 
-CLUE enforces structure *upstream*, eliminating ambiguity before the LLM sees the data.
-
----
-
-## 4. What CLUE Does
-
-CLUE encodes a source document into an CLUE Form that:
-
-- Clause-aligns each statement into a formal surface representation
-- Exposes semantic roles: **subject**, **predicate**, **object**, **adjunct**
-- Preserves the original language verbatim (no rewriting or summarization)
-- Requires no changes on the model side
-- Enables temporal, causal, and dependency reasoning with reduced error
-- Facilitates clause-level cross-reference and evidence-linked reasoning
-
-> Think of CLUE like HTML for language: invisible to the user, essential for structure.
-
-CLUE is **not a model**. It does not interpret, infer, or analyze—it creates the structure *so that analysis can happen* with full traceability and context.
+CLUE moves structural discipline **upstream**, removing ambiguity before the LLM processes the document.
 
 ---
 
-## 5. What CLUE Consumers Receive
+## 5. What CLUE Does
 
-1. **Structured Meaning Form (SM Form)**
+CLUE converts a document into a CLUE Transcript that:
+
+- aligns each statement at the clause level
+- exposes semantic roles (**subject**, **predicate**, **object**, **adjunct**)
+- preserves original language verbatim
+- requires no modification to the model itself
+- enables temporal, causal, and dependency reasoning
+- supports clause-level citation and cross-reference
+
+> Think of CLUE as **HTML for language**: invisible to the reader, essential for structure.
+
+CLUE is **not a model**.  
+It performs no interpretation or reasoning.
+
+It prepares text so that reasoning systems can operate with explicit structure and traceable evidence.
+
+---
+
+## 6. What CLUE Consumers Receive
+
+1. **CLUE Transcript**  
+  Clause-resolved, human-readable, machine-operable document.
   
-  - Clause-resolved, human-readable, machine-operable format.
-2. **Deterministic Clause Map**
+2. **Deterministic Clause Map**  
+  Stable identifiers for reference, citation, and change tracking.
   
-  - Stable identifiers for citation, reference, and change tracking.
 3. **Structural Validation**
   
-  - Integrity checks ensuring:
-    - No added/removed/altered words
-    - Conformance to CLUE specification
-    - Well-formed clause indexing and cross-references
+  Integrity checks confirming:
+  
+  - no words added, removed, or altered
+  - conformance with the CLUE specification
+  - correct clause indexing and cross-references
 
-### Ideal For:
+### Ideal For
 
-- Document-heavy analytical backlogs
-- Machine-first review teams
-- High-consequence LLM deployments:
-  - Defense, Intelligence, Security
-  - Risk, Compliance, Complex Operations
-- Auditability and provenance-sensitive workflows
+- document-heavy analytical backlogs
+- machine-assisted review teams
+- high-consequence LLM deployments
 
-### Example Use Cases:
+Example domains:
 
-- Incident reconstruction and timeline stabilization
-- After-action review normalization
-- Multi-document correlation
-- Long-range investigative narrative tracking
-- Statement-level policy and compliance traceability
-- Analyst augmentation with citation integrity
+- defense and intelligence
+- risk and compliance
+- complex operational environments
+
+### Example Use Cases
+
+- incident reconstruction
+- after-action review normalization
+- investigative narrative tracking
+- multi-document correlation
+- policy and compliance traceability
+- analyst augmentation with citation integrity
 
 ---
 
-## 6. How It Works (High-Level)
+## 7. How It Works (High Level)
 
 1. **Ingest**
   
-  - Client provides documents (TXT, DOCX, PDF, etc.)
+  Client provides documents (TXT, DOCX, PDF, etc.)
+  
 2. **CLUE Encoding**
   
-  - Text is rendered into CLUE Form with explicit clause structure and semantic roles
+  Text is transformed into a CLUE Transcript exposing clause structure and semantic roles.
+  
 3. **Verification**
   
-  - Deterministic checks ensure faithfulness and structural compliance
+  Deterministic validation confirms structural correctness and faithfulness to the source text.
+  
 4. **Delivery**
   
-  - Outputs provided in agreed format (individual files, bundles, batches) for LLM and analytics integration
-
----
-
-## 7. What CLUE Is Not
-
-- Not an LLM (but designed to work with them)
-- Not a summarizer
-- Not a field extractor
-- Not a reasoning engine
-- Not a decision-making system
-
-CLUE does not resolve ambiguity or infer intent. It structurally enables systems that do.
-
----
-
-## 8. Trust, Auditability & Traceability
-
-CLUE is engineered for environments where verifiability and accountability are essential.
-
-- **Verbatim preservation** – Original language remains unchanged
-- **Determinism** – Same input yields same output
-- **Clause-level citation** – Every statement is referenceable
-- **Human auditability** – Readable without special tooling
-- **Machine-operable structure** – Explicit and inspectable
-
----
-
-## 9. Engagement Model (Typical)
-
-- **Pilot**
+  Outputs are provided in agreed formats for integration with LLM or analytics workflows.
   
-  - Targeted corpus
-  - Success metrics
-  - Output validation
-  - LLM integration demo
-- **Production**
-  
-  - Batch processing
-  - Packaging standards
-  - QA protocols
-- **Sustainment**
-  
-  - Schema updates
-  - Workflow integration
-  - Optional custom schema extensions
-
-> ⚠️ For regulated entities or government clients (e.g., MITRE, In-Q-Tel, R&D agencies), we recommend beginning with a constrained pilot and traceability-focused evaluation rubric.
 
 ---
 
-## 10. Contact / Evaluation
+## 8. What CLUE Is Not
+
+CLUE is **not**:
+
+- an LLM
+- a summarization system
+- an information extractor
+- a reasoning engine
+- a decision-making system
+
+CLUE does not resolve ambiguity or infer intent.
+
+It simply exposes structure so that reasoning systems can operate over explicit semantics.
+
+---
+
+## 9. Trust, Auditability & Traceability
+
+CLUE is designed for environments where verifiability matters.
+
+Key design properties:
+
+- **Verbatim preservation**  
+  Original language remains unchanged.
+  
+- **Determinism**  
+  The same input always produces the same output.
+  
+- **Clause-level citation**  
+  Every analytical statement can reference a specific clause.
+  
+- **Human readability**  
+  No special tools required.
+  
+- **Machine-operable structure**  
+  Explicit and inspectable semantic scaffolding.
+  
+
+---
+
+## 10. Engagement Model (Typical)
+
+**Pilot**
+
+- targeted corpus
+- defined success metrics
+- output validation
+- LLM integration demonstration
+
+**Production**
+
+- batch processing
+- packaging standards
+- QA procedures
+
+**Sustainment**
+
+- schema updates
+- workflow integration
+- optional schema extensions
+
+For regulated organizations or government clients (e.g., MITRE, In-Q-Tel, research agencies), evaluation typically begins with a constrained pilot focused on traceability and analytical reliability.
+
+---
+
+## 11. Contact / Evaluation
 
 When evaluating CLUE, consider:
 
-- Determinism across repeated runs
-- Stability of clause-level references across versions
-- Reduction in drift and hallucination vs. raw text
-- Analyst time saved at equal or higher auditability
+- determinism across repeated runs
+- stability of clause identifiers
+- reduction of hallucination compared with raw text
+- analyst time saved while maintaining traceability
 
-📬 **For pilots, integration, or access inquiries:**  
-Use the repository’s [Issues](../../issues) page or the contact channel in the repo settings.
-
----
-
-## CLUE Service Scope & Liability Terms
-
-### Clause-Level Unified Encoding (CLUE) Profile Delivery Agreement
-
-> _This section outlines baseline service terms. It is not legal advice._
-
----
-
-### 1. Service Description
-
-The **Provider** offers a transformation service that converts input documents into **SM Forms** (Structured Meaning Forms). These documents:
-
-- Retain original language
-- Add clause structure, semantic roles, and cross-references
-- Are fully human-readable and LLM-operable
-
----
-
-### 2. Provider Responsibilities
-
-The Provider will:
-
-- Accept pre-agreed document formats (TXT, DOCX, PDF)
-- Generate and validate SM Forms for structural integrity
-- Preserve original language without paraphrasing or rewriting
-- Deliver outputs in agreed format and timeframe
-
----
-
-### 3. Exclusions & Limitations
-
-The Provider **disclaims liability** for:
-
-- Interpretations or decisions based on SM Forms
-- LLM or AI system behaviors using CLUE data
-- Analytical errors by third-party systems
-- Legal or operational consequences from SM Form usage
-- LLM fine-tuning, deployment, or prompt engineering
-
----
-
-### 4. Legal Status
-
-- SM Forms are **not legal documents**
-- No warranty is given regarding legal or regulatory use
-- No claims of fitness for any specific mission or domain
-
----
-
-### 5. Liability Waiver
-
-- Client assumes full responsibility for downstream usage
-- Provider is not liable for:
-  - Loss of data, business, or reputation
-  - Third-party claims arising from CLUE use
-
----
-
-### 6. Acknowledgement
-
-Use of the CLUE service constitutes **acceptance of these terms**.
-
-CLUE enables LLM-assisted structured analysis, but **does not perform analysis** or guarantee its quality, accuracy, or relevance.
-
----
+📬 **For pilot evaluation or collaboration inquiries:**  
+Use the repository **Issues** page or the contact information in repository settings.
