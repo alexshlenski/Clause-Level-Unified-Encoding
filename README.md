@@ -1,3 +1,7 @@
+# CLUE: Clause-Level Unified Encoding
+
+**From Unstructured Text to Structured Machine Reasoning**
+
 ⚠️ **CLUE becomes critical when:**
 
 - organizations must analyze more long, complex documents than available human resources allow
@@ -134,9 +138,7 @@ It is especially suitable for demonstrating CLUE on a real-world, document-heavy
 
 ---
 
-# CLUE: Clause-Level Unified Encoding
-
-**From Unstructured Text to Structured Machine Reasoning**
+# CLUE: A brief introduction for AI Engineers
 
 ---
 
