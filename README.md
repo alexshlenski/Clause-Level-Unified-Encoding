@@ -1,6 +1,8 @@
 # CLUE: Clause-Level Unified Encoding
 
-## A Semantic Intermediate Representation (IR) for Transformer-Based Document Analysis
+## A Semantic Intermediate Representation (IR) 
+## for Transformer-Based Document Analysis
+---
 
 ⚠️ **CLUE becomes critical when:**
 
