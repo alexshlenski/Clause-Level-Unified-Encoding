@@ -1,7 +1,7 @@
 # CLUE: Clause-Level Unified Encoding
+### A Semantic Intermediate Representation (IR) for Transformer-Based Document Analysis
 
-## A Semantic Intermediate Representation (IR) 
-## for Transformer-Based Document Analysis
+#### _Built by a Transformer upstream, interpreted by a Transformer downstream_
 ---
 
 ⚠️ **CLUE becomes critical when:**
@@ -142,8 +142,6 @@ It is especially suitable for demonstrating CLUE on a real-world, document-heavy
 
 # CLUE: A brief introduction for AI Engineers
 
----
-
 ## 1. Purpose
 
 **CLUE** (Clause-Level Unified Encoding) is a technology that transforms unstructured English language documents into **deterministic, clause-resolved semantic surfaces**.
@@ -163,7 +161,9 @@ In practice this allows the LLM to operate less like a chatbot and more like an 
 
 Large language models struggle with long documents because semantic relationships must be reconstructed from natural language during inference.
 
-Narrative text hides:
+Narrative text is immediately understandable to human, but it is semantically opaque for LLM. Transformer must interleave vector-based inference with continuous NLP-driven semantic assembly, effectively combining semantic extraction and reasoning within a single process. This architectural entanglement is inherently unstable, comparable to extracting ore and smelting steel within the same production line, and results in cumulative representational drift during somewhat extended reasoning.
+
+Also, narrative text hides:
 
 - event boundaries
 - actor roles
