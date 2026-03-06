@@ -1,6 +1,6 @@
 # CLUE: Clause-Level Unified Encoding
 
-**From Unstructured Text to Structured Machine Reasoning**
+**a Semantic Intermediate Representation (IR) for Transformer-Based Document Analysis**
 
 ⚠️ **CLUE becomes critical when:**
 
