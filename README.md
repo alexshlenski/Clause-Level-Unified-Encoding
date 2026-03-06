@@ -14,7 +14,7 @@ Want to see CLUE in action in under a minute?
 1. **Copy the file** [**CLUE Form "Genesis"**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/GNSS-CLUE.txt)  
   → This is the CLUE-encoded version of the *Book of Genesis*.
   
-2. **Upload it to** [**Claude Sonnet 4.5**](https://claude.ai/)  
+2. **Upload it to** [**Claude Sonnet 4.6**](https://claude.ai/)  
   → No fine-tuning or prompt engineering needed.
   
 3. **Start asking anything**, like:
