@@ -17,13 +17,13 @@ time constraints and document complexity make manual analysis impractical
 
 Want to see CLUE in action in under a minute?
 
-1. **Copy the file** [**CLUE Trascript "Genesis"**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/GNSS-CLUE.txt)  
-  → This is the CLUE-encoded version of the *Book of Genesis*.
-  
-2. **Upload it to** [**Claude Sonnet 4.6**](https://claude.ai/)  
+1. **Choose and download the CLUE Transcript**
+   → Check below for available Transcripts
+
+2. **Upload the Transcript to** [**Claude Sonnet 4.6**](https://claude.ai/)  
   → No fine-tuning or prompt engineering required.
   
-3. **Start asking questions**, for example:
+3. **Start asking questions**, for example for the Book of Genesis you may ask:
   
   - "Summarize the timeline of events in Genesis"
   - "Who are all the descendants of Abraham?"
@@ -33,8 +33,11 @@ Want to see CLUE in action in under a minute?
 
 Because it is CLUE-encoded, the model can **reason with explicit structure** rather than reconstructing events from raw narrative text.
 
-**Additional demo corpus:**  
+**Available CLUE Transcripts:**  
+[**the Book of Genesis"**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/GNSS-CLUE.txt)
 [**Behavioral Health During the COVID-19 Pandemic**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/BHVM-CLUE.txt)
+[**the Artichoke Program**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/ARTICHOKE-clue.txt)
+[**the Church Report**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/CHURCH-clue.txt)
 
 ---
 
