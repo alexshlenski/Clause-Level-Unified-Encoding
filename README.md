@@ -1,15 +1,10 @@
 ⚠️ **CLUE becomes critical when:**
 
-organizations must analyze more long, complex documents than available human resources allow
-
+- organizations must analyze more long, complex documents than available human resources allow
 - those documents directly inform decisions in legal, financial, intelligence, or market-competitive domains
-  
-
-every analytical claim must be traceable to its immediate source
-
-analytical errors carry material, legal, or organizational risk
-
-time constraints and document complexity make manual analysis impractical
+- every analytical claim must be traceable to its immediate source
+- analytical errors carry material, legal, or organizational risk
+- time constraints and document complexity make manual analysis impractical
 
 ---
 
@@ -17,30 +12,125 @@ time constraints and document complexity make manual analysis impractical
 
 Want to see CLUE in action in under a minute?
 
-1. **Choose and download the CLUE Transcript**
-   → Check below for available Transcripts
+1. **Choose and download a CLUE Transcript**  
+   → See the available demo Transcripts below
 
 2. **Upload the Transcript to** [**Claude Sonnet 4.6**](https://claude.ai/)  
-  → No fine-tuning or prompt engineering required.
-  
-3. **Start asking questions**, for example for the Book of Genesis you may ask:
-  
-  - "Summarize the timeline of events in Genesis"
-  - "Who are all the descendants of Abraham?"
-  - "Create a Mermaid diagram of the major biblical periods"
-  - "Map character interactions during the flood narrative"
-  - "List promises and covenants clause by clause"
+   → No fine-tuning or prompt engineering required.
+
+3. **Start asking questions**  
+   → Suggested queries are listed under each Transcript below
 
 Because it is CLUE-encoded, the model can **reason with explicit structure** rather than reconstructing events from raw narrative text.
 
-**Available CLUE Transcripts:**  
-[**the Book of Genesis"**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/GNSS-CLUE.txt)
+---
 
-[**Behavioral Health During the COVID-19 Pandemic**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/BHVM-CLUE.txt)
+## Available CLUE Transcripts
 
-[**the Artichoke Program**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/ARTICHOKE-clue.txt)
+### [**The Book of Genesis**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/GNSS-CLUE.txt)
 
-[**the Church Report**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/CHURCH-clue.txt)
+A long-form narrative corpus demonstrating that CLUE can turn a highly complex literary-religious text into a structured semantic event stream.  
+This Transcript is useful for testing:
+
+- long-range narrative reasoning
+- temporal reconstruction
+- covenant and promise tracking
+- deception, judgment, and causality patterns
+- character interaction mapping across many chapters
+
+**Suggested queries:**
+
+- "Summarize the timeline of events in Genesis"
+- "Who are all the descendants of Abraham?"
+- "Create a Mermaid diagram of the major biblical periods"
+- "Map character interactions during the flood narrative"
+- "List promises and covenants clause by clause"
+- "List all cases of deception in Genesis"
+- "Show the causal chain leading to the Flood"
+- "Identify all episodes where someone is punished and explain why"
+
+---
+
+### [**Behavioral Health During the COVID-19 Pandemic**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/BHVM-CLUE.txt)
+
+A compact policy and public-health Transcript showing that CLUE is not limited to historical or literary corpora.  
+This Transcript is useful for testing:
+
+- policy-document reasoning
+- public-health causality
+- funding and regulatory analysis
+- agency and institution tracking
+- service-delivery and treatment-access reasoning
+
+This demo is intentionally small and currently has **no entity registry**, showing that CLUE already improves document operability even at the Transcript-only level.
+
+**Suggested queries:**
+
+- "Summarize the causal chain between the pandemic and behavioral health deterioration"
+- "List all federal agencies mentioned and describe their roles"
+- "Identify all funding actions and appropriations mentioned in the document"
+- "Show all policy changes related to telehealth and behavioral health access"
+- "List major barriers to treatment access described in the report"
+- "Create a diagram of how different institutions responded to the crisis"
+
+---
+
+### [**The Artichoke Program**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/ARTICHOKE-clue.txt)
+
+A covert-program and intelligence-history Transcript suitable for demonstrating structured reasoning over classified-style historical material.  
+This corpus is especially useful for testing:
+
+- institutional relationship reconstruction
+- covert program genealogy
+- behavioral-control and interrogation program tracing
+- long-range entity tracking
+- causal and bureaucratic chain analysis
+
+This Transcript is stronger than a purely literary demo for audiences interested in intelligence, defense, or national-security applications.
+
+**Suggested queries:**
+
+- "Map the institutional chain linking the Psychological Strategy Board to CIA covert behavioral programs"
+- "List all programs related to behavior control, coercion, or interrogation"
+- "Reconstruct the causal chain from policy directives to covert program oversight"
+- "Show which agencies and committees are connected to ARTICHOKE, BLUEBIRD, and MKULTRA"
+- "Create a diagram of all organizational relationships mentioned in the transcript"
+- "List all mentions of research, control, interrogation, and operational testing"
+
+---
+
+### [**The Church Report**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/CHURCH-clue.txt)
+
+A large investigatory-hearing Transcript based on the 1975 Church Committee hearings.  
+This is a high-value demonstration corpus because it combines:
+
+- witnesses
+- exhibits
+- institutional actors
+- operational history
+- evidence-linked reasoning
+- an integrated **entity registry**
+
+This Transcript is useful for testing:
+
+- accountability trails
+- witness and exhibit tracking
+- long-range institutional memory
+- hidden-program reconstruction
+- evidence-linked analytical questioning
+
+It is especially suitable for demonstrating CLUE on a real-world, document-heavy investigative record.
+
+**Suggested queries:**
+
+- "Who retained the shellfish toxin, and how was that decision explained?"
+- "List all witnesses who appeared in the hearings and summarize their roles"
+- "Which organizations participated in the program described in the hearings?"
+- "What events led to the discovery of the toxin stockpile?"
+- "Reconstruct the chain of command around the Fort Detrick relationship"
+- "List all exhibits and explain what each one documents"
+- "Show all points where Presidential directives were ignored, bypassed, or not enforced"
+- "Create a Mermaid diagram of the institutional relationships in the hearings"
 
 ---
 
@@ -159,18 +249,18 @@ It prepares text so that reasoning systems can operate with explicit structure a
 ## 6. What CLUE Consumers Receive
 
 1. **CLUE Transcript**  
-  Clause-resolved, human-readable, machine-operable document.
-  
+   Clause-resolved, human-readable, machine-operable document.
+
 2. **Deterministic Clause Map**  
-  Stable identifiers for reference, citation, and change tracking.
-  
+   Stable identifiers for reference, citation, and change tracking.
+
 3. **Structural Validation**
-  
-  Integrity checks confirming:
-  
-  - no words added, removed, or altered
-  - conformance with the CLUE specification
-  - correct clause indexing and cross-references
+
+   Integrity checks confirming:
+
+   - no words added, removed, or altered
+   - conformance with the CLUE specification
+   - correct clause indexing and cross-references
 
 ### Ideal For
 
@@ -198,21 +288,20 @@ Example domains:
 ## 7. How It Works (High Level)
 
 1. **Ingest**
-  
-  Client provides documents (TXT, DOCX, PDF, etc.)
-  
+
+   Client provides documents (TXT, DOCX, PDF, etc.)
+
 2. **CLUE Encoding**
-  
-  Text is transformed into a CLUE Transcript exposing clause structure and semantic roles.
-  
+
+   Text is transformed into a CLUE Transcript exposing clause structure and semantic roles.
+
 3. **Verification**
-  
-  Deterministic validation confirms structural correctness and faithfulness to the source text.
-  
+
+   Deterministic validation confirms structural correctness and faithfulness to the source text.
+
 4. **Delivery**
-  
-  Outputs are provided in agreed formats for integration with LLM or analytics workflows.
-  
+
+   Outputs are provided in agreed formats for integration with LLM or analytics workflows.
 
 ---
 
@@ -240,19 +329,18 @@ Key design properties:
 
 - **Verbatim preservation**  
   Original language remains unchanged.
-  
+
 - **Determinism**  
   The same input always produces the same output.
-  
+
 - **Clause-level citation**  
   Every analytical statement can reference a specific clause.
-  
+
 - **Human readability**  
   No special tools required.
-  
+
 - **Machine-operable structure**  
   Explicit and inspectable semantic scaffolding.
-  
 
 ---
 
