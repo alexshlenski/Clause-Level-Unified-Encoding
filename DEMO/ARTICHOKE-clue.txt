@@ -1,0 +1,1460 @@
+================================================================
+RENIXA COGNITIVE FOUNDATION, INC. 
+CLUE TRANSCRIPT v1.2 OFFICIAL HEADER
+----------------------------------------------------------------
+Header text is unalienated part of the CLUE Transcript.
+Any upstream alteration invalidates downstream processing.
+
+Each module MUST preserve its XREF identifier
+in format [DOCID|NNNNN].
+================================================================
+Syntax:
+d:x| <SEGMENTS>
+
+x ∈ {t, s}
+t = transactional (event present)
+s = stative (no state transition)
+
+Segments are tagged atomic units:
+
+- Agents segments
++A = active agent  ::= the agent that emits the action
++A = passive agent ::= the agent that receives/accepts/absorbs/etc. the results of the action
+
+- Objects segments
+O  = object/theme  ::= any objects involved into the action, besides the agents
+
+- Verb segments
+T  = transition/action
+D  = stative predicate
+
+- Cicumstantial segments
+Cl = locative
+Cs = subordinate clause
+Cc = causal connector
+Ct = temporal connector
+Cp = purpose
+Cy = qualifier
+Ca = adjunct
+Cm = manner
+Cd = degree
+================================================================
+END OF THE OFFICIAL HEADER
+================================================================
+REGISTRY "E"
+================================================================
+
+ARTK|00001 | Organization:Agency | the Psychological Strategy Board | ARTK|00002,ARTK|00003,ARTK|00004,ARTK|00005,ARTK|00011,ARTK|00012,ARTK|00014,ARTK|00015,ARTK|00016,ARTK|00019,ARTK|00020,ARTK|00021,ARTK|00023,ARTK|00024,ARTK|00026,ARTK|00029,ARTK|00030,ARTK|00031,ARTK|00032,ARTK|00033,ARTK|00034,ARTK|00036,ARTK|00037,ARTK|00038,ARTK|00039,ARTK|00042,ARTK|00043,ARTK|00044,ARTK|00049,ARTK|00053,ARTK|00054,ARTK|00055,ARTK|00056,ARTK|00057,ARTK|00058,ARTK|00060,ARTK|00062,ARTK|00065,ARTK|00066,ARTK|00068,ARTK|00069,ARTK|00071,ARTK|00072,ARTK|00074,ARTK|00077,ARTK|00078,ARTK|00080,ARTK|00081,ARTK|00084,ARTK|00085,ARTK|00087,ARTK|00089,ARTK|00108,ARTK|00124,ARTK|00125,ARTK|00126,ARTK|00129,ARTK|00130,ARTK|00131,ARTK|00133,ARTK|00134,ARTK|00135,ARTK|00136,ARTK|00137,ARTK|00139,ARTK|00140,ARTK|00141,ARTK|00142,ARTK|00145,ARTK|00146,ARTK|00147,ARTK|00148,ARTK|00149,ARTK|00150,ARTK|00151,ARTK|00152,ARTK|00153,ARTK|00155,ARTK|00156,ARTK|00161,ARTK|00162,ARTK|00163,ARTK|00165,ARTK|00167,ARTK|00172,ARTK|00173,ARTK|00174,ARTK|00176,ARTK|00177,ARTK|00178,ARTK|00179,ARTK|00180,ARTK|00181,ARTK|00182,ARTK|00183,ARTK|00184,ARTK|00185,ARTK|00186,ARTK|00194,ARTK|00195,ARTK|00198,ARTK|00199,ARTK|00201,ARTK|00203,ARTK|00205,ARTK|00206,ARTK|00207,ARTK|00208,ARTK|00209,ARTK|00210,ARTK|00211,ARTK|00212,ARTK|00213,ARTK|00214,ARTK|00216,ARTK|00217,ARTK|00218,ARTK|00219,ARTK|00220,ARTK|00221,ARTK|00222,ARTK|00223,ARTK|00224,ARTK|00232,ARTK|00233,ARTK|00234,ARTK|00236,ARTK|00238,ARTK|00241,ARTK|00317,ARTK|00318,ARTK|00320,ARTK|00327,ARTK|00328,ARTK|00341,ARTK|00344,ARTK|00345,ARTK|00346,ARTK|00363,ARTK|00364,ARTK|00370,ARTK|00371,ARTK|00372,ARTK|00379,ARTK|00380,ARTK|00382,ARTK|00403,ARTK|00405,ARTK|00406,ARTK|00410,ARTK|00411,ARTK|00420
+ARTK|00005 | Organization:Agency | the Central Intelligence Agency | ARTK|00017,ARTK|00018,ARTK|00020,ARTK|00023,ARTK|00024,ARTK|00031,ARTK|00037,ARTK|00039,ARTK|00040,ARTK|00042,ARTK|00043,ARTK|00044,ARTK|00049,ARTK|00050,ARTK|00052,ARTK|00053,ARTK|00062,ARTK|00064,ARTK|00066,ARTK|00069,ARTK|00072,ARTK|00075,ARTK|00080,ARTK|00104,ARTK|00106,ARTK|00108,ARTK|00113,ARTK|00114,ARTK|00124,ARTK|00131,ARTK|00132,ARTK|00134,ARTK|00135,ARTK|00136,ARTK|00143,ARTK|00145,ARTK|00146,ARTK|00147,ARTK|00148,ARTK|00149,ARTK|00150,ARTK|00161,ARTK|00163,ARTK|00164,ARTK|00165,ARTK|00167,ARTK|00168,ARTK|00169,ARTK|00172,ARTK|00173,ARTK|00174,ARTK|00175,ARTK|00178,ARTK|00217,ARTK|00223,ARTK|00224,ARTK|00234,ARTK|00242,ARTK|00243,ARTK|00252,ARTK|00254,ARTK|00256,ARTK|00257,ARTK|00258,ARTK|00259,ARTK|00261,ARTK|00262,ARTK|00275,ARTK|00276,ARTK|00278,ARTK|00279,ARTK|00282,ARTK|00288,ARTK|00293,ARTK|00294,ARTK|00295,ARTK|00296,ARTK|00297,ARTK|00300,ARTK|00305,ARTK|00307,ARTK|00308,ARTK|00354,ARTK|00358,ARTK|00366,ARTK|00374,ARTK|00382,ARTK|00383,ARTK|00389,ARTK|00390,ARTK|00405,ARTK|00411,ARTK|00413,ARTK|00420
+ARTK|00005 | Organization:Government | the United States State Department | ARTK|00039,ARTK|00043,ARTK|00115,ARTK|00116,ARTK|00117,ARTK|00119,ARTK|00143,ARTK|00157,ARTK|00184,ARTK|00196,ARTK|00220,ARTK|00372
+ARTK|00005 | Organization:MilitaryUnit | branches of the military | ARTK|00039,ARTK|00220,ARTK|00383
+ARTK|00004 | Organization:Committee | the National Security Council | ARTK|00005,ARTK|00026,ARTK|00033,ARTK|00040,ARTK|00122,ARTK|00131,ARTK|00134,ARTK|00136,ARTK|00139,ARTK|00176,ARTK|00202
+ARTK|00014 | Organization:Committee | the National Security Council 10/5 Panel | ARTK|00026,ARTK|00033,ARTK|00034,ARTK|00040,ARTK|00044,ARTK|00049,ARTK|00051,ARTK|00053,ARTK|00156,ARTK|00405,ARTK|00420
+ARTK|00014 | Organization:Agency | Hoover's Federal Bureau of Investigation | ARTK|00066,ARTK|00358
+ARTK|00014 | Organization:Agency | the National Military Establishment | 
+ARTK|00014 | Organization:Committee | the State-Army-Navy-Air Force Coordinating Committee | 
+ARTK|00014 | Organization:Committee | the Joint Chiefs | ARTK|00327
+ARTK|00014 | Organization | the North Atlantic Treaty Organization | ARTK|00189
+ARTK|00017 | Program | the Central Intelligence Agency's University Associates Program | 
+ARTK|00021 | Operation | Operation Mockingbird | ARTK|00071
+ARTK|00023 | Program | the BLUEBIRD program | ARTK|00031,ARTK|00049,ARTK|00053,ARTK|00062,ARTK|00071,ARTK|00074,ARTK|00076,ARTK|00106,ARTK|00108,ARTK|00223,ARTK|00270,ARTK|00301,ARTK|00302,ARTK|00303,ARTK|00304,ARTK|00305,ARTK|00306,ARTK|00307,ARTK|00308,ARTK|00309,ARTK|00310,ARTK|00311,ARTK|00312,ARTK|00313,ARTK|00314,ARTK|00315,ARTK|00316,ARTK|00317,ARTK|00318,ARTK|00320,ARTK|00321,ARTK|00322,ARTK|00323,ARTK|00325,ARTK|00326,ARTK|00341,ARTK|00343,ARTK|00344,ARTK|00345,ARTK|00346,ARTK|00347,ARTK|00355,ARTK|00406,ARTK|00408
+ARTK|00023 | Program | the ARTICHOKE program | ARTK|00031,ARTK|00049,ARTK|00053,ARTK|00062,ARTK|00063,ARTK|00071,ARTK|00074,ARTK|00076,ARTK|00106,ARTK|00108,ARTK|00223,ARTK|00267,ARTK|00269,ARTK|00270,ARTK|00301,ARTK|00341,ARTK|00342,ARTK|00343,ARTK|00347,ARTK|00348,ARTK|00349,ARTK|00350,ARTK|00351,ARTK|00352,ARTK|00353,ARTK|00354,ARTK|00355,ARTK|00356,ARTK|00357,ARTK|00358,ARTK|00359,ARTK|00361,ARTK|00362,ARTK|00363,ARTK|00376,ARTK|00379,ARTK|00380,ARTK|00381,ARTK|00406,ARTK|00408
+ARTK|00023 | Program | the MKULTRA program | ARTK|00031,ARTK|00049,ARTK|00052,ARTK|00053,ARTK|00062,ARTK|00071,ARTK|00072,ARTK|00074,ARTK|00076,ARTK|00106,ARTK|00108,ARTK|00223,ARTK|00243,ARTK|00244,ARTK|00256,ARTK|00258,ARTK|00263,ARTK|00301,ARTK|00383,ARTK|00384,ARTK|00385,ARTK|00386,ARTK|00387,ARTK|00388,ARTK|00389,ARTK|00390,ARTK|00391,ARTK|00392,ARTK|00393,ARTK|00394,ARTK|00395,ARTK|00396,ARTK|00397,ARTK|00398,ARTK|00400,ARTK|00401,ARTK|00402,ARTK|00403,ARTK|00406,ARTK|00408,ARTK|00412
+ARTK|00021 | Organization | the Rockefeller Foundation | 
+ARTK|00040 | Person:Military | General Walter B. Smith | ARTK|00132,ARTK|00133,ARTK|00134,ARTK|00135,ARTK|00318
+ARTK|00040 | LegalEntity:Law | the National Security Act of 1947 | 
+ARTK|00043 | InformationObject:Memorandum | Briefing to the Psychological Strategy Board on Some 10/5 Problems | 
+ARTK|00043 | Organization:Agency | the Central Intelligence Agency's Office of Policy Coordination | ARTK|00308,ARTK|00356
+ARTK|00044 | Person | Barnes | ARTK|00045
+ARTK|00060 | Person | Scott Lucas | 
+ARTK|00063 | Organization:Committee | the Senate Committee on Labor and Public Welfare, Subcommittee on Health | ARTK|00256,ARTK|00281,ARTK|00288
+ARTK|00064 | LegalEntity | the Freedom of Information Act | ARTK|00304
+ARTK|00064 | InformationObject:Report | the redacted Report of Inspection of MKULTRA | ARTK|00243
+ARTK|00064 | Person:Official | Central Intelligence Agency Inspector General J.S. Earman | ARTK|00243,ARTK|00244,ARTK|00247,ARTK|00321,ARTK|00393
+ARTK|00066 | Organization:Committee | the Church Committee | ARTK|00067,ARTK|00068,ARTK|00069,ARTK|00071,ARTK|00072,ARTK|00073,ARTK|00134,ARTK|00201,ARTK|00252,ARTK|00254,ARTK|00258,ARTK|00261,ARTK|00262,ARTK|00263,ARTK|00353,ARTK|00355,ARTK|00381,ARTK|00389,ARTK|00394
+ARTK|00066 | Organization:Agency | the Internal Revenue Service | 
+ARTK|00066 | Organization:Agency | the National Security Agency | 
+ARTK|00075 | Person:Official | Admiral Stansfield Turner | ARTK|00299,ARTK|00351,ARTK|00399
+ARTK|00079 | InformationObject:Book | Christopher Simpson's Science of Coercion: Communication Research and Psychological Warfare, 1945 to 1960 | ARTK|00080
+ARTK|00079 | Person | Christopher Simpson | ARTK|00081,ARTK|00082,ARTK|00083
+ARTK|00086 | Person | Dorothy Smith | 
+ARTK|00090 | Person | Georg Simmel | ARTK|00091,ARTK|00094
+ARTK|00092 | Person | Max Weber | 
+ARTK|00099 | Location:Installation | the Truman and Eisenhower presidential libraries | ARTK|00233
+ARTK|00099 | InformationObject:Dataset | the Central Intelligence Agency's CREST database | 
+ARTK|00099 | InformationObject:Collection | the MKULTRA Collection at Black Vault | 
+ARTK|00099 | InformationObject:Collection | National Security Archive Briefing Books | 
+ARTK|00099 | InformationObject:Dataset | United States Declassified Documents | 
+ARTK|00112 | Organization:Committee | the Senate Subcommittee on Health and Scientific Research | 
+ARTK|00112 | Person:Intelligence | Dr. Sidney Gottlieb | ARTK|00113,ARTK|00114,ARTK|00256,ARTK|00257,ARTK|00306,ARTK|00381,ARTK|00391
+ARTK|00113 | Organization | the Central Intelligence Agency's Technical Services Staff Chemical Division | ARTK|00268,ARTK|00306,ARTK|00774
+ARTK|00115 | Organization:Government | the United States Department of State | ARTK|00116,ARTK|00117,ARTK|00119,ARTK|00372
+ARTK|00117 | InformationObject:Document | National Security Council 74 | ARTK|00118,ARTK|00120
+ARTK|00117 | Person:Official | Under Secretary of State James Webb | 
+ARTK|00119 | InformationObject:Policy | National Security Council 59/1 | ARTK|00157
+ARTK|00127 | InformationObject:Directive | the Presidential Secret Directive of April 1, 1951 | ARTK|00128,ARTK|00130,ARTK|00180
+ARTK|00130 | InformationObject:Memorandum | Implementation of the Presidential Directive of April 4, 1951 | 
+ARTK|00138 | InformationObject:Directive | Presidential Directive 128 | ARTK|00139
+ARTK|00140 | Person:Official | the Under Secretary of State | 
+ARTK|00140 | Person:Official | the Deputy Secretary of Defense | 
+ARTK|00140 | Person:Official | the Director of Central Intelligence | ARTK|00037,ARTK|00039,ARTK|00040,ARTK|00069,ARTK|00132,ARTK|00258
+ARTK|00151 | Organization | the Office of Plans and Policy | 
+ARTK|00151 | Organization | the Office of Coordination | 
+ARTK|00151 | Organization | the Office of Evaluation and Review | 
+ARTK|00154 | Person:Official | Gordon Gray | ARTK|00177,ARTK|00179,ARTK|00185,ARTK|00221,ARTK|00222
+ARTK|00155 | Organization:Media | The New York Times | ARTK|00199
+ARTK|00157 | InformationObject:Policy | National Security Council Memorandum 10/2 | ARTK|00146
+ARTK|00157 | Organization:Government | the Department of Defense | ARTK|00039,ARTK|00157,ARTK|00220,ARTK|00372
+ARTK|00157 | InformationObject:Document | the 1952 Department of Defense Directive C-5132.1 | 
+ARTK|00158 | Organization | the Office of Psychological Policy | 
+ARTK|00159 | Person:Official | the Deputy for Psychological Policy | ARTK|00160
+ARTK|00160 | Person:Official | the Assistant Secretary of Defense for International Affairs | 
+ARTK|00160 | Person:Official | the Assistant Secretary of Defense for International Security Affairs | 
+ARTK|00163 | InformationObject:Memorandum | January 1952 Memorandum for Record on Legislative Problems of the Psychological Strategy Board | 
+ARTK|00164 | Organization:Agency | the Bureau of the Budget | ARTK|00166
+ARTK|00166 | Person:Official | Chairman Mahon | 
+ARTK|00166 | Person:Official | Senator O'Mahoney | 
+ARTK|00175 | Person:Intelligence | Allen Dulles | ARTK|00318,ARTK|00319,ARTK|00334,ARTK|00337,ARTK|00339,ARTK|00364,ARTK|00366,ARTK|00371,ARTK|00373,ARTK|00374,ARTK|00375,ARTK|00386,ARTK|00392,ARTK|00403
+ARTK|00175 | InformationObject:Memorandum | June 9 memorandum from Allen Dulles to Central Intelligence Agency Deputy and Assistant Directors | 
+ARTK|00179 | Person | President Truman | ARTK|00180
+ARTK|00181 | Organization:Committee | the President's Committee on International Information Activities | ARTK|00182,ARTK|00185
+ARTK|00182 | Organization:Committee | the Jackson Committee | ARTK|00183,ARTK|00184
+ARTK|00182 | Person:Official | Chairman William H. Jackson | 
+ARTK|00186 | InformationObject:Report | a Status Report on the National Psychological Effort and First Progress Report | ARTK|00187,ARTK|00188,ARTK|00189,ARTK|00190,ARTK|00191,ARTK|00192,ARTK|00193
+ARTK|00193 | LegalEntity:Law | the McCarran Act | 
+ARTK|00195 | InformationObject:Document | the January Handbook on Psychological Strategy Functions and Procedures | ARTK|00196
+ARTK|00197 | Person:Official | Dwight D. Eisenhower | ARTK|00198,ARTK|00202,ARTK|00203
+ARTK|00198 | Person:Official | Acting Director George A. Morgan | 
+ARTK|00198 | Person:Official | Special Assistant to the President C.D. Jackson | ARTK|00199
+ARTK|00199 | Person | James Reston | 
+ARTK|00200 | LegalEntity:ExecutiveOrder | Reorganization Plan No. 8 of 1953 | 
+ARTK|00200 | Organization:Agency | the United States Information Agency | ARTK|00201
+ARTK|00203 | Organization | the Operations Coordinating Board | ARTK|00205,ARTK|00219,ARTK|00220,ARTK|00221,ARTK|00222,ARTK|00237,ARTK|00238,ARTK|00240
+ARTK|00204 | LegalEntity:ExecutiveOrder | Executive Order 10483 | ARTK|00205,ARTK|00070,ARTK|00244
+ARTK|00214 | Location:Country | the former Soviet Union | ARTK|00215,ARTK|00338
+ARTK|00216 | Person | Joseph Stalin | 
+ARTK|00217 | Location:Installation | the Fort Bragg Psychological Warfare Center | 
+ARTK|00217 | Organization | the Evaluation Branch of the Office of Global Psychological Warfare | 
+ARTK|00220 | Person | Walter L. Hixson | 
+ARTK|00220 | Organization | Congress | ARTK|00407
+ARTK|00220 | Organization:Agency | the Bureau of the Budget | 
+ARTK|00227 | Person | Lewis Mumford | 
+ARTK|00241 | InformationObject:Document | Psychological Strategy Board: Top Secret Documents | 
+ARTK|00249 | InformationObject:List | List of Psychological Strategy Board Documents Destroyed | 
+ARTK|00252 | InformationObject:Record | Central Intelligence Agency regulation CSI 70-10 | 
+ARTK|00256 | Person:Intelligence | Central Intelligence Agency Deputy Director Carl E. Druckett | ARTK|00257,ARTK|00292
+ARTK|00258 | Person:Intelligence | Director of Central Intelligence Richard Helms | ARTK|00257,ARTK|00319,ARTK|00386,ARTK|00392,ARTK|00398
+ARTK|00265 | Organization:Committee | the Advisory Committee on Human Experimentation | ARTK|00258,ARTK|00265
+ARTK|00267 | Organization:Government | the Office of the Secretary of Defense Classified Mail and Records | 
+ARTK|00268 | Person:Official | the Secretary of Defense | ARTK|00364,ARTK|00367,ARTK|00368,ARTK|00369,ARTK|00370
+ARTK|00268 | Organization:MilitaryUnit | the Army | ARTK|00268,ARTK|00271,ARTK|00327,ARTK|00358
+ARTK|00268 | Organization:MilitaryUnit | the Navy | ARTK|00268,ARTK|00327,ARTK|00358
+ARTK|00271 | Location:Installation | Fort Belvoir | 
+ARTK|00275 | Location:Installation | the Office of Security file index | 
+ARTK|00279 | Person:Official | Director of Security Robert W. Gambino | 
+ARTK|00281 | Person | Dr. Robert Lashbrook | ARTK|00282,ARTK|00283
+ARTK|00282 | Person:Official | Senator Richard Schweiker | 
+ARTK|00281 | Organization:Committee | the Subcommittee on Scientific Research of the Committee on Human Resources | 
+ARTK|00288 | Person | Dr. Sayre Stevens | ARTK|00289,ARTK|00290,ARTK|00291
+ARTK|00288 | Organization:Agency | the Bureau of Narcotics | 
+ARTK|00306 | Person | Morse Allen | ARTK|00312
+ARTK|00306 | Organization | the Society for the Investigation of Human Ecology | ARTK|00346
+ARTK|00307 | Organization | the Office of Scientific Intelligence | ARTK|00354,ARTK|00355,ARTK|00356,ARTK|00357,ARTK|00358
+ARTK|00308 | Organization | the Office of Special Operations | 
+ARTK|00313 | Person:Intelligence | Colonel Sheffield Edwards | ARTK|00314,ARTK|00315,ARTK|00319,ARTK|00322,ARTK|00342
+ARTK|00315 | Person:Intelligence | Director Hillenkoetter | ARTK|00316,ARTK|00320
+ARTK|00319 | Person:Intelligence | Frank Wisner | 
+ARTK|00319 | Person:Intelligence | Lyman B. Kirkpatrick Jr. | 
+ARTK|00319 | Person:Official | John S. Earman | ARTK|00321,ARTK|00393
+ARTK|00326 | InformationObject:Memorandum | Meeting with Intelligence Advisory Committee Representatives of Project BLUEBIRD | 
+ARTK|00326 | Organization:Committee | the Intelligence Advisory Committee | ARTK|00327,ARTK|00341,ARTK|00347
+ARTK|00327 | Organization:MilitaryUnit | the Air Force | ARTK|00327,ARTK|00358
+ARTK|00327 | Organization:Agency | the Atomic Energy Commission | 
+ARTK|00329 | Person | J.H. Alberti | ARTK|00330,ARTK|00331,ARTK|00332,ARTK|00333
+ARTK|00329 | Location:Installation | Bethesda | 
+ARTK|00330 | Organization | the Office of Naval Intelligence | 
+ARTK|00334 | Person | H. Marshall Chadwell | ARTK|00337,ARTK|00339,ARTK|00340,ARTK|00342
+ARTK|00334 | InformationObject:Memorandum | Briefing for the Psychological Board | 
+ARTK|00335 | Asset:Commodity | Seramin | 
+ARTK|00335 | Organization:Company | Sandoz | 
+ARTK|00335 | Location:Country | Switzerland | 
+ARTK|00356 | Organization | the Inspection and Security Office | ARTK|00357
+ARTK|00358 | Organization:Agency | the Veterans Administration | 
+ARTK|00358 | Organization:Agency | the Treasury Department | 
+ARTK|00364 | Person:Official | Secretary of Defense Charles E. Wilson | ARTK|00367,ARTK|00368,ARTK|00369,ARTK|00370
+ARTK|00364 | InformationObject:Communication | a letter from Secretary of Defense Charles E. Wilson | ARTK|00367
+ARTK|00371 | Person:Official | Detlev Bronk | 
+ARTK|00371 | Organization:AcademicInstitution | Johns Hopkins University | 
+ARTK|00372 | Organization:Committee | the Interdepartmental Working Committee | 
+ARTK|00376 | Organization:Government | the United States Department of Agriculture | ARTK|00377
+ARTK|00376 | Organization:Agency | the Food and Drug Administration | ARTK|00378
+ARTK|00381 | Organization:Committee | the Church Committee | 
+ARTK|00388 | Location:Country | North Korea | 
+ARTK|00393 | Person:Official | Inspector General John S. Earman | 
+ARTK|00394 | Program | MKDELTA | ARTK|00395,ARTK|00396
+ARTK|00397 | Program | MKSEARCH | ARTK|00399,ARTK|00400,ARTK|00401
+ARTK|00399 | Location:Installation | Georgetown University Hospital | 
+ARTK|00400 | Organization:Committee | the Senate Committee on Human Resources | 
+ARTK|00400 | Person:PoliticalActor | Senator Edward M. Kennedy | ARTK|00401,ARTK|00402,ARTK|00412,ARTK|00413,ARTK|00414,ARTK|00415,ARTK|00416
+ARTK|00400 | Program | MKCHICKWIT | ARTK|00401
+ARTK|00401 | Program | MKOFTEN | 
+
+[ARTK|00001]
+d:s| O<A definitive history of the Psychological Strategy Board> D<has not yet been written>.
+
+[ARTK|00002]
+d:s| Ct<When> O<it> T<is eventually constructed>, O<this history> T<might situate> -A<the Psychological Strategy Board> O<as a major force> Cs<in the institutionalization of information> +A<programs> D<designed> T<to shape> -A<beliefs> and -A<behavior>.
+
+[ARTK|00003]
+d:s| O<The Psychological Strategy Board> T<operated> Ca<through almost invisible activities>.
+
+[ARTK|00004]
+d:s| O<The Psychological Strategy Board> D<functioned> O<as a subcommittee> Cs<under the aegis of> O<the National Security Council>.
+
+[ARTK|00005]
+d:s| +A<The Psychological Strategy Board> T<coordinated> -A<programs> and -A<operations> Ca<with> O<the Central Intelligence Agency>, O<the United States State Department>, O<branches of the military>, and O<other federal agencies> D<involved> Cs<in psychological warfare>.
+
+[ARTK|00006]
+d:t| O<A declassified text of the period> T<describes> -A<psychological warfare> D<as> O<the communication> O<of messages>, Cr<whether expressly> or Cr<by implication>.
+
+[ARTK|00007]
+d:s| O<Modern psychological warfare> D<is outlined> O<as a tool> Cp<for managing empire> and Cr<not for settling conflicts> Cs<in any fundamental sense>.
+
+[ARTK|00008]
+d:s| O<Modern psychological warfare> D<has operated> O<largely> O<as a means> Cp<to ensure> D<that> O<indigenous democratic initiatives> Cl<in the Third World> and Cl<Europe> D<did not go too far> Cs<from the standpoint of> O<United States security agencies>.
+
+[ARTK|00009]
+d:s| O<The primary utility> Cs<of modern psychological warfare> D<has been> -A<its ability> T<to suppress> or T<distort> O<unauthorized communication> Ca<among> O<subject peoples>.
+
+[ARTK|00010]
+d:s| O<Modern psychological warfare> D<has also suppressed> or D<distorted> -A<communication> Ca<among> O<domestic United States dissenters> D<who> T<challenged> -A<the wisdom> or -A<morality> Cs<of imperial policies>.
+
+[ARTK|00011]
+d:s| O<The Psychological Strategy Board> T<exemplified> -A<the idea> D<that> O<secrecy> D<functions> O<as a form> Cs<of government regulation>.
+
+[ARTK|00012]
+d:s| O<The Psychological Strategy Board> D<served> O<as the behind-the-scenes coordinator> Cs<of psychological warfare activities> Ct<during the years 1951 to 1953>.
+
+[ARTK|00013]
+d:s| O<Secrecy> O<as a parallel form of government> T<manifests> Ca<through> O<specific information policies>.
+
+[ARTK|00014]
+d:t| Cl<In the case of> O<the Psychological Strategy Board>, O<secrecy> T<resulted> O<in a dearth> Cs<of public knowledge> Cs<about> O<its relationship> Ca<with> O<the National Security Council 10/5 Panel>, O<Hoover's Federal Bureau of Investigation>, O<the National Military Establishment>, O<the State-Army-Navy-Air Force Coordinating Committee>, O<the Joint Chiefs>, and O<the North Atlantic Treaty Organization>.
+
+[ARTK|00015]
+d:s| O<Secrecy> D<also concealed> -A<knowledge> Cs<of> O<the Psychological Strategy Board's role> Cs<in psychological warfare operations> Cs<on a domestic scale>.
+
+[ARTK|00016]
+d:s| O<The Psychological Strategy Board> D<maintained> -A<a relationship> Ca<with> O<social scientists> Cs<in Cold War operations>.
+
+[ARTK|00017]
+d:t| O<Knowledge> Cs<of the Central Intelligence Agency's University Associates Program>, D<which> D<was established> Ct<in 1951>, D<is not widely known>.
+
+[ARTK|00018]
+d:s| O<Knowledge> Cs<of Central Intelligence Agency front organizations> and Cs<publishing houses> D<is not widely known>.
+
+[ARTK|00019]
+d:s| O<The role> Cs<of the Psychological Strategy Board's Panel D psychological programs> Cs<in shaping> O<the most favorable psychological effects> Cs<from the public reporting> Cs<of> O<atomic>, O<chemical>, O<biological>, and O<nuclear weapons> D<remains under-researched>.
+
+[ARTK|00020]
+d:t| O<It> D<is not known> D<whether> O<the Psychological Strategy Board> T<took> -A<any actions> Ct<when> +A<the Central Intelligence Agency> T<approached> -A<it> Cp<to exploit> -A<information> Cs<on unidentified flying objects> D<that> +A<appeared> T<to have> -A<implications> Ca<for psychological warfare> as well as Ca<for intelligence> and Ca<operations>.
+
+[ARTK|00021]
+d:s| O<Questions> D<remain> Cs<regarding> O<the Psychological Strategy Board's role> Cs<in early iterations> Cs<of Operation Mockingbird> and O<its relationship> Ca<with> O<the press> and O<the Rockefeller Foundation>.
+
+[ARTK|00022]
+n:s| O<The subject> Cs<of the article> D<concerns> O<another critical gap> Cs<in the literature>.
+
+[ARTK|00023]
+n:s| O<The article> T<examines> -A<the Psychological Strategy Board's knowledge> Cs<of> O<the Central Intelligence Agency's clandestine scientific research and development> Cs<into> O<behavior>, O<addiction>, O<drug interactions>, O<interrogation techniques>, O<sleep>, and O<hypnosis> D<carried out> Cs<under> O<the BLUEBIRD>, O<ARTICHOKE>, and O<MKULTRA programs>.
+
+[ARTK|00024]
+n:s| O<The article> D<is divided> -A<into distinct sections> Cp<to accommodate> -A<the wide range> Cs<of primary materials> Cs<related to> O<the Psychological Strategy Board>, O<the Central Intelligence Agency>, and O<clandestine projects>.
+
+[ARTK|00025]
+n:s| O<Each section> D<can be read> O<as an independent history> or O<in unison> Ca<with the other sections>.
+
+[ARTK|00026]
+n:t| O<The case study> Ct<first> T<discusses> -A<the role> Cs<of National Security Council 10/5> O<as a foundation> Cp<for examining> -A<the Psychological Strategy Board> O<as a member> Cs<of the invisible government>.
+
+[ARTK|00027]
+d:s| O<The invisible government> D<is defined> O<as a loose and amorphous grouping> Cs<of individuals> and Cs<agencies> D<drawn> Cs<from many parts> Cs<of the visible government>.
+
+[ARTK|00028]
+n:s| O<The research literature> Cs<concerning> O<the Psychological Strategy Board>, O<the Central Intelligence Agency>, and O<secret projects> D<is then reviewed>.
+
+[ARTK|00029]
+n:s| O<The article> T<charts> -A<the creation> Cs<of the Psychological Strategy Board>.
+
+[ARTK|00030]
+n:s| O<The article> T<reports> Cs<on> -A<inconsistent information policies> D<that> D<continue> T<to influence> -A<historical reconstruction> Cs<of the Psychological Strategy Board's activities> Ct<some sixty-five years after the fact>.
+
+[ARTK|00031]
+n:s| O<The article> D<focuses> Cs<on> -A<the Psychological Strategy Board's knowledge of and participation> Cs<in three well-known Central Intelligence Agency clandestine projects>, namely O<BLUEBIRD>, O<ARTICHOKE>, and O<MKULTRA>.
+
+[ARTK|00032]
+d:t| O<The investigation> T<establishes> D<that> O<information policies>, Ca<including island secrecy>, T<led> Cs<to> -A<the Psychological Strategy Board's fragmentary understanding> Cs<of> O<project budgets>, O<planning>, and O<operations>.
+
+[ARTK|00033]
+d:s| O<The exploration> Cs<of the Psychological Strategy Board> D<is based> Cs<on questions> Cs<regarding> O<the National Security Council's policy directive 10/5>.
+
+[ARTK|00034]
+d:t| O<This directive> T<authorized> -A<the Psychological Strategy Board> Cp<to ensure> D<that> O<its strategic concept> Cs<for a national psychological program> D<included> -A<provision> Ca<for covert operations>.
+
+[ARTK|00035]
+d:s| O<The directive> D<titled> O<Actions Taken by the National Security Council on the Scope and Pace of Covert Operations> D<is dated> Ct<October 23, 1951>.
+
+[ARTK|00036]
+d:t| O<The directive> T<directed> -A<the Psychological Strategy Board> Cp<to participate> Cs<in covert operations>.
+
+[ARTK|00037]
+d:t| O<The directive> D<required> -A<the Psychological Strategy Board> Cp<to determine> -A<the desirability> and -A<feasibility> Cs<of programs> and Cs<individual major projects> Cp<for covert operations> D<formulated> Ca<by> O<or proposed> Ca<to> O<the Director of Central Intelligence>.
+
+[ARTK|00038]
+d:t| O<The directive> D<required> -A<the Psychological Strategy Board> Cp<to establish> -A<the scope>, -A<pace>, and -A<timing> Cs<of covert operations> and Cp<to allocate> -A<priorities> Ca<among these operations>.
+
+[ARTK|00039]
+d:t| O<The directive> D<required> -A<the Psychological Strategy Board> Cp<to coordinate> -A<action> Cp<to ensure> D<that> O<the Departments of State and Defense> T<provided> -A<adequate personnel>, -A<funds>, -A<logistical support>, and -A<other support> Ca<to> O<the Director of Central Intelligence> Cp<for carrying out> -A<any approved program> Cs<of covert operations>.
+
+[ARTK|00040]
+d:t| +A<General Walter B. Smith> T<noted> -A<in the memorandum> Cs<from Director of Central Intelligence Smith> Ca<to the National Security Council> D<that> O<National Security Council 10/5> T<redefines> -A<the Central Intelligence Agency’s responsibilities> Cs<in a field> D<that> O<was probably not envisaged> Ct<when> O<the National Security Act of 1947>, Ca<under which> O<the Agency> D<was established>, D<was framed>.
+
+[ARTK|00041]
+d:t| O<He> D<stated> D<that> O<this field> D<involves> O<cold war covert activities>, Ca<including guerrilla warfare>.
+
+[ARTK|00042]
+d:t| O<He> D<stated> D<that> O<the Central Intelligence Agency> T<accepted> -A<these responsibilities> O<as agents> Ca<for> O<the major Departments concerned> and Ca<for> O<projects> D<that> D<are approved> Ca<by the Psychological Strategy Board>.
+
+[ARTK|00043]
+d:t| O<An additional memorandum> D<dated> Ct<May 7, 1952> and D<titled> O<Briefing to the Psychological Strategy Board on Some 10/5 Problems> T<outlines> -A<the relationship> Ca<between> O<the Psychological Strategy Board>, O<the State and Defense Departments>, and O<the Central Intelligence Agency's Office of Policy Coordination> Cs<on covert actions>.
+
+[ARTK|00044]
+d:t| Cr<Although> O<National Security Council 10/5> D<seemingly directs> -A<Psychological Strategy Board involvement> Cs<in the Central Intelligence Agency's covert programs>, +A<Barnes> T<describes> -A<the Board's oversight role> D<as giving nominal approval>.
+
+[ARTK|00045]
+d:t| +A<Barnes> Ct<further> T<outlines> -A<guidelines> Ca<for such approval>.
+
+[ARTK|00046]
+d:s| O<There> D<was> O<considerable concern> D<that> O<clandestine operations> D<were consistent> Ca<with American policy abroad>.
+
+[ARTK|00047]
+d:s| O<Any action> D<capable> Cs<of interpretation> O<as bruising communist interests> D<was thought> T<to fit> Cs<in this category>.
+
+[ARTK|00048]
+d:s| O<The freedom> D<given> Cp<for covert operations> D<was> O<considerable>.
+
+[ARTK|00049]
+d:s| +A<Using National Security Council 10/5> Cp<to explore> -A<the Psychological Strategy Board> and -A<its knowledge> Cs<of the Central Intelligence Agency's BLUEBIRD>, O<ARTICHOKE>, and O<MKULTRA programs> D<is risky>, but O<this approach> D<has> -A<some foundation>.
+
+[ARTK|00050]
+d:s| O<The three Central Intelligence Agency programs> D<operated> Cm<in secret> Cp<to support> -A<clandestine and covert operations>.
+
+[ARTK|00051]
+d:s| O<A reading> Cs<of National Security Council 10/5> D<does not differentiate> Ca<between> O<approval> Cp<for support programs> and O<actual field operations>, Cr<whether covert or clandestine>.
+
+[ARTK|00052]
+d:s| Cl<For example>, O<MKULTRA> D<is described> O<as the principal program> Cp<for Central Intelligence Agency development> Cs<of chemical and biological agents> D<that> D<were to be capable> Cs<of employment> Cs<in clandestine operations> Cp<to control> O<human behavior>.
+
+[ARTK|00053]
+d:s| O<These distinctions> T<serve> O<as a starting point> Cp<to explore> -A<the Psychological Strategy Board's membership> Cs<in the invisible government> and -A<any involvement> Cs<in> O<the BLUEBIRD>, O<ARTICHOKE>, and O<MKULTRA programs>.
+
+[ARTK|00054]
+d:s| O<The Psychological Strategy Board> D<functioned> O<as a United States government based propaganda machine>.
+
+[ARTK|00055]
+d:t| O<The Psychological Strategy Board> T<reflects> -A<the dynamics> Cs<of Cold War messaging> Ca<by showing> Ct<how> O<the practice of international relations> D<was no longer> O<the preserve> Cs<of governments> and O<foreign policy elites> but D<required> -A<the mobilization> Cs<of entire populations>.
+
+[ARTK|00056]
+d:t| O<The Psychological Strategy Board> T<described> -A<itself> O<as the nerve center> Cp<for strategic psychological operations>.
+
+[ARTK|00057]
+d:s| O<The Psychological Strategy Board> D<is deeply connected> Ca<to> O<more contemporary projects> D<that> T<alter> -A<beliefs> and -A<opinions> and T<shape> O<social reality>.
+
+[ARTK|00058]
+d:s| O<The Psychological Strategy Board> T<laid> -A<the institutional foundation> Cp<for the development> Cs<of initiatives> Cp<to exploit>, Cp<destabilize>, Cp<manipulate>, and Cp<mold> -A<opinion>, -A<beliefs>, and -A<allegiances>.
+
+[ARTK|00059]
+d:s| O<Deception operations>, O<influence operations>, O<information operations>, O<information warfare>, O<military information support operations>, O<perception management>, O<public diplomacy>, O<strategic communication>, and O<strategic influence> D<are> O<the direct result> Cs<of decades long social sciences research> Ca<with roots in> O<the Psychological Strategy Board> O<as the interagency clearinghouse> Cs<for psychological warfare>.
+
+[ARTK|00060]
+d:t| +A<Scott Lucas> T<points out> D<that> Cl<in the thousands of volumes> Cs<on the United States and the Cold War> O<there> D<is scarcely> O<a mention> Cs<of the Psychological Strategy Board> and D<that> O<the few passing references> D<are dismissive>.
+
+[ARTK|00061]
+d:s| O<A general research gap> Cs<on the Psychological Strategy Board> T<supports> O<this observation>.
+
+[ARTK|00062]
+d:s| O<The Psychological Strategy Board's connection> Ca<with> O<the Central Intelligence Agency's BLUEBIRD>, O<ARTICHOKE>, and O<MKULTRA projects> D<has largely been lost> Cs<in historical accounts>.
+
+[ARTK|00063]
+d:t| O<Hearings> Cs<of the Senate Committee on Labor and Public Welfare, Subcommittee on Health>, Ct<held on September 10, September 12, and November 7, 1975>, T<disclosed> -A<information> Cs<on the BLUEBIRD and ARTICHOKE projects>.
+
+[ARTK|00064]
+d:t| Cl<With the release> Cs<of declassified documents> D<obtained> Cs<through the Freedom of Information Act>, O<the country> T<learned> Cs<of once secret budgets>, O<contracts>, O<experiments>, and O<internal audits>, Ca<including> O<the redacted Report of Inspection of MKULTRA> D<prepared> Ct<in 1963> Ca<by> O<Central Intelligence Agency Inspector General J.S. Earman>.
+
+[ARTK|00065]
+d:s| O<The Psychological Strategy Board> D<was not mentioned> Cl<in these hearings>.
+
+[ARTK|00066]
+d:t| O<The subsequent Church Committee> Ct<in 1975> T<changed> O<the trajectory of knowledge> Cs<concerning BLUEBIRD>, O<ARTICHOKE>, and O<MKULTRA> Ca<by investigating> O<a wide range> Cs<of intelligence abuses> Ca<by federal agencies>, Ca<including> O<the Central Intelligence Agency>, O<the Federal Bureau of Investigation>, O<the Internal Revenue Service>, and O<the National Security Agency>.
+
+[ARTK|00067]
+d:t| O<The Committee> T<described> -A<the Psychological Strategy Board> O<as a National Security Council subcommittee> D<established> Ct<in 1951> Cp<to determine> -A<the desirability> Cs<of proposed covert action programs> and Cs<major covert action projects>.
+
+[ARTK|00068]
+d:s| O<The Committee> D<did not differentiate> Ca<between> O<the Psychological Strategy Board> and O<its successor>, O<the Operations Coordinating Board>.
+
+[ARTK|00069]
+d:t| O<The Committee> T<reported> D<that> Ct<during the first two years of the Eisenhower administration, from 1953 to 1954>, O<66 projects> D<were approved> Ca<by> O<the Director of Central Intelligence> Ca<in coordination with> O<the Operations Coordinating Board> or O<the Psychological Strategy Board>.
+
+[ARTK|00070]
+d:t| O<The Psychological Strategy Board> D<was abolished> Ct<on September 2, 1953> Ca<with> O<Eisenhower Executive Order 10483>.
+
+[ARTK|00071]
+d:s| O<The Church Committee> D<did not differentiate> Ca<between> O<the short months> Cs<of the Psychological Strategy Board> Cs<under Eisenhower> and O<its successor>, O<the Operations Coordinating Board>, Cs<regarding> O<the sixty-six reported projects> and Cs<specifically> -A<the Psychological Strategy Board's connection> Ca<with> O<BLUEBIRD>, O<ARTICHOKE>, and O<MKULTRA>.
+
+[ARTK|00072]
+d:s| O<These projects>, D<which> D<are discussed> Cl<in Book 1> Cs<of the Church Committee hearings>, D<are primarily associated> Ca<with> O<the Central Intelligence Agency> and D<do not mention> -A<Psychological Strategy Board involvement>.
+
+[ARTK|00073]
+d:s| O<Researchers and the media> D<have not had> -A<complete access> Cs<to Church Committee records> Cs<because> O<a select group of records> D<remains classified>.
+
+[ARTK|00074]
+d:s| O<The 1977 Senate Select Committee on Intelligence hearings> D<did not address> O<the Psychological Strategy Board> or O<its possible participation> Cs<in> O<the BLUEBIRD>, O<ARTICHOKE>, and O<MKULTRA programs>.
+
+[ARTK|00075]
+d:t| O<The hearings> D<are notable> Cp<for remarks> Ca<by> O<then Central Intelligence Agency Director Admiral Stansfield Turner>, D<who> T<observed> D<that> O<his testimony> D<did not tell> O<the whole story> but O<only pieces> Cs<of it>.
+
+[ARTK|00076]
+d:s| O<Journalists and scholars> T<have made> O<significant progress> Cs<in uncovering> O<the complexity> Cs<of the BLUEBIRD>, O<ARTICHOKE>, and O<MKULTRA programs>.
+
+[ARTK|00077]
+d:s| O<Few studies> T<connect> -A<the Psychological Strategy Board> Ca<to> -A<knowledge> Cs<of these three programs>.
+
+[ARTK|00078]
+d:s| O<Works> D<that> T<examine> -A<the Psychological Strategy Board> O<often> D<do not link> -A<the Board> Ca<to> O<the clandestine projects> D<addressed> Cl<in this article>.
+
+[ARTK|00079]
+d:s| +A<Christopher Simpson's Science of Coercion: Communication Research and Psychological Warfare, 1945 to 1960> T<outlines> -A<the evolution> Cs<of United States psychological warfare> Ct<during those years>.
+
+[ARTK|00080]
+d:s| O<The book> T<offers> O<limited insight> Cs<into> -A<the relationship> Ca<between> O<the Psychological Strategy Board> and O<the Central Intelligence Agency>.
+
+[ARTK|00081]
+d:t| +A<Simpson> T<attributes> -A<his brief mention> Cs<of the Psychological Strategy Board> Ca<to> O<security classification issues> and O<the scattering of records> Ca<across archives>.
+
+[ARTK|00082]
+d:t| Ct<Since 1994>, O<declassification initiatives> and O<digital collections> T<have reduced> O<these barriers>.
+
+[ARTK|00083]
+d:s| +A<Simpson> T<frames> -A<psychological warfare> O<as a communication device>.
+
+[ARTK|00084]
+d:s| O<This framing> D<is relevant> Ca<to> O<the Psychological Strategy Board's programs> Cs<in terms of> -A<the relationship> Ca<between> O<the production of knowledge>, Ca<including> O<preconceptions> Cs<about communication and coercion>, and O<the social and political conditions> Cs<of a particular era>.
+
+[ARTK|00085]
+n:s| O<The article> T<aims> Cp<to bring> O<the hidden history> Cs<of the Psychological Strategy Board> Ca<to light>.
+
+[ARTK|00086]
+n:s| O<The analysis> T<draws> Ca<on> +A<Dorothy Smith's concept> D<that> O<the realities> Cs<to which action and decision are oriented> D<are> O<virtual realities> D<vested> Cs<in texts>.
+
+[ARTK|00087]
+n:s| O<Primary materials> D<documenting> O<Psychological Strategy Board operations> Ct<from 1951 to 1953> T<provide> -A<a chronology of events>.
+
+[ARTK|00088]
+n:s| O<These materials> D<function> O<as a diary> Cs<of information control>.
+
+[ARTK|00089]
+n:s| O<These materials> T<reveal> -A<political tensions> Ca<between> O<Psychological Strategy Board staff> and O<member agencies> and T<expose> -A<the dynamics> Cs<of power and knowledge>.
+
+[ARTK|00090]
+d:t| +A<Georg Simmel> T<argued> D<that> O<writing> D<is opposed> Ca<to secrecy> and T<possesses> -A<an objective existence> D<that> T<renounces> -A<guarantees> Cs<of remaining secret>.
+
+[ARTK|00091]
+d:s| +A<Simmel> D<did not distinguish> Ca<between> O<degrees of concealment> Cs<within institutions>.
+
+[ARTK|00092]
+d:t| +A<Max Weber> T<addressed> -A<the territorialization> Cs<of information and knowledge> Cs<within bureaucratic institutions>.
+
+[ARTK|00093]
+d:s| O<Writing and dissemination of texts> D<do not necessarily produce> -A<total publicity> or -A<transparency>.
+
+[ARTK|00094]
+d:t| O<Redaction>, D<which involves blacking out sensitive information>, T<demonstrates> O<limits> Cs<to Simmel's argument>.
+
+[ARTK|00095]
+d:s| O<Redaction> T<obscures> O<individuals>, O<conversations>, O<dates>, O<relationships>, and O<policies>.
+
+[ARTK|00096]
+d:s| O<These obscured elements> D<are> O<critical> Ca<to> O<evidence building> and O<accountability>.
+
+[ARTK|00097]
+n:s| O<Many materials> D<cited> Cl<in the article> T<contain> -A<some level of redaction>.
+
+[ARTK|00098]
+d:s| O<Redaction> T<conceals> O<writing>.
+
+[ARTK|00099]
+d:s| O<Primary materials> D<preserved> Cl<at the Truman and Eisenhower presidential libraries>, O<documents> D<declassified> Cl<in the Central Intelligence Agency's CREST database>, O<materials> Cl<in the MKULTRA Collection at Black Vault>, O<National Security Archive Briefing Books>, O<the subscription database United States Declassified Documents>, and O<documents> D<obtained> Cs<through the Freedom of Information Act> T<allow> -A<partial reconstruction> Cs<of the Psychological Strategy Board's knowledge and involvement> Cs<in the BLUEBIRD>, O<ARTICHOKE>, and O<MKULTRA projects>.
+
+[ARTK|00100]
+d:s| O<These primary materials> T<allow> -A<closer scrutiny> Cs<of the Psychological Strategy Board's ethics>, O<internal politics>, O<bureaucratic relationships>, and O<ideological differences>.
+
+[ARTK|00101]
+d:s| O<These documents> D<also provide> -A<insight> Ca<into> O<the national security complex>, D<which> D<broadly defined> and D<applied> -A<psychological warfare>.
+
+[ARTK|00102]
+d:s| O<Broad definitions> Cs<of psychological warfare> T<permitted> -A<studies> D<that> T<included> O<brain warfare>, O<sensory deprivation>, O<interrogation>, O<the study> Cs<of specific drugs> Cs<on behavior>, and O<the search> Cs<for a truth serum>.
+
+[ARTK|00103]
+d:s| O<Psychological warfare> D<extended> Cp<beyond> O<propaganda> and O<modification> Cs<of public opinion> Cp<to include> -A<research and development> Cs<of chemicals and drugs>, O<technologies> Cl<such as electroconvulsive therapy and the polygraph>, and O<interventions> Cl<such as isolation and sleep deprivation> Cp<to alter> O<agency>, O<behavior>, and O<consciousness> and Cl<in some cases> Cp<to break> O<minds> and O<spirits>.
+
+[ARTK|00104]
+d:s| O<The legacy> Cs<of these programs> D<persists> Cl<in techniques> D<that> T<manipulate> -A<information> Cp<to create> O<consent> and T<generate> O<positive misinformation>.
+
+[ARTK|00105]
+d:s| O<The legacy> D<also appears> Cl<in the development> Cs<of certain neurotechnologies> Cl<such as functional magnetic resonance imaging and transcranial magnetic stimulation> and Cl<in neuropharmacological interventions>.
+
+[ARTK|00106]
+d:s| O<Research and development> D<conducted> Cs<under the BLUEBIRD>, O<ARTICHOKE>, and O<MKULTRA programs> T<set> -A<the institutional stage> Cp<for enhanced interrogation techniques> and Cr<possibly neurowarfare> O<as tools> Cp<for protecting and strengthening national security>.
+
+[ARTK|00107]
+d:s| O<These developments> D<are characterized> O<as neurosecurity>.
+
+[ARTK|00108]
+d:s| O<The Psychological Strategy Board's knowledge> Cs<of Central Intelligence Agency black programs> Ca<with the cryptonyms BLUEBIRD>, O<ARTICHOKE>, and O<MKULTRA> T<forms> O<an important part> Cs<of United States social history> and T<raises> -A<genealogical concerns>.
+
+[ARTK|00109]
+d:s| O<Genealogy> Cl<in this context> D<involves> -A<inquiry> Cs<into historical conditions of possibility> D<that> T<constrain> -A<action> Cr<not by necessity> but Cr<by contingency>.
+
+[ARTK|00110]
+d:s| O<Examining> -A<the genealogical footprints> Cs<of secrecy and national security> T<exposes> -A<tensions> Cs<involving> O<authority>, O<democratic rights to know>, and O<ethics>.
+
+[ARTK|00111]
+d:s| O<National security> D<is often used> Cp<to justify> T<initiating>, T<conducting>, and T<funding> O<secret research and development programs> and D<also to justify> T<concealing> -A<details> Ca<from allies and adversaries>.
+
+[ARTK|00112]
+d:s| +A<Dr. Sidney Gottlieb> T<testified> Ca<before> O<the Senate Subcommittee on Health and Scientific Research> Cs<about> O<this dual nature> Cs<of national security secrecy>.
+
+[ARTK|00113]
+d:s| +A<Sidney Gottlieb> D<served> O<as former Director> Cs<of the Central Intelligence Agency's Technical Services Staff Chemical Division>, D<which> D<conducted> -A<research and development> Cs<into hallucinogens>, O<poisonous plants>, and O<biological and chemical agents>.
+
+[ARTK|00114]
+d:s| +A<Sidney Gottlieb> D<stated> D<that> O<harnessing the academic and research community of the United States> T<aimed> Cp<to provide> O<urgently needed answers> Ca<to national security problems> Ct<in the shortest possible time> Cr<without alerting> O<potential enemies> Cs<to the United States Government's interest> Cs<in these matters>.
+
+[ARTK|00115]
+d:t| O<The proposal> Cs<for a National Psychological Board> D<was initiated> Ca<by> O<the United States Department of State> Ct<on January 14, 1950>.
+
+[ARTK|00116]
+d:s| O<The State Department> T<authorized> O<the Secretary of State> Cp<to coordinate> O<informational and psychological strategy> Cl<in situations> D<where> O<joint action> Ca<by more than one government agency> D<was required> Cl<in this field>.
+
+[ARTK|00117]
+d:t| O<National Security Council 74>, D<titled> O<A Plan for National Psychological Warfare>, D<was written> Ca<by> O<Under Secretary of State James Webb> Ct<in July 1950>.
+
+[ARTK|00118]
+d:s| O<National Security Council 74> T<recommended> D<that> O<a national psychological warfare organization> D<be established>.
+
+[ARTK|00119]
+d:t| O<Pursuant to this recommendation> and Ca<to National Security Council 59/1>, O<the Department of State> T<announced> Ct<on August 17> -A<the creation> Cs<of a National Psychological Strategy Board> Cs<under the Secretary of State>.
+
+[ARTK|00120]
+d:s| O<National Security Council 74> D<did not receive> -A<formal approval> Ca<from the Council> but D<was used> O<as a reference> Cl<in subsequent studies> Cs<on the subject>.
+
+[ARTK|00121]
+d:t| O<Planning discussions> Cs<for the new board> D<continued> Ct<throughout 1950>.
+
+[ARTK|00122]
+d:t| Ct<By January 18, 1951>, O<the Draft Directive on the National Psychological Effort> T<outlined> -A<the board's composition> and T<assigned> -A<it> Cs<under the purview> Cs<of the National Security Council>.
+
+[ARTK|00123]
+d:t| Cl<In February 1951>, O<a subject paper> D<originating> Cl<in the Executive Office of the President> D<stated> D<that> O<the mission of the Board> T<would relate> O<solely> Ca<to national strategy and policy> Cs<in the field of psychological warfare>.
+
+[ARTK|00124]
+d:s| O<This policy paper> T<raised> -A<the issue> Cs<of the Central Intelligence Agency providing intelligence support> Ca<to> O<the new National Psychological Strategy Board> or O<Psychological Strategy Board>.
+
+[ARTK|00125]
+d:s| Cl<Out of these discussions>, O<the Psychological Strategy Board> D<was established>.
+
+[ARTK|00126]
+d:t| O<The Presidential Secret Directive> Ct<of April 1, 1951> T<established> -A<the Psychological Strategy Board>.
+
+[ARTK|00127]
+d:t| O<An April 4, 1951 date> D<is also cited> Cp<for the Board's establishment>.
+
+[ARTK|00128]
+d:t| O<The White House> T<published> O<an abbreviated version> Cs<of the Directive> Ct<on June 20, 1951>.
+
+[ARTK|00129]
+d:t| Ct<Between April and June 1951>, O<agencies> D<engaged> Cs<in discussions> Cs<about> O<the organization> Cs<of the Psychological Strategy Board>.
+
+[ARTK|00130]
+d:s| O<A planning memorandum> D<titled> O<Implementation of the Presidential Directive of April 4, 1951> T<outlined> -A<the recruitment> Cs<of a competent staff>.
+
+[ARTK|00131]
+d:s| O<The memorandum> T<anticipated> O<National Security Council 10/5> and D<stated> D<that> O<policy guidance> Cp<for covert operations> D<should be coordinated and issued> Ca<to> O<the Central Intelligence Agency> Ca<by> O<the new Psychological Board>.
+
+[ARTK|00132]
+d:t| Cl<In May 1951>, +A<Director of Central Intelligence General Walter B. Smith> T<characterized> -A<the Psychological Strategy Board> O<as something> D<that> D<should be> O<entirely independent> Ca<of> O<an altruistic agency>.
+
+[ARTK|00133]
+d:s| +A<Director of Central Intelligence Smith> T<conceptualized> -A<the Psychological Strategy Board> O<as a body> D<that> T<would provide> -A<policy guidance> Ca<to> O<the Central Intelligence Agency> Cs<on covert actions>.
+
+[ARTK|00134]
+d:s| O<The Church Committee> T<reported> D<that> +A<Director of Central Intelligence Smith> T<called for> O<a restatement or redetermination> Ca<by> O<the National Security Council> Cs<of the responsibilities and authorities involved> Cs<in United States covert operations>.
+
+[ARTK|00135]
+d:s| +A<Director of Central Intelligence Smith> T<proposed> D<that> O<the newly created Psychological Strategy Board> T<provide> -A<guidance> Ca<to> O<the Central Intelligence Agency> Cs<on the conduct of covert operations>.
+
+[ARTK|00136]
+d:s| O<The National Security Council> T<adopted> O<this proposal> and T<made> -A<the Psychological Strategy Board> O<the approval body> Cp<for covert action>.
+
+[ARTK|00137]
+d:s| O<The Psychological Strategy Board> D<was perceived> Cl<in part> O<as a general staff> Cp<for the direction> Cs<of the Cold War>.
+
+[ARTK|00138]
+d:s| O<Presidential Directive 128> D<served> O<as a guiding framework> Cp<for the coordination> Cs<of psychological operations>.
+
+[ARTK|00139]
+d:s| O<The Directive> D<required> -A<the Psychological Strategy Board> Cp<to report> Ca<to> O<the National Security Council>.
+
+[ARTK|00140]
+d:s| O<The Board> D<was staffed> Ca<by> O<the Under Secretary of State>, O<the Deputy Secretary of Defense>, and O<the Director of Central Intelligence> or O<their appropriate designees>.
+
+[ARTK|00141]
+d:s| O<The Board> D<could include> O<an appropriate representative> Cs<of the head> Cs<of any other department or agency> D<as determined> Ca<by the Board>.
+
+[ARTK|00142]
+d:s| O<Membership> Cs<in the Psychological Strategy Board> D<was based> Cs<on the perception> D<that> O<its members> T<would possess> O<sufficient prestige> Cp<to make> O<Board-approved guidance> D<mandatory> Ca<for operating agencies>.
+
+[ARTK|00143]
+d:s| O<Major psychological operations> D<were conducted> Ca<by> O<the Department of State>, O<the Department of Defense>, or O<the Central Intelligence Agency>, D<whose senior officials> T<constituted> O<the Board's membership>.
+
+[ARTK|00144]
+d:t| Ct<Early in its formation>, O<concerns> D<were raised> D<that> O<the scope> Cs<of the Board's responsibility> D<was> O<very broad> and T<covered> O<every kind of activity> Cs<in support of United States policies> Cp<except> O<overt military combat> and O<overt economic warfare>.
+
+[ARTK|00145]
+d:s| O<The Central Intelligence Agency> T<evaluated> -A<its relationship> Ca<with the Psychological Strategy Board>.
+
+[ARTK|00146]
+d:s| O<The Agency> T<concluded> D<that> O<the Psychological Strategy Board> D<could potentially become> O<one of the most effective government elements> Cp<to assist> O<the Central Intelligence Agency> Cs<in activities> D<assigned> Cs<under National Security Council 10/2>.
+
+[ARTK|00147]
+d:s| O<The Central Intelligence Agency> T<argued> D<that> O<the Board's activities> D<should be> O<broad enough> Cp<to encompass> -A<government activities> D<that> T<have> -A<psychological impact>.
+
+[ARTK|00148]
+d:s| O<The Central Intelligence Agency> D<stated> D<that> O<the Psychological Strategy Board> D<must engage> O<more deeply> Ca<with> O<operational and planning problems> Cs<of the agencies it coordinates> Cr<than had previously occurred> Cl<at that level of government>.
+
+[ARTK|00149]
+d:s| Cl<In the same memorandum>, O<the Central Intelligence Agency> T<acknowledged> O<the extreme value> Cs<of the Psychological Strategy Board> Ca<to its interests> Cr<while expressing> -A<concerns> Cs<about security and propriety>.
+
+[ARTK|00150]
+d:s| O<The Central Intelligence Agency> T<proposed> -A<security and secrecy measures> Cp<for the Psychological Strategy Board>, Ca<including> O<recycling personnel> Cs<through special matter panels> and T<limiting> -A<information> Ca<to what was absolutely necessary> and T<restricted> Cs<to a need-to-know basis>.
+
+[ARTK|00151]
+d:t| Ct<At an August 13, 1951 meeting>, O<the Psychological Strategy Board> T<finalized> -A<its organizational structure> and T<created> -A<three offices>, namely O<the Office of Plans and Policy>, O<the Office of Coordination>, and O<the Office of Evaluation and Review>.
+
+[ARTK|00152]
+d:s| O<The Psychological Strategy Board> T<stated> D<that> Cp<to execute> -A<its role> O<it> T<would formulate> and T<promulgate> -A<overall policies>, -A<programs>, and -A<objectives> Cp<for psychological operations>, Ca<including> -A<overall strategic plans> Cl<in sufficient detail> Cp<to enable> -A<operational planning> Ca<by departments and agencies>.
+
+[ARTK|00153]
+d:t| Ct<By September 1951>, O<the proposed staff> Cs<of the Psychological Strategy Board> D<consisted> Cs<of 42 officers> and Cs<57 supporting administrative and clerical positions>.
+
+[ARTK|00154]
+d:s| +A<Gordon Gray> D<served> O<as the first director> Cs<of the Psychological Strategy Board>.
+
+[ARTK|00155]
+d:t| Ct<In June 1951>, O<The New York Times> T<described> -A<the Psychological Strategy Board> O<as central> Cs<in formulating strategy> Ca<against Russian communism> Cl<in all areas> Cp<except military operations>.
+
+[ARTK|00156]
+d:t| Ct<In October 1951>, O<National Security Council 10/5> T<institutionalized> -A<the position> Cs<of the Psychological Strategy Board> Cs<in relation to> O<Central Intelligence Agency-run operations>.
+
+[ARTK|00157]
+d:s| Cl<In response> Ca<to the establishment> Cs<of the Psychological Strategy Board> and Ca<to the psychological operations> D<specified> Cs<in National Security Council Memorandums 10/2>, O<10/5>, and O<59/1>, O<the Department of Defense> T<issued> O<the 1952 Department of Defense Directive C-5132.1> D<titled> O<Organization, Office of Psychological Policy>.
+
+[ARTK|00158]
+d:s| O<This directive> T<established> O<the Office of Psychological Policy> Cs<under the leadership> Cs<of the Deputy for Psychological Policy>.
+
+[ARTK|00159]
+d:s| O<The Deputy for Psychological Policy> D<was formally known> O<as the Deputy Assistant> Ca<to the Assistant Secretary of Defense for International Affairs> Cp<for Psychological Policy>.
+
+[ARTK|00160]
+d:s| O<The directive> T<specified> D<that> O<the Deputy for Psychological Policy> T<would have> O<direct access> Ca<to the Department of Defense member> Cs<of the Psychological Strategy Board> Cs<on matters pertaining to the Board> and Ca<to the Assistant Secretary of Defense for International Security Affairs> Cs<on other matters>.
+
+[ARTK|00161]
+d:s| O<Funding> Cp<for the Psychological Strategy Board> D<originated> Ca<from> O<equal contributions> Cs<of $188,000.00> Ca<from the Central Intelligence Agency> and Ca<from the Departments of Defense and State>.
+
+[ARTK|00162]
+d:s| O<The projected staff> Cp<for the Psychological Strategy Board> T<included> Cs<79 permanent positions> Cp<for fiscal years 1952 and 1953>.
+
+[ARTK|00163]
+d:t| O<A January 1952 Memorandum for Record> Cs<on Legislative Problems of the Psychological Strategy Board> T<recorded> O<Central Intelligence Agency concern> D<that> O<its secret activities> Cl<in the psychological warfare field> T<might be exposed> Ct<before a Subcommittee>.
+
+[ARTK|00164]
+d:s| O<The Central Intelligence Agency> T<noted> D<that> O<it> T<had recently succeeded> Cs<in removing itself> Cs<from such subcommittees> Ca<with the assistance> Cs<of the Bureau of the Budget> and O<supportive committee members>.
+
+[ARTK|00165]
+d:s| O<The Central Intelligence Agency> T<stated> D<that> O<it> T<would have preferred> Cp<to include> O<the Psychological Strategy Board administrative budget> O<openly> Cs<within the budget> Cs<of the National Security Council>, D<of which> O<the Board> T<might be considered> O<an adjunct>.
+
+[ARTK|00166]
+d:s| O<The Agency> T<argued> D<that> O<this arrangement> T<would have placed> O<all Psychological Strategy Board funds> Cs<under the Armed Services Appropriations Subcommittee> and T<allowed> O<Chairman Mahon> and O<Senator O'Mahoney> O<greater control> Cs<over the situation>.
+
+[ARTK|00167]
+d:t| Cl<In March 1952>, O<the Central Intelligence Agency> T<responded> Ca<to> -A<Director Gordon Gray's recommendation> Cp<to make> O<the Board's Report to the President> O<public>.
+
+[ARTK|00168]
+d:s| O<The Agency> T<expressed> -A<reluctance> Cp<to release> O<the report> Cs<because> O<it> T<might reveal> -A<sensitive information> and -A<relationships> and T<expose> -A<interagency differences> and -A<disputes>.
+
+[ARTK|00169]
+d:s| O<The Central Intelligence Agency> T<warned> D<that> O<public disclosure> T<might invite> -A<criticism> Cs<of the Government> Cs<for doing less> Cl<than it had actually done> Cp<to develop> -A<machinery> Cp<for psychological warfare measures>.
+
+[ARTK|00170]
+d:s| O<Materials> Cs<from this period> T<indicate> -A<concern> Cs<over> O<the physical control and custody> Cs<of information>.
+
+[ARTK|00171]
+d:s| +A<Tracy Barnes> T<reported> D<that> O<he> T<kept> -A<sensitive documents> T<locked> Cl<in his office safe>.
+
+[ARTK|00172]
+d:s| O<Correspondence> Ca<between the Psychological Strategy Board and the Central Intelligence Agency> T<demonstrated> O<tight control> Cs<over documents>.
+
+[ARTK|00173]
+d:s| O<A Central Intelligence Agency memorandum> T<informed> -A<the Psychological Strategy Board> D<that> O<reports of members> D<would be made available> Ca<to others> Cp<except on matters> D<affecting> O<the security> Cs<of Central Intelligence Agency operations>.
+
+[ARTK|00174]
+d:s| O<The memorandum> D<stated> D<that> O<the Central Intelligence Agency member> D<could make> -A<his report> O<available only> Ca<to the Chairman> and, Cl<in the field>, Ca<to a specified individual>.
+
+[ARTK|00175]
+d:s| O<A June 9 memorandum> Ca<from Allen Dulles> Ca<to Central Intelligence Agency Deputy and Assistant Directors> D<documented> O<ongoing segregation and control> Cs<of information>.
+
+[ARTK|00176]
+d:s| Cr<Although> O<the Psychological Strategy Board> T<operated> Cs<under the aegis> Cs<of the National Security Council>, O<it> D<did not have> O<a representative> Cs<on the Council>.
+
+[ARTK|00177]
+d:s| +A<Gordon Gray> T<recommended> D<that> O<the director> Cs<of the Psychological Strategy Board> T<hold> O<a seat> Cs<on the National Security Council>, but O<this recommendation> D<was not considered> O<desirable>.
+
+[ARTK|00178]
+d:s| O<Disputes> T<arose> Ca<between> O<the Central Intelligence Agency> and O<the Psychological Strategy Board> Cs<over this issue>.
+
+[ARTK|00179]
+d:t| +A<Gordon Gray> T<resigned> Ct<in May 1952> O<as director> Cs<of the Psychological Strategy Board> Ct<after less than one year> Cs<in the position> Cs<because> O<he> T<believed> D<that> O<representation on the National Security Council> D<was vital> Cp<to achieving> O<a coordinated psychological offensive>.
+
+[ARTK|00180]
+d:t| Ct<On June 21, 1952>, O<President Truman> T<wrote> Cl<in a memorandum> Ca<to the Chairman> Cs<of the Psychological Strategy Board> D<that> O<he> D<was considering> T<amending> O<the April 4, 1951 Directive> D<that> T<had established> O<the Board>.
+
+[ARTK|00181]
+d:t| Ct<On June 30, 1952>, O<the President’s Committee on International Information Activities> T<stated> D<that> O<the national information program> T<had suffered> Ca<from a lack of effective central direction> Cr<despite> O<the establishment> Cs<of the Psychological Strategy Board> and D<that> O<various agencies> T<had largely acted> O<independently>.
+
+[ARTK|00182]
+d:s| O<The President’s Committee>, D<also known> O<as the Jackson Committee> Ca<after Chairman William H. Jackson>, T<found> O<the existing conception> Cs<of the Psychological Strategy Board> O<unsound>.
+
+[ARTK|00183]
+d:s| O<The Jackson Committee> T<observed> D<that> O<the Psychological Strategy Board> D<was charged> Ca<with> O<planning>, O<coordination>, and O<evaluation> Cs<of psychological operations>, O<a term> D<that> D<was not adequately defined>.
+
+[ARTK|00184]
+d:s| O<The Jackson Committee> T<noted> O<significant controversy> Ca<between> O<the Psychological Strategy Board> and O<established planning agencies> Cs<within the Department of State> and T<recommended> D<that> O<the Board> D<be abolished>.
+
+[ARTK|00185]
+d:s| +A<Gordon Gray> D<was> O<a member> Cs<of the President’s Committee> and T<contributed> Ca<to its report>.
+
+[ARTK|00186]
+d:t| Ct<On August 1, 1952>, O<the Psychological Strategy Board> T<issued> O<a Status Report on the National Psychological Effort and First Progress Report> D<that> T<offered> O<a critical assessment> Cs<of United States foreign policy>.
+
+[ARTK|00187]
+d:s| O<The Status Report> T<stated> D<that> O<certain national policies> Cs<of the United States> D<were> O<psychologically damaging> Cl<in various areas> Cs<of the non-Soviet world>.
+
+[ARTK|00188]
+d:s| O<The report> T<stated> D<that> Cl<in the Muslim world> O<United States policy> Ca<toward Israel> D<was> O<psychologically damaging>.
+
+[ARTK|00189]
+d:s| O<The report> T<stated> D<that> Cl<in areas under European domination> O<United States acceptance> Cs<of the colonial policies> Cs<of its North Atlantic Treaty Organization allies> D<was> O<psychologically damaging>.
+
+[ARTK|00190]
+d:s| O<The report> T<stated> D<that> Cl<in Britain and elsewhere> O<United States policy> Ca<toward China> D<was> O<psychologically damaging>.
+
+[ARTK|00191]
+d:s| O<The report> T<stated> D<that> O<certain domestic matters> D<also had> O<damaging psychological effects>.
+
+[ARTK|00192]
+d:s| O<The report> T<stated> D<that> O<efforts> Cp<to counteract> O<communist exploitation> Cs<of race relations problems> Cs<in the United States> D<had not been fully successful>.
+
+[ARTK|00193]
+d:s| O<The report> T<stated> D<that> O<the restrictive immigration policy> D<embodied> Cl<in the McCarran Act> T<had> O<damaging psychological repercussions> O<abroad>.
+
+[ARTK|00194]
+d:t| Cl<In early 1953>, O<the Psychological Strategy Board> Ct<continued> -A<its interagency coordination> Cs<of psychological warfare activities>.
+
+[ARTK|00195]
+d:s| O<The January Handbook on Psychological Strategy Functions and Procedures> T<described> -A<the Psychological Strategy Board> O<as responsible> Ca<for psychological strategic planning>.
+
+[ARTK|00196]
+d:s| O<The Handbook> T<stated> D<that> O<the Department of State> T<would supply> -A<Board staff> Ca<with> O<appropriate intelligence research materials> and O<various types of policy information> Cl<as requested>.
+
+[ARTK|00197]
+d:t| +A<Dwight D. Eisenhower> D<was elected> O<President> Ct<in 1953>.
+
+[ARTK|00198]
+d:t| Ct<On March 5, 1953>, +A<Dwight D. Eisenhower> T<wrote> Ca<to Acting Director George A. Morgan> T<requesting> D<that> O<Special Assistant to the President C.D. Jackson> D<be granted> -A<membership> Cs<on the Psychological Strategy Board>.
+
+[ARTK|00199]
+d:t| Ct<On March 19, 1953>, +A<James Reston> Cs<of The New York Times> T<reported> D<that> +A<C.D. Jackson> T<had assumed> -A<leadership> Cs<of the Psychological Strategy Board>.
+
+[ARTK|00200]
+d:t| Ct<On September 2, 1953>, O<Reorganization Plan No. 8 of 1953> T<established> O<the United States Information Agency>.
+
+[ARTK|00201]
+d:s| O<The Church Committee> T<noted> D<that> O<the United States Information Agency> T<assumed> -A<the functions> Cs<of the Psychological Strategy Board>.
+
+[ARTK|00202]
+d:s| O<The Eisenhower administration> T<identified> -A<a need> Cp<to improve> -A<the manner> D<in which> O<National Security Council policies> D<were carried out>.
+
+[ARTK|00203]
+d:s| O<The Eisenhower administration> T<created> O<the Operations Coordinating Board> Cp<to address> O<this need>.
+
+[ARTK|00204]
+d:t| O<Executive Order 10483> Ct<of September 2, 1953> T<established> -A<the Operations Coordinating Board>.
+
+[ARTK|00205]
+d:t| O<Executive Order 10483> T<terminated> -A<the Psychological Strategy Board> O<as a coordinating body> Cp<for psychological warfare> and T<transferred> -A<its projects> Ca<to> O<the Operations Coordinating Board>.
+
+[ARTK|00206]
+d:s| O<The international information activities> Cs<of the Psychological Strategy Board> T<included> -A<manipulation> Cs<of public opinion> and O<the press> Cl<in foreign countries>.
+
+[ARTK|00207]
+d:s| O<The Psychological Strategy Board> D<conducted> -A<staff testing> Cs<of psychological warfare methods> O<overseas> Cp<to influence> O<foreign politics>.
+
+[ARTK|00208]
+d:s| O<The Psychological Strategy Board> D<conducted> -A<psychological operations> Ct<during the Korean cease-fire>.
+
+[ARTK|00209]
+d:s| O<The Psychological Strategy Board> T<participated> Cs<in psychological programs> D<intended> Cp<to reduce> O<Communist power> Cl<in Italy>.
+
+[ARTK|00210]
+d:s| O<The Psychological Strategy Board> T<participated> Cs<in psychological programs> D<intended> Cp<to reduce> O<Communist power> Cl<in France>.
+
+[ARTK|00211]
+d:s| O<The Psychological Strategy Board> D<conducted> O<a staff study> Cs<on psychological operations> Cl<in Southeast Asia>.
+
+[ARTK|00212]
+d:s| O<The Psychological Strategy Board> T<developed> O<a plan> Cp<for coordinated psychological operations> Cl<in Thailand>.
+
+[ARTK|00213]
+d:s| O<The Psychological Strategy Board> T<developed> -A<psychological operation plans> Cl<in the Middle East>.
+
+[ARTK|00214]
+d:s| O<The paramount strategic goal> Cs<of the Psychological Strategy Board> D<was> Cp<to defeat> O<the former Soviet Union> Ca<through doctrinal and ideological warfare>.
+
+[ARTK|00215]
+d:s| O<Psychological warfare efforts> D<focused> Cs<on exploiting information> Ca<about> O<refugees> Ca<from> O<the Iron Curtain> and O<the Soviet orbit>.
+
+[ARTK|00216]
+d:s| O<The Psychological Strategy Board> D<conducted> -A<preparatory work> Cs<in anticipation of> O<Joseph Stalin's death>.
+
+[ARTK|00217]
+d:s| O<The Psychological Strategy Board> T<influenced> O<United States psychological warfare policies> Ca<through> O<conferences> Cs<on evaluation techniques and criteria> Ca<in cooperation with> O<the Evaluation Branch> Cs<of the Office of Global Psychological Warfare>, O<with the Central Intelligence Agency>, and O<at the Fort Bragg Psychological Warfare Center>.
+
+[ARTK|00218]
+d:s| O<The Psychological Strategy Board> T<advised> -A<agencies> Cs<on psychiatric warfare>.
+
+[ARTK|00219]
+d:s| Ct<After its termination and the creation of the Operations Coordinating Board>, O<the Psychological Strategy Board> D<was described> O<as premised> Cs<on the concept> Cs<of an independently existing psychological strategy>.
+
+[ARTK|00220]
+d:s| +A<Walter L. Hixson> D<stated> D<that> O<the Psychological Strategy Board> T<failed> Cp<to unite> O<the executive branch>, O<the Department of State>, O<the Department of Defense>, O<all branches of the military>, O<the Central Intelligence Agency>, O<Congress>, O<the Bureau of the Budget>, O<academic specialists>, and O<corporate interests> Ca<behind> O<a campaign> Cs<of psychological warfare>.
+
+[ARTK|00221]
+d:s| Cl<In an interview>, +A<Gordon Gray> D<stated> D<that> O<the Psychological Strategy Board> D<had been> O<a necessary but unstable precursor> Ca<to> O<the Operations Coordinating Board>.
+
+[ARTK|00222]
+d:s| +A<Gordon Gray> D<stated> D<that> O<an effective Operations Coordinating Board> T<might not have been possible> Cr<without> O<the experiences> Cs<of the Psychological Strategy Board>.
+
+[ARTK|00223]
+d:s| O<Significant institutional barriers> T<hinder> -A<documentation> Cs<of historical connections> Ca<between> O<the Psychological Strategy Board>, O<the Central Intelligence Agency>, and O<the BLUEBIRD>, O<ARTICHOKE>, and O<MKULTRA programs>.
+
+[ARTK|00224]
+d:s| O<These barriers> T<constrain> -A<research> and T<limit> -A<the ability> Cp<to document fully> O<the relations> Ca<between> O<the Psychological Strategy Board> and O<the Central Intelligence Agency>.
+
+[ARTK|00225]
+d:s| O<These barriers> T<include> O<declassification and redaction practices>, O<continuing classification>, O<limited copy policies>, and O<compartmentalization>.
+
+[ARTK|00226]
+d:s| O<Compartmentalization> D<involves> O<concealment>, O<containment>, and O<segmentation> Cs<of information and communications>.
+
+[ARTK|00227]
+d:s| +A<Lewis Mumford> T<observed> D<that> O<exercising arbitrary power> D<involves> T<restraining> -A<communication> Ca<by subdividing information>.
+
+[ARTK|00228]
+d:s| O<Additional institutional barriers> T<include> O<deliberate destruction of documents>, O<lack of uniform indexing>, and O<uneven preservation policies>.
+
+[ARTK|00229]
+d:s| O<Declassification>, D<which involves downgrading and releasing formerly classified materials>, T<reveals> -A<underlying forces> Ca<behind government policies and events>.
+
+[ARTK|00230]
+d:s| O<The declassification process> O<often> T<releases> -A<information> O<incrementally> Ct<over decades>.
+
+[ARTK|00231]
+d:s| O<Incremental declassification> T<creates> O<a gap> Ca<between> O<partial and full knowledge>.
+
+[ARTK|00232]
+d:s| Cl<In the case of> O<the Psychological Strategy Board>, O<approximately seventy percent> Cs<of documents> D<are> O<partially declassified> and T<contain> O<minimal redaction>.
+
+[ARTK|00233]
+d:s| O<Approximately 9,200 pages> Cs<of Psychological Strategy Board materials> D<remain classified> Cl<in whole or in part> Cl<at the Truman and Eisenhower presidential libraries>.
+
+[ARTK|00234]
+d:s| O<The classification status> Cs<of Psychological Strategy Board documents> D<held> Ca<by the Central Intelligence Agency> D<remains unknown>.
+
+[ARTK|00235]
+d:s| O<The lack> Cs<of official records> T<constitutes> O<another barrier> Cp<to research>.
+
+[ARTK|00236]
+d:t| Ct<At its second meeting on August 13, 1951>, O<the Psychological Strategy Board> T<agreed> D<that> O<it> T<would meet> O<only> Ct<when important problems required discussion>.
+
+[ARTK|00237]
+d:t| Ct<Between July 2, 1951 and January 15, 1953>, O<only seventeen sets> Cs<of declassified and redacted minutes> D<are available> Cp<for examination>.
+
+[ARTK|00238]
+d:s| O<The limited availability> Cs<of official minutes> T<increases> O<the importance> Cs<of internal correspondence> Ca<between Psychological Strategy Board staff and agency members> Cp<for reconstructing> O<the Board's history>.
+
+[ARTK|00239]
+d:s| O<Limited copy policies> T<constitute> O<an additional institutional barrier> Cp<to research>.
+
+[ARTK|00240]
+d:s| O<These policies> D<are connected> Ca<to compartmentalization> O<as an official mechanism> Cs<of secrecy>.
+
+[ARTK|00241]
+d:s| O<A memorandum> D<titled> O<Psychological Strategy Board: Top Secret Documents> T<documents> -A<a limited copy policy> Cp<for Psychological Strategy Board publications>, D<which> O<were often issued> Cl<in single-digit quantities>.
+
+[ARTK|00242]
+d:s| O<Central Intelligence Agency memoranda> Cs<from the same period> D<were also subject> Ca<to limited copy policies>.
+
+[ARTK|00243]
+d:s| O<Central Intelligence Agency Inspector General J.S. Earman> T<reported> D<that> O<the MKULTRA program> D<involved> O<minimal documentation> Cs<because> Cs<of the high sensitivity> Cs<of some projects>.
+
+[ARTK|00244]
+d:s| +A<Inspector General Earman> T<restricted> -A<his report> Cs<on the MKULTRA program> Ca<to one copy> Cs<because of its unusual sensitivity>.
+
+[ARTK|00245]
+d:s| O<A variation> Cs<of the limited copy policy> D<involved> T<not producing> -A<documentation> O<at all>.
+
+[ARTK|00246]
+d:s| O<Compartmentalization> Ct<further> T<restricted> -A<knowledge> Ca<to privileged parties>.
+
+[ARTK|00247]
+d:s| +A<Inspector General Earman> T<reported> D<that> O<only two individuals> Cl<in the Technical Services Staff> T<had> O<full substantive knowledge> Cs<of the MKULTRA program> and D<that> O<most of this knowledge> D<was unrecorded>.
+
+[ARTK|00248]
+d:s| O<Deliberate destruction of documents> Ca<through official and informal policies> T<represents> O<another institutional barrier> Cp<to research and historical reconstruction>.
+
+[ARTK|00249]
+d:t| O<A document> D<titled> O<List of Psychological Strategy Board Documents Destroyed>, D<dated> Ct<September 22, 1952>, T<inventories> O<specific titles> Cs<of destroyed documents> and O<the number of copies destroyed>.
+
+[ARTK|00250]
+d:s| O<The working draft copies 16 through 18> Cs<of the Psychological Strategy Plan Prescribing Specific Courses of Action with Respect to Soviet Harassment of Berlin> D<were destroyed> Ca<along with> O<eight additional copies>.
+
+[ARTK|00251]
+d:s| O<Details> Cs<about destroyed documents> T<provide> O<important metrics> Ca<for information professionals> and Ca<for researchers> D<concerned> Ca<with preservation and historical analysis>.
+
+[ARTK|00252]
+d:t| Ct<During the Church Committee hearings>, O<the existence> Cs<of Central Intelligence Agency regulation CSI 70-10> Cs<on retirement of inactive records> D<was revealed>.
+
+[ARTK|00253]
+d:s| O<The regulation> T<characterized> -A<retirement of records> O<as a conscious judgment> D<intended> Cp<to ensure> D<that> O<a complete story> D<could be reconstructed> Ct<in later years> Ca<by individuals> D<unfamiliar with the events>.
+
+[ARTK|00254]
+d:s| O<The Church Committee> T<found> D<that> O<retirement procedures> D<were not uniformly followed> Cs<within the Central Intelligence Agency>.
+
+[ARTK|00255]
+d:s| O<Individuals> D<associated> Ca<with compartmented projects> T<initiated> -A<document destruction>.
+
+[ARTK|00256]
+d:t| Ct<During Senate Committee on Labor and Public Welfare, Subcommittee on Health hearings>, O<Central Intelligence Agency Deputy Director Carl E. Druckett> D<stated> D<that> O<documents> D<were destroyed> Ca<by individuals> D<directly involved> Cs<in the MKULTRA program> Ca<on instructions from Dr. Sidney Gottlieb>.
+
+[ARTK|00257]
+d:s| +A<Carl E. Druckett> D<stated> D<that> O<a handwritten note> T<indicated> D<that> +A<Dr. Sidney Gottlieb> D<had been instructed> Ca<by Director Richard Helms> Cp<to destroy> O<the documents>.
+
+[ARTK|00258]
+d:s| O<The Advisory Committee on Human Experimentation> T<reported> D<that> O<MKULTRA records> D<were substantially destroyed> Ca<at the direction of> O<Director of Central Intelligence Richard Helms> Ct<in 1973>.
+
+[ARTK|00259]
+d:s| O<Destruction> Cs<of records> Ca<by isolated groups> Cs<within the Central Intelligence Agency> T<indicates> D<that> O<information policies> D<were not universally followed> Cp<for documents> D<considered> O<embarrassing> or O<potentially criminal>.
+
+[ARTK|00260]
+d:s| O<Select individuals> D<associated> Ca<with classified projects> T<determined> O<the fate> Cs<of records>.
+
+[ARTK|00261]
+d:s| O<The Church Committee> T<concluded> D<that> O<destruction of project records> T<made> O<it impossible> Cp<to identify>, Cp<locate>, and Cp<provide follow-up care> Ca<to unwitting subjects> Cs<of Central Intelligence Agency experimentation>.
+
+[ARTK|00262]
+d:s| O<The Church Committee> D<also concluded> D<that> O<record destruction> T<made> O<it impossible> Cp<to determine> O<the full range and extent> Cs<of the largest Central Intelligence Agency research program> Cs<involving chemical and biological agents>.
+
+[ARTK|00263]
+d:s| O<The Committee> T<concluded> D<that> O<record destruction> T<prevented> -A<determination> Cs<of the full extent> Cs<of operations> D<that> T<used> -A<materials> D<developed> Cs<in the MKULTRA program>.
+
+[ARTK|00264]
+d:s| O<Destruction> Cs<of inventories> D<documenting destruction of records> T<constitutes> O<an additional barrier> Cp<to research>.
+
+[ARTK|00265]
+d:s| O<The Advisory Committee on Human Experimentation> T<found> D<that> O<records> D<documenting> O<the destruction of records> D<had themselves been lost or destroyed>.
+
+[ARTK|00266]
+d:s| O<Destruction schedules> T<serve> O<as crucial discovery tools> Ca<for researchers> D<seeking> Cp<to confirm> O<identities>, O<dates>, and O<interagency communication>.
+
+[ARTK|00267]
+d:t| O<A Memorandum> Ca<for the Office of the Secretary of Defense Classified Mail and Records> D<dated> Ct<October 30, 1951> T<called for> -A<destruction> Cs<of a document> Cs<on Project ARTICHOKE> and T<requested> D<that> O<a Certificate of Destruction> D<be furnished> Ca<to the Central Intelligence Agency>.
+
+[ARTK|00268]
+d:s| O<The memorandum> T<identified> O<the number of copies>, O<the date of destruction>, and O<the agencies with access>, Ca<including> O<the Secretary of Defense>, O<the Army>, O<the Navy>, and O<the Central Intelligence Agency Technical Services Staff>.
+
+[ARTK|00269]
+d:s| O<Attached records> T<indicated> D<that> O<a Staff Study on Special Interrogations>, D<known as Project ARTICHOKE>, D<was scheduled> Cp<for destruction>.
+
+[ARTK|00270]
+d:s| O<An attached BLUEBIRD document> T<indicated> D<that> O<the BLUEBIRD and ARTICHOKE projects> D<operated> O<concurrently>.
+
+[ARTK|00271]
+d:s| O<The memorandum> T<revealed> D<that> O<the United States Army> Cl<at Fort Belvoir> T<had access> Ca<to Technical Services Staff information>.
+
+[ARTK|00272]
+d:s| O<The memorandum> T<referenced> O<use> Cs<of the Third Agency Rule>, D<which> T<prohibits> O<one agency> Ca<from disseminating> -A<materials> D<originating from another agency> Cr<without the originating agency's consent>.
+
+[ARTK|00273]
+d:s| O<The Third Agency Rule> D<is relevant> Ca<to determining> D<which agencies> T<had> -A<security access> and Ca<to questions> Cs<of who knew specific information and when>.
+
+[ARTK|00274]
+d:s| O<Another barrier> Cp<to research> D<involves> O<records> D<segregated> Ca<from an agency's main indexing system>.
+
+[ARTK|00275]
+d:t| Ct<In August 1977>, O<the Central Intelligence Agency> T<located> O<eighteen boxes> D<labeled> O<Project ARTICHOKE> D<that> D<were not part> Cs<of the Office of Security file index>.
+
+[ARTK|00276]
+d:s| Ct<After review>, O<the Central Intelligence Agency> T<determined> D<that> O<fourteen of the boxes> T<contained> -A<materials> Cs<on ARTICHOKE>.
+
+[ARTK|00277]
+d:s| O<The boxes> T<contained> O<one ampule> Cs<of Thorazine> and O<a display board> Ca<with samples> Cs<of several drugs> D<under study>.
+
+[ARTK|00278]
+d:s| O<The boxes> D<also contained> O<a crudely fashioned automatic injection device> D<tested> Ca<by the Central Intelligence Agency>.
+
+[ARTK|00279]
+d:s| O<Director of Security Robert W. Gambino> D<stated> D<that> O<the material> D<was presumed> Cr<not to have been reviewed> Ct<during Congressional inquiries> Cs<into agency drug-related activities>.
+
+[ARTK|00280]
+d:s| O<One reason> Cp<for this lack of review> T<may have been> O<archival practices> Cl<in which convenience or working files> D<were not considered> O<official records> and D<were not indexed>.
+
+[ARTK|00281]
+d:s| +A<Dr. Robert Lashbrook> T<testified> Ca<before> O<the Subcommittee on Scientific Research> Cs<of the Committee on Human Resources> Cs<about> O<control files>.
+
+[ARTK|00282]
+d:s| O<An exchange> Ca<between Dr. Robert Lashbrook and Senators Edward Kennedy and Richard Schweiker> T<revealed> D<that> O<the Central Intelligence Agency> T<used> O<boilerplate or cover files> O<as a form> Cs<of records camouflage> Cp<for secrecy and security purposes>.
+
+[ARTK|00283]
+d:s| +A<Dr. Robert Lashbrook> D<stated> D<that> O<documents> D<signed off> D<were not the same> O<as the actual detailed project proposals>.
+
+[ARTK|00284]
+d:s| O<Cover files or boilerplates> D<did not reveal> -A<the substantive content> Cs<of the projects> D<they represented>.
+
+[ARTK|00285]
+d:s| O<These institutional information barriers> T<hinder> -A<reconstruction> Cs<of the history> Cs<of secret programs and operations>.
+
+[ARTK|00286]
+d:s| O<These barriers> T<undermine> -A<trust> Cs<in an agency's competence> Cp<to conduct> O<public business>, Cr<even when that business is secret>.
+
+[ARTK|00287]
+d:s| O<These barriers> T<create> -A<challenges> Ca<for federal officials> Ct<who later must interpret policies> and T<defend> O<actions> Cl<in which they did not participate> and Cl<of which they had no knowledge>.
+
+[ARTK|00288]
+d:t| Ct<During hearings> Cs<of the Senate Committee on Labor and Public Welfare, Subcommittee on Health>, +A<Dr. Sayre Stevens> D<stated> D<that> O<the Central Intelligence Agency> T<worked> Ca<through the Bureau of Narcotics> Ct<from approximately 1953 to 1963> Cp<to test> O<the effects> Cs<of certain drugs>, Ca<including LSD>, Ca<on unwitting subjects> Cl<in social situations>.
+
+[ARTK|00289]
+d:s| +A<Dr. Sayre Stevens> D<stated> D<that> O<individuals> D<were administered> -A<drugs> Cr<without their knowledge> Cl<in normal social situations> Cp<to study> -A<their behavior>.
+
+[ARTK|00290]
+d:s| +A<Dr. Sayre Stevens> D<stated> D<that> O<no follow-up or monitoring> D<was normally possible>.
+
+[ARTK|00291]
+d:s| +A<Dr. Sayre Stevens> D<stated> D<that> O<the program> T<may have begun> Ct<in 1953 or 1954> and D<was expanded> Ca<to another location> Ct<in 1961>.
+
+[ARTK|00292]
+d:s| +A<Carl E. Duckett> D<stated> D<that> O<a document> D<dated> Ct<February 10, 1954> T<suggested> D<that> O<activities> D<were underway> Ct<at that time> and D<that> O<the program> T<may have started> O<as early as 1953>.
+
+[ARTK|00293]
+d:t| O<The Central Intelligence Agency> Ct<in 1975> T<described> -A<its Cold War experimentation history> Cr<without acknowledging> -A<specific project names>.
+
+[ARTK|00294]
+d:t| O<The Central Intelligence Agency> D<stated> D<that> Ct<by 1953> O<it> T<had established> O<a large and complex external research program> Cs<involving basic research> Cs<on lysergic acid and other compounds> as well as O<extensive testing and experimentation>.
+
+[ARTK|00295]
+d:s| O<The Central Intelligence Agency> D<stated> D<that> O<more than thirty universities and institutions> T<participated> Cs<in the program>.
+
+[ARTK|00296]
+d:s| O<The Central Intelligence Agency> D<stated> D<that> O<research> T<included> O<chemical studies>, O<tissue studies>, O<toxicological investigations>, and O<testing> Ca<on animals and human volunteers>.
+
+[ARTK|00297]
+d:s| O<The Central Intelligence Agency> D<stated> D<that> O<it> T<used> O<covert funding techniques> Cp<to protect> O<the nature> Cs<of its foreign intelligence concerns>.
+
+[ARTK|00298]
+d:t| Ct<In 1977>, O<newly discovered records> T<described> O<a more extensive series of experiments> Cr<than previously understood> and T<indicated> D<that> O<eighty-six universities or institutions> D<were involved>.
+
+[ARTK|00299]
+d:s| O<Director Stansfield Turner> T<reported> D<that> O<approximately forty-four colleges and universities>, O<fifteen research facilities or private companies>, O<twelve hospitals or clinics>, and O<three penal institutions> T<participated> Cs<in the program>.
+
+[ARTK|00300]
+d:s| O<The Central Intelligence Agency> T<used> O<university facilities> and O<personnel> Cr<without their knowledge> and T<funded> O<leading researchers> Cr<without their knowledge>.
+
+[ARTK|00301]
+d:s| O<The BLUEBIRD>, O<ARTICHOKE>, and O<MKULTRA projects> T<overlapped> and T<intersected> Ct<over time> Cr<rather than following> O<a simple chronological sequence>.
+
+[ARTK|00302]
+d:s| O<The inception date> Cs<of Project BLUEBIRD> D<is uncertain> Cs<because of> O<document destruction>.
+
+[ARTK|00303]
+d:s| O<Some reports> T<indicate> D<that> O<Project BLUEBIRD> T<began> O<as early as 1949> and T<continued> Ct<until at least November 1953>.
+
+[ARTK|00304]
+d:s| O<Surviving BLUEBIRD documents> D<were obtained> Cs<through Freedom of Information Act requests> and D<are available> Cl<in digital collections>.
+
+[ARTK|00305]
+d:s| O<Some scholars> T<theorize> D<that> O<Project BLUEBIRD> T<developed> Ca<from human experimentation> D<conducted> Ca<by Nazi physicians and scientists> D<captured> Cs<under Operation Paperclip>.
+
+[ARTK|00306]
+d:s| +A<Sidney Gottlieb> D<stated> D<that> O<Project BLUEBIRD> T<began> O<as an Office of Security concept> D<that> Ct<later> T<evolved> O<into a Technical Services Staff-sponsored activity> D<examining> O<brainwashing> and T<included> O<the Society for the Investigation of Human Ecology>.
+
+[ARTK|00307]
+d:s| O<Surviving documents> T<demonstrate> D<that> O<Project BLUEBIRD> T<established> O<a behavioral control program> Cs<within the Central Intelligence Agency> Ca<in collaboration with> O<the Office of Scientific Intelligence>.
+
+[ARTK|00308]
+d:s| O<Project BLUEBIRD> T<provided> O<immediate establishment> Cs<of interrogation teams> Cp<to support> O<Office of Special Operations> and O<Office of Policy Coordination activities>.
+
+[ARTK|00309]
+d:s| O<Project BLUEBIRD> T<sought> Cp<to discover> O<means> Cs<of conditioning personnel> Cp<to prevent> O<unauthorized extraction> Cs<of information>.
+
+[ARTK|00310]
+d:s| O<Project BLUEBIRD> T<investigated> -A<the possibility> Cs<of controlling individuals> Ca<through special interrogation techniques>.
+
+[ARTK|00311]
+d:s| O<Project BLUEBIRD> T<pursued> O<memory enhancement> and O<defensive measures> Cp<to prevent> O<hostile control> Cs<of agency personnel>.
+
+[ARTK|00312]
+d:t| Ct<At the end of 1950>, +A<Morse Allen> T<became> O<head> Cs<of the BLUEBIRD program>.
+
+[ARTK|00313]
+d:t| +A<Colonel Sheffield Edwards> T<called for> O<a meeting> Ct<on March 14> Cp<to discuss> O<operational requirements> Cp<for specialized interrogation teams>.
+
+[ARTK|00314]
+d:s| +A<Colonel Sheffield Edwards> D<stated> D<that> O<Project BLUEBIRD> T<carried> O<the highest security classification> and D<would be known> O<only> Ca<to designated individuals>.
+
+[ARTK|00315]
+d:s| +A<Colonel Sheffield Edwards> T<requested> O<direct approval> Ca<from Director Hillenkoetter> Cs<because of> O<the program's extreme sensitivity> and O<covert nature>.
+
+[ARTK|00316]
+d:s| +A<Director Hillenkoetter> T<approved> O<Project BLUEBIRD> Ca<with a budget of $65,515.00> Cp<for psychiatrists>, O<drugs>, O<a polygraph>, and O<security>.
+
+[ARTK|00317]
+d:t| O<A heavily redacted memorandum> D<dated> Ct<July 2, 1951> T<listed> O<individuals> D<briefed> Cs<on Project BLUEBIRD>.
+
+[ARTK|00318]
+d:s| +A<General Walter Bedell Smith>, D<who chaired the Psychological Strategy Board>, D<was marked> O<as briefed> Cs<on Project BLUEBIRD>.
+
+[ARTK|00319]
+d:s| +A<Allen W. Dulles>, +A<Richard Helms>, +A<Frank Wisner>, +A<Colonel Sheffield Edwards>, +A<Lyman B. Kirkpatrick Jr.>, and +A<John S. Earman> D<were also briefed>.
+
+[ARTK|00320]
+d:s| +A<Hillenkoetter> and O<others> T<followed> O<concealment and compartmentalization protocols> D<that> T<limited> O<broader Psychological Strategy Board knowledge> Cs<of Project BLUEBIRD>.
+
+[ARTK|00321]
+d:s| +A<John S. Earman> D<did not discuss> O<Project BLUEBIRD> Cl<in his 1963 MKULTRA report>.
+
+[ARTK|00322]
+d:t| Cl<In a March 17, 1951 memorandum>, +A<Colonel Sheffield Edwards> T<established> -A<special handling procedures> Cp<for Project BLUEBIRD documents>.
+
+[ARTK|00323]
+d:s| O<Project BLUEBIRD documents> D<were classified> O<Top Secret> and D<were hand carried> O<on an eyes-only basis>.
+
+[ARTK|00324]
+d:s| O<Documents> D<that> D<did not specify> O<the true purpose> Cs<of the program> D<could be classified> O<as Secret>.
+
+[ARTK|00325]
+d:s| O<A control list> D<was established> Ca<for individuals> D<who needed to know> Cs<about Project BLUEBIRD> and D<were briefed>.
+
+[ARTK|00326]
+d:t| O<A July 25, 1951 memorandum> D<titled> O<Meeting with Intelligence Advisory Committee Representatives of Project BLUEBIRD> T<addressed> O<protection> Cs<of personnel> Ca<against Soviet interrogation techniques>.
+
+[ARTK|00327]
+d:s| O<The Intelligence Advisory Committee> T<included> -A<representatives> Ca<from> O<the Department of State>, O<the Atomic Energy Commission>, O<the Joint Chiefs of Staff>, O<the Army>, O<the Navy>, and O<the Air Force>.
+
+[ARTK|00328]
+d:s| O<Psychological Strategy Board staff> D<were excluded> Ca<from this briefing>.
+
+[ARTK|00329]
+d:t| +A<J.H. Alberti> T<presented> -A<information> Cl<at the meeting> Cs<regarding> O<a Navy research effort> Cl<at Bethesda> D<that began> Ct<in 1947>.
+
+[ARTK|00330]
+d:t| +A<Jack Henry Alberti> D<had served> O<as a senior interrogator> Cs<in the Office of Naval Intelligence> Ct<during World War II>.
+
+[ARTK|00331]
+d:s| O<A Naval Inspector General report> T<described> +A<Alberti> O<as having interrogated> O<a captured German submarine commander> Cl<in a humiliating manner> and O<as having distributed> O<looted decorations and property>.
+
+[ARTK|00332]
+d:s| O<The Naval Inspector General> T<concluded> D<that> +A<Alberti's actions> T<violated> O<the Geneva Convention> and O<directives> Cs<of the Chief of Naval Operations>.
+
+[ARTK|00333]
+d:s| +A<Alberti> T<denied> -A<involvement> Cs<in irregularities>, but O<the broader Psychological Strategy Board> D<was unaware> Cs<of the briefing> and Cs<of his background>.
+
+[ARTK|00334]
+d:t| O<A May 13 memorandum> Ca<from H. Marshall Chadwell> Ca<to Director Allen W. Dulles> D<titled> O<Briefing for the Psychological Board> T<discussed> O<secret research> Cs<on a drug> D<called> O<Seramin>, D<also known as lysergic acid diethylamide or LSD>.
+
+[ARTK|00335]
+d:s| O<The memorandum> D<stated> D<that> O<the drug> D<was manufactured> Ca<by Sandoz> Cl<in Switzerland> and D<had been exported> Ca<to the Soviet Union>.
+
+[ARTK|00336]
+d:s| O<The memorandum> D<stated> D<that> O<the drug> T<caused> O<temporary mental derangement>.
+
+[ARTK|00337]
+d:s| O<The memorandum> Cs<from H. Marshall Chadwell> T<advised> +A<Director Allen W. Dulles> D<that> Cl<if a high government official exhibited signs of a changed personality>, O<the official> D<should be confined> Ca<to quarters> Ct<for at least twenty-four hours> Cs<because> O<the drug’s effects> T<would dissipate> Cl<within that period> Cl<if no additional doses were administered>.
+
+[ARTK|00338]
+d:s| O<The memorandum> T<advised> D<that> O<food and liquids> D<should be carefully monitored> Ct<during that period>.
+
+[ARTK|00339]
+d:s| +A<H. Marshall Chadwell> T<briefed> +A<Director Allen W. Dulles> Cs<on brainwashing> and Cs<on a group of drugs> D<that> T<temporarily alter> -A<personality>.
+
+[ARTK|00340]
+d:s| +A<H. Marshall Chadwell> T<recommended> D<that> O<no general release of information> D<be made> Cs<regarding drugs> Ca<in relation to brainwashing>.
+
+[ARTK|00341]
+d:s| O<An attached suggested briefing> D<stated> D<that> O<the Psychological Strategy Board> and O<the Intelligence Advisory Committee> D<should be briefed> O<only in general terms>, Cr<without reference to the specific drug>, and D<that> O<no publicity> D<should be emphasized>.
+
+[ARTK|00342]
+d:s| +A<H. Marshall Chadwell> D<stated> D<that> O<the matter> D<had been coordinated> Ca<with Colonel Sheffield Edwards> and Ca<with Dr. Willis Gibbons>.
+
+[ARTK|00343]
+d:t| Ct<In November 1953>, O<the Central Intelligence Agency> Ct<continued> -A<planning> Cs<BLUEBIRD program activities>, Ca<including> O<experimentation> Ca<with a hypospray> O<as a covert speech-inducing method> Ca<on unwilling subjects> Cr<without the use of a polygraph> or Cr<additional intravenous drug injections>.
+
+[ARTK|00344]
+d:s| O<These memoranda> T<indicate> D<that> O<the Psychological Strategy Board> D<was largely excluded> Ca<from full awareness> Cs<of BLUEBIRD activities>.
+
+[ARTK|00345]
+d:s| O<It> D<remains uncertain> D<whether> O<select Psychological Strategy Board members> T<had> -A<knowledge> Cs<of or involvement with the BLUEBIRD Control Board>.
+
+[ARTK|00346]
+d:s| O<It> D<remains uncertain> D<whether> O<the Psychological Strategy Board> D<was aware> Cs<of the Central Intelligence Agency-funded Society for the Investigation of Human Ecology>, D<described> Cl<in a redacted cable> O<as a cover mechanism> Cp<for numerous projects>.
+
+[ARTK|00347]
+d:s| O<It> D<is also uncertain> D<whether> O<the Intelligence Advisory Committee> T<had> -A<full access> Ca<to BLUEBIRD information>.
+
+[ARTK|00348]
+d:s| O<Project ARTICHOKE> D<was> O<the Central Intelligence Agency cryptonym> Cp<for the study or use> Cs<of special interrogation methods and techniques>.
+
+[ARTK|00349]
+d:s| O<These special interrogation methods> T<included> O<drugs and chemicals>, O<hypnosis>, O<total isolation>, and O<psychological harassment>.
+
+[ARTK|00350]
+d:s| O<Polygraph testing> D<was also studied> Cs<within the ARTICHOKE program>.
+
+[ARTK|00351]
+d:s| O<Director Stansfield Turner> T<testified> D<that> Ct<beginning in 1949>, O<foreign research> Cs<on LSD> D<was assessed> Cs<under Project ARTICHOKE> Cs<due to concerns> D<that> O<such drugs> T<might be used> Ca<against agency and United States personnel>.
+
+[ARTK|00352]
+d:s| O<Other accounts> T<place> O<Project ARTICHOKE> Ca<between 1951 and 1955>.
+
+[ARTK|00353]
+d:s| O<The Church Committee> T<reported> D<that> Ct<in August 1951> O<the project> D<was renamed> O<ARTICHOKE> and D<that> -A<information> Ct<after the fall of 1953> D<is scarce>.
+
+[ARTK|00354]
+d:s| O<The Central Intelligence Agency> D<maintained> D<that> O<the project> T<ended> Ct<in 1956>, but O<evidence> T<suggested> D<that> O<use> Cs<of special interrogation techniques> Ca<by the Office of Security and the Office of Medical Services> D<continued> Ct<for several years thereafter>.
+
+[ARTK|00355]
+d:s| O<The Church Committee> T<identified> D<that> O<the Office of Scientific Intelligence> Ct<initially> T<led> O<BLUEBIRD and ARTICHOKE efforts>.
+
+[ARTK|00356]
+d:t| Ct<In 1952>, -A<responsibility> Cp<for ARTICHOKE> D<was transferred> Ca<from the Office of Scientific Intelligence> Ca<to the Inspection and Security Office>, O<the predecessor to the Office of Security>.
+
+[ARTK|00357]
+d:t| O<A January 1952 memorandum> D<stated> D<that> O<the Inspection and Security Office> T<organized> O<permanent teams> Cp<to apply> O<ARTICHOKE methods> Cp<to assist> O<the Office of Scientific Intelligence> Cl<in coordinating activities>.
+
+[ARTK|00358]
+d:s| O<The Office of Scientific Intelligence> D<served> O<as the focal point> Cp<for information> Ca<from> O<the Army>, O<the Navy>, O<the Air Force>, O<Veterans Administration>, O<Central Intelligence Agency>, O<Federal Bureau of Investigation>, O<Treasury Department>, and O<private contractors>.
+
+[ARTK|00359]
+d:s| O<The January memorandum> D<stated> D<that> O<ARTICHOKE> D<focused> Cs<on evaluating and developing methods> Cp<to obtain> -A<information> Ca<from a person> Cp<against his will> and Cr<without his knowledge>.
+
+[ARTK|00360]
+d:s| O<The memorandum> T<expressed> -A<concern> Cs<about the failure> Cp<to place> O<scientifically trained personnel> Cl<in key positions> and T<questioned> Ct<how such methods could be countered> Cl<if used against the United States>.
+
+[ARTK|00361]
+d:t| O<A February 1952 memorandum> T<outlined> O<ARTICHOKE efforts> Cp<to develop> O<electroshock and hypnosis techniques>, O<drug techniques>, O<neurosurgical techniques>, O<psychological techniques>, and O<rapid screening and selection techniques>.
+
+[ARTK|00362]
+d:s| O<ARTICHOKE operations> D<also included> -A<studies> Cp<to induce> O<triggers> Cp<for targeted assassination>.
+
+[ARTK|00363]
+d:s| O<Memoranda> T<suggest> D<that> Cr<although> O<the Psychological Strategy Board> D<was generally aware> Cs<of claims about brainwashing>, O<specific ARTICHOKE details> D<were muted> Cl<in official records>.
+
+[ARTK|00364]
+d:t| Ct<At a February 19, 1953 Psychological Strategy Board meeting>, +A<Director Allen W. Dulles> T<discussed> O<a letter> Ca<from Secretary of Defense Charles E. Wilson> Cs<regarding public discussion> Cs<of Communist indoctrination> and Cs<confessions> Cs<of United States servicemen> D<held> Cl<in Korea>.
+
+[ARTK|00365]
+d:s| O<Board member Harold Stassen> T<suggested> D<that> O<a leading doctor or scientist> T<present> O<a paper> Cl<at a scientific conference> Cp<to reduce> O<government attribution> Cr<while gaining> O<publicity>.
+
+[ARTK|00366]
+d:s| +A<Director Allen W. Dulles> T<indicated> D<that> O<the Central Intelligence Agency> T<would assemble> O<all available information> Cs<on the subject>.
+
+[ARTK|00367]
+d:s| Cl<In his letter>, +A<Secretary of Defense Charles E. Wilson> T<expressed> -A<concern> Cs<over interrogation techniques> D<used> Ca<by Chinese Communists> and T<proposed> O<a counterpropaganda campaign>.
+
+[ARTK|00368]
+d:s| +A<Secretary Wilson> T<used> O<terms> Cl<such as mind murder and mendicide> Cp<to describe> O<psychological techniques> D<intended> Cp<to alter> O<cognition>, O<judgment>, and O<behavior>.
+
+[ARTK|00369]
+d:s| +A<Secretary Wilson> T<characterized> O<brainwashing> O<as a new form> Cs<of war crime> and O<a refinement> Cs<in atrocity techniques>.
+
+[ARTK|00370]
+d:t| O<A subsequent Psychological Strategy Board meeting> Ct<on February 26> T<addressed> +A<Wilson’s proposed press release> Cs<concerning the utilization> Cs<of captured American personnel> Cp<for Communist propaganda>.
+
+[ARTK|00371]
+d:t| +A<Director Allen W. Dulles> D<was asked> Cp<to contact> +A<Detlev Bronk>, O<president of Johns Hopkins University>, Cp<to determine> D<whether> O<he> T<would head> O<a panel> Cs<of private consultants> Cp<to issue> O<a statement> Cp<in place of> O<a Pentagon press release>.
+
+[ARTK|00372]
+d:s| O<The Psychological Strategy Board> T<formed> O<an Interdepartmental Working Committee> D<composed> Cs<of members> Ca<from the Board>, O<the Central Intelligence Agency>, O<the Department of Defense>, and O<the Department of State> Cp<to address> O<the issue>.
+
+[ARTK|00373]
+d:t| Cl<In a March memorandum> Ca<to the Under Secretary of State and the Deputy Secretary of Defense>, +A<Director Allen W. Dulles> T<challenged> -A<the scientific basis> Cs<of brainwashing claims>.
+
+[ARTK|00374]
+d:s| +A<Director Allen W. Dulles> D<stated> D<that> O<a search> Cs<within the Central Intelligence Agency> T<revealed> O<little scientific evidence> D<supporting brainwashing>.
+
+[ARTK|00375]
+d:s| +A<Director Allen W. Dulles> D<stated> D<that> O<case reports> T<suggested> D<that> O<individuals> D<could be forced> Cp<to make> O<inaccurate statements> Cl<if timing and conditions were controlled>.
+
+[ARTK|00376]
+d:t| O<Additional memoranda> Cs<from 1953> T<reported> -A<coordination> Cs<of ARTICHOKE activities> Cl<within the United States> Ca<involving> O<the United States Department of Agriculture> and O<the Food and Drug Administration>.
+
+[ARTK|00377]
+d:s| O<The United States Department of Agriculture> D<was enlisted> Cp<to expedite> O<the importation> Cs<of botanicals>.
+
+[ARTK|00378]
+d:s| O<The Food and Drug Administration> D<was prepared> Cp<to provide> O<laboratory and testing facilities> Cl<if necessary>.
+
+[ARTK|00379]
+d:s| O<It> D<remains uncertain> D<whether> O<the Psychological Strategy Board> T<had> -A<knowledge> Cs<of these domestic activities> or Cs<of the use> Cs<of ARTICHOKE techniques> Ca<on individuals> D<held> Cl<in federal prisons>.
+
+[ARTK|00380]
+d:s| O<It> D<is also unclear> D<whether> O<the Psychological Strategy Board> D<was aware> Cs<of the ARTICHOKE Committee>, D<which> D<maintained> O<a compartmented relationship> Ca<with personnel> Cl<at Camp Detrick> and T<met> O<periodically> Cp<to discuss> O<behavioral drugs>.
+
+[ARTK|00381]
+d:t| Ct<When questioned by the Church Committee> Cs<about why information> Cs<on the surreptitious administration of LSD> D<was not shared> Ca<with the ARTICHOKE Committee>, +A<Dr. Sidney Gottlieb> D<stated> D<that> O<the likely reason> D<was> -A<concern> Cs<about broadening awareness> Cs<of the program’s existence>.
+
+[ARTK|00382]
+d:s| O<This concern> Cs<about limiting awareness> T<may also have restricted> -A<information sharing> Ca<between the Psychological Strategy Board and the Central Intelligence Agency>.
+
+[ARTK|00383]
+d:s| O<Project MKULTRA> D<was> O<a research and development program> Ca<involving> O<the Central Intelligence Agency> and O<branches of the military>.
+
+[ARTK|00384]
+d:s| O<The MKULTRA charter> T<included> O<investigation> Cs<of radiation>, O<electroshock>, O<psychology>, O<psychiatry>, O<sociology>, O<anthropology>, O<graphology>, O<harassment substances>, and O<paramilitary devices and materials>.
+
+[ARTK|00385]
+d:s| O<Research> D<associated with MKULTRA> T<included> -A<studies> Cs<of concussion-induced amnesia> and O<experiments> Ca<involving the use of radar> Cp<to induce sleep> Ca<in animals>.
+
+[ARTK|00386]
+d:s| +A<Director Allen W. Dulles> T<approved> O<MKULTRA> Cs<based on Richard Helms’ recommendation> D<that> O<security considerations> T<precluded> O<use> Cs<of standard contractual procedures>.
+
+[ARTK|00387]
+d:s| O<Established audit procedures> D<were waived> Cp<for MKULTRA>.
+
+[ARTK|00388]
+d:s| O<Some accounts> T<place> O<the inception> Cs<of MKULTRA> Ct<in 1950> Cs<in response to> O<alleged Soviet>, O<Chinese>, and O<North Korean mind-control techniques> D<used> Ca<on United States prisoners of war> Cl<in Korea>.
+
+[ARTK|00389]
+d:s| O<The Church Committee> T<reported> D<that> Cs<because MKULTRA records were destroyed>, O<it> D<was impossible> Cp<to reconstruct fully> O<its overseas operational use>.
+
+[ARTK|00390]
+d:s| O<The Committee> T<determined> D<that> O<overseas use> Cs<of MKULTRA materials> T<began> Ct<in 1953> and Cr<possibly as early as 1950>.
+
+[ARTK|00391]
+d:s| +A<Dr. Sidney Gottlieb> T<testified> D<that> O<several research inquiries> Ct<later organized under the cryptonym MKULTRA> T<began> O<around 1952>.
+
+[ARTK|00392]
+d:s| O<Another account> D<states> D<that> +A<Director Allen W. Dulles> T<approved> O<the program> Ct<on April 13, 1953> Cl<following a recommendation> Ca<from Richard Helms>.
+
+[ARTK|00393]
+d:s| +A<Inspector General John S. Earman> T<reported> D<that> O<MKULTRA> D<had> O<a ten-year duration> Ct<from 1953 to 1963>.
+
+[ARTK|00394]
+d:s| O<The Church Committee> T<discussed> O<MKULTRA> Ca<alongside> O<MKDELTA>.
+
+[ARTK|00395]
+d:s| O<MKULTRA> T<functioned> O<as a research and development arm>, Cr<while> O<MKDELTA> T<denoted> -A<activities> Cs<of the Deputy Director for Plans>.
+
+[ARTK|00396]
+d:s| O<MKDELTA> D<was established> Ct<in October 1952> Cp<for the use> Cs<of biochemicals> Cs<in clandestine operations> and T<may not have been implemented> O<operationally>.
+
+[ARTK|00397]
+d:t| Ct<In 1964>, O<MKULTRA> D<was renamed> O<MKSEARCH> Cp<to continue testing> O<biological>, O<chemical>, and O<radioactive materials> and -A<techniques> Cp<to produce> O<predictable behavioral or physiological changes>.
+
+[ARTK|00398]
+d:s| +A<Richard Helms> D<stated> D<that> O<the reasons> Cp<for waiving standardized administrative controls> D<remained valid> Ct<after eleven years> Cs<of experience with MKULTRA>.
+
+[ARTK|00399]
+d:t| O<Admiral Stansfield Turner> T<testified> Ct<in 1977> D<that> O<research> Cs<on amnesia> and O<sleep-inducing drugs> D<continued> Cs<under MKSEARCH> Ct<through July 1967> Cl<at Georgetown University Hospital>.
+
+[ARTK|00400]
+d:t| Ct<At the September 21 hearing> Cs<of the Senate Committee on Human Resources>, +A<Senator Edward M. Kennedy> T<described> O<MKULTRA>, O<MKSEARCH>, and O<MKCHICKWIT> O<as programs> D<that> D<were activated and deactivated> Cs<within a continuous framework> Ct<over approximately twenty years>.
+
+[ARTK|00401]
+d:s| +A<Senator Edward M. Kennedy> T<characterized> O<these programs> O<as various forms> Cs<of drug testing> D<conducted> Cs<under different cryptonyms>, Ca<including> O<MKULTRA>, O<MKSEARCH>, O<MKCHICKWIT>, and O<MKOFTEN>.
+
+[ARTK|00402]
+d:s| +A<Senator Edward M. Kennedy> D<stated> D<that> Cr<regardless of the cryptonym>, O<there> D<was> O<a continuing program> Ct<from the early 1950s until 1973> Ca<involving both unwitting and later witting subjects>.
+
+[ARTK|00403]
+d:s| Cs<Because the Psychological Strategy Board was not dissolved until September 1953>, O<it> D<is possible> D<that> O<certain members> Cs<of the Board>, Cp<aside from Director Allen W. Dulles>, T<had> -A<awareness> Cs<of these programs>.
+
+[ARTK|00404]
+d:s| O<National security secrecy> T<fostered> -A<selective information sharing> and -A<restricted circles of trust>.
+
+[ARTK|00405]
+d:s| O<Research> Cs<into the Psychological Strategy Board’s role> Cs<in United States psychological warfare>, O<its interactions> Ca<with the Central Intelligence Agency> Cs<under National Security Council 10/5>, and O<its knowledge> Cs<of clandestine programs> T<indicates> D<that> O<the Board> D<did not uniformly approve> O<Central Intelligence Agency covert and clandestine operations>.
+
+[ARTK|00406]
+d:s| O<The Psychological Strategy Board> T<had> O<uneven knowledge> Cs<of the BLUEBIRD>, O<ARTICHOKE>, and O<MKULTRA programs>.
+
+[ARTK|00407]
+d:s| Cl<As a result>, O<these programs> T<proceeded> Cr<without effective challenge> Ca<from the press>, O<the public>, O<Congress>, and Cr<possibly sitting presidents>.
+
+[ARTK|00408]
+d:s| O<Conflicting dates> Cp<for the inception and termination> Cs<of the BLUEBIRD>, O<ARTICHOKE>, and O<MKULTRA programs> T<suggest> -A<inconsistencies> Cs<in the historical record>.
+
+[ARTK|00409]
+d:s| O<Institutional barriers> Cl<such as classification>, O<redaction>, O<compartmentalization>, O<limited copy policies>, and O<document destruction> T<impede> O<comprehensive historical reconstruction>.
+
+[ARTK|00410]
+d:s| O<These barriers> T<make> -A<reconstruction> Cs<of the Psychological Strategy Board’s activities and intelligence community programs> O<incomplete> and Cl<sometimes speculative>.
+
+[ARTK|00411]
+d:s| O<Documenting> O<the Psychological Strategy Board’s knowledge> Cs<of the Central Intelligence Agency’s clandestine programs> D<requires> -A<engagement> Ca<with declassified archives> Cp<in order to render> -A<hidden structures> O<visible>.
+
+[ARTK|00412]
+d:s| +A<Senator Edward M. Kennedy> D<stated> Ct<during the MKULTRA hearings> D<that> O<the intelligence community> T<operates> Cs<under a sacred trust> D<granted> Ca<by the American people>.
+
+[ARTK|00413]
+d:s| +A<Senator Edward M. Kennedy> D<stated> D<that> O<the Central Intelligence Agency’s human experimentation programs> T<violated> O<that trust>.
+
+[ARTK|00414]
+d:s| +A<Senator Edward M. Kennedy> D<stated> D<that> O<destruction of records> Ct<in 1973> T<constituted> O<a further violation>.
+
+[ARTK|00415]
+d:s| +A<Senator Edward M. Kennedy> D<stated> D<that> O<refusal> Ca<by officials> Cp<to recall> -A<details> Cs<of the programs> T<represented> O<an additional violation>.
+
+[ARTK|00416]
+d:s| +A<Senator Edward M. Kennedy> T<concluded> D<that> O<a complete public accounting> Cs<of past abuses> D<is> O<the best safeguard> Ca<against future abuses>.
+
+[ARTK|00417]
+d:s| O<National security secrecy> T<may be justified> Cl<in certain circumstances> Cs<within a democracy>.
+
+[ARTK|00418]
+d:s| O<Secrecy> D<is justified> O<only> Cs<under specified conditions> D<that> T<ensure> O<democratic accountability>.
+
+[ARTK|00419]
+d:s| O<Excesses> Cs<within intelligence operations> T<conflict> Ca<with norms> Cs<of candor and sincerity>.
+
+[ARTK|00420]
+d:s| O<The dissolution> Cs<of the Psychological Strategy Board> T<leaves> O<unresolved questions> Cs<about whether stronger oversight> Cs<under National Security Council 10/5> and O<greater information sharing> T<might have altered> O<the trajectory> Cs<of Central Intelligence Agency clandestine programs>.
