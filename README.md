@@ -161,7 +161,7 @@ In practice this allows the LLM to operate less like a chatbot and more like an 
 
 Large language models struggle with long documents because semantic relationships must be reconstructed from natural language during inference.
 
-Narrative text is immediately understandable to human, but it is semantically opaque for LLM. Transformer must interleave vector-based inference with continuous NLP-driven semantic assembly, effectively combining semantic extraction and reasoning within a single process. This architectural entanglement is inherently unstable, comparable to extracting ore and smelting steel within the same production line, and results in cumulative representational drift during somewhat extended reasoning.
+Narrative text is immediately understandable to human, but it is semantically opaque to LLM. Transformer must interleave vector-based inference with continuous NLP-driven semantic assembly, effectively combining semantic extraction and reasoning within a single process. This architectural entanglement is inherently unstable, comparable to extracting ore and smelting steel within the same production line, and results in cumulative representational drift during somewhat extended reasoning.
 
 Also, narrative text hides:
 
