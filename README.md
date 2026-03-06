@@ -35,8 +35,11 @@ Because it is CLUE-encoded, the model can **reason with explicit structure** rat
 
 **Available CLUE Transcripts:**  
 [**the Book of Genesis"**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/GNSS-CLUE.txt)
+
 [**Behavioral Health During the COVID-19 Pandemic**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/BHVM-CLUE.txt)
+
 [**the Artichoke Program**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/ARTICHOKE-clue.txt)
+
 [**the Church Report**](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/DEMO/CHURCH-clue.txt)
 
 ---
