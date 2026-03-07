@@ -1,16 +1,33 @@
 # CLUE: Clause-Level Unified Encoding
 ### A Semantic Intermediate Representation (IR) for Transformer-Based Document Analysis
-
 #### _Built by a Transformer upstream, interpreted by a Transformer downstream_
+
 ---
 
 ⚠️ **CLUE becomes critical when:**
-
 - organizations must analyze more long, complex documents than available human resources allow
 - those documents directly inform decisions in legal, financial, intelligence, or market-competitive domains
 - every analytical claim must be traceable to its immediate source
 - analytical errors carry material, legal, or organizational risk
 - time constraints and document complexity make manual analysis impractical
+
+---
+
+## 📄 White Paper
+
+**[Why Structured Semantic Streams Improve LLM Reasoning over Long Documents](https://github.com/alexshlenski/Clause-Level-Unified-Encoding/blob/main/Documentation/CLUE_White_Paper.pdf)**
+
+A technical paper for engineers and researchers explaining the mechanism behind CLUE's observed effects.
+
+The paper covers:
+- why transformer attention degrades over long documents (attention diffusion, entity drift, effective context collapse)
+- how a semantic intermediate representation interacts with functional attention heads to reduce this degradation
+- why IR-encoded input increases semantic density and effective reasoning range within an unchanged context window
+- why the same models that struggle with long-document interpretation can reliably generate CLUE markup sentence-by-sentence
+
+The paper references mechanistic interpretability research (Anthropic Transformer Circuits, Olsson et al. 2022, Elhage et al. 2021, Clark et al. 2019) and draws the compiler IR analogy in detail.
+
+Theoretical sections on semantic drift and embedding space attractors are clearly marked and can be skipped without loss of the engineering argument.
 
 ---
 
@@ -20,10 +37,8 @@ Want to see CLUE in action in under a minute?
 
 1. **Choose and download a CLUE Transcript**  
    → See the available demo Transcripts below
-
 2. **Upload the Transcript to** [**Claude Sonnet 4.6**](https://claude.ai/)  
    → No fine-tuning or prompt engineering required.
-
 3. **Start asking questions**  
    → Suggested queries are listed under each Transcript below
 
@@ -37,7 +52,6 @@ Because it is CLUE-encoded, the model can **reason with explicit structure** rat
 
 A long-form narrative corpus demonstrating that CLUE can turn a highly complex literary-religious text into a structured semantic event stream.  
 This Transcript is useful for testing:
-
 - long-range narrative reasoning
 - temporal reconstruction
 - covenant and promise tracking
@@ -45,7 +59,6 @@ This Transcript is useful for testing:
 - character interaction mapping across many chapters
 
 **Suggested queries:**
-
 - "Summarize the timeline of events in Genesis"
 - "Who are all the descendants of Abraham?"
 - "Create a Mermaid diagram of the major biblical periods"
@@ -61,7 +74,6 @@ This Transcript is useful for testing:
 
 A compact policy and public-health Transcript showing that CLUE is not limited to historical or literary corpora.  
 This Transcript is useful for testing:
-
 - policy-document reasoning
 - public-health causality
 - funding and regulatory analysis
@@ -71,7 +83,6 @@ This Transcript is useful for testing:
 This demo is intentionally small and currently has **no entity registry**, showing that CLUE already improves document operability even at the Transcript-only level.
 
 **Suggested queries:**
-
 - "Summarize the causal chain between the pandemic and behavioral health deterioration"
 - "List all federal agencies mentioned and describe their roles"
 - "Identify all funding actions and appropriations mentioned in the document"
@@ -85,7 +96,6 @@ This demo is intentionally small and currently has **no entity registry**, showi
 
 A covert-program and intelligence-history Transcript suitable for demonstrating structured reasoning over classified-style historical material.  
 This corpus is especially useful for testing:
-
 - institutional relationship reconstruction
 - covert program genealogy
 - behavioral-control and interrogation program tracing
@@ -95,7 +105,6 @@ This corpus is especially useful for testing:
 This Transcript is stronger than a purely literary demo for audiences interested in intelligence, defense, or national-security applications.
 
 **Suggested queries:**
-
 - "Map the institutional chain linking the Psychological Strategy Board to CIA covert behavioral programs"
 - "List all programs related to behavior control, coercion, or interrogation"
 - "Reconstruct the causal chain from policy directives to covert program oversight"
@@ -109,7 +118,6 @@ This Transcript is stronger than a purely literary demo for audiences interested
 
 A large investigatory-hearing Transcript based on the 1975 Church Committee hearings.  
 This is a high-value demonstration corpus because it combines:
-
 - witnesses
 - exhibits
 - institutional actors
@@ -118,7 +126,6 @@ This is a high-value demonstration corpus because it combines:
 - an integrated **entity registry**
 
 This Transcript is useful for testing:
-
 - accountability trails
 - witness and exhibit tracking
 - long-range institutional memory
@@ -128,7 +135,6 @@ This Transcript is useful for testing:
 It is especially suitable for demonstrating CLUE on a real-world, document-heavy investigative record.
 
 **Suggested queries:**
-
 - "Who retained the shellfish toxin, and how was that decision explained?"
 - "List all witnesses who appeared in the hearings and summarize their roles"
 - "Which organizations participated in the program described in the hearings?"
@@ -164,7 +170,6 @@ Large language models struggle with long documents because semantic relationship
 Narrative text is immediately understandable to humans, but it is semantically opaque to LLMs. Transformers must interleave vector-based inference with continuous NLP-driven semantic assembly, effectively combining semantic extraction and reasoning within a single process. This architectural entanglement is inherently unstable, comparable to combining an industrial JSON parser and a general ledger viewer in the same executable, and it leads to cumulative representational drift during extended reasoning.
 
 Also, narrative text hides:
-
 - event boundaries
 - actor roles
 - causal links
@@ -173,7 +178,6 @@ Also, narrative text hides:
 CLUE externalizes this structure before the model sees the text.
 
 The document is converted into a **clause-aligned semantic surface** where each statement exposes:
-
 - actors
 - actions
 - objects
@@ -190,7 +194,6 @@ This reduces ambiguity and allows the model to operate directly on explicit even
 A CLUE Transcript preserves the exact wording of the original document while adding a stable semantic scaffolding.
 
 This scaffolding enables LLMs to reason over:
-
 - events
 - actors
 - timelines
@@ -199,21 +202,19 @@ This scaffolding enables LLMs to reason over:
 without altering the underlying language.
 
 ### Key Benefits
-
 - No NLP parsing pipelines required
 - No co-reference resolution required
 - Reduced hallucination risk
 - Lower token waste
 - Explicit traceability from claim → source clause
 
-Inference is limited to aligning encoded semantics with the model’s internal world knowledge.
+Inference is limited to aligning encoded semantics with the model's internal world knowledge.
 
 ---
 
 ## 4. Primary Consumers of CLUE
 
 CLUE is designed for environments handling large volumes of operational text, including:
-
 - Intelligence reports
 - Mission debriefs
 - Incident timelines
@@ -221,7 +222,6 @@ CLUE is designed for environments handling large volumes of operational text, in
 - Compliance logs
 
 These domains frequently face:
-
 - analyst overload
 - unreliable LLM outputs on long text
 - lack of traceability between conclusions and evidence
@@ -233,7 +233,6 @@ CLUE moves structural discipline **upstream**, removing ambiguity before the LLM
 ## 5. What CLUE Does
 
 CLUE converts a document into a CLUE Transcript that:
-
 - aligns each statement at the clause level
 - exposes semantic roles (**subject**, **predicate**, **object**, **adjunct**)
 - preserves original language verbatim
@@ -254,32 +253,26 @@ It prepares text so that reasoning systems can operate with explicit structure a
 
 1. **CLUE Transcript**  
    Clause-resolved, human-readable, machine-operable document.
-
 2. **Deterministic Clause Map**  
    Stable identifiers for reference, citation, and change tracking.
-
 3. **Structural Validation**
 
    Integrity checks confirming:
-
    - no words added, removed, or altered
    - conformance with the CLUE specification
    - correct clause indexing and cross-references
 
 ### Ideal For
-
 - document-heavy analytical backlogs
 - machine-assisted review teams
 - high-consequence LLM deployments
 
 Example domains:
-
 - defense and intelligence
 - risk and compliance
 - complex operational environments
 
 ### Example Use Cases
-
 - incident reconstruction
 - after-action review normalization
 - investigative narrative tracking
@@ -294,15 +287,12 @@ Example domains:
 1. **Ingest**
 
    Client provides documents (TXT, DOCX, PDF, etc.)
-
 2. **CLUE Encoding**
 
    Text is transformed into a CLUE Transcript exposing clause structure and semantic roles.
-
 3. **Verification**
 
    Deterministic validation confirms structural correctness and faithfulness to the source text.
-
 4. **Delivery**
 
    Outputs are provided in agreed formats for integration with LLM or analytics workflows.
@@ -312,7 +302,6 @@ Example domains:
 ## 8. What CLUE Is Not
 
 CLUE is **not**:
-
 - an LLM
 - a summarization system
 - an information extractor
@@ -330,19 +319,14 @@ It simply exposes structure so that reasoning systems can operate over explicit 
 CLUE is designed for environments where verifiability matters.
 
 Key design properties:
-
 - **Verbatim preservation**  
   Original language remains unchanged.
-
 - **Determinism**  
   The same input always produces the same output.
-
 - **Clause-level citation**  
   Every analytical statement can reference a specific clause.
-
 - **Human readability**  
   No special tools required.
-
 - **Machine-operable structure**  
   Explicit and inspectable semantic scaffolding.
 
@@ -351,20 +335,17 @@ Key design properties:
 ## 10. Engagement Model (Typical)
 
 **Pilot**
-
 - targeted corpus
 - defined success metrics
 - output validation
 - LLM integration demonstration
 
 **Production**
-
 - batch processing
 - packaging standards
 - QA procedures
 
 **Sustainment**
-
 - schema updates
 - workflow integration
 - optional schema extensions
@@ -376,7 +357,6 @@ For regulated organizations or government clients (e.g., MITRE, In-Q-Tel, resear
 ## 11. Contact / Evaluation
 
 When evaluating CLUE, consider:
-
 - determinism across repeated runs
 - stability of clause identifiers
 - reduction of hallucination compared with raw text
