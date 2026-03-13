@@ -150,9 +150,9 @@ It is especially suitable for demonstrating CLUE on a real-world, document-heavy
 
 ## 1. Purpose
 
-**CLUE** (Clause-Level Unified Encoding) is a technology that transforms unstructured English language documents into **deterministic, clause-resolved semantic surfaces**.
+**CLUE** (Clause-Level Unified Encoding) is a technology that transforms unstructured English language documents into **deterministic, clause-resolved semantic transcripts**.
 
-These surfaces preserve the original wording while exposing latent logic, temporal order, dependencies, and interactions between entities.
+These transcripts preserve the original wording while exposing latent logic, temporal order, dependencies, and interactions between entities.
 
 Once CLUE-encoded, documents become directly operable by top-tier LLMs.  
 The model no longer needs to reconstruct events from narrative text during inference.
