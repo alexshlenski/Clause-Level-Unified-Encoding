@@ -1,0 +1,2121 @@
+================================================================
+RENYXA COGNITIVE FOUNDATION, INC.
+CLUE TRANSCRIPT v2.0 OFFICIAL HEADER
+----------------------------------------------------------------
+Header text is unalienated part of the CLUE Transcript.
+Any upstream alteration invalidates downstream processing.
+
+Each module MUST preserve its XREF identifier
+in format [DOCID|NNNNN].
+================================================================
+Syntax:
+d:x# <SEGMENTS>
+
+x ∈ {t, s}
+t = transition present
+s = statica only
+
+d = diegetic line
+n = non-diegetic line
+
+Valid line prefixes:
+d:t#
+d:s#
+n:t#
+n:s#
+
+Atomic predication segments:
+
+- Agents / bearers
++A  = active initiator / emitter of transition
+-A  = affected bearer / patient / entity with which the transition happens
+O   = object / theme / recipient / bearer of stative predication
+
+- Quantified agents / bearers
++AQ = quantified active initiator
+-AQ = quantified affected bearer
+OQ  = quantified object / theme / quantified bearer of stative predication
+
+- Predicate segments
+T   = transition / action / event / process
+D   = stative predicate / declaration / fixed relation
+
+Circumstantial layer uses script-style envelopes:
+
+tm| ... |mt = time
+lc| ... |cl = location
+mn| ... |nm = manner
+pr| ... |rp = purpose
+cu| ... |uc = cause
+ac| ... |ca = accompany
+sp| ... |ps = scope
+dg| ... |gd = degree
+cn| ... |nc = concession
+cm| ... |mc = comparison
+cd| ... |dc = condition
+pq| ... |qp = prerequisite
+rs| ... |sr = consequence
+
+Operational rules:
+
+1. L1 predication uses only:
+   +A, -A, O, +AQ, -AQ, OQ, T, D
+
+2. Quantifier never lives as a standalone segment.
+   Quantifier is encoded only inside a quantified participant:
+   +AQ / -AQ / OQ
+
+3. L2 circumstantial envelopes may contain L1 segments.
+   L1 segments do not contain L2 envelopes.
+
+4. L3 is a line prefix only.
+   It does not segment the sentence internally.
+
+5. If all markup is removed, the underlying sentence surface
+   must remain byte-identical to the source line.
+
+================================================================
+END OF THE OFFICIAL HEADER
+================================================================
+REGISTRY-E OUTPUT v6.6
+CORPUS: MZBQ (UNDRO 87/0440 -- MOZAMBIQUE)
+================================================================
+E0001 | Person:Official | Secretary-General | | MZBQ|00001,MZBQ|00027,MZBQ|00028,MZBQ|00030,MZBQ|00031,MZBQ|00032,MZBQ|00033,MZBQ|00034,MZBQ|00037,MZBQ|00038,MZBQ|00039
+E0002 | Person:Official | Mr. Abdulrahim A. Farah | Farah | MZBQ|00002,MZBQ|00301,MZBQ|00415,MZBQ|00458
+E0003 | Person:Official | Mr. Charles H. La Muniere | La Muniere | MZBQ|00002,MZBQ|00301,MZBQ|00415,MZBQ|00458
+E0004 | Person:Official | Mr. Hein-Caceres | | MZBQ|00030
+E0005 | Person:Official | Mario da Graca Machungo | Prime Minister | MZBQ|00343,MZBQ|00419,MZBQ|00421,MZBQ|00422
+E0006 | Person:Official | Vice Minister Ratilal | | MZBQ|00671,MZBQ|00724
+E0007 | Person:Official | Y. Lagier | | MZBQ|00618
+E0008 | Person:Official | B. Hammarstroem | | MZBQ|00618
+E0009 | Organization | UNDRO | | MZBQ|00002,MZBQ|00040,MZBQ|00300,MZBQ|00301,MZBQ|00344,MZBQ|00350,MZBQ|00351,MZBQ|00352,MZBQ|00354,MZBQ|00480,MZBQ|00481,MZBQ|00482,MZBQ|00483,MZBQ|00542,MZBQ|00545,MZBQ|00546,MZBQ|00566,MZBQ|00567,MZBQ|00568,MZBQ|00614,MZBQ|00615,MZBQ|00617,MZBQ|00618,MZBQ|00630,MZBQ|00633,MZBQ|00634,MZBQ|00635,MZBQ|00668,MZBQ|00692,MZBQ|00697,MZBQ|00703,MZBQ|00718,MZBQ|00950,MZBQ|00959,MZBQ|00963
+E0010 | Organization | UNICEF | | MZBQ|00002,MZBQ|00065,MZBQ|00198,MZBQ|00201,MZBQ|00214,MZBQ|00356,MZBQ|00358,MZBQ|00359,MZBQ|00370,MZBQ|00387,MZBQ|00515,MZBQ|00516,MZBQ|00519,MZBQ|00542,MZBQ|00543,MZBQ|00544,MZBQ|00545,MZBQ|00573,MZBQ|00583,MZBQ|00630,MZBQ|00631,MZBQ|00632,MZBQ|00633,MZBQ|00637,MZBQ|00638,MZBQ|00694,MZBQ|00696,MZBQ|00719,MZBQ|00740,MZBQ|00914,MZBQ|00915,MZBQ|00918,MZBQ|00921,MZBQ|00940,MZBQ|00952
+E0011 | Organization | WFP | | MZBQ|00002,MZBQ|00123,MZBQ|00348,MZBQ|00360,MZBQ|00373,MZBQ|00374,MZBQ|00375,MZBQ|00376,MZBQ|00377,MZBQ|00378,MZBQ|00379,MZBQ|00380,MZBQ|00381,MZBQ|00383,MZBQ|00384,MZBQ|00412,MZBQ|00461,MZBQ|00516,MZBQ|00542,MZBQ|00571,MZBQ|00574,MZBQ|00575,MZBQ|00577,MZBQ|00579,MZBQ|00606,MZBQ|00628,MZBQ|00630,MZBQ|00634,MZBQ|00641,MZBQ|00642,MZBQ|00672,MZBQ|00706,MZBQ|00712,MZBQ|00713,MZBQ|00952,MZBQ|00954,MZBQ|00955,MZBQ|00956,MZBQ|00957,MZBQ|00958,MZBQ|00959,MZBQ|00960,MZBQ|00961,MZBQ|00962
+E0012 | Organization | DPCCN | | MZBQ|00062,MZBQ|00069,MZBQ|00070,MZBQ|00071,MZBQ|00072,MZBQ|00073,MZBQ|00074,MZBQ|00077,MZBQ|00125,MZBQ|00138,MZBQ|00356,MZBQ|00389,MZBQ|00390,MZBQ|00392,MZBQ|00412,MZBQ|00578,MZBQ|00670
+E0013 | Organization | UNHCR | | MZBQ|00002,MZBQ|00034,MZBQ|00036,MZBQ|00348,MZBQ|00371,MZBQ|00372,MZBQ|00481,MZBQ|00673,MZBQ|00674,MZBQ|00675,MZBQ|00683,MZBQ|00694
+E0014 | Organization | UNDP | | MZBQ|00002,MZBQ|00065,MZBQ|00348,MZBQ|00367,MZBQ|00952
+E0015 | Organization | FAO | | MZBQ|00002,MZBQ|00348,MZBQ|00462,MZBQ|00546,MZBQ|00584,MZBQ|00585,MZBQ|00634,MZBQ|00935
+E0016 | Organization | WHO | | MZBQ|00002,MZBQ|00348,MZBQ|00387,MZBQ|00526,MZBQ|00543,MZBQ|00631,MZBQ|00684,MZBQ|00685,MZBQ|00694
+E0017 | Organization | ILO | | MZBQ|00002
+E0018 | Organization | UNSCERO | | MZBQ|00614,MZBQ|00618,MZBQ|00630,MZBQ|00633,MZBQ|00634,MZBQ|00635,MZBQ|00668,MZBQ|00950
+E0019 | Organization | UNV | | MZBQ|00348,MZBQ|00368,MZBQ|00369,MZBQ|00370
+E0020 | Organization | CARE | CARE International^CARE Logistics Support Unit | MZBQ|00062,MZBQ|00125,MZBQ|00349,MZBQ|00389,MZBQ|00390,MZBQ|00517,MZBQ|00558,MZBQ|00559
+E0021 | Organization | ICRC | | MZBQ|00349,MZBQ|00396,MZBQ|00593,MZBQ|00594,MZBQ|00595,MZBQ|00596,MZBQ|00597,MZBQ|00621,MZBQ|00695,MZBQ|00941
+E0022 | Organization | LRCS | | MZBQ|00349,MZBQ|00392,MZBQ|00394,MZBQ|00396,MZBQ|00528,MZBQ|00695,MZBQ|00941
+E0023 | Organization | LWF | Lutheran World Federation | MZBQ|00349,MZBQ|00397,MZBQ|00398,MZBQ|00528,MZBQ|00603,MZBQ|00696,MZBQ|00936,MZBQ|00937
+E0024 | Organization | Oxfam | Oxfam (UK)^Oxfam UK | MZBQ|00349,MZBQ|00406,MZBQ|00522,MZBQ|00528,MZBQ|00549,MZBQ|00601,MZBQ|00610,MZBQ|00612,MZBQ|00620,MZBQ|00627,MZBQ|00696,MZBQ|00710,MZBQ|00711,MZBQ|00713,MZBQ|00715,MZBQ|00717,MZBQ|00835,MZBQ|00942
+E0025 | Organization | Medecins Sans Frontieres of Belgium | MSF Belgium | MZBQ|00349,MZBQ|00399,MZBQ|00400,MZBQ|00598,MZBQ|00599,MZBQ|00686,MZBQ|00967
+E0026 | Organization | Medecins Sans Frontieres of France | MSF France | MZBQ|00401,MZBQ|00402,MZBQ|00403,MZBQ|00404
+E0027 | Organization | Medecins du Monde | Medecins du Monde/Hopital Sans Frontieres | MZBQ|00349,MZBQ|00352
+E0028 | Organization | German Agro Action | | MZBQ|00349,MZBQ|00590,MZBQ|00591,MZBQ|00592,MZBQ|00752
+E0029 | Organization | Community Aid Abroad | | MZBQ|00349,MZBQ|00352,MZBQ|00589,MZBQ|00612
+E0030 | Organization | Caritas | Caritas Internationalis | MZBQ|00349,MZBQ|00412,MZBQ|00518,MZBQ|00519,MZBQ|00528,MZBQ|00550,MZBQ|00551,MZBQ|00552,MZBQ|00553,MZBQ|00696,MZBQ|00942
+E0031 | Organization | World Vision International | World Vision | MZBQ|00349,MZBQ|00412,MZBQ|00413,MZBQ|00528,MZBQ|00606,MZBQ|00607,MZBQ|00608,MZBQ|00688,MZBQ|00689,MZBQ|00690,MZBQ|00696
+E0032 | Organization | Save the Children Fund UK | Save the Children (UK)^SCF/UK | MZBQ|00406,MZBQ|00560,MZBQ|00561,MZBQ|00687,MZBQ|00835,MZBQ|00942
+E0033 | Organization | Save the Children USA | Save the Children (USA) | MZBQ|00410
+E0034 | Organization | Redd Barna | | MZBQ|00349,MZBQ|00528,MZBQ|00549,MZBQ|00601,MZBQ|00602,MZBQ|00835
+E0035 | Organization | ADRA | Adventist Development and Relief Agency | MZBQ|00349,MZBQ|00528,MZBQ|00696,MZBQ|00942
+E0036 | Organization | USA for Africa | | MZBQ|00726,MZBQ|00738
+E0037 | Organization | Air Serv International | | MZBQ|00349
+E0038 | Organization | World Council of Churches | WCC | MZBQ|00349,MZBQ|00411,MZBQ|00603,MZBQ|00604,MZBQ|00605
+E0039 | Organization | Eduardo Mondlane Foundation | | MZBQ|00349,MZBQ|00520,MZBQ|00548,MZBQ|00612,MZBQ|00835
+E0040 | Organization | Mozambican Red Cross | | MZBQ|00349,MZBQ|00392,MZBQ|00394,MZBQ|00395,MZBQ|00412,MZBQ|00528
+E0041 | Organization | British Red Cross Society | | MZBQ|00621,MZBQ|00622
+E0042 | Organization | UDAAS | | MZBQ|00195,MZBQ|00201,MZBQ|00210,MZBQ|00222,MZBQ|00226
+E0043 | Organization | GEOMOC | | MZBQ|00201,MZBQ|00210
+E0044 | Organization | CENE | National Executive Commission for Emergency | MZBQ|00486,MZBQ|00880,MZBQ|00883,MZBQ|00951
+E0045 | Organization | LAM | | MZBQ|00063,MZBQ|00805
+E0046 | Organization | USAID | | MZBQ|00065,MZBQ|00126
+E0047 | Organization | EEC | | MZBQ|00454,MZBQ|00525,MZBQ|00556,MZBQ|00599,MZBQ|00698,MZBQ|00947,MZBQ|00952
+E0048 | Organization:Government | Government of Mozambique | the Government | MZBQ|00001,MZBQ|00003,MZBQ|00031,MZBQ|00034,MZBQ|00037,MZBQ|00039,MZBQ|00042,MZBQ|00137,MZBQ|00191,MZBQ|00192,MZBQ|00209,MZBQ|00343,MZBQ|00418,MZBQ|00422,MZBQ|00563,MZBQ|00720,MZBQ|00952
+E0049 | Asset:Vehicle | Cinq Juin | The Cinq Juin | MZBQ|00381,MZBQ|00382,MZBQ|00383,MZBQ|00417,MZBQ|00746
+E0050 | Asset:Vehicle | Idun | the Idun | MZBQ|00383,MZBQ|00746
+E0051 | Location:Country | Mozambique | | MZBQ|00001,MZBQ|00005,MZBQ|00006,MZBQ|00026,MZBQ|00031,MZBQ|00034,MZBQ|00037,MZBQ|00039,MZBQ|00418
+E0052 | Location:City | Maputo | | MZBQ|00001,MZBQ|00013,MZBQ|00025,MZBQ|00030,MZBQ|00064,MZBQ|00069,MZBQ|00117,MZBQ|00122,MZBQ|00265,MZBQ|00266,MZBQ|00267,MZBQ|00268,MZBQ|00269,MZBQ|00272,MZBQ|00273,MZBQ|00274,MZBQ|00275,MZBQ|00276,MZBQ|00306,MZBQ|00307,MZBQ|00308,MZBQ|00309,MZBQ|00310,MZBQ|00313,MZBQ|00314,MZBQ|00315,MZBQ|00316,MZBQ|00317,MZBQ|00350,MZBQ|00353,MZBQ|00354,MZBQ|00377,MZBQ|00378,MZBQ|00379,MZBQ|00380,MZBQ|00381,MZBQ|00486,MZBQ|00487,MZBQ|00619,MZBQ|00621,MZBQ|00671,MZBQ|00681
+E0053 | Location:City | Beira | | MZBQ|00064,MZBQ|00117,MZBQ|00122,MZBQ|00206,MZBQ|00210,MZBQ|00265,MZBQ|00266,MZBQ|00267,MZBQ|00268,MZBQ|00269,MZBQ|00272,MZBQ|00273,MZBQ|00274,MZBQ|00275,MZBQ|00276,MZBQ|00306,MZBQ|00307,MZBQ|00308,MZBQ|00309,MZBQ|00310,MZBQ|00313,MZBQ|00314,MZBQ|00315,MZBQ|00316,MZBQ|00317,MZBQ|00351,MZBQ|00461,MZBQ|00596,MZBQ|00619,MZBQ|00621
+E0054 | Location:City | Quelimane | | MZBQ|00122,MZBQ|00596,MZBQ|00619,MZBQ|00621,MZBQ|00687,MZBQ|00878,MZBQ|00961
+E0055 | Location:City | Nacala | | MZBQ|00621,MZBQ|00829
+E0056 | Location:City | Pemba | | MZBQ|00621,MZBQ|00859
+E0057 | Location:Region | Inhambane | | MZBQ|00015,MZBQ|00025,MZBQ|00083,MZBQ|00174,MZBQ|00201,MZBQ|00214,MZBQ|00264,MZBQ|00305,MZBQ|00352,MZBQ|00359,MZBQ|00373,MZBQ|00376,MZBQ|00394,MZBQ|00399,MZBQ|00400,MZBQ|00407,MZBQ|00411,MZBQ|00463,MZBQ|00468,MZBQ|00554,MZBQ|00598,MZBQ|00600,MZBQ|00686,MZBQ|00733,MZBQ|00936,MZBQ|00937,MZBQ|00967
+E0058 | Location:Region | Sofala | | MZBQ|00008,MZBQ|00016,MZBQ|00156,MZBQ|00157,MZBQ|00174,MZBQ|00190,MZBQ|00199,MZBQ|00205,MZBQ|00206,MZBQ|00207,MZBQ|00264,MZBQ|00305,MZBQ|00352,MZBQ|00373,MZBQ|00376,MZBQ|00393,MZBQ|00407,MZBQ|00411,MZBQ|00459,MZBQ|00461,MZBQ|00471,MZBQ|00482,MZBQ|00494,MZBQ|00579,MZBQ|00585,MZBQ|00586,MZBQ|00587,MZBQ|00595,MZBQ|00704,MZBQ|00924,MZBQ|00936,MZBQ|00937
+E0059 | Location:Region | Zambezia | | MZBQ|00008,MZBQ|00019,MZBQ|00156,MZBQ|00174,MZBQ|00199,MZBQ|00264,MZBQ|00305,MZBQ|00360,MZBQ|00373,MZBQ|00393,MZBQ|00394,MZBQ|00407,MZBQ|00409,MZBQ|00413,MZBQ|00459,MZBQ|00473,MZBQ|00482,MZBQ|00494,MZBQ|00560,MZBQ|00585,MZBQ|00586,MZBQ|00603,MZBQ|00687,MZBQ|00688,MZBQ|00960,MZBQ|00961
+E0060 | Location:Region | Tete | | MZBQ|00008,MZBQ|00018,MZBQ|00035,MZBQ|00156,MZBQ|00157,MZBQ|00174,MZBQ|00190,MZBQ|00194,MZBQ|00195,MZBQ|00199,MZBQ|00200,MZBQ|00215,MZBQ|00216,MZBQ|00217,MZBQ|00264,MZBQ|00305,MZBQ|00369,MZBQ|00372,MZBQ|00393,MZBQ|00407,MZBQ|00413,MZBQ|00459,MZBQ|00472,MZBQ|00477,MZBQ|00590,MZBQ|00592,MZBQ|00655,MZBQ|00656,MZBQ|00676,MZBQ|00688,MZBQ|00691,MZBQ|00720,MZBQ|00926,MZBQ|00927,MZBQ|00962
+E0061 | Location:Region | Niassa | | MZBQ|00020,MZBQ|00264,MZBQ|00305,MZBQ|00393,MZBQ|00407,MZBQ|00474,MZBQ|00601,MZBQ|00602,MZBQ|00620,MZBQ|00704,MZBQ|00709,MZBQ|00712,MZBQ|00714,MZBQ|00716,MZBQ|00718,MZBQ|00719,MZBQ|00720,MZBQ|00921
+E0062 | Location:Region | Manica | | MZBQ|00017,MZBQ|00083,MZBQ|00174,MZBQ|00190,MZBQ|00205,MZBQ|00210,MZBQ|00214,MZBQ|00264,MZBQ|00305,MZBQ|00369,MZBQ|00376,MZBQ|00404,MZBQ|00413,MZBQ|00459,MZBQ|00470,MZBQ|00580,MZBQ|00590,MZBQ|00591,MZBQ|00608,MZBQ|00653,MZBQ|00924
+E0063 | Location:Region | Gaza | | MZBQ|00014,MZBQ|00025,MZBQ|00083,MZBQ|00174,MZBQ|00264,MZBQ|00305,MZBQ|00373,MZBQ|00376,MZBQ|00407,MZBQ|00411,MZBQ|00412,MZBQ|00463,MZBQ|00469,MZBQ|00520,MZBQ|00548,MZBQ|00606,MZBQ|00704
+E0064 | Location:Region | Nampula | | MZBQ|00156,MZBQ|00157,MZBQ|00466,MZBQ|00475,MZBQ|00595,MZBQ|00709,MZBQ|00789
+E0065 | Location:Region | Cabo Delgado | | MZBQ|00359,MZBQ|00369,MZBQ|00789
+E0066 | Location:Country | Malawi | | MZBQ|00034,MZBQ|00035,MZBQ|00199,MZBQ|00280,MZBQ|00321,MZBQ|00371,MZBQ|00372,MZBQ|00477,MZBQ|00626,MZBQ|00673,MZBQ|00683,MZBQ|00720,MZBQ|00797,MZBQ|00858
+E0067 | Location:Country | Zimbabwe | | MZBQ|00034,MZBQ|00206,MZBQ|00280,MZBQ|00321,MZBQ|00477,MZBQ|00580,MZBQ|00960
+E0068 | Location:Country | Zambia | | MZBQ|00034,MZBQ|00280,MZBQ|00321,MZBQ|00477,MZBQ|00858
+E0069 | Location:Country | South Africa | | MZBQ|00034
+E0070 | Location:Country | Swaziland | | MZBQ|00034
+E0071 | Location:Country | Italy | | MZBQ|00445,MZBQ|00525,MZBQ|00619,MZBQ|00699,MZBQ|00770,MZBQ|00944,MZBQ|00964
+E0072 | Location:Country | Canada | | MZBQ|00439,MZBQ|00525,MZBQ|00610,MZBQ|00615,MZBQ|00683,MZBQ|00699,MZBQ|00959
+E0073 | Location:Country | Sweden | | MZBQ|00450,MZBQ|00525,MZBQ|00575,MZBQ|00610,MZBQ|00611,MZBQ|00693,MZBQ|00699,MZBQ|00952
+E0074 | Location:Country | United States | USA^USAID | MZBQ|00065,MZBQ|00126,MZBQ|00410,MZBQ|00453,MZBQ|00525,MZBQ|00699,MZBQ|00939,MZBQ|00944,MZBQ|00945,MZBQ|00952
+E0075 | Location:Country | United Kingdom | UK | MZBQ|00406,MZBQ|00452,MZBQ|00483,MZBQ|00522,MZBQ|00523,MZBQ|00525,MZBQ|00549,MZBQ|00561,MZBQ|00610,MZBQ|00611,MZBQ|00621,MZBQ|00683,MZBQ|00693,MZBQ|00695,MZBQ|00699,MZBQ|00939,MZBQ|00941,MZBQ|00944,MZBQ|00945,MZBQ|00952
+E0076 | Location:Country | Netherlands | | MZBQ|00446,MZBQ|00520,MZBQ|00525,MZBQ|00548,MZBQ|00611,MZBQ|00621,MZBQ|00627,MZBQ|00695,MZBQ|00699,MZBQ|00713,MZBQ|00939,MZBQ|00944,MZBQ|00945,MZBQ|00952
+E0077 | Location:Country | Australia | | MZBQ|00352,MZBQ|00435,MZBQ|00525,MZBQ|00589,MZBQ|00606,MZBQ|00699,MZBQ|00713,MZBQ|00944,MZBQ|00945
+E0078 | Location:Country | Norway | | MZBQ|00448,MZBQ|00525,MZBQ|00549,MZBQ|00601,MZBQ|00693,MZBQ|00699,MZBQ|00713,MZBQ|00944,MZBQ|00945
+E0079 | Location:Country | Denmark | | MZBQ|00441,MZBQ|00525,MZBQ|00610,MZBQ|00611,MZBQ|00621,MZBQ|00695,MZBQ|00699,MZBQ|00939,MZBQ|00944,MZBQ|00945
+E0080 | Location:Country | Finland | | MZBQ|00442,MZBQ|00525,MZBQ|00610,MZBQ|00611,MZBQ|00695,MZBQ|00699,MZBQ|00944,MZBQ|00945
+E0081 | Location:Country | Switzerland | | MZBQ|00525,MZBQ|00567,MZBQ|00575,MZBQ|00610,MZBQ|00617,MZBQ|00683,MZBQ|00693,MZBQ|00699,MZBQ|00939,MZBQ|00944,MZBQ|00945,MZBQ|00952
+E0082 | Location:Country | Austria | | MZBQ|00436,MZBQ|00525,MZBQ|00611,MZBQ|00699,MZBQ|00812,MZBQ|00939,MZBQ|00944,MZBQ|00945
+E0083 | Location:Country | Belgium | | MZBQ|00399,MZBQ|00437,MZBQ|00525,MZBQ|00598,MZBQ|00599,MZBQ|00686,MZBQ|00699,MZBQ|00944,MZBQ|00945,MZBQ|00967
+E0084 | Location:Country | France | | MZBQ|00401,MZBQ|00443,MZBQ|00521,MZBQ|00525,MZBQ|00554,MZBQ|00587,MZBQ|00699,MZBQ|00944,MZBQ|00945
+E0085 | Location:Country | Germany | Federal Republic of Germany | MZBQ|00349,MZBQ|00444,MZBQ|00525,MZBQ|00590,MZBQ|00591,MZBQ|00592,MZBQ|00610,MZBQ|00621,MZBQ|00683,MZBQ|00695,MZBQ|00699,MZBQ|00713,MZBQ|00939,MZBQ|00941,MZBQ|00944,MZBQ|00945,MZBQ|00952
+E0086 | Location:City | Geneva | | MZBQ|00039,MZBQ|00603,MZBQ|00619,MZBQ|00739
+E0087 | Location:City | Moatize | | MZBQ|00195,MZBQ|00199,MZBQ|00200,MZBQ|00676,MZBQ|00677,MZBQ|00678,MZBQ|00682
+E0088 | Location:City | Benga | | MZBQ|00679,MZBQ|00681,MZBQ|00682
+E0089 | Location:City | Zobue | | MZBQ|00199,MZBQ|00680
+E0090 | Location:City | Lichinga | | MZBQ|00707,MZBQ|00709,MZBQ|00720,MZBQ|00797,MZBQ|00824
+E0091 | Location:City | Mandimba | | MZBQ|00626,MZBQ|00704,MZBQ|00706,MZBQ|00707,MZBQ|00714,MZBQ|00716,MZBQ|00717,MZBQ|00718,MZBQ|00720
+E0092 | Location:City | Espungabera | | MZBQ|00214,MZBQ|00580,MZBQ|00889
+E0093 | Location:City | Chimoio | | MZBQ|00210,MZBQ|00214
+E0094 | Location:City | Cuamba | | MZBQ|00522,MZBQ|00549,MZBQ|00620,MZBQ|00710,MZBQ|00797
+E0095 | Location:City | Moamba | | MZBQ|00964
+E0096 | Location | Incomati River | | MZBQ|00964
+E0097 | Location | Limpopo River | | MZBQ|00024
+E0098 | Location | Zambezi River | | MZBQ|00196,MZBQ|00197
+E0099 | Asset:FacilitySite | Beira port | | MZBQ|00064,MZBQ|00206,MZBQ|00776,MZBQ|00877
+E0100 | Asset:FacilitySite | Quelimane port | | MZBQ|00687,MZBQ|00878
+E0101 | Organization | MINAGRI | | MZBQ|00319
+================================================================
+
+[MZBQ|00001]
+d:t# cu|In response to a request by the Government of Mozambique|uc, +A<the Secretary-General> T<dispatched> O<a mission> lc|to Maputo|cl tm|from 11 to 17 February 1987|mt pr|T<to consult> with O<the authorities> on the increasingly critical situation existing in several provinces and T<to prepare> O<an assessment> of the country's urgent humanitarian needs|rp.
+[MZBQ|00002]
+d:s# -A<The mission> T<was led> by +A<Mr. Abdulrahim A. Farah, Under-Secretary-General for Special Political Questions>, and D<included> O<Mr. Charles H. La Muniere, Director for Emergencies in Africa>, as well as O<headquarters and field representatives from UNDP, UNDRO, UNHCR, UNICEF, WFP, FAO, WHO, and ILO>.
+[MZBQ|00003]
+d:t# +A<The mission> T<held> O<high-level discussions> with O<the Government> and with O<senior officials in the technical ministries concerned>.
+[MZBQ|00004]
+n:s# cu|On the basis of these discussions|uc, and mn|taking into account all available data|nm, O<the major findings of the mission> D<were> as follows.
+[MZBQ|00005]
+d:s# O<An emergency situation of a complex nature> D<exists> in Mozambique.
+[MZBQ|00006]
+d:t# +A<The emergency situation> T<has plagued> -A<the country> tm|since the drought years of 1983-84|mt, but -A<the emergency situation> T<has registered> O<a marked increase in severity> tm|since late 1986|mt.
+[MZBQ|00007]
+d:t# O<Its principal cause> D<lies> in O<widespread attacks against population centres>, as well as in O<continued acts of sabotage pr|designed to destabilize the country|rp>, and -AQ<both> T<are being carried out> by +A<externally supported armed groups>.
+[MZBQ|00008]
+d:t# -A<These attacks> T<have intensified> tm|during the past six months|mt, lc|particularly in the central provinces of Tete, Zambezia, and Sofala|cl.
+[MZBQ|00009]
+d:t# -A<The attacks> T<are being aimed> at O<key agricultural production and economic installations>, and -A<the attacks> T<are also being aimed> at O<logistical, health, and education infrastructure>.
+[MZBQ|00010]
+d:t# +A<The authorities> T<estimate> that, cu|as a result of the marked intensification of attacks during the past six months|uc, O<approximately 3.5 million people> D<are now severely affected>, ac|including over one million displaced people|ca.
+[MZBQ|00011]
+d:s# cu|Because of inadequate resources|uc, O<the affected population> D<urgently requires> O<substantial food aid>, O<logistics assistance in the handling, transport, and distribution of vital supplies>, and O<basic support sp|in the areas of health, survival items, water, and primary agricultural inputs|ps>.
+[MZBQ|00012]
+n:s# O<The following data> T<provides> O<information sp|on the location, category, and number of the affected population|ps>.
+[MZBQ|00013]
+d:s# O<Maputo> D<has> O<248,300 severely affected people> and O<22,600 displaced people>, and O<Maputo> D<has> O<a total of 270,900 affected and displaced people>.
+[MZBQ|00014]
+d:s# O<Gaza> D<has> O<333,900 severely affected people> and OQ<no displaced people listed>, and O<Gaza> D<has> O<a total of 333,900 affected and displaced people>.
+[MZBQ|00015]
+d:s# O<Inhambane> D<has> O<375,000 severely affected people> and O<55,000 displaced people>, and O<Inhambane> D<has> O<a total of 430,000 affected and displaced people>.
+[MZBQ|00016]
+d:s# O<Sofala> D<has> O<107,100 severely affected people> and O<464,100 displaced people>, and O<Sofala> D<has> O<a total of 571,200 affected and displaced people>.
+[MZBQ|00017]
+d:s# O<Manica> D<has> O<94,000 severely affected people> and O<80,900 displaced people>, and O<Manica> D<has> O<a total of 174,900 affected and displaced people>.
+[MZBQ|00018]
+d:s# O<Tete> D<has> O<344,000 severely affected people> and O<114,000 displaced people>, and O<Tete> D<has> O<a total of 458,000 affected and displaced people>.
+[MZBQ|00019]
+d:s# O<Zambezia> D<has> O<577,000 severely affected people> and O<270,000 displaced people>, and O<Zambezia> D<has> O<a total of 847,000 affected and displaced people>.
+[MZBQ|00020]
+d:s# O<Niassa> D<has> O<443,300 severely affected people> and OQ<no displaced people listed>, and O<Niassa> D<has> O<a total of 443,300 affected and displaced people>.
+[MZBQ|00021]
+d:s# O<The total> D<consists of> O<2,522,600 severely affected people> and O<1,006,600 displaced people>, and O<the total number of affected and displaced people> D<is> O<3,529,200>.
+[MZBQ|00022]
+d:t# O<Drought> D<is> O<a secondary factor in the emergency>, cn|although +A<the persistence of drought in some areas> T<continues to aggravate> O<the overall situation>|nc.
+[MZBQ|00023]
+d:s# O<precipitation> D<is> within O<levels considered normal or above> lc|in most of the country|cl.
+[MZBQ|00024]
+d:t# O<Exceptions> D<include> O<the area immediately south of the Limpopo River>, -A<which> T<has tm|recently|mt been subjected> to O<periods of abnormally dry weather>.
+[MZBQ|00025]
+d:s# O<Other areas, lc|notably the interior of Maputo, Gaza, and Inhambane provinces|cl> D<still reflect> O<the aftermath of several years of low rainfall> and T<experience> O<localized pockets of drought>.
+[MZBQ|00026]
+d:t# +A<The organizations of the United Nations system>, +A<the international donor community>, and +A<the NGOs active in Mozambique> T<provided> O<timely emergency assistance> to O<the country> tm|during the past three years|mt, but -A<the situation> T<has now reached> O<a stage> where -A<needs> T<have greatly increased> and O<an expanded, co-ordinated programme of emergency assistance> D<is urgently required>.
+[MZBQ|00027]
+d:t# +A<the Secretary-General> T<has decided> T<to take> O<the following action>.
+[MZBQ|00028]
+d:t# +A<The Secretary-General> T<has decided> T<to launch> O<a world-wide appeal> pr|T<to provide> O<urgently required emergency assistance> to O<the affected Mozambican population>|rp.
+[MZBQ|00029]
+n:s# O<The general parameters of this appeal>, +A<which> T<covers> O<the period until the end of 1987>, D<are detailed> in Parts II to VII below.
+[MZBQ|00030]
+d:t# +A<The Secretary-General> T<has decided> T<to appoint> -A<Mr. Hein-Caceres, UN Resident Co-ordinator in Maputo> as O<Special Co-ordinator for Emergency Relief Operations>.
+[MZBQ|00031]
+d:t# +A<The Secretary-General> T<has decided> T<to strengthen> O<the capacity of the United Nations lc|within Mozambique|cl> pr|T<to assist> O<the Government> in coping with the emergency|rp.
+[MZBQ|00032]
+d:t# +A<The Secretary-General> T<has decided> T<to continue> O<consultation> with O<executive heads of the concerned UN organizations and agencies> pr|with a view to ensuring an effective and co-ordinated response by the United Nations system|rp.
+[MZBQ|00033]
+d:t# +A<The Secretary-General> T<has decided> T<to provide> O<additional technical support and training> to O<national institutions dealing with emergency>, pr|with a view to T<rapidly increasing> O<their capacity> T<to plan> and T<manage> O<large-scale emergency assistance programmes>, T<to strengthen> O<related countrywide information systems>, and T<to systematize> O<procurement, transportation, and distribution of necessary supplies to critical areas>|rp.
+[MZBQ|00034]
+d:t# In addition, +A<the Secretary-General> T<asked> O<the UN High Commissioner for Refugees> T<to support> O<the Government> in T<assisting> -A<Mozambican refugees> +A<who> T<had fled> lc|to neighbouring countries|cl, ac|including over 250,000 refugees in Malawi, Swaziland, Zambia, Zimbabwe, and South Africa|ca, and +A<some of these refugees> T<are tm|now|mt returning> lc|to their country|cl.
+[MZBQ|00035]
+d:t# -A<First priority> T<will be given> to O<those> +A<who> T<have already returned> lc|from Malawi|cl, ac|including some 17,000 people in Tete Province|ca, and +A<these people> T<are continuing to return> with a potential for substantial increase.
+[MZBQ|00036]
+d:t# +A<The High Commissioner> T<will launch> O<a special appeal> for O<financial support> to O<this programme> tm|in the near future|mt.
+[MZBQ|00037]
+d:t# +A<The Secretary-General> T<appeals> to O<the international community> T<to provide> O<emergency assistance> pr|T<to help> O<the Government of Mozambique> T<to cover> O<vital priority needs of the affected population>|rp tm|for the period from February to December 1987|mt, as outlined in Parts II to VII below.
+[MZBQ|00038]
+d:t# Furthermore, +A<the Secretary-General> T<urges> O<the international community>, cd|in responding|dc, T<to give> O<equal priority> to OQ<both food and non-food emergency requirements>, and in particular to O<the necessity of providing adequate means to ensure the distribution of food and other emergency assistance to those in need>.
+[MZBQ|00039]
+d:t# Furthermore, +A<the Secretary-General> T<has decided> T<to convene> O<a meeting of donors> tm|on 24 March 1987|mt lc|in Geneva|cl pr|T<to review> O<the response to his appeal> and T<to assess> O<the latest developments in regard to relief operations in Mozambique>|rp.
+[MZBQ|00040]
+d:t# +A<UNDRO> T<will organize> O<the meeting> and T<disseminate> O<information sp|on the status of relief operations|ps> to O<the international community>.
+[MZBQ|00041]
+n:s# O<Food aid requirements> D<are described> in Part II.
+[MZBQ|00042]
+d:s# O<Final estimates of the Government of Mozambique's cereal requirements tm|for crop year 1987/88, from May to April|mt> T<await> O<the conclusion of the assessment of the current harvest>.
+[MZBQ|00043]
+d:t# +A<prevailing in-country conditions> T<continue to hamper> O<local cereal production> and T<have resulted> in O<an increase in the total number of people requiring food aid>, O<cereal aid requirements tm|for 1987/88|mt> D<are likely to be> O<at least equal to those tm|of crop year 1986/87|mt>, O<which> D<are> O<676,000 tons>.
+[MZBQ|00044]
+d:t# cd|If +A<donors> T<maintain> O<the same support> to O<Mozambique> through 1987 as shown in the past|dc, O<expected food aid> T<to be provided> D<will be> O<approximately 450,000 metric tons>, rs|T<leaving> O<a gap of 226,000 tons>|sr.
+[MZBQ|00045]
+d:s# O<The overall cost of the above preliminary estimate of the 676,000-ton cereal deficit, ac|including essential in-country transport costs|ca> D<is> O<about US dollars 169 million>.
+[MZBQ|00046]
+d:t# -A<supplementary food needs> T<were calculated> pr|primarily for O<vulnerable groups>|rp, ac|including O<children>, O<aged people>, and O<pregnant and lactating women>|ca, and O<these groups> D<comprise> O<approximately 25 percent of the affected population>.
+[MZBQ|00047]
+n:s# O<the estimates in the table below> D<are based on> O<total needs> cu|for the following reasons|uc.
+[MZBQ|00048]
+n:s# O<The overall need for supplementary food sp|in the country as a whole|ps> D<is thereby truly reflected>.
+[MZBQ|00049]
+d:s# O<Appropriate distribution systems> D<do not exist> pr|for channelling supplementary food only to specific subgroups of the vulnerable population|rp.
+[MZBQ|00050]
+n:s# O<Supplementary food aid requirements sp|for combined urban and rural affected populations|ps sp|for sugar, oil, and pulses|ps> D<are> as follows.
+[MZBQ|00051]
+d:s# O<Needs> D<are> O<70,000 metric tons of sugar>, O<15,000 metric tons of oil>, and O<80,000 metric tons of pulses>.
+[MZBQ|00052]
+d:s# O<Locally met needs> D<are> O<35,000 metric tons of sugar>, O<4,000 metric tons of oil>, and O<10,000 metric tons of pulses>.
+[MZBQ|00053]
+d:s# O<Internationally met needs> D<are> O<10,000 metric tons of sugar>, O<10,000 metric tons of oil>, and O<20,000 metric tons of pulses>.
+[MZBQ|00054]
+d:s# O<Unmet needs> D<are> O<25,000 metric tons of sugar>, O<1,000 metric tons of oil>, and O<50,000 metric tons of pulses>.
+[MZBQ|00055]
+n:s# O<The cost of providing the deficit, ac|including transport|ca> D<is> O<as follows>.
+[MZBQ|00056]
+d:s# O<The cost of sugar> D<is> O<25,000> T<multiplied> by O<US dollars 375 per ton>, O<which> D<equals> O<US dollars 9,375,000>.
+[MZBQ|00057]
+d:s# O<The cost of oil> D<is> O<1,000> T<multiplied> by O<US dollars 1,313 per ton>, O<which> D<equals> O<US dollars 1,313,000>.
+[MZBQ|00058]
+d:s# O<The cost of pulses> D<is> O<50,000> T<multiplied> by O<US dollars 625 per ton>, O<which> D<equals> O<US dollars 31,250,000>.
+[MZBQ|00059]
+d:s# O<The total cost> D<is> O<US dollars 41,938,000>.
+[MZBQ|00060]
+n:s# O<Part III> D<concerns> O<logistics support pr|for emergency activities|rp>.
+[MZBQ|00061]
+d:s# O<Continuing support to the emergency relief airlift pr|for high-value and low-volume cargo|rp> T<is required>.
+[MZBQ|00062]
+d:s# O<A highly successful airlift> D<has been in operation> tm|since June 1985|mt, and +A<the Department for Prevention, Control and Combat Natural Disasters>, ac|together with +A<the associated CARE Logistics Support Unit>|ca, T<manages> O<the airlift>.
+[MZBQ|00063]
+d:s# +A<The national airline LAM> T<provides> O<airplanes> and O<crew> and T<requires> O<only the foreign currency component> pr|for operating costs|rp.
+[MZBQ|00064]
+d:s# +A<The airlift> T<serves> O<government departments concerned>, O<UN agencies>, and O<NGOs>, and +A<the airlift> T<facilitates> O<movement of high-value and low-volume emergency cargo> lc|from Maputo and Beira ports to provincial capitals and inaccessible districts and towns|cl.
+[MZBQ|00065]
+d:t# +A<UNICEF>, ac|with USAID funds|ca, T<is providing> O<US dollars 600,000> pr|for O<the continued airlift>|rp, and O<the airlift> T<originated> ac|with UNDP funds|ca.
+[MZBQ|00066]
+d:t# -A<these resources> T<will be fully utilized> tm|by April or May 1987|mt.
+[MZBQ|00067]
+d:s# O<Additional funds> D<are essential> cu|in view of security constraints on road transport|uc.
+[MZBQ|00068]
+d:s# O<The estimated costs, cu|based on the experience of 1985 and 1986|uc, for airlift operational capacity of 100 metric tons per month tm|for 12 months|mt>, plus O<an additional transport factor for the Ministry of Health pr|for wounded people, medical personnel, and urgent drugs|rp>, O<which> T<is estimated> tm|initially|mt at O<US dollars 100,000>, D<are> O<US dollars 750,000>.
+[MZBQ|00069]
+d:t# +A<DPCCN> T<established> O<a central logistics support unit ac|with provincial offices in each affected province|ca> lc|in Maputo|cl.
+[MZBQ|00070]
+d:t# O<The programme> T<expanded> tm|in 1986|mt lc|to newly affected provinces|cl, and O<the programme> T<has begun> T<to establish> O<DPCCN representatives> lc|in each affected district|cl as well.
+[MZBQ|00071]
+d:s# O<DPCCN> D<has> O<major responsibility for co-ordination, receipt, despatch, and transportation of all emergency relief supplies to the affected and displaced population>.
+[MZBQ|00072]
+d:s# +A<DPCCN> T<runs> O<301 trucks>, with an estimated 75 percent operational availability on average tm|at any given time|mt.
+[MZBQ|00073]
+d:t# +A<DPCCN> T<handled> O<125,000 metric tons of emergency assistance>, of which O<110,000 metric tons> D<were> O<food>.
+[MZBQ|00074]
+d:t# There D<were> O<320 separate consignments>, and +A<DPCCN> T<received> O<these consignments> from O<44 different donors>.
+[MZBQ|00075]
+d:t# O<Goods> T<entered> Mozambique lc|at 18 different points or means of entry|cl, mn|by road, air, and sea|nm.
+[MZBQ|00076]
+d:s# O<The value of this emergency assistance> D<was> O<approximately US dollars 30 million>.
+[MZBQ|00077]
+d:s# pr|In order to meet expanding transport, maintenance, and storage requirements|rp, +A<DPCCN> T<needs> O<the following contributions>.
+[MZBQ|00078]
+d:s# O<District penetration vehicles> T<are required>.
+[MZBQ|00079]
+d:s# O<The requirement> D<is for> O<30 farm tractors ac|with trailers with 5-ton capacity|ca> or O<3-ton to 5-ton capacity four-wheel-drive trucks>.
+[MZBQ|00080]
+d:s# OQ<Each unit> D<includes> O<12.5 percent spare parts>.
+[MZBQ|00081]
+d:s# O<The total cost for these penetration vehicles> D<is> O<US dollars 641,000>.
+[MZBQ|00082]
+d:s# O<These penetration vehicles> T<are required> pr|for basing at district headquarters to undertake tertiary transport from district to localities|rp, and O<these distances> T<do not exceed> O<60 to 80 kilometres>.
+[MZBQ|00083]
+d:s# O<The estimate> D<is for> O<30 tractors with trailers> pr|for basing at a rate of 2 to 3 per interior but accessible district of Gaza, Inhambane, and parts of Manica Province|rp.
+[MZBQ|00084]
+d:s# O<Light vehicles> T<are required> pr|for replacement only|rp.
+[MZBQ|00085]
+d:s# O<The requirement> D<consists of> O<1 sedan car, ac|with a cost of US dollars 8,000 with spares|ca>, O<1 pick-up truck, ac|with a cost of US dollars 10,000 with spares|ca>, and O<14 Land Cruiser field vehicles, ac|with a cost of US dollars 336,000 with spares|ca>.
+[MZBQ|00086]
+d:s# O<The total cost for these light vehicles> D<is> O<US dollars 354,000>.
+[MZBQ|00087]
+d:s# O<Fuel>, O<lubricants>, and O<related items> T<are required>.
+[MZBQ|00088]
+d:s# O<The fuel requirement for trucks> D<is> O<3,600,000 litres at US dollars 0.27 per litre>.
+[MZBQ|00089]
+d:s# O<Diesel fuel needs for light vehicles> D<are> O<150,000 litres at US dollars 0.27 per litre>.
+[MZBQ|00090]
+d:s# O<Lubricants> D<are> O<46,875 litres>, or O<225 drums>, at US dollars 225 per drum.
+[MZBQ|00091]
+d:s# O<Contingent avgas>, O<fuel tanks>, O<fuel pumps>, O<contingent special transport>, O<purchase of drums>, and O<related items> D<cost> O<US dollars 20,000>.
+[MZBQ|00092]
+d:s# O<The total cost for fuel, lubricants, and related items> D<is> O<US dollars 1,083,000>.
+[MZBQ|00093]
+n:s# O<The above calculations> T<are based on> O<a fleet of 301 trucks with an estimated 75 percent operational availability> dg|on average|gd, cu|recognizing that O<38 percent of the fleet> D<is> O<new>|uc.
+[MZBQ|00094]
+n:s# O<The calculations> therefore D<are for> O<225 trucks> T<multiplied> by O<20 working days per month> T<multiplied> by O<200 kilometres per working day>.
+[MZBQ|00095]
+n:s# O<The calculations> also D<include> O<50 light vehicles> T<multiplied> by O<25 working days per month> T<multiplied> by O<100 kilometres per working day>.
+[MZBQ|00096]
+n:s# O<Lubricants, including engine oil, gear oil, hydraulic fluid, and grease> T<are estimated> at O<1.25 percent of fleet fuel consumption>.
+[MZBQ|00097]
+d:s# O<Tyres> and O<batteries> T<are required>.
+[MZBQ|00098]
+d:s# sp|For O<90 trucks> T<multiplied> by O<6 tyres>, size 900x20, T<multiplied> by O<1.5>|ps, O<the requirement> D<is> O<810 tyres at US dollars 135 each>.
+[MZBQ|00099]
+d:s# sp|For O<135 trucks> T<multiplied> by O<10 tyres>, size 1100x20 or 1000x20, T<multiplied> by O<1.5>|ps, O<the requirement> D<is> O<2,025 tyres at US dollars 170 each>.
+[MZBQ|00100]
+d:s# sp|For O<50 vehicles> T<multiplied> by O<4 tyres>, size 750x16, T<multiplied> by O<1.0>|ps, O<the requirement> D<is> O<200 tyres at US dollars 56.25 each>.
+[MZBQ|00101]
+d:s# O<The total cost for tyres> D<is> O<US dollars 465,000>.
+[MZBQ|00102]
+d:s# -A<Tyres> T<are calculated> cu|on the basis of a fleet of 225 trucks and 50 light vehicles|uc.
+[MZBQ|00103]
+d:s# OQ<Forty percent of the truck fleet> D<has> O<six wheels>, and OQ<sixty percent> D<has> O<ten wheels>, and OQ<all these trucks> D<require> O<1.5 complete tyre changes> tm|per year|mt, cu|taking into account opening stock balances|uc.
+[MZBQ|00104]
+d:s# -A<Light vehicles with four wheels> T<are calculated> dg|at O<one complete tyre change>|gd tm|per year|mt.
+[MZBQ|00105]
+d:s# mn|For 225 trucks multiplied by 2 batteries multiplied by US dollars 60|nm, O<the total cost> D<is> O<US dollars 27,000>.
+[MZBQ|00106]
+d:s# mn|For 50 light vehicles multiplied by 1 battery multiplied by US dollars 40|nm, O<the total cost> D<is> O<US dollars 2,000>.
+[MZBQ|00107]
+d:s# O<The total cost for batteries> D<is> O<US dollars 29,000>.
+[MZBQ|00108]
+d:s# O<Truck spare parts and vehicle repairs> D<require> O<a total of US dollars 300,000>.
+[MZBQ|00109]
+d:s# O<The calculations> D<are based> on O<extrapolation from actual expenditure tm|in 1985 and 1986|mt>, cu|taking into account the enlarged fleet and the advancing age of earlier trucks|uc.
+[MZBQ|00110]
+d:s# O<Workshop tools, equipment, and facilities> D<require> O<a total of US dollars 150,000>.
+[MZBQ|00111]
+d:s# O<This amount> D<is> O<the estimated requirement> pr|for T<the supply> of O<equipment> and T<the enhancement> of O<maintenance facilities>|rp D<required> by O<the enlarged fleet>.
+[MZBQ|00112]
+d:s# O<Warehousing equipment and facilities> D<require> O<a total of US dollars 150,000>.
+[MZBQ|00113]
+d:s# O<This amount> D<includes> O<US dollars 50,000> pr|for T<the provision> of O<warehousing operations materials and equipment>|rp, ac|including pallets, fumigation items, trolleys, reconstitution bags and containers, scales, banding equipment, maintenance supplies, lighting, and repair materials|ca.
+[MZBQ|00114]
+d:s# O<An additional US dollars 100,000> D<is included> pr|for T<the establishment> of O<warehousing units>|rp lc|on the Maputo truck park and service base compound|cl pr|to promote consolidation and improved control of DPCCN operations in Maputo|rp.
+[MZBQ|00115]
+d:s# O<Operations establishment materials> D<require> O<a total of US dollars 55,000>.
+[MZBQ|00116]
+d:s# O<A provision of US dollars 35,000> D<is included> pr|for O<VHF and short-radius walkie-talkie portable handset radios> for use within operational localities to co-ordinate logistics activities|rp.
+[MZBQ|00117]
+d:s# O<The major need> D<is> lc|in Maputo and Beira|cl.
+[MZBQ|00118]
+d:s# O<The remaining US dollars 20,000> D<is> pr|for O<DPCCN office materials and supplies>|rp, dg|particularly|gd lc|in the provinces|cl.
+[MZBQ|00119]
+d:s# O<Sea transport> D<requires> O<a total of US dollars 1,320,000>.
+[MZBQ|00120]
+d:s# cu|Given prevailing conditions in-country|uc, O<it> D<is> O<necessary> T<to utilize> OQ<all available means> T<to deliver> O<food aid and other emergency support items> to O<the affected population>, ac|including entry points -A<that> T<can be reached> by sea or from neighbouring food surplus countries|ca.
+[MZBQ|00121]
+d:s# O<Sea coast operations> ac|D<involving> O<two time-chartered ships>|ca D<are> O<an essential component of this necessary capability>.
+[MZBQ|00122]
+d:s# -A<The required funding> pr|for O<two delivery vessels>|rp T<operating> lc|out of Maputo, Beira, and Quelimane|cl tm|for 12 months|mt T<is estimated> at O<US dollars 1,320,000>.
+[MZBQ|00123]
+d:t# O<This estimate> D<is based> on O<the actual cost of O<operations> T<conducted> by +A<WFP> tm|in 1985 and 1986|mt>.
+[MZBQ|00124]
+d:s# O<Technical and administrative support to DPCCN> D<requires> O<a total of US dollars 1,050,000>.
+[MZBQ|00125]
+d:t# tm|In late 1984|mt, +A<the Government of Mozambique> T<signed> O<an agreement> with O<the NGO CARE> pr|to assist T<the establishment> of O<a logistics support unit>|rp lc|within DPCCN|cl.
+[MZBQ|00126]
+d:t# -A<This highly effective co-operation> T<has continued> tm|since that time|mt, mn|with funds from USAID|nm, rs|with the result that O<the unit> D<is> O<considerably strengthened>, O<well organized>, and O<increasingly staffed with trained and competent national personnel>|sr.
+[MZBQ|00127]
+d:t# pr|To complete the process|rp, -A<this co-operative process> T<must continue> tm|at least until the second quarter of 1988|mt, but -A<available funds> T<will have been fully utilized> tm|by 30 April 1987|mt.
+[MZBQ|00128]
+d:s# O<Supplementary resources> D<are dg|urgently|gd needed> pr|T<to cover> O<the following costs>|rp.
+[MZBQ|00129]
+d:s# O<Personnel and training> D<require> O<US dollars 934,500>.
+[MZBQ|00130]
+d:s# O<Administration> D<requires> O<US dollars 62,000>.
+[MZBQ|00131]
+d:s# O<Administrative vehicle operation> D<requires> O<US dollars 45,000>.
+[MZBQ|00132]
+d:s# O<Sundry items, ac|including depreciation and office miscellania|ca,> D<require> O<US dollars 8,500>.
+[MZBQ|00133]
+d:s# O<The grand total> D<is> O<US dollars 6,347,000>.
+[MZBQ|00134]
+d:s# -A<Health services> T<are dg|greatly|gd affected> cu|by +A<war> and by +A<the country's economic decline>|uc.
+[MZBQ|00135]
+d:t# +A<The lack of foreign exchange for drugs and fuel>, plus +A<bandit attacks>, T<have dg|seriously|gd reduced> O<basic medical coverage> and T<have disrupted> O<programmes such as immunization, MCH, and endemic disease control>.
+[MZBQ|00136]
+d:s# -A<Vulnerable groups> T<are dg|particularly|gd affected>.
+[MZBQ|00137]
+d:s# O<The Government of Mozambique's emergency health needs> D<reflect> O<estimated requirements> pr|for a programme of T<rehabilitation> of O<the war-affected and drought-affected health service network> and of T<assistance> to O<the most severely affected population groups>|rp.
+[MZBQ|00138]
+d:s# O<The immediate priorities> D<are> T<the rehabilitation> and T<re-equipping> of O<basic health facilities>, T<ensuring> T<the supply> of O<vital drugs>, T<special assistance> to O<the most vulnerable groups>, and T<strengthening> O<the health sector's emergency management and supervisory capacity>.
+[MZBQ|00139]
+d:s# T<The rehabilitation> and T<re-equipping> of O<basic health facilities> D<require> O<the following amounts in US dollars>.
+[MZBQ|00140]
+d:s# T<The reconstruction> and T<re-equipment> of O<health posts> D<require> O<US dollars 500,000>.
+[MZBQ|00141]
+d:s# O<Medical equipment for 9 health centres or hospitals> D<requires> O<US dollars 90,000>.
+[MZBQ|00142]
+d:s# O<Hospital clothing and linen> D<require> O<US dollars 200,000>.
+[MZBQ|00143]
+d:s# O<Cleaning material and disinfectant> D<require> O<US dollars 250,000>.
+[MZBQ|00144]
+d:s# O<10 ambulances>, O<which> D<are> O<Land Cruisers>, D<require> O<US dollars 288,000>.
+[MZBQ|00145]
+d:s# O<Logistics support, ac|including fuel, maintenance, and parts|ca,> D<requires> O<US dollars 200,000>.
+[MZBQ|00146]
+d:s# O<20 vehicles>, O<which> D<are> O<Land Cruisers>, D<require> O<US dollars 299,000>.
+[MZBQ|00147]
+d:s# O<Kitchen utensils for 200 health units> D<require> O<US dollars 100,000>.
+[MZBQ|00148]
+d:s# O<Construction materials> D<require> O<US dollars 1,400,000>.
+[MZBQ|00149]
+d:s# O<Water supply for 200 health units>, ac|D<consisting of> O<basic hand pumps plus installation>|ca dg|at US dollars 5,000 per unit|gd, D<requires> O<US dollars 1,000,000>.
+[MZBQ|00150]
+d:s# O<The total> D<is> O<US dollars 4,327,000>.
+[MZBQ|00151]
+d:t# T<Restoring> OQ<at least a proportion of over 500 facilities destroyed, damaged, or ransacked by bandits> D<is> O<a major priority>.
+[MZBQ|00152]
+d:s# O<The most urgent needs> D<are in> O<the provinces with the greatest proportional loss of facilities> sp|in relation to population|ps, as well as O<increased demand> cu|due to O<displaced or repatriated people>|uc.
+[MZBQ|00153]
+d:t# O<security considerations> T<currently affect> O<the ability to reconstruct> lc|in certain provinces|cl.
+[MZBQ|00154]
+d:s# O<the following specific needs> T<are included> sp|in the above costing|ps.
+[MZBQ|00155]
+d:s# T<The reconstruction> and T<equipping> of O<200 dispensary and health post units> lc|in various provinces|cl T<are included>.
+[MZBQ|00156]
+d:s# T<The reconstruction> and T<equipping> of O<4 health centres>, ac|including O<1 each> in Sofala, Zambezia, Tete, and Nampula|ca, T<are included>.
+[MZBQ|00157]
+d:s# T<The reconstruction> and T<equipping> of O<5 rural hospitals>, ac|including O<3 in Sofala>, O<1 in Nampula>, and O<1 in Tete>|ca, T<are included>.
+[MZBQ|00158]
+d:s# O<These needs> T<include> T<transportation> of -A<wounded and seriously ill patients>, O<vehicles> pr|for medical supervision visits|rp, and O<small-scale water supply facilities>, ac|including O<wells> and O<hand pumps>|ca, pr|to ensure basic sanitation at health units|rp.
+[MZBQ|00159]
+d:s# T<The supply> of O<vital medicines> and O<surgical materials> T<requires> O<a total of US dollars 3,400,000, CIF>.
+[MZBQ|00160]
+d:s# O<Funding for the country's medical supplies for the national formulary of 101 vital medicines plus basic surgical materials> D<is totally insufficient> tm|for 1987|mt.
+[MZBQ|00161]
+d:s# O<Funding> D<is urgently required> pr|to continue T<the procurement> of O<supplies> and T<the distribution> of O<supplies> to all levels of the health care system|rp.
+[MZBQ|00162]
+d:t# D<Failure> of O<this programme> to continue D<will mean> O<a serious and further breakdown of Mozambique's health services> tm|at a time when O<demands on Mozambique's health services> from O<the displaced and affected population> D<are greater than ever>|mt.
+[MZBQ|00163]
+d:s# sp|Of O<the total needs for 1987 of US dollars 20.4 million>|ps, ac|T<comprising> O<US dollars 17.4 million for vital medicines> and O<US dollars 3.0 million for surgical materials>|ca, O<only US dollars 7 million> D<is available>, rs|T<leaving> O<a funding gap of US dollars 13.4 million> for the whole country|sr.
+[MZBQ|00164]
+d:t# O<This appeal>, cn|while T<recognizing> O<the critical importance> of T<securing> O<funds> for O<this entire amount>|nc, T<highlights> O<the top priority needs> for O<3.5 million affected and displaced people>.
+[MZBQ|00165]
+d:s# O<These people> T<comprise> O<25 percent of the national requirement>, and -A<the needs of these people> T<should be met> mn|as a matter of absolute urgency|nm.
+[MZBQ|00166]
+d:s# O<Special assistance to the most vulnerable groups> T<includes> O<family kits> and O<household articles> for institutions, O<which> T<require> O<US dollars 162,000>.
+[MZBQ|00167]
+d:s# O<Foodstuffs for therapeutic feeding>, ac|including O<52 metric tons of milk powder>, O<24.9 litres of vegetable oil>, and O<21 metric tons of sugar>|ca, T<require> O<US dollars 272,000>.
+[MZBQ|00168]
+d:s# O<The total for special assistance to the most vulnerable groups> D<is> O<US dollars 434,000>.
+[MZBQ|00169]
+d:s# O<The Department of Social Action of the Ministry of Health> D<is responsible> for T<extending> O<care> to O<especially disadvantaged groups>, such as O<orphaned children>, O<handicapped children>, and O<aged people>.
+[MZBQ|00170]
+d:t# O<The needs of this sector> T<have grown> dg|dramatically|gd cu|with the intensification of war conditions|uc and T<require> O<a broad approach of assistance> to O<families> and to O<the community in general>.
+[MZBQ|00171]
+d:s# O<Two specific areas of immediate need> D<are> O<family kits> pr|for +A<households> T<receiving> O<abandoned or orphaned children> or O<other affected persons>|rp, ac|including O<clothing>, O<cooking utensils>, O<foodstuffs>, O<seeds>, and O<agricultural tools>|ca.
+[MZBQ|00172]
+d:s# O<Similar requirements> D<are required> pr|for +A<the limited number of institutions> T<taking care of> O<abandoned children>|rp.
+[MZBQ|00173]
+d:s# O<A second specific area of immediate need> D<is> O<special foodstuffs> pr|for T<therapeutic feeding> of O<children> T<suffering> O<growth failure> due to O<malnourishment>|rp, mn|channelled through health institutions|nm.
+[MZBQ|00174]
+d:t# O<These foods> T<would assist> OQ<some 20,650 children> lc|in the worst-affected provinces of Zambezia, Tete, Manica, Sofala, Inhambane, and Gaza|cl.
+[MZBQ|00175]
+d:s# T<Strengthening> O<health sector emergency management> and O<supervisory capacity> T<requires> O<a total of US dollars 144,000>.
+[MZBQ|00176]
+d:s# T<Expanding> O<the presently scarce technical capacity of the Ministry of Health> pr|to respond to the emergency situation|rp D<is urgently required>.
+[MZBQ|00177]
+d:s# O<Specialist skills> for O<emergency planning> and O<response>, as well as O<field supervision of the preceding projects>, D<are> O<among the top priorities> tm|for the immediate future|mt.
+[MZBQ|00178]
+d:s# O<The areas concerned> D<are> O<an epidemiologist> pr|for T<improving> O<emergency preparedness> and O<management of emergency response>|rp tm|for 6 months|mt.
+[MZBQ|00179]
+d:s# O<The areas concerned> D<are> O<a nutritionist> pr|to T<increase> O<the capacity of the nutrition section> to T<monitor> O<the status of vulnerable groups> and to T<mount> O<rehabilitation programmes>|rp tm|for 6 months|mt.
+[MZBQ|00180]
+d:s# O<The areas concerned> D<are> O<a sanitary engineer> pr|to T<advise on> and to T<oversee> O<the implementation of basic water supply projects> for O<health units> in rehabilitation and resettlement schemes|rp tm|for 6 months|mt.
+[MZBQ|00181]
+d:s# O<The areas concerned> D<are> O<a health economist> pr|to help to T<plan> and to T<co-ordinate> O<health rehabilitation programmes> and O<health inputs> to O<multisectoral resettlement programmes>|rp tm|for 6 months|mt.
+[MZBQ|00182]
+d:s# O<The total costs> T<include> O<24 person-months>, O<salary>, O<airfares>, and O<related expenditures>.
+[MZBQ|00183]
+d:s# O<The grand total of health requirements> D<is> O<US dollars 8,305,000>.
+[MZBQ|00184]
+d:s# O<The water sector in Mozambique> D<is extremely underfunded>.
+[MZBQ|00185]
+d:s# O<Clean water> D<is available> to OQ<less than 13 percent of the population>.
+[MZBQ|00186]
+d:s# O<Development efforts> tm|since independence|mt D<have been based on> O<multisector development programmes> lc|in communal villages|cl T<incorporating> O<improved water> and O<sanitation> ac|with O<community participation> in construction|ca.
+[MZBQ|00187]
+d:s# O<Low-cost shallow wells with handpumps> T<are commonly used>, but O<deep boreholes> D<are needed> lc|in certain areas|cl.
+[MZBQ|00188]
+d:t# O<This process of extension of rural water supplies> T<has suffered> O<great setbacks> cu|due to O<droughts>, O<war>, and O<the resulting dislocation>|uc.
+[MZBQ|00189]
+d:t# O<Many district capitals> T<are facing> O<a large influx of population> ac|with great pressure on available water|ca.
+[MZBQ|00190]
+d:t# O<Urgent expansion of water supplies> D<is required>, lc|particularly in the provinces of Tete, Manica, and Sofala|cl, where O<already underserved populations> T<have swollen> by O<a large number of displaced people>.
+[MZBQ|00191]
+d:s# O<The Government of Mozambique policy> D<is> to T<assist> O<displaced people> mn|by T<the establishment> of O<new villages>|nm cd|where feasible|dc, O<which> T<requires> T<the creation> of O<minimally secure sources> pr|to be viable|rp.
+[MZBQ|00192]
+d:s# O<The capacity of the Government of Mozambique> lc|at both central and provincial level|cl to T<design>, to T<implement>, and to help O<communities> T<maintain> O<such schemes> D<is very weak>, and O<part of the strategy in this sector> D<is> to T<strengthen> O<such capacity> pq|as a prerequisite to O<the geographical expansion of existing rural water supply programmes>|qp.
+[MZBQ|00193]
+d:s# sp|Among O<the immediate technical assistance needs>|ps D<is> O<short-term design capability> pr|for O<the priority project areas> identified below|rp.
+[MZBQ|00194]
+d:s# T<Water source construction> and T<recovery> lc|in three districts in Tete Province|cl T<require> O<a total of US dollars 3,200,000>.
+[MZBQ|00195]
+d:t# O<The project> D<is> to T<enable> O<UDAAS, the National Water and Sanitation Agency>, to T<expand> O<construction and maintenance capacity> lc|in Tete Province|cl, where O<severe drought and famine in 1983/84> T<resulted in> O<a high concentration of displaced people> in the districts of Cahora Bassa/Estima, Changara, and Moatize.
+[MZBQ|00196]
+d:t# O<These areas> T<have since been attracting> O<new populations> cu|because O<areas to the north of the Zambezi River> D<are now unsafe>|uc.
+[MZBQ|00197]
+d:t# +AQ<The majority of the population in these districts, 280,000 people,> T<are using> O<water> lc|from the Zambezi River or from shallow wells in riverbeds|cl, ac|with high disease risk and long walking distances|ca.
+[MZBQ|00198]
+d:t# O<The groundwater level in most of this area> D<is deep>, rs|so O<boreholes> D<are> O<the main solution to water supply problems>|sr, cn|although O<some success> T<has already been achieved> in limited areas of Changara District by O<a UNICEF-sponsored project> with O<riverside shallow wells>|nc.
+[MZBQ|00199]
+d:t# -A<The project> T<is made> O<more urgent> cu|by T<the continuing influx> of O<displaced population> from Zambezia, Sofala, and northern Tete, mainly via Malawi, and by D<the intention> to T<resettle> O<a large number of people> currently in transit camps in Moatize and Zobue|uc.
+[MZBQ|00200]
+d:t# O<The need> D<is urgent> lc|not only in rural areas but also in the district headquarters of Songo and Moatize|cl, O<which> T<are accommodating> O<greatly increased populations>.
+[MZBQ|00201]
+d:t# +A<UDAAS and GEOMOC, the State Drilling Company,> D<have> O<a small but growing national capacity> and T<have developed> O<a successful model for the establishment of province-level construction and maintenance infrastructure in the UNICEF-supported well and borehole programme> lc|in Inhambane Province|cl.
+[MZBQ|00202]
+d:t# O<The project under reference> D<is> T<to enable> the T<installation> of O<similar capacity> for Tete Province and T<to commence> with the urgent T<construction> or T<recuperation> of O<up to 130 boreholes> tm|over the first two years|mt, plus O<shallow wells> where feasible.
+[MZBQ|00203]
+d:s# O<Indicative needs for the projects> D<include> O<transport>, O<workshop and office equipment>, O<drilling rigs>, O<pumps>, O<tools>, O<other construction materials>, and O<a technical assistance team> D<consisting of> O<a hydrogeologist>, O<a master driller>, O<a rig mechanic>, and O<a geophysicist>.
+[MZBQ|00204]
+d:s# O<Part of this amount> D<is needed> pr|for a short-term project design activity|rp.
+[MZBQ|00205]
+d:s# O<Water source construction and recovery> lc|in Sofala and Manica Provinces|cl D<require> O<a total of US dollars 700,000>.
+[MZBQ|00206]
+d:s# O<Sofala and Manica Provinces> D<have> O<an estimated total of 545,000 displaced people>, OQ<many of whom> D<are concentrated> lc|in the relatively safe Beira Corridor area|cl, O<which> D<incorporates> O<the road, rail, and oil pipeline> from Zimbabwe to Beira port.
+[MZBQ|00207]
+d:t# -AQ<Both provinces> T<were badly affected> cu|by drought in 1983/84|uc and cu|subsequently by insurgency|uc.
+[MZBQ|00208]
+d:s# Except in central areas, O<these provinces> D<contain> OQ<little shallow groundwater> and generally D<have> OQ<few reliable water sources>.
+[MZBQ|00209]
+d:t# O<High priority> T<is given> by +A<the Government of Mozambique> to O<water source development> lc|in areas where O<security> T<has been established> and where OQ<a large number of displaced people> D<are> in urgent need of O<resettlement>|cl.
+[MZBQ|00210]
+d:t# O<The first and immediate phase> D<is> T<to establish> O<enhanced technical and operational capacity> for these provinces, mn|based on O<the existing UDAAS delegation at Chimoio> and O<the GEOMOC delegation in Beira>|nm, O<which> D<have> O<existing but outmoded rigs>.
+[MZBQ|00211]
+d:t# O<Funds> D<are required> for O<a hydrogeologist and project co-ordinator>, O<a new rotary drilling rig with accessories>, O<spare parts and tools for existing cable-tool and percussion rigs>, and T<procurement> of O<materials>, including O<borehole casing>, O<screens>, O<cement>, O<fuel>, O<lubricants>, and O<related materials>.
+[MZBQ|00212]
+d:t# O<The immediate phase> T<aims> T<to construct> O<50 new tubewells> and T<to recuperate> O<47 existing ones> pr|to benefit immediately -A<over 48,500 rural people>|rp.
+[MZBQ|00213]
+d:t# O<The project> D<is> T<to result> in O<increased institutional capacity> T<to mount> and T<to supervise> O<shallow well development> lc|in resettlement villages|cl mn|using community participation|nm.
+[MZBQ|00214]
+d:t# O<The first such project> D<is due> T<to start> tm|in early 1987|mt lc|in the UNICEF-assisted Espungabera resettlement project in southern Manica Province|cl, ac|with T<expansion> to O<new villages> in the Manica-Chimoio Corridor within the planned UNICEF-assisted integrated project for displaced people|ca.
+[MZBQ|00215]
+d:t# T<The recovery> of O<Tete City water supply> D<requires> O<a total of US dollars 600,000>.
+[MZBQ|00216]
+d:s# O<Tete> D<is> O<one of the most war-affected provinces>.
+[MZBQ|00217]
+d:t# There D<has been> a substantial T<influx> of O<displaced persons> to the provincial capital, Tete City, rs|T<causing> O<a 300 percent increase in population> in the last two years|sr.
+[MZBQ|00218]
+d:s# O<The city> and O<the periphery population> D<depend upon> O<a water supply system> O<that> D<is> O<totally inadequate for current needs>, while O<available surface water> D<is contaminated> by the open sewers of the town.
+[MZBQ|00219]
+d:t# O<The project> D<is> T<to provide> -A<the population> with O<access to a reliable supply of safe water> mn|by T<recuperating> O<the existing equipment and distribution network>|nm and mn|by T<expanding> O<supply>|nm, particularly to new communities on the periphery, mn|through T<building> O<a new pump station> and O<new distribution mains>|nm.
+[MZBQ|00220]
+d:s# sp|Of the overall cost of this project|ps, O<some US dollars 150,000> D<is required> pr|for O<technical assistance> in design, supervision, and training of local maintenance and operations staff|rp.
+[MZBQ|00221]
+d:t# T<Strengthening> O<central management capacity> D<requires> O<a total of US dollars 600,000 in technical assistance>.
+[MZBQ|00222]
+d:t# pr|For effective co-ordination, management, and supervision of new water supply projects in the most affected areas of Tete, Manica, and Sofala, O<which> D<are> O<projects A, B, and C above>, and in Inhambane Province, O<which> D<is> O<ongoing>|rp, it D<is essential> that O<central co-ordination and management capacities in UDAAS> T<be strengthened>.
+[MZBQ|00223]
+d:t# O<The highest priority areas> D<include> O<technical assistance> pr|T<to support> O<projects> with major technical difficulties in source location, construction, or maintenance|rp.
+[MZBQ|00224]
+d:s# O<The highest priority areas> D<include> O<logistical and organizational assistance>.
+[MZBQ|00225]
+d:t# O<The highest priority areas> D<include> T<monitoring> and T<supervision> of O<new projects>.
+[MZBQ|00226]
+d:t# O<These technical inputs> D<are needed> pr|T<to firm up> O<the capability in UDAAS> T<to extend> O<its support> to rural and provincial water supply programmes beyond its present limited coverage|rp.
+[MZBQ|00227]
+d:t# T<The provision> of O<chemicals> pr|for water treatment|rp lc|in urban and suburban areas|cl D<requires> O<a total of US dollars 575,000>.
+[MZBQ|00228]
+d:t# T<Renewed and systematic treatment> of O<water supply> D<is urgently required> lc|in the country's main urban and suburban centres|cl, where O<crowding> cu|due to the T<influx> of O<displaced persons>|uc T<is accelerating> O<the overall deterioration of living conditions> ac|with a significant increase in O<water-borne disease> T<affecting> O<particularly vulnerable groups>|ca.
+[MZBQ|00229]
+d:s# A total of O<170 tons of hydrochlorine calcium>, D<costing> O<US dollars 275,000>, and O<230 tons of gas chlorine>, D<costing> O<US dollars 300,000>, D<are required>.
+[MZBQ|00230]
+d:s# O<The grand total> D<is> O<US dollars 5,675,000>.
+[MZBQ|00231]
+d:t# OQ<A high percentage of the displaced and rural or urban affected population> T<has lost> OQ<most possessions>, D<has> O<no access to necessary consumer goods>, and T<faces> O<stringent shortages of basic commodities>.
+[MZBQ|00232]
+d:t# sp|Based on 2,522,600 affected people and 1,006,600 displaced people|ps, -A<the following relief and survival items> T<to be distributed> by +A<DPCCN> D<are urgently needed>.
+[MZBQ|00233]
+d:t# O<Clothing> D<consists of> O<2,300,000 sets>, and -A<donations in kind> T<are requested>.
+[MZBQ|00234]
+d:t# O<Utility shoes> D<consist of> O<1,200,000 pairs>, and -A<donations in kind> T<are requested>.
+[MZBQ|00235]
+d:s# tm|Today|mt O<the need for clothing in Mozambique> D<is> cm|O<as serious as the need for food>|mc.
+[MZBQ|00236]
+d:s# O<The problem of nudity> D<is> O<increasingly grave>, with large-scale impact on the socio-economic system.
+[MZBQ|00237]
+d:s# +A<Women> and +A<men without clothes> T<do not go> lc|to fields|cl pr|to work|rp and T<do not visit> O<health centres>.
+[MZBQ|00238]
+d:s# O<Children without clothes> T<do not go> lc|to school|cl and T<are not taken> pr|for vaccination or medical treatment|rp.
+[MZBQ|00239]
+n:t# -A<The most urgent appeal> rs|therefore|sr T<is being made> for O<donations of utility clothing and shoes>.
+[MZBQ|00240]
+d:t# T<The provision> of O<the optimal requirements of two changes of clothing and one pair of shoes per affected and displaced person> tm|per year|mt D<is> O<unrealistic>.
+[MZBQ|00241]
+d:t# cn|However|nc, T<the provision> of O<2,300,000 sets of clothing> and O<1,200,000 pairs of shoes>, D<representing> O<30 percent of overall needs>, D<is urgently required>.
+[MZBQ|00242]
+d:s# For women, O<simple sturdy cotton frocks> and O<blouses in plain colours and in different sizes> D<are needed>.
+[MZBQ|00243]
+d:s# For men, O<sturdy cotton shirts> and O<long pants in different sizes> D<are needed>.
+[MZBQ|00244]
+d:s# For children, O<T-shirts> and O<shorts of sturdy cotton and of various sizes> D<are needed>.
+[MZBQ|00245]
+d:s# OQ<All shoes> D<should be> O<for utility wear only>, D<including> O<rubber-soled sneakers for children>.
+[MZBQ|00246]
+d:t# -A<Experiments> T<are also being made> ac|with O<family packages> D<containing> O<fabric>, O<thread>, O<buttons>, and O<needles> for all members of a family|ca.
+[MZBQ|00247]
+n:s# cd|Whenever possible|dc, O<this response> D<is preferred>.
+[MZBQ|00248]
+d:s# O<Blankets> D<total> O<1,058,760 units> and D<require> O<US dollars 2,250,000>.
+[MZBQ|00249]
+d:s# cm|Like clothing|mc, O<blankets> D<are> O<also in extremely scarce supply> among the affected and displaced population.
+[MZBQ|00250]
+d:t# tm|In four months|mt, O<the cold season in Mozambique> T<will begin>, ac|with O<people> T<facing> O<exposure> and O<increased health problems> without minimal cover|ca.
+[MZBQ|00251]
+d:s# -A<The total need> T<is estimated> dg|at O<3.5 million blankets>|gd, dg|at a cost of O<approximately 7 million dollars>|gd.
+[MZBQ|00252]
+n:t# +A<This appeal> T<requests> O<urgent donation of only 30 percent of the real need>.
+[MZBQ|00253]
+d:s# O<Utility soap> D<totals> O<6,350 metric tons> and D<requires> O<US dollars 3,500,000>.
+[MZBQ|00254]
+d:s# O<Soap pr|for both personal hygiene and laundry|rp> D<is> O<extremely scarce> lc|throughout the country|cl, cu|due in part to the lack of O<foreign currency inputs> D<required> for T<re-activating> O<local soap-making capabilities>|uc.
+[MZBQ|00255]
+d:s# -A<The total need for the displaced and affected population> T<is estimated> dg|at O<21,163 metric tons>|gd, dg|at a cost of O<US dollars 11.6 million>|gd, of which OQ<at least 30 percent> D<is most urgently needed>.
+[MZBQ|00256]
+n:t# -A<Donors> T<are also requested> T<to explore> O<possibilities> T<to assist> O<the rehabilitation of the local soap factory> pr|for a more long-term solution to the problem of hygiene and health|rp.
+[MZBQ|00257]
+d:s# O<Cooking utensils> D<total> O<201,230 sets> and D<require> O<US dollars 604,000>.
+[MZBQ|00258]
+d:t# -A<The displaced population> T<is often forced> T<to abandon> OQ<all family possessions>.
+[MZBQ|00259]
+d:s# O<A set of three basic cooking utensils> D<is needed> for OQ<each of approximately 200,000 families among the displaced>.
+[MZBQ|00260]
+d:s# O<The grand total for all relief items> D<is> O<US dollars 6,354,000>.
+[MZBQ|00261]
+d:t# -A<Critical and widespread shortages of basic agricultural handtools, seeds, and other agricultural inputs> T<are being handled> by +A<the Government of Mozambique> sp|within the framework of its strategy for rehabilitation of the agricultural sector|ps.
+[MZBQ|00262]
+d:s# O<The problem> D<is> O<particularly acute> sp|among displaced families|ps, O<which> tm|currently|mt D<require> O<handtools> and O<seeds> pr|in order to T<restore> O<basic capacity for subsistence farming>|rp.
+[MZBQ|00263]
+d:s# O<Small centralized storage facilities for the same> D<are also required> lc|in key cluster resettlement areas|cl.
+[MZBQ|00264]
+n:s# O<The following request> D<is based on> O<an estimated 250,000 displaced and severely affected families> in O<Sofala>, D<representing> O<45 percent>, O<Niassa>, D<representing> O<18 percent>, O<Zambezia>, D<representing> O<12 percent>, O<Tete>, D<representing> O<11 percent>, O<Manica>, D<representing> O<7 percent>, O<Inhambane>, D<representing> O<4 percent>, and O<Maputo>, D<representing> O<3 percent>.
+[MZBQ|00265]
+d:s# O<The requirement for hoes> D<is> O<675,000 units> dg|at a cost of O<US dollars 1,620,000 c.i. Maputo or Beira>|gd.
+[MZBQ|00266]
+d:s# O<The requirement for machetes> D<is> O<250,000 units> dg|at a cost of O<US dollars 250,000 c.i. Maputo or Beira>|gd.
+[MZBQ|00267]
+d:s# O<The requirement for axes> D<is> O<250,000 units> dg|at a cost of O<US dollars 390,000 c.i. Maputo or Beira>|gd.
+[MZBQ|00268]
+d:s# O<The requirement for sickles> D<is> O<75,000 units> dg|at a cost of O<US dollars 46,000 c.i. Maputo or Beira>|gd.
+[MZBQ|00269]
+d:s# O<The requirement for files> D<is> O<250,000 units> dg|at a cost of O<US dollars 250,000 c.i. Maputo or Beira>|gd.
+[MZBQ|00270]
+d:s# O<The total cost of handtools> D<is> O<US dollars 2,556,000>.
+[MZBQ|00271]
+d:t# -A<Handtools> T<should be made available> pq|as soon as possible after T<agreement> with O<the Government of Mozambique> on O<technical specifications>|qp.
+[MZBQ|00272]
+d:s# O<The requirement for maize seed> D<is> O<3,000 tons> dg|at a cost of O<US dollars 1,340,000 c.i. Maputo or Beira>|gd.
+[MZBQ|00273]
+d:s# O<The requirement for sorghum seed> D<is> O<375 tons> dg|at a cost of O<US dollars 126,000 c.i. Maputo or Beira>|gd.
+[MZBQ|00274]
+d:s# O<The requirement for groundnuts seed> D<is> O<1,500 tons> dg|at a cost of O<US dollars 1,500,000 c.i. Maputo or Beira>|gd.
+[MZBQ|00275]
+d:s# O<The requirement for cowpeas seed> D<is> O<500 tons> dg|at a cost of O<US dollars 200,000 c.i. Maputo or Beira>|gd.
+[MZBQ|00276]
+d:s# O<The requirement for horticulture seed> D<is> O<1 ton> dg|at a cost of O<US dollars 100,000 c.i. Maputo or Beira>|gd.
+[MZBQ|00277]
+d:s# O<The total seed requirement> D<is> O<5,376 tons> dg|at a cost of O<US dollars 3,266,000>|gd.
+[MZBQ|00278]
+d:s# O<The source of vegetable seeds> D<is> O<not significant>, pq|provided that -A<specifications> T<are checked> with O<the Ministry of Agriculture>|qp.
+[MZBQ|00279]
+d:t# -A<These seeds> T<should start to become available> lc|in Mozambique|cl pr|for distribution|rp tm|by November 1987|mt.
+[MZBQ|00280]
+d:t# -A<Other seeds> T<should be bought> lc|within the region, preferably in Zimbabwe, Zambia, and Malawi|cl, and T<should start to become available> pr|for distribution in Mozambique|rp tm|by July 1987|mt.
+[MZBQ|00281]
+d:s# sp|For a volume of about 7,000 tons of goods|ps, O<an estimated US dollars 700,000> D<will be required>, mn|T<calculated> on the basis of O<US dollars 0.50 per ton per kilometre> and O<an average travel distance of 200 kilometres>|nm.
+[MZBQ|00282]
+d:s# O<Temporary storage for handtools and seeds> D<is also required>.
+[MZBQ|00283]
+d:s# O<Seven prefabricated warehouses with a capacity of 600 to 700 tons each> D<are required>.
+[MZBQ|00284]
+d:s# O<The unit price> D<is> O<US dollars 60,000>.
+[MZBQ|00285]
+d:s# O<The total cost> D<is> O<US dollars 420,000>.
+[MZBQ|00286]
+d:s# O<The grand total> D<is> O<US dollars 6,942,000>, O<which> D<is> O<US dollars 28 per displaced family>.
+[MZBQ|00287]
+n:s# O<Part VIII> D<is> O<a summary of all requirements>.
+[MZBQ|00288]
+n:s# O<Cereals> D<require> O<US dollars 169,000,000>.
+[MZBQ|00289]
+n:s# O<Other food> D<requires> O<US dollars 41,938,000>.
+[MZBQ|00290]
+n:s# O<The subtotal> D<is> O<US dollars 210,938,000>.
+[MZBQ|00291]
+n:s# O<Logistics support> D<requires> O<US dollars 6,347,000>.
+[MZBQ|00292]
+n:s# O<Health> D<requires> O<US dollars 8,305,000>.
+[MZBQ|00293]
+n:s# O<Water> D<requires> O<US dollars 5,675,000>.
+[MZBQ|00294]
+n:s# O<Relief and survival items> D<require> O<US dollars 6,354,000>.
+[MZBQ|00295]
+n:s# O<Agricultural inputs> D<require> O<US dollars 6,942,000>.
+[MZBQ|00296]
+n:s# O<The sub-total> D<is> O<US dollars 33,623,000>.
+[MZBQ|00297]
+n:s# O<The grand total> D<is> O<US dollars 244,561,000>.
+[MZBQ|00298]
+n:s# O<The contents of the above appeal> D<focus> dg|primarily|gd on O<the emergency assistance requirement of 3.5 million severely affected and displaced Mozambican people>.
+[MZBQ|00299]
+d:t# +A<the Government of Mozambique> T<intends>, cd|depending on the availability of resources, executing agents, and accessibility|dc, T<to broaden> O<the above approach> into O<multisectoral rehabilitation programmes> T<targeting> O<specific clusters of displaced persons> and T<providing> O<them> with O<integrated support>, ac|including O<technical assistance>|ca.
+[MZBQ|00300]
+n:t# pr|To ensure accurate recording of pledges versus unmet needs|rp, O<it> D<is> O<extremely important> that +AQ<all donors> T<keep> O<UNDRO> O<mn|directly|nm informed of their current and planned contributions and programmes>.
+[MZBQ|00301]
+n:s# -A<This information> T<is to be sent> O<to UNDRO> ac|with copy to the Resident Co-ordinator in Maputo and Farah and La Muniere at UN/OSPQ in New York|ca.
+[MZBQ|00302]
+d:t# -A<Critical and widespread shortages of basic agricultural handtools, seeds, and other agricultural inputs> lc|throughout the country|cl T<are being handled> by +A<the Government of Mozambique> sp|within the framework of its strategy for rehabilitation of the agricultural sector|ps.
+[MZBQ|00303]
+d:s# O<The problem> D<is> dg|particularly|gd O<acute> sp|among displaced families|ps, O<which> tm|currently|mt D<require> O<handtools> and O<seeds> pr|in order to restore basic capacity for subsistence farming|rp.
+[MZBQ|00304]
+d:s# O<Small centralized storage facilities for the same> D<are also required> lc|in key cluster resettlement areas|cl.
+[MZBQ|00305]
+d:s# O<The following request> D<is based on> O<an estimated 250,000 displaced and severely affected families> in Sofala, O<which> D<accounts for> O<45 percent>, Niassa, O<which> D<accounts for> O<18 percent>, Zambezia, O<which> D<accounts for> O<12 percent>, Tete, O<which> D<accounts for> O<11 percent>, Manica, O<which> D<accounts for> O<7 percent>, Inhambane, O<which> D<accounts for> O<4 percent>, and Maputo, O<which> D<accounts for> O<3 percent>.
+[MZBQ|00306]
+d:s# O<The requirement for hoes> D<is> O<675,000 units> at a cost of O<US dollars 1,675,000 c.i. Maputo or Beira>.
+[MZBQ|00307]
+d:s# O<The requirement for machetes> D<is> O<250,000 units> at a cost of O<US dollars 750,000 c.i. Maputo or Beira>.
+[MZBQ|00308]
+d:s# O<The requirement for axes> D<is> O<250,000 units> at a cost of O<US dollars 1,875,000 c.i. Maputo or Beira>.
+[MZBQ|00309]
+d:s# O<The requirement for sickles> D<is> O<75,000 units> at a cost of O<US dollars 150,000 c.i. Maputo or Beira>.
+[MZBQ|00310]
+d:s# O<The requirement for files> D<is> O<250,000 units> at a cost of O<US dollars 750,000 c.i. Maputo or Beira>.
+[MZBQ|00311]
+d:s# O<The total cost of handtools> D<is> O<US dollars 5,200,000>.
+[MZBQ|00312]
+d:t# -A<Handtools> T<should be made available> tm|as soon as possible after T<agreement> with O<the Government of Mozambique> on O<technical specifications>|mt.
+[MZBQ|00313]
+d:s# O<The requirement for maize seed> D<is> O<3,000 tons> at a cost of O<US dollars 1,340,000 c.i. Maputo or Beira>.
+[MZBQ|00314]
+d:s# O<The requirement for sorghum seed> D<is> O<375 tons> at a cost of O<US dollars 126,000 c.i. Maputo or Beira>.
+[MZBQ|00315]
+d:s# O<The requirement for groundnuts seed> D<is> O<1,500 tons> at a cost of O<US dollars 1,500,000 c.i. Maputo or Beira>.
+[MZBQ|00316]
+d:s# O<The requirement for cowpeas seed> D<is> O<500 tons> at a cost of O<US dollars 200,000 c.i. Maputo or Beira>.
+[MZBQ|00317]
+d:s# O<The requirement for horticulture seed> D<is> O<10 tons> at a cost of O<US dollars 100,000 c.i. Maputo or Beira>.
+[MZBQ|00318]
+d:s# O<The total seed requirement> D<is> O<5,385 tons> at a cost of O<US dollars 3,266,000>.
+[MZBQ|00319]
+d:s# O<The source of vegetable seeds> D<is> O<not significant>, pq|provided that -A<specifications> T<are checked> with O<MINAGRI>|qp.
+[MZBQ|00320]
+d:t# O<These seeds> T<should start> T<to become available> lc|in Mozambique|cl pr|for distribution|rp tm|by November 1987|mt.
+[MZBQ|00321]
+d:t# -A<Other seeds> T<should be bought> lc|within the region, preferably in Zimbabwe, Zambia, and Malawi|cl, and T<should start> T<to become available> pr|for distribution|rp lc|in Mozambique|cl tm|by July 1987|mt.
+[MZBQ|00322]
+d:s# sp|For a volume of about 7,000 tons of goods|ps, O<an estimated US dollars 735,000> D<will be required>, mn|calculated on the basis of US dollars 0.35 per ton per kilometre and an average travel distance of 300 kilometres|nm.
+[MZBQ|00323]
+d:s# O<Temporary storage for handtools and seeds> D<is required>.
+[MZBQ|00324]
+d:s# O<It> D<will be necessary> T<to provide> O<about 150 tarpaulins of 20 by 20 metres> pr|for temporary protection|rp lc|in some localities|cl.
+[MZBQ|00325]
+d:s# O<The cost involved> D<would be> O<about US dollars 35,000>.
+[MZBQ|00326]
+d:s# O<Pesticides> D<are required>.
+[MZBQ|00327]
+d:s# cu|Given O<the high risk of migratory pests>, in particular in areas O<which> T<have been affected> by O<drought> in previous years|uc, O<it> D<is important> T<to make available> O<an allocation of US dollars 100,000> pr|for T<the purchase> of O<pesticides>|rp.
+[MZBQ|00328]
+d:s# O<The grand total> D<is> O<US dollars 9,336,000>.
+[MZBQ|00329]
+d:s# O<The amount> D<is> O<US dollars 37 per displaced family>.
+[MZBQ|00330]
+n:s# O<Part VIII> D<is> O<a summary of all requirements>.
+[MZBQ|00331]
+d:s# O<Cereals, indicative,> D<require> O<US dollars 169,000,000>.
+[MZBQ|00332]
+d:s# O<Other food> D<requires> O<US dollars 41,938,000>.
+[MZBQ|00333]
+d:s# O<The sub-total> D<is> O<US dollars 210,938,000>.
+[MZBQ|00334]
+d:s# O<Logistics support> D<requires> O<US dollars 6,347,000>.
+[MZBQ|00335]
+d:s# O<Health> D<requires> O<US dollars 8,305,000>.
+[MZBQ|00336]
+d:s# O<Water> D<requires> O<US dollars 5,675,000>.
+[MZBQ|00337]
+d:s# O<Relief and survival items> D<require> O<US dollars 6,354,000>.
+[MZBQ|00338]
+d:s# O<Agricultural inputs> D<require> O<US dollars 9,336,000>.
+[MZBQ|00339]
+d:s# O<The sub-total> D<is> O<US dollars 36,017,000>.
+[MZBQ|00340]
+d:s# O<The grand total> D<is> O<US dollars 246,955,000>.
+[MZBQ|00341]
+d:t# tm|On 27 February 1987|mt, -A<a special emergency appeal of the Secretary-General of the United Nations> T<was launched>, T<calling for> O<humanitarian assistance> to O<victims of civil strife and drought in Mozambique>.
+[MZBQ|00342]
+d:t# -A<A donors meeting> T<has now been called> tm|for 31 March|mt.
+[MZBQ|00343]
+d:s# -A<The delegation of the Government of Mozambique at this meeting> T<will be headed> by +A<the Prime Minister, His Excellency Mr. Mario da Graca Machungo>.
+[MZBQ|00344]
+n:s# O<The purpose of UNDRO situation report number 2> D<is> T<to provide> O<an update of recent emergency assistance activities> T<carried out> lc|in Mozambique|cl by +A<UN agencies> and +A<major NGOs>.
+[MZBQ|00345]
+n:s# O<This summary> D<is based on> O<recent information> T<provided> to O<UNDRO> by +A<the organizations concerned>.
+[MZBQ|00346]
+d:t# pr|To arrive at a concerted plan of action for the provision of emergency assistance|rp, +A<UNDRO> T<envisages> T<issuing>, tm|as from April 1987 and until further notice|mt, O<monthly situation reports> sp|on O<the number of affected and displaced persons>, O<donors' response to the Secretary-General's appeal of 27 February 1987 and unmet requirements>, and O<programmes and plans of UN agencies and NGOs> T<relating to> O<the Secretary-General's appeal>|ps.
+[MZBQ|00347]
+d:t# -A<These reports> T<will be compiled> from O<inputs> T<received> from O<the UN Special Co-ordinator for Emergency Relief Operations in Mozambique>, O<which> cu|D<are based on> O<extensive and regular consultations> between O<him>, O<the Government>, O<UN agencies>, O<donors>, and O<NGOs> through appropriate co-ordinating mechanisms at field level|uc, as well as from O<contributions> T<received> from O<headquarters of the organizations and institutions concerned>.
+[MZBQ|00348]
+d:s# O<The UN system> D<includes> O<UNDRO>, O<UNICEF>, O<UNDP>, O<UNV>, O<UNHCR>, O<WFP>, O<FAO>, and O<WHO>.
+[MZBQ|00349]
+d:s# O<The NGOs> D<include> O<Adventist Development and Relief Agency>, O<Africare>, O<Air Serv International ARO Solidarity Group>, O<Association Francaise des Volontaires du Progres>, O<Belgian Socialist Solidarity Group>, O<Bioforce>, O<CARE>, O<Caritas>, O<Catholic Relief Services>, O<Christian Council of Mozambique>, O<Church World Services>, O<Community Aid Abroad>, O<CUSO/SUCO>, O<Development Aid from People to People>, O<Eduardo Mondlane Foundation>, O<Friedrich Ebert Foundation>, O<German Agro Action>, O<ICRC>, O<International Voluntary Service>, O<LRCS>, O<Lutheran World Federation>, O<Medecins du Monde/Hopital Sans Frontieres>, O<Medecins Sans Frontieres>, O<Mellemfolkeligt Samvirke>, O<Methodist Church of Mozambique>, O<Movimento Liberazione e Sviluppo>, O<Mozambican Red Cross>, O<Norwegian People's Relief Association>, O<Operation Handicap International>, O<Oxfam>, O<Redd Barna>, O<Save the Children Fund>, O<World Council of Churches>, O<World University Service>, and O<World Vision International>.
+[MZBQ|00350]
+d:t# mn|With O<funds> T<donated> by +A<the Canadian Government>|nm, +A<UNDRO> T<is continuing> T<to support> O<the governmental Department for Prevention, Control and Combat Natural Disasters> and O<its logistics base in Zambezia Province> mn|through T<the provision> of O<trucks> and O<vehicles>, as well as O<communications equipment> and O<tools>|nm.
+[MZBQ|00351]
+d:t# pr|For water purification|rp, +A<UNDRO> T<is providing> O<two thousand tons of aluminium sulphate>, -A<which> T<are being delivered> lc|to Beira and Maputo|cl.
+[MZBQ|00352]
+d:t# ac|With an Australian contribution|ca, +A<UNDRO> T<is financing> O<health programmes of NGOs>, ac|including O<Medecins du Monde/Hopital Sans Frontieres> and O<Community Aid Abroad>|ca, lc|in the provinces of Inhambane and Sofala|cl.
+[MZBQ|00353]
+d:t# ac|With Italian funds|ca, -A<cooking utensils>, -A<blankets>, and -A<handtools> T<were shipped> lc|from the Pisa warehouse|cl.
+[MZBQ|00354]
+d:t# pr|To assist the UN Special Co-ordinator in his capacity as UNDRO representative|rp, +A<UNDRO> will, pq|subject to the receipt of cash contributions|qp, T<post> O<two delegates> lc|to Maputo|cl.
+[MZBQ|00355]
+d:s# O<The total cost of these postings> D<amounts to> O<US dollars 170,000>.
+[MZBQ|00356]
+d:t# +A<UNICEF> T<has provided> O<support> to O<DPCCN> sp|in the logistical sector|ps, ac|including O<emergency airlift> and O<road fleet maintenance>|ca, and sp|in the area of O<planning> and O<information>|ps.
+[MZBQ|00357]
+d:t# ac|In co-operation with the Ministry of Health|ca, -A<health and nutrition programmes> T<are being carried out>, ac|including O<essential drugs> and O<immunization>|ca.
+[MZBQ|00358]
+d:t# sp|At provincial level|ps, -A<relief items such as seeds, supplementary foods, and household items> T<are provided>.
+[MZBQ|00359]
+d:t# -A<Rural water supply projects> T<are carried out>, dg|especially|gd lc|in the provinces of Inhambane and Cabo Delgado|cl.
+[MZBQ|00360]
+d:t# ac|With governmental and WFP participation|ca, +A<the United Nations Special Co-ordinator for Emergency Relief Operations in Mozambique> T<conducted> tm|from 27 to 28 February|mt O<a UN assessment mission sp|on the emergency and food situation in Zambezia|ps>, O<which> D<is> O<the region most severely affected by civil strife>.
+[MZBQ|00361]
+d:t# +A<The mission> T<reviewed> O<food aid logistics>, O<health care>, and O<access to beneficiaries>, T<examined> O<needs for displaced persons lc|in reception centres|cl>, and T<identified> O<technical assistance requirements for the DPCCN provincial office>.
+[MZBQ|00362]
+d:t# tm|In early March 1987|mt, +A<the UN Special Co-ordinator> T<convened> O<a series of meetings> with O<the Government>, O<bilateral donors>, O<UN agencies>, and O<NGOs> pr|T<to review> O<emergency operations> and T<present> O<the Secretary-General's appeal>|rp.
+[MZBQ|00363]
+d:t# -A<Particular emphasis> T<was placed> on T<co-ordination> both by +A<the UN system> and by +A<the Mozambique Government> sp|concerning O<information>, O<needs>, and O<donations>, but also concerning T<the arrival> and T<distribution> of O<emergency supplies>|ps.
+[MZBQ|00364]
+d:t# -A<Particular emphasis> T<was placed> on O<donor flexibility> pr|in order to avoid redundancy or overlap in the supply of specific requirements|rp.
+[MZBQ|00365]
+d:t# -A<Particular emphasis> T<was placed> on O<the extent> to which O<the emergency lc|in Mozambique|cl> T<is linked> with O<regional problems>.
+[MZBQ|00366]
+d:s# O<A second round of meetings> D<is scheduled> tm|prior to the meeting of 31 March|mt.
+[MZBQ|00367]
+d:t# +A<UNDP> T<is strengthening> O<its office> lc|in Maputo|cl dg|substantially|gd pr|T<to promote> O<enhanced co-operation> and O<response of the UN system to the situation at hand> and T<to allow> O<the Special Co-ordinator> T<to concentrate> O<his activities> on emergency-related matters|rp.
+[MZBQ|00368]
+d:t# +A<The United Nations Volunteers Programme> T<has provided> O<the services of mechanics, data-base managers, and sanitary engineers>.
+[MZBQ|00369]
+d:s# tm|At present|mt, O<sanitary engineers> D<are attached to> O<water supply and sanitation schemes lc|in Cabo Delgado Province, Manica Province, and Tete City|cl>.
+[MZBQ|00370]
+d:t# +A<UNV> T<is making> O<input> to O<UNICEF logistics and nutritional support projects>.
+[MZBQ|00371]
+d:t# +A<UNHCR> T<launched> O<an appeal> pr|T<to cover> O<the needs of displaced Mozambicans in Malawi and returnees>|rp.
+[MZBQ|00372]
+d:t# -A<UNHCR field capacity lc|in the Province of Tete|cl>, lc|to which|cl -A<displaced persons lc|in Malawi|cl> D<are expected> T<to return>, T<is being strengthened>.
+[MZBQ|00373]
+d:t# sp|Under an ongoing emergency operation|ps, +A<WFP> T<supplied> O<12,000 tons of maize>, O<3,535 tons of beans>, and O<50 tons of lyophilized products> pr|for distribution to O<1,473,000 drought victims and displaced persons located in the provinces of Inhambane, Gaza, Sofala, Manica, Tete, and Zambezia>|rp.
+[MZBQ|00374]
+d:s# O<Distribution> D<is expected> T<to be completed> tm|in April 1987|mt, cn|though O<current stocks of bilateral food commodities> D<may last> until mid-1987|nc.
+[MZBQ|00375]
+d:t# sp|As a continuation of its assistance beyond April 1987|ps, +A<WFP> T<approved> tm|on 18 February 1987|mt O<an additional supply of 11,000 tons of maize, 2,000 tons of beans, and 50 tons of lyophilized products> at O<a total cost of US dollars 4.7 million>.
+[MZBQ|00376]
+d:t# O<Food aid sp|under this forthcoming emergency operation|ps> T<will cover> O<unmet food aid requirements of approximately 760,000 persons lc|in the provinces of Inhambane, Gaza, Manica, Sofala, and Tete|cl>.
+[MZBQ|00377]
+d:t# -A<A logistics co-ordinator> T<has been posted> lc|in Maputo|cl pr|to help T<organize> and T<direct> O<the flow of emergency food aid>|rp.
+[MZBQ|00378]
+d:t# -A<A food aid co-ordinator> T<is being assigned> lc|to O<the Food Management Unit of the Ministry of Internal Trade>|cl.
+[MZBQ|00379]
+d:t# -A<A senior officer experienced in emergency operations management> T<is being assigned> lc|to O<the WFP office in Maputo>|cl.
+[MZBQ|00380]
+d:t# O<A high-level food aid and logistics mission> D<is> lc|in Mozambique|cl T<reviewing> O<the overall situation> and T<will revert>.
+[MZBQ|00381]
+d:t# -A<A logistical food delivery operation> T<is being carried out> mn|by sea|nm lc|to coastal areas in Inhambane|cl by +A<the vessel Cinq Juin>.
+[MZBQ|00382]
+d:t# +A<The Cinq Juin> T<has made> O<over 110 trips> tm|thus far|mt, T<carrying> O<335 tons of food> sp|on each trip|ps, for a total of 335,000 tons.
+[MZBQ|00383]
+d:t# tm|Recently|mt -A<this vessel> T<was joined> by +A<another boat chartered by WFP, the Idun>.
+[MZBQ|00384]
+d:t# +A<WFP> T<plans> T<to continue> O<this logistical operation> mn|by sea|nm.
+[MZBQ|00385]
+d:s# O<The prospects> for -A<cereal crops> T<to be harvested> tm|in April 1987|mt D<are> O<unfavourable>.
+[MZBQ|00386]
+d:t# -A<A mission lc|to Mozambique|cl> T<is being carried out> pr|T<to assist> O<the Government> in O<the preparation of project proposals and a plan of action for emergency and rehabilitation in the agricultural sector>|rp.
+[MZBQ|00387]
+d:t# ac|Together with UNICEF|ca, O<WHO> D<forms part of> O<a working group lc|in the Ministry of Health|cl> T<evaluating> O<health needs>, ac|including O<drugs>, O<medical supplies>, O<construction material>, O<water supply schemes>, and O<equipment for rehabilitation of primary-level health facilities>|ca.
+[MZBQ|00388]
+d:t# O<Family health kits> D<are foreseen> pr|for O<households> and O<installations> T<receiving> O<orphans>|rp.
+[MZBQ|00389]
+d:t# +A<CARE's Disaster Logistics Unit> T<assists> O<DPCCN> pr|T<to co-ordinate> and T<to manage> O<various aspects of emergency food aid>|rp.
+[MZBQ|00390]
+d:t# -A<An advisory team of 17 technical and logistical managers> T<has been placed> pr|T<to train> O<DPCCN staff> and T<to facilitate> T<the receipt>, T<storage>, and T<distribution> of O<emergency food>|rp.
+[MZBQ|00391]
+d:t# -A<Seeds> and -A<handtools> T<are provided> to O<local farmers>.
+[MZBQ|00392]
+d:t# +A<The Mozambican Red Cross> T<created> O<an emergency unit> ac|with O<representatives of LRCS, the Ministry of Health, and DPCCN>|ca.
+[MZBQ|00393]
+d:t# -A<The following priority provinces> T<were identified>: Niassa, Tete, Zambezia, and Manica.
+[MZBQ|00394]
+d:t# lc|In Zambezia Province|cl, -A<approximately 35,000 displaced persons lc|in Chinde|cl> and -A<4,000 lc|in Inhassunge|cl> T<are being assisted> by +A<the Mozambican Red Cross> ac|with O<support of the LRCS delegation>|ca.
+[MZBQ|00395]
+d:t# O<The Mozambican Red Cross> D<has> O<two teams> T<totalling> O<20 first-aiders> T<working> lc|on the spot|cl, one lc|in each district|cl.
+[MZBQ|00396]
+d:s# O<A joint LRCS/ICRC mission> D<is scheduled> tm|for April 1987|mt pr|T<to determine> O<the division of responsibilities between the two agencies>|rp.
+[MZBQ|00397]
+d:t# tm|On 2 March|mt, +A<the Lutheran World Federation> T<launched> O<an emergency appeal>.
+[MZBQ|00398]
+d:t# +A<A fact-finding mission> is tm|at present|mt T<determining> O<the use of donors' response>.
+[MZBQ|00399]
+d:t# +A<Medecins Sans Frontieres of Belgium> T<is carrying out> O<the rehabilitation of health facilities lc|in northern Inhambane|cl>.
+[MZBQ|00400]
+d:t# -A<Medical teams> T<have been sent> lc|to Inhambane|cl and +A<Medecins Sans Frontieres> T<has supplied> O<medicaments> and O<basic medical equipment> lc|to O<Inhambane and Sofala Provinces>|cl.
+[MZBQ|00401]
+d:t# +A<Medecins Sans Frontieres of France> T<is carrying out> O<rehabilitation works> lc|at Mocuba Hospital in Zambezia|cl.
+[MZBQ|00402]
+d:s# O<The rehabilitation works> D<are due for completion> tm|in June 1987|mt.
+[MZBQ|00403]
+d:s# +A<The MSF team> T<shall stay on> tm|until 1988|mt.
+[MZBQ|00404]
+d:t# +A<An airlift> T<covers> O<isolated towns> lc|in Manica and Tete Provinces|cl, and +A<the airlift> T<carries> O<medicaments>, O<vaccines>, O<materials>, and O<medical evacuations>.
+[MZBQ|00405]
+d:t# -A<Ophthalmologist care> T<is provided> O<to Tete Hospital> and O<to provincial dispensaries accessible by road>.
+[MZBQ|00406]
+d:t# +A<Oxfam (UK)> and +A<Save the Children (UK)> T<launched> O<an appeal> tm|on 12 February 1987|mt.
+[MZBQ|00407]
+d:s# +A<Relief programmes> T<will concentrate> O<on Gaza, Niassa, Tete, and Zambezia Provinces>.
+[MZBQ|00408]
+d:s# O<The first phase> D<will include> O<relief items such as grain, high-energy biscuits, medicines, blankets, fabric, sewing kits, and cooking pots>.
+[MZBQ|00409]
+d:s# O<The second phase> D<will consist of> O<the provision of seeds, fertilizers, and tools for 50,000 families>, dg|mainly|gd lc|in Zambezia Province|cl, pr|in order that +A<the families> T<may plant> during the period from October 1987 to February 1988|rp.
+[MZBQ|00410]
+d:t# +A<Save the Children (USA)> T<is undertaking> O<a child survival and primary health care project> lc|in Gaza Province|cl, and +A<the project> T<covers> O<a population of 15,000>.
+[MZBQ|00411]
+d:t# +A<The World Council of Churches> T<launched> O<a 1987 six-month emergency appeal> for O<food>, O<seeds>, O<tools>, O<medicines>, O<blankets>, and O<household utensils> pr|T<to be distributed> by +A<the Christian Council of Mozambique> in co-operation with DPCCN in Gaza, Inhambane, Maputo, Sofala, and Tete Provinces|rp.
+[MZBQ|00412]
+d:t# tm|From 1 October 1986 to 30 September 1987|mt, +A<World Vision International> T<is providing> O<24,500 metric tons of maize>, O<3,000 metric tons of beans>, and O<3,000 metric tons of vegetable oil> O<to Gaza, Manica, Maputo, Tete, and Zambezia Provinces> O<mn|through DPCCN, the Mozambican Red Cross, Caritas, and the Christian Council of Mozambique|nm>.
+[MZBQ|00413]
+d:t# +A<World Vision International> T<is distributing> O<packages of agricultural inputs, ac|including seed, handtools, and manuals,|ca> O<to 10,000 farmers lc|in Tete|cl> and O<to 8,000 farmers lc|in Zambezia|cl>.
+[MZBQ|00414]
+n:s# pr|To ensure accurate recording of contributions versus unmet needs|rp, O<it> D<is important> that +AQ<all donors> T<keep> O<UNDRO> O<directly informed> of O<their current and planned contributions and programmes>.
+[MZBQ|00415]
+n:s# -A<This information> T<is to be sent> O<to UNDRO>, ac|with copy O<to the Resident Co-ordinator in Maputo> and O<to Farah and La Muniere at UN/OSPQ in New York>|ca.
+[MZBQ|00416]
+n:s# O<Part two, WFP paragraph 18, second sentence> D<should read> mn|as follows|nm.
+[MZBQ|00417]
+d:t# +A<The Cinq Juin> T<has made> O<125 trips> tm|thus far|mt, and +A<the Cinq Juin> T<has carried> O<dg|approximately|gd 45,000 tons of emergency food>.
+[MZBQ|00418]
+d:t# mn|As announced in the UN Secretary-General's appeal of 27 February 1987|nm, +A<the international community, ac|including governments, the UN system, and NGOs,|ca> T<attended> O<a meeting> T<convened> by +A<the Secretary-General> O<on humanitarian assistance to Mozambique>.
+[MZBQ|00419]
+d:t# ac|Together with a delegation of the Mozambique Government headed by the Prime Minister of Mozambique and the Special UN Co-ordinator for Relief Operations in Mozambique|ca, +A<representatives of 53 governments, 2 inter-governmental organizations, 14 agencies of the UN system, and 37 non-governmental organizations> T<participated> in O<the meeting> T<chaired> by +A<the United Nations Disaster Relief Co-ordinator>.
+[MZBQ|00420]
+d:t# +A<The Under-Secretary-General for Special Political Questions> T<transmitted> O<a message> O<from the Secretary-General> T<stressing> O<the need for immediate action> pr|in order to avoid further intensification of the emergency assistance|rp.
+[MZBQ|00421]
+d:t# +A<The Prime Minister> T<gave> O<an overview of the situation lc|in Mozambique|cl tm|in recent years|mt> and T<highlighted> O<the dire state of the affected population> cu|as a result of externally induced destabilisation|uc.
+[MZBQ|00422]
+d:t# +A<The Prime Minister> T<outlined> O<measures> T<being taken> by +A<the Government of Mozambique> pr|to enhance national aid co-ordination and reception capacity|rp.
+[MZBQ|00423]
+d:t# +A<The UN Special Co-ordinator for Relief Operations in Mozambique> T<described> O<the efforts> T<being undertaken> by +A<the UN system> pr|to promote close co-operation between all parties involved in relief operations|rp.
+[MZBQ|00424]
+d:t# +A<The UN Special Co-ordinator for Relief Operations in Mozambique> T<stressed> O<the need for a central information system pr|for the collection, analysis, and dissemination of emergency data|rp>.
+[MZBQ|00425]
+d:t# +A<Donor governments> and +A<representatives of NGOs and the UN system> T<expressed> O<a clear commitment towards alleviating the plight of the affected population in Mozambique>.
+[MZBQ|00426]
+d:t# +A<Representatives of African countries> +A<who> T<took> O<the floor> T<emphasized> O<their solidarity with the people of Mozambique>.
+[MZBQ|00427]
+d:t# tm|After +A<the meeting> T<had concluded> O<its formal agenda>|mt, +A<the meeting> T<briefly discussed> O<questions related to logistics, relief management in general, and accessibility of the affected population>.
+[MZBQ|00428]
+d:t# tm|On 1 April 1987|mt, -A<a follow-up meeting> T<was held> O<with 35 NGOs and UN agencies>, and O<the meeting> D<had> O<the participation of the Minister of Co-operation of Mozambique and the UN Special Co-ordinator for Relief Operations in Mozambique>.
+[MZBQ|00429]
+d:t# +A<The follow-up meeting> T<advocated> O<equal partnership between governmental and non-governmental organizations> sp|in relief management structures|ps.
+[MZBQ|00430]
+d:t# pr|In order to avoid duplication of relief efforts and to enable unified reporting on relief operations|rp, +A<the follow-up meeting> T<made> O<a recommendation> that +A<NGOs> T<improve> O<their own co-ordination mechanisms> sp|at national, provincial, and sectoral level|ps.
+[MZBQ|00431]
+d:s# O<Commitments for relief contributions tm|in 1987|mt made lc|at the meeting|cl> D<amounted to> O<dg|approximately|gd US dollars 209 million>.
+[MZBQ|00432]
+n:s# -A<A preliminary and tentative list by country> T<is provided> lc|below|cl.
+[MZBQ|00433]
+d:t# +A<UNDRO> T<is tm|at present|mt verifying> O<these data> and T<matching> O<these data> against O<relief requirements>.
+[MZBQ|00434]
+n:s# O<The tentative list of pledged contributions> D<is> mn|as follows|nm.
+[MZBQ|00435]
+d:t# +A<Australia> T<pledged> O<US dollars 878,000>.
+[MZBQ|00436]
+d:t# +A<Austria> T<pledged> O<an estimated US dollars 800,000>.
+[MZBQ|00437]
+d:t# +A<Belgium> T<pledged> O<an estimated US dollars 881,000>.
+[MZBQ|00438]
+d:t# +A<Botswana> T<pledged> O<US dollars 1,176,000>.
+[MZBQ|00439]
+d:t# +A<Canada> T<pledged> O<US dollars 12,367,000>.
+[MZBQ|00440]
+d:t# +A<Czechoslovakia> T<pledged> O<US dollars 414,000>.
+[MZBQ|00441]
+d:t# +A<Denmark> T<pledged> O<US dollars 2,200,000>.
+[MZBQ|00442]
+d:t# +A<Finland> T<pledged> O<US dollars 1,200,000>.
+[MZBQ|00443]
+d:t# +A<France> T<pledged> O<an estimated US dollars 800,000>.
+[MZBQ|00444]
+d:t# +A<Germany, Federal Republic,> T<pledged> O<US dollars 4,945,000>.
+[MZBQ|00445]
+d:t# +A<Italy> T<pledged> O<US dollars 38,500,000>.
+[MZBQ|00446]
+d:t# +A<The Netherlands> T<pledged> O<US dollars 11,000,000>.
+[MZBQ|00447]
+d:t# +A<New Zealand> T<pledged> O<US dollars 139,000>.
+[MZBQ|00448]
+d:t# +A<Norway> T<pledged> O<US dollars 4,286,000>.
+[MZBQ|00449]
+d:t# +A<Portugal> T<pledged> O<US dollars 2,100,000>.
+[MZBQ|00450]
+d:t# +A<Sweden> T<pledged> O<US dollars 11,000,000>.
+[MZBQ|00451]
+d:t# +A<The USSR> T<pledged> O<US dollars 282,000>.
+[MZBQ|00452]
+d:t# +A<The U.K.> T<pledged> O<US dollars 12,789,000>.
+[MZBQ|00453]
+d:t# +A<The USA> T<pledged> O<US dollars 75,464,000>.
+[MZBQ|00454]
+d:t# +A<The EEC> T<pledged> O<US dollars 27,880,000>.
+[MZBQ|00455]
+d:s# O<The total pledged contributions> D<amount to> O<US dollars 209,101,000>.
+[MZBQ|00456]
+n:t# -A<A final list taking into account commitments of governmental and non-governmental donors to Mozambique> T<will be issued> tm|shortly|mt.
+[MZBQ|00457]
+n:s# O<it> D<is> O<important> that +AQ<all donors> T<keep> O<UNDRO> O<informed of their current and planned contributions and programmes>.
+[MZBQ|00458]
+n:s# -A<This information> T<is to be sent> to O<UNDRO>, ac|with copy to O<the Resident Co-ordinator in Maputo> and to O<Farah and La Muniere at UN/OSPQ in New York>|ca.
+[MZBQ|00459]
+d:s# O<The provinces reported most affected by war> D<are> O<Tete>, O<Zambezia>, and O<Sofala>.
+[MZBQ|00460]
+d:s# O<People> lc|in liberated areas|cl, OQ<many of whom> D<remain> O<inaccessible> by road, D<urgently need> O<food>.
+[MZBQ|00461]
+d:t# +A<WFP> T<has almost completed> O<an airlift of 100 metric tons of food and relief supplies> lc|from Beira to Inhaminga in Sofala Province|cl.
+[MZBQ|00462]
+d:t# +A<An FAO mission> T<confirmed> that O<the outlook for cereal crops about to be harvested> D<is> O<unfavourable>.
+[MZBQ|00463]
+d:t# -A<the planted area> T<was dg|seriously|gd reduced>, while +A<drought> T<has dg|severely|gd affected> -A<crops>.
+[MZBQ|00464]
+d:t# O<The production of cereals> D<will probably be> O<less than the poor 1986 crop>, while O<the production of other non-cereal staple foods> D<is also likely> T<to decline>.
+[MZBQ|00465]
+d:t# +A<The most recent estimate by Mozambican authorities of the number of affected and displaced population> T<indicates> O<a total of 4.3 million people>.
+[MZBQ|00466]
+d:t# -A<Nampula Province> T<has been added> to O<the affected provinces>.
+[MZBQ|00467]
+d:s# O<Maputo, excluding Maputo City,> D<has> O<167,421 displaced people> and O<190,837 affected people>, and O<Maputo> D<has> O<a total of 358,258 displaced and affected people>.
+[MZBQ|00468]
+d:s# O<Inhambane> D<has> O<55,000 displaced people> and O<414,883 affected people>, and O<Inhambane> D<has> O<a total of 469,883 displaced and affected people>.
+[MZBQ|00469]
+d:s# O<Gaza> D<has> OQ<no displaced people listed> and O<383,983 affected people>, and O<Gaza> D<has> O<a total of 383,983 displaced and affected people>.
+[MZBQ|00470]
+d:s# O<Manica> D<has> O<102,967 displaced people> and O<151,002 affected people>, and O<Manica> D<has> O<a total of 253,969 displaced and affected people>.
+[MZBQ|00471]
+d:s# O<Sofala> D<has> O<476,102 displaced people> and O<107,107 affected people>, and O<Sofala> D<has> O<a total of 583,209 displaced and affected people>.
+[MZBQ|00472]
+d:s# O<Tete> D<has> O<119,000 displaced people> and O<195,000 affected people>, and O<Tete> D<has> O<a total of 314,000 displaced and affected people>.
+[MZBQ|00473]
+d:s# O<Zambezia> D<has> O<252,805 displaced people> and O<574,840 affected people>, and O<Zambezia> D<has> O<a total of 827,645 displaced and affected people>.
+[MZBQ|00474]
+d:s# O<Niassa> D<has> O<203,307 displaced people> and O<239,300 affected people>, and O<Niassa> D<has> O<a total of 442,607 displaced and affected people>.
+[MZBQ|00475]
+d:s# O<Nampula> D<has> O<177,460 displaced people> and O<494,595 affected people>, and O<Nampula> D<has> O<a total of 672,055 displaced and affected people>.
+[MZBQ|00476]
+d:s# O<The total> D<consists of> O<1,554,062 displaced people> and O<2,751,547 affected people>, and O<the total number of displaced and affected people> D<is> O<4,305,609>.
+[MZBQ|00477]
+d:s# O<306,000 people from Tete Province> D<are displaced> lc|in other countries|cl, ac|including Malawi, Zambia, and Zimbabwe|ca.
+[MZBQ|00478]
+d:s# O<Requirements> sp|in the sectors of water and agricultural inputs|ps D<are still dg|largely|gd unmet>.
+[MZBQ|00479]
+d:t# +A<The Government> T<emphasizes> O<the importance of contributions in these two sectors> pr|as a means to achieve self-sufficiency|rp.
+[MZBQ|00480]
+d:t# +A<UNDRO> T<has fielded> O<an adviser> and O<emergency liaison officer> pr|to assist the UN Special Co-ordinator for Relief Operations in Mozambique|rp.
+[MZBQ|00481]
+d:t# +A<UNDRO> T<has fielded> O<an information system expert, seconded by UNHCR,> pr|to prepare the setting up of an information system in the office of the UN Special Co-ordinator in Maputo|rp.
+[MZBQ|00482]
+d:t# +A<UNDRO> T<has fielded> O<co-ordination advisers> lc|at provincial level|cl, and tm|so far|mt +A<UNDRO> T<has sent> O<two advisers> lc|to O<Sofala> and O<Zambezia Provinces> respectively|cl.
+[MZBQ|00483]
+d:t# -A<This UNDRO input> T<has been made possible> cu|by +A<the positive response of the U.K. Government to UNDRO's appeal for funding of field delegates>|uc.
+[MZBQ|00484]
+d:s# O<The structure for co-ordination in Mozambique> D<is> O<mn|as follows|nm>.
+[MZBQ|00485]
+d:s# +A<the UN Special Co-ordinator for Emergency Relief Operations> T<co-operates> with O<representatives of the UN system, the Government, donors, and NGOs>.
+[MZBQ|00486]
+d:s# +A<the National Executive Commission for Emergency> T<operates>.
+[MZBQ|00487]
+d:s# +A<the UN Emergency Operations Group> T<operates> ac|with O<four technical standing committees>|ca.
+[MZBQ|00488]
+d:s# O<The first technical standing committee> D<concerns> O<food>, O<logistics>, and O<distribution>.
+[MZBQ|00489]
+d:s# O<The second technical standing committee> D<concerns> O<health>, O<nutrition>, and O<relief>.
+[MZBQ|00490]
+d:s# O<The third technical standing committee> D<concerns> O<agriculture> and O<water>.
+[MZBQ|00491]
+d:s# O<The fourth technical standing committee> D<concerns> O<returnees> and O<displaced people>.
+[MZBQ|00492]
+d:s# +A<the National Emergency Technical Council> T<operates>.
+[MZBQ|00493]
+d:t# +A<UNDRO> T<is assigning> O<four co-ordination advisers>.
+[MZBQ|00494]
+d:t# +A<UNDRO> T<has sent> O<two advisers> lc|to O<Sofala> and O<Zambezia Provinces>|cl.
+[MZBQ|00495]
+d:s# +A<the Provincial Commission for Emergency> T<operates>.
+[MZBQ|00496]
+d:t# -A<Food requirements> tm|for the crop year from May 1987 to April 1988|mt T<are tm|currently|mt under review>, and O<the estimate below> D<is> O<provisional>.
+[MZBQ|00497]
+d:s# O<Aid requirements for cereals> D<are> O<674,000 metric tons>.
+[MZBQ|00498]
+d:s# O<Pledges> and O<contributions for cereals> D<are> O<457,000 metric tons>.
+[MZBQ|00499]
+d:s# O<The shortfall for cereals> D<is> O<217,000 metric tons>.
+[MZBQ|00500]
+d:s# O<The shortfall for sugar> D<is> O<40,000 metric tons>.
+[MZBQ|00501]
+d:s# O<The shortfall for oil> D<is> O<2,000 metric tons>.
+[MZBQ|00502]
+d:s# O<The shortfall for pulses> D<is> O<47,000 metric tons>.
+[MZBQ|00503]
+d:s# O<The total value of unmet non-food needs> D<is> O<US dollars 27,166,000>.
+[MZBQ|00504]
+d:s# O<Logistics support> D<has> O<unmet needs of US dollars 2,617,000>.
+[MZBQ|00505]
+d:s# O<The unmet logistics support needs> D<consist of> O<air transport of US dollars 750,000>, O<light vehicles of US dollars 344,000>, O<fuel and lubricants of US dollars 83,000>, O<workshop and office equipment of US dollars 120,000>, and O<sea transport of US dollars 1,320,000>.
+[MZBQ|00506]
+d:s# O<Health> D<has> O<unmet needs of US dollars 4,671,000>.
+[MZBQ|00507]
+d:s# O<The unmet health needs> D<consist of> O<rehabilitation and re-equipping of basic health facilities of US dollars 4,313,000>, O<special assistance to the most vulnerable groups of US dollars 214,000>, and O<strengthening of health sector emergency management capacity of US dollars 144,000>.
+[MZBQ|00508]
+d:s# O<Water> D<has> O<unmet needs of US dollars 5,675,000>.
+[MZBQ|00509]
+d:s# O<The unmet water needs> D<consist of> O<tubewell construction and recovery in Manica and Sofala of US dollars 700,000>, O<strengthening central management capacity of US dollars 600,000>, O<drinking water borehole drilling and recovery in rural areas of Tete Province of US dollars 3,200,000>, O<recovery of Tete City water supply of US dollars 600,000>, and O<chemical support for safe drinking water of US dollars 575,000>.
+[MZBQ|00510]
+d:s# O<Relief and survival items> D<have> O<unmet needs of US dollars 5,780,000>.
+[MZBQ|00511]
+d:t# In addition to O<shoes> and O<clothing>, for which -A<donations in kind> T<are requested>, O<the unmet needs for relief and survival items> D<consist of> O<blankets of US dollars 2,027,000>, O<soap of US dollars 3,220,000>, and O<cooking utensils of US dollars 533,000>.
+[MZBQ|00512]
+d:s# O<Agricultural inputs> D<have> O<unmet needs of US dollars 8,423,000>.
+[MZBQ|00513]
+d:s# O<The unmet agricultural input needs> D<consist of> O<handtools of US dollars 5,180,000>, O<seeds of US dollars 2,373,000>, O<pesticides of US dollars 100,000>, and O<distribution and temporary storage costs of US dollars 770,000>.
+[MZBQ|00514]
+d:s# O<Additional funds> D<are required>.
+[MZBQ|00515]
+d:t# +A<UNICEF> T<states> that O<the integrated resettlement project in Manica District> D<requires> O<an additional US dollars 270,000>.
+[MZBQ|00516]
+d:t# +A<WFP> T<is appealing> for O<contributions> pr|in order to T<improve> O<storage and offtake capacity at Maputo port> and O<delivery, storage, and offtake capacity, including airlifts, at central and provincial delivery points>|rp.
+[MZBQ|00517]
+d:s# O<CARE International> D<requires> O<US dollars 430,000> pr|for O<the supply of basic consumer goods and logistics support to displaced and affected people in interior Inhambane Province>|rp.
+[MZBQ|00518]
+d:s# O<Caritas Internationalis> D<requires> O<US dollars 2,798,000> pr|T<to carry out> O<a comprehensive 1987 relief programme> for O<40,000 to 50,000 families>|rp.
+[MZBQ|00519]
+d:t# tm|So far|mt, O<US dollars 1,600,000> T<have been received or pledged> for O<the Caritas Internationalis programme>.
+[MZBQ|00520]
+d:s# O<The Eduardo Mondlane Foundation of the Netherlands> D<requires> O<US dollars 995,250> pr|for O<emergency relief and integrated rural development in Alto Changane in Gaza>|rp.
+[MZBQ|00521]
+d:s# O<Operation Handicap International of France> D<requires> O<US dollars 339,120> pr|for T<training> of O<staff> at Inhambane Hospital|rp.
+[MZBQ|00522]
+d:s# O<Oxfam (UK)> D<requires> O<US dollars 1,747,715> pr|for O<an integrated relief programme> in Maua and Cuamba in Niassa|rp.
+[MZBQ|00523]
+d:s# O<Save the Children Fund (UK)> D<requires> O<US dollars 1,300,000> pr|for O<sea transport enhancement> and T<training> for Zambezia|rp.
+[MZBQ|00524]
+d:s# O<Governmental and inter-governmental pledges and contributions for relief activities in 1987> D<total> O<US dollars 180,167,000>.
+[MZBQ|00525]
+d:s# O<The governmental and inter-governmental contributors> D<are> O<Australia>, O<Austria>, O<Belgium>, O<Botswana>, O<Brazil>, O<Canada>, O<Czechoslovakia>, O<Denmark>, O<Finland>, O<France>, O<the German Democratic Republic>, O<the Federal Republic of Germany>, O<Ireland>, O<Italy>, O<Japan>, O<Kenya>, O<the Netherlands>, O<New Zealand>, O<Nigeria>, O<Norway>, O<Poland>, O<Portugal>, O<Sweden>, O<the USSR>, O<the UK>, O<the USA>, O<Yugoslavia>, and O<the EEC>.
+[MZBQ|00526]
+d:t# +A<The UN system>, including +A<UNICEF>, +A<WFP>, and +A<WHO>, T<contributed> O<US dollars 10,284,000>.
+[MZBQ|00527]
+d:s# O<Pledges and contributions from NGOs and private sectors> D<amount to> O<US dollars 7,845,000>.
+[MZBQ|00528]
+d:s# O<The NGOs> D<include> O<ADRA>, O<CARE>, O<Caritas>, O<Food for the Hungry>, O<Help the Aged>, O<Hopital Sans Frontieres>, O<LRCS>, O<LWF>, O<Medecins du Monde>, O<Medecins Sans Frontieres>, O<Oxfam>, O<Redd Barna>, O<Save the Children>, and O<World Vision>.
+[MZBQ|00529]
+d:t# O<The total contributions> whose O<value> T<has been reported> to O<UNDRO> D<amount to> O<approximately US dollars 200 million>.
+[MZBQ|00530]
+d:t# -A<Donors> T<are requested> T<to inform> O<UNDRO> mn|directly|nm, mn|preferably by telex|nm, of O<their contributions> and O<value>.
+[MZBQ|00531]
+d:t# +A<WFP> T<is continuing> O<the airlift of relief supplies> lc|from Beira to Inhaminga|cl.
+[MZBQ|00532]
+d:t# +A<UNDRO> T<will finance> O<air transport of 200 metric tons> ac|with O<the Canadian contribution>|ca.
+[MZBQ|00533]
+n:s# sp|Further to situation report number 4 dated 15 May 1987|ps, O<the following> D<is> O<completed or updated information related to non-food requirements>.
+[MZBQ|00534]
+n:s# O<The requirements>, O<contributions>, and O<unmet requirements> D<are> O<as follows>.
+[MZBQ|00535]
+d:s# sp|For logistics support|ps, O<the requirement> D<is> O<US dollars 6,347,000>, O<the contribution> D<is> O<US dollars 3,730,000>, and O<the unmet requirement> D<is> O<US dollars 2,617,000>.
+[MZBQ|00536]
+d:s# sp|For health|ps, O<the requirement> D<is> O<US dollars 8,305,000>, O<the contribution> D<is> O<US dollars 3,634,000>, and O<the unmet requirement> D<is> O<US dollars 4,671,000>.
+[MZBQ|00537]
+d:s# sp|For water|ps, O<the requirement> D<is> O<US dollars 5,675,000>, there D<is> OQ<no contribution listed>, and O<the unmet requirement> D<is> O<US dollars 5,675,000>.
+[MZBQ|00538]
+d:s# sp|For relief and survival items|ps, O<the requirement> D<is> O<US dollars 6,354,000>, O<the contribution> D<is> O<US dollars 574,000>, and O<the unmet requirement> D<is> O<US dollars 5,780,000>.
+[MZBQ|00539]
+d:s# sp|For agricultural inputs|ps, O<the requirement> D<is> O<US dollars 9,336,000>, O<the contribution> D<is> O<US dollars 913,000>, and O<the unmet requirement> D<is> O<US dollars 8,423,000>.
+[MZBQ|00540]
+d:s# O<The total requirement> D<is> O<US dollars 36,017,000>, O<the total contribution> D<is> O<US dollars 8,851,000>, and O<the total unmet requirement> D<is> O<US dollars 27,166,000>.
+[MZBQ|00541]
+n:s# O<The proposed principal channels in addition to the Government for funding of unmet non-food requirements> D<are> O<as follows>.
+[MZBQ|00542]
+d:s# sp|For logistics support|ps, ac|with unmet needs of US dollars 2,617,000|ca, O<the channels for transfer of funds> D<are> O<the UN Special Co-ordinator and UNDRO>, O<UNICEF>, and O<WFP>.
+[MZBQ|00543]
+d:s# sp|For health|ps, ac|with unmet needs of US dollars 4,671,000|ca, O<the channels for transfer of funds> D<are> O<UNICEF> and O<WHO>.
+[MZBQ|00544]
+d:s# sp|For water|ps, ac|with unmet needs of US dollars 5,675,000|ca, O<the channel for transfer of funds> D<is> O<UNICEF>.
+[MZBQ|00545]
+d:s# sp|For relief and survival items|ps, ac|with unmet needs of US dollars 5,780,000|ca, O<the channels for transfer of funds> D<are> O<the UN Special Co-ordinator and UNDRO>, and O<UNICEF>.
+[MZBQ|00546]
+d:s# sp|For agricultural inputs|ps, ac|with unmet needs of US dollars 8,423,000|ca, O<the channels for transfer of funds> D<are> O<the UN Special Co-ordinator and UNDRO>, and O<FAO>.
+[MZBQ|00547]
+n:s# O<The status of NGO projects> submitted to the donors meeting of 31 March, and O<whose financing> D<is not included> under O<paragraph 3>, D<is> O<as follows>.
+[MZBQ|00548]
+d:s# O<The Eduardo Mondlane Foundation of the Netherlands project for emergency relief and integrated rural development in Alto Changane in Gaza> T<is fully financed> by +A<the Government of the Netherlands>.
+[MZBQ|00549]
+d:s# O<The Oxfam (UK) and Redd Barna (Norway) integrated relief programme in Maua and Cuamba in Niassa> T<is fully financed> by +A<Oxfam (UK)> and +A<Redd Barna (Norway)>.
+[MZBQ|00550]
+d:s# O<The Caritas Internationalis comprehensive 1987 relief programme for 40,000 to 50,000 families> T<is partially financed>.
+[MZBQ|00551]
+d:s# O<The initial requirement for the Caritas Internationalis programme> D<is> O<US dollars 2,798,000>.
+[MZBQ|00552]
+d:s# O<The contribution to the Caritas Internationalis programme> D<is> O<US dollars 1,600,000>.
+[MZBQ|00553]
+d:s# O<The unmet need for the Caritas Internationalis programme> D<is> O<US dollars 1,198,000>.
+[MZBQ|00554]
+d:s# O<The Operation Handicap International of France project for training of staff at Inhambane Provincial Hospitals> D<is dg|partially|gd financed>.
+[MZBQ|00555]
+d:s# O<The initial requirement for the Operation Handicap International project> D<is> O<US dollars 339,120>.
+[MZBQ|00556]
+d:s# O<The contribution to the Operation Handicap International project> D<is> O<US dollars 134,870>, ac|including an EEC contribution of ECUs 117,000|ca.
+[MZBQ|00557]
+d:s# O<The unmet need for the Operation Handicap International project> D<is> O<US dollars 204,250>.
+[MZBQ|00558]
+d:s# O<The CARE International project for the supply of basic consumer goods and logistics support to displaced and affected people in interior Inhambane Province> D<is not yet financed>.
+[MZBQ|00559]
+d:s# O<The requirement for the CARE International project> D<is> O<US dollars 430,000>.
+[MZBQ|00560]
+d:s# O<The Save the Children Fund (UK) project for sea transport enhancement and training for Zambezia> D<is not yet financed>.
+[MZBQ|00561]
+d:s# O<The requirement for the Save the Children Fund (UK) project> D<is> O<US dollars 1,300,000>.
+[MZBQ|00562]
+d:t# -A<Donors> T<are requested> T<to inform> O<UNDRO> mn|directly|nm, mn|preferably by telex|nm, O<of their contributions and value>.
+[MZBQ|00563]
+d:t# +A<The Government> T<has set up> O<a Special Emergency Operations Committee> pr|to identify and to solve bottlenecks in the co-ordination and implementation of emergency programmes|rp.
+[MZBQ|00564]
+d:s# O<The Special Emergency Operations Committee> D<comprises> O<some 20 participants from the Mozambique Government, donor governments, NGOs, and the UN>.
+[MZBQ|00565]
+d:t# +A<The Vice-Minister of Trade> T<chairs> O<weekly meetings>.
+[MZBQ|00566]
+d:s# O<The UNDRO adviser and emergency liaison officer to the UN Special Co-ordinator> D<acts as> O<secretary of the committee>.
+[MZBQ|00567]
+d:t# -A<Computer equipment>, donated by the Swiss Government, T<has been installed>, and +A<the computer equipment> T<is upgrading> O<the capacity of the office of the Special UN Co-ordinator of Emergency Operations in Mozambique> pr|to store and to disseminate data on requirements, contributions, and other statistics of the emergency situation|rp.
+[MZBQ|00568]
+d:t# +A<UNDRO delegates> T<are adapting> O<software> pr|to reporting requirements|rp.
+[MZBQ|00569]
+d:t# -A<Local staff> T<are being trained> pr|in using the equipment|rp.
+[MZBQ|00570]
+d:t# +A<The authorities> T<are reviewing> O<import>, O<clearance procedures>, and O<unloading services> pr|to allow for expeditious and simplified handling of emergency donations|rp.
+[MZBQ|00571]
+d:t# -A<future scheduling of food aid shipments> T<should be checked> with O<the WFP Mozambique Emergency Task Force> in Rome and with O<Chairman Ellis> mn|by telephone 57-971, extension 6321 or 5412|nm.
+[MZBQ|00572]
+d:s# O<Emergency relief requirements> D<remain largely unmet> sp|in the areas of water, relief and survival items, and agricultural inputs|ps.
+[MZBQ|00573]
+d:t# -A<A Dutch contribution of US dollars 961,000 through UNICEF for the emergency health sector> T<will be used> for rehabilitation and re-equipping of basic health facilities, rs|thereby T<reducing> O<needs in this sector> to O<US dollars 3,710,000>|sr.
+[MZBQ|00574]
+d:t# +A<WFP> T<reports> that O<wheat and rice requirements tm|for crop year 1987/88|mt> D<are covered>, whereas O<the need for maize, pulses, and vegetable oil> D<is not yet met>.
+[MZBQ|00575]
+d:t# O<The WFP appeal for cash contributions> pr|towards purchasing port delivery, storage, and offtake equipment|rp T<has met with> O<a response from the Governments of New Zealand, Sweden, and Switzerland>.
+[MZBQ|00576]
+d:s# O<Additional equipment> D<is still needed>, ac|including O<8 shunting tractors>, O<500 pallets>, O<5 tractors>, O<10 5-ton heavy-duty trailers>, O<5 four-wheel-drive vehicles>, and O<5 roller stackers>|ca.
+[MZBQ|00577]
+d:s# O<additional financing> D<is required> pr|for T<strengthening> O<coastal transport>|rp, O<which> +A<WFP> T<manages>.
+[MZBQ|00578]
+d:s# O<additional financing> D<is required> for O<the DPCCN-operated airlift> sp|T<covering> O<the affected provinces>|ps.
+[MZBQ|00579]
+d:t# O<additional financing> D<is required> for O<the WFP airlift> lc|in Sofala Province|cl tm|following T<the delivery> of O<400 metric tons of emergency food aid>|mt.
+[MZBQ|00580]
+d:t# -A<1,800 people> T<arrived> lc|from Zimbabwe|cl lc|to the Espungabera resettlement project site in Manica Province|cl.
+[MZBQ|00581]
+d:s# O<Some 1,500 new arrivals> D<are expected> tm|in the next three months|mt.
+[MZBQ|00582]
+d:t# +A<The authorities> T<are carrying out> O<the reintegration of more than 2,500 orphans in families> lc|in eight provinces|cl.
+[MZBQ|00583]
+d:t# O<A UNICEF-assisted marketing campaign> lc|in western Niassa|cl D<is underway>, and +A<the campaign> T<exchanges> O<basic goods> for O<locally produced food items>.
+[MZBQ|00584]
+d:t# +A<An FAO mission carried out tm|in April 1987|mt> T<confirmed> O<requirements for agricultural inputs valued at US dollars 9,336,000 as included in the Secretary-General's appeal>.
+[MZBQ|00585]
+d:t# +A<FAO> T<launched> O<an appeal for six integrated rural development projects in Sofala and Zambezia Provinces>, and O<the total value of the projects> D<is> O<US dollars 9,105,000>.
+[MZBQ|00586]
+d:s# +A<The six integrated rural development projects in Sofala and Zambezia Provinces> T<benefit> O<displaced farming families> as well as O<the wider rural community>.
+[MZBQ|00587]
+d:t# -A<Medicines>, -A<medical equipment>, and -A<clothing> T<have been sent> lc|to Sofala Province|cl, and +A<the French Government> T<funded> O<the transport>.
+[MZBQ|00588]
+d:s# O<Collectif Francais Urgence Mozambique> D<consists of> O<17 French NGOs>.
+[MZBQ|00589]
+d:t# +A<Community Aid Abroad> T<shipped> O<clothing>, O<shoes>, and O<cloth>, and +A<Community Aid Abroad> T<collected> O<cash grants> to the value of O<Australian dollars 250,000>, O<which> D<is> O<US dollars 176,056>.
+[MZBQ|00590]
+d:t# +A<German Agro Action> T<delivered> O<the following food items and relief supplies> lc|in Manica Province and Tete Province|cl, and O<the total value> D<was> O<US dollars 2,293,000>.
+[MZBQ|00591]
+d:t# +A<German Agro Action> T<delivered> O<710 metric tons of maize> lc|in Manica Province|cl.
+[MZBQ|00592]
+d:t# +A<German Agro Action> T<delivered> O<150 metric tons of peanuts>, O<760 metric tons of beans>, O<salt>, O<cooking utensils>, and O<agricultural utensils> lc|in Tete Province|cl.
+[MZBQ|00593]
+d:t# +A<ICRC> T<is resuming> O<relief activities> lc|in Mozambique|cl.
+[MZBQ|00594]
+d:t# +A<ICRC> T<conducted> O<a survey> pr|T<to assess> O<the nutritional and medical needs of conflict victims>|rp.
+[MZBQ|00595]
+d:t# +A<ICRC> T<will carry out> O<operations> lc|in Nampula, Niassa, Sofala, Tete, and Zambezia Provinces|cl mn|in close co-operation with O<the Mozambique Red Cross>|nm cd|when possible|dc.
+[MZBQ|00596]
+d:s# O<ICRC> D<has> O<an operational centre> in Quelimane and O<a logistics base> in Beira.
+[MZBQ|00597]
+d:s# O<The financial needs of ICRC tm|for the second half of 1987|mt> D<are> O<Swiss francs 8 million>, O<which> D<is> O<US dollars 5,298,013>.
+[MZBQ|00598]
+d:t# +A<Medecins Sans Frontieres of Belgium> T<is carrying out> O<its medical and nutritional programme> lc|in Inhambane Province|cl, and -A<the programme> T<began> tm|in February 1986|mt.
+[MZBQ|00599]
+d:s# O<The financing of tm|the first half of 1987|mt for the Medecins Sans Frontieres of Belgium programme> D<is covered> by O<the EEC> and O<the Government of Belgium>.
+[MZBQ|00600]
+d:s# O<a contribution of ECU 1,935,000>, O<which> D<is> O<US dollars 2,226,185>, D<is required>.
+[MZBQ|00601]
+d:t# +A<Oxfam (UK)> and +A<Redd Barna (Norway)> T<plan> T<to start> O<an airlift lc|to remote parts of Niassa Province|cl> tm|at the end of June 1987|mt, and O<the airlift> T<will run> tm|for six months|mt.
+[MZBQ|00602]
+d:t# +A<The airlift to remote parts of Niassa Province> T<will carry> O<cereals>, O<beans>, O<salt>, O<seeds>, O<tools>, O<clothing>, and O<soap>.
+[MZBQ|00603]
+d:t# +A<Representatives of the Christian Council of Mozambique and neighbouring national Christian councils and service divisions>, ac|together with +A<WCC and LWF representatives>|ca, T<met> tm|on 11 and 12 June|mt lc|in Geneva|cl pr|for consultation on relief assistance in Mozambique and neighbouring countries|rp.
+[MZBQ|00604]
+d:t# +A<WCC> T<launched> O<an appeal pr|for cash contributions of US dollars 4.5 million towards relief assistance in Mozambique|rp>.
+[MZBQ|00605]
+d:s# O<The WCC relief assistance in Mozambique> D<includes> O<food>, O<soap>, O<clothing>, O<blankets>, O<household utensils>, O<seeds>, O<tools>, O<health care>, and O<domestic water supply>.
+[MZBQ|00606]
+d:t# +A<World Vision> T<will distribute> O<4,500 metric tons of maize donated by the Australian Development Assistance Bureau> lc|in Gaza and Sofala Provinces|cl.
+[MZBQ|00607]
+d:t# +A<World Vision> T<offers> O<training in construction and water> to O<workers of the Mozambican Construction Ministry>.
+[MZBQ|00608]
+d:t# lc|In Manica Province|cl, -A<Students> T<are being trained> in O<construction and sanitation>.
+[MZBQ|00609]
+d:s# O<Contributions reported to UNDRO tm|since situation report number 5 dated 22 May 1987|mt> D<amount to> O<US dollars 10,012,000>.
+[MZBQ|00610]
+d:s# sp|Of the contributions reported to UNDRO since situation report number 5 dated 22 May 1987|ps, O<US dollars 8,525,000> D<came from> O<governments>, ac|including O<Canada>, O<Cyprus>, O<Denmark>, O<Finland>, O<the German Democratic Republic>, O<the Federal Republic of Germany>, O<Sweden>, O<Switzerland>, and O<the United Kingdom>|ca.
+[MZBQ|00611]
+d:s# sp|Of the contributions reported to UNDRO since situation report number 5 dated 22 May 1987|ps, O<US dollars 310,000> D<came from> O<Red Cross societies>, ac|including O<Austria>, O<Finland>, O<Iceland>, O<the Netherlands>, O<Sweden>, and O<the United Kingdom>|ca.
+[MZBQ|00612]
+d:s# sp|Of the contributions reported to UNDRO since situation report number 5 dated 22 May 1987|ps, O<US dollars 1,177,000> D<came from> O<NGOs>, ac|including O<Community Aid Abroad>, O<Collectif Francais Urgence Mozambique>, O<the Eduardo Mondlane Foundation>, O<Help the Aged>, and O<Oxfam (UK)>|ca.
+[MZBQ|00613]
+d:s# O<Further details on contributions> D<are available> lc|at UNDRO|cl.
+[MZBQ|00614]
+d:t# +A<Donors> T<are requested> T<to inform> O<UNDRO> mn|directly|nm, dg|preferably|gd mn|by telex 28148 UNDR CH|nm, ac|with copy to O<UNSCERO in Maputo> at telex 6364 UNDEV|ca, of O<their contributions and value>.
+[MZBQ|00615]
+d:t# ac|With the contribution of the Canadian Government|ca, +A<UNDRO> T<has rented> O<a Cessna 402C aircraft> tm|for six months|mt and T<has placed> O<the aircraft> at the disposal of O<the United Nations Special Coordinator for Emergency Relief Operations> pr|to facilitate field assessment of needs and co-ordination of aid|rp.
+[MZBQ|00616]
+d:t# +A<The aircraft> D<is expected> T<to start> O<operations> tm|by mid-August|mt.
+[MZBQ|00617]
+d:t# cu|Further to a Government request|uc, +A<an UNDRO delegate seconded by the Swiss Disaster Relief Corps> T<has installed> O<computer equipment> lc|in O<the offices of the recently created Emergency Operations Committee>|cl pr|to systematize planning and monitoring of emergency assistance|rp.
+[MZBQ|00618]
+d:t# -A<UNDRO Special Adviser and Emergency Liaison Officer to UNSCERO Y. Lagier> T<is being replaced> by O<B. Hammarstroem>.
+[MZBQ|00619]
+d:t# cu|Further to the Italian Government pledge at the Geneva meeting on humanitarian assistance to Mozambique on 31 March 1987|uc, -A<two Italian shipments of rice, vegetable oil, clothing materials, soap, cranes, and trucks, valued at US dollars 6.3 million> T<were delivered> tm|in July|mt lc|to the ports of Beira and Quelimane|cl.
+[MZBQ|00620]
+d:t# lc|In Niassa Province|cl, +A<Oxfam> T<has started> O<an airlift of relief supplies lc|from Cuamba to Maua, Metarica, Nipepe, and Marrupa|cl>.
+[MZBQ|00621]
+d:t# +A<A vessel chartered by the British Red Cross Society ac|with the support of the United Kingdom Government|ca> T<will unload> O<relief goods donated by Red Cross societies of Denmark, the Federal Republic of Germany, the Netherlands, and the United Kingdom, and by ICRC> lc|to the ports of Maputo, Beira, Quelimane, Nacala, and Pemba|cl tm|during August 1987|mt.
+[MZBQ|00622]
+d:s# O<The cargo of the British Red Cross Society> D<consists in part of> O<DSM>, O<feeding kits>, O<sugar>, O<blankets>, O<rolls of polythene sheeting>, O<tents>, O<antibiotics>, O<oral rehydration salt>, O<clothing>, O<cooking pots>, O<soap>, O<forklift trucks>, and O<vehicles>.
+[MZBQ|00623]
+d:s# O<The delivery rate> D<continues to be limited> cu|by O<the inaccessibility of many areas by land>|uc.
+[MZBQ|00624]
+d:s# O<The delivery rate> D<continues to be limited> cu|by O<the need for convoys to ensure transport of relief supplies>|uc.
+[MZBQ|00625]
+d:s# O<The delivery rate> D<continues to be limited> cu|by O<the disruption of the national rail system>, O<which> D<is> O<about 50 percent functioning>|uc.
+[MZBQ|00626]
+d:t# O<Difficulties sp|in road transport|ps lc|between Malawi and Niassa Province through the entry point of Mandimba|cl> T<are dg|also|gd being experienced>.
+[MZBQ|00627]
+d:t# +A<A joint assessment mission involving the Government, WFP, the Dutch Government, and Oxfam (UK)> T<is leaving> tm|on 30 July 1987|mt lc|for Niassa|cl, and O<the joint assessment mission> T<will report> lc|to O<the Emergency Operations Committee>|cl tm|on 3 August 1987|mt.
+[MZBQ|00628]
+d:t# +A<The Emergency Operations Committee> T<reviewed> O<criteria> and O<responsibilities for the assessment of food needs and for food distribution> ac|in consultation with O<WFP>|ca.
+[MZBQ|00629]
+n:s# O<The proposed principal channels for funding in addition to the Government>, O<the requirements>, O<the contributions>, and O<the unmet requirements> D<are> as follows.
+[MZBQ|00630]
+d:s# sp|For logistics support|ps, O<the proposed principal channels> D<are> O<UNSCERO> and O<UNDRO>, O<UNICEF>, and O<WFP>, O<the requirement> D<is> O<US dollars 12,219,000>, O<the contribution> D<is> O<US dollars 7,317,000>, and O<the unmet requirement> D<is> O<US dollars 4,902,000>.
+[MZBQ|00631]
+d:s# sp|For health|ps, O<the proposed principal channels> D<are> O<UNICEF> and O<WHO>, O<the requirement> D<is> O<US dollars 8,605,000>, O<the contribution> D<is> O<US dollars 5,003,000>, and O<the unmet requirement> D<is> O<US dollars 3,602,000>.
+[MZBQ|00632]
+d:s# sp|For water|ps, O<the proposed principal channel> D<is> O<UNICEF>, O<the requirement> D<is> O<US dollars 5,675,000>, O<the contribution> D<is> O<US dollars 55,000>, and O<the unmet requirement> D<is> O<US dollars 5,620,000>.
+[MZBQ|00633]
+d:s# sp|For relief and survival items|ps, O<the proposed principal channels> D<are> O<UNSCERO> and O<UNDRO> and O<UNICEF>, O<the requirement> D<is> O<US dollars 6,354,000>, O<the contribution> D<is> O<US dollars 1,369,000>, and O<the unmet requirement> D<is> O<US dollars 4,985,000>.
+[MZBQ|00634]
+d:s# sp|For agricultural inputs|ps, O<the proposed principal channels> D<are> O<UNSCERO> and O<UNDRO> and O<FAO>, O<the requirement> D<is> O<US dollars 9,336,000>, O<the contribution> D<is> O<US dollars 888,000>, and O<the unmet requirement> D<is> O<US dollars 8,448,000>.
+[MZBQ|00635]
+d:s# O<The total requirement> D<is> O<US dollars 42,189,000>, O<the total contribution> D<is> O<US dollars 14,632,000>, and O<the total unmet requirement> D<is> O<US dollars 27,557,000>.
+[MZBQ|00636]
+d:s# O<The unmet logistics support needs> D<total> O<US dollars 4,902,000>.
+[MZBQ|00637]
+d:s# O<The unmet logistics support needs> D<include> O<the UNICEF airlift of high-value and low-volume supplies>, O<which> D<requires> O<US dollars 482,000>.
+[MZBQ|00638]
+d:s# O<The unmet logistics support needs> D<include> O<light vehicles>, O<which> D<require> O<US dollars 344,000>.
+[MZBQ|00639]
+d:s# O<The unmet logistics support needs> D<include> O<fuel and lubricants>, O<which> D<require> O<US dollars 80,000>.
+[MZBQ|00640]
+d:s# O<The unmet logistics support needs> D<include> O<workshop and office equipment>, O<which> D<require> O<US dollars 120,000>.
+[MZBQ|00641]
+d:s# O<The unmet logistics support needs> D<include> O<sea transport>, O<which> D<requires> O<US dollars 1,320,000>.
+[MZBQ|00642]
+d:s# O<The unmet logistics support needs> D<include> O<the WFP airlift, dg|mainly|gd pr|for food|rp>, O<which> D<requires> O<US dollars 201,000>.
+[MZBQ|00643]
+d:s# O<The unmet logistics support needs> D<include> O<port equipment, ac|including grabs|ca>, O<which> D<require> O<US dollars 80,000>.
+[MZBQ|00644]
+d:s# O<The unmet logistics support needs> D<include> O<discharge and bagging equipment>, O<which> D<require> O<US dollars 2,000,000>.
+[MZBQ|00645]
+d:s# O<The unmet logistics support needs> D<include> O<conveyor belts and ropes>, O<which> D<require> O<US dollars 100,000>.
+[MZBQ|00646]
+d:s# O<The unmet logistics support needs> D<include> O<pallets>, O<which> D<require> O<US dollars 40,000>.
+[MZBQ|00647]
+d:s# O<The unmet logistics support needs> D<include> O<tarpaulins>, O<which> D<require> O<US dollars 135,000>.
+[MZBQ|00648]
+d:s# O<The need for cranes> D<is under review>.
+[MZBQ|00649]
+d:s# O<The unmet health needs> D<total> O<US dollars 3,602,000>.
+[MZBQ|00650]
+d:s# O<The unmet health needs> D<include> O<rehabilitation and re-equipping of basic health facilities>, O<which> D<require> O<US dollars 3,352,000>.
+[MZBQ|00651]
+d:s# O<The unmet health needs> D<include> T<strengthening> O<health sector emergency management>, O<which> D<requires> O<US dollars 250,000>.
+[MZBQ|00652]
+d:s# O<The unmet water needs> D<total> O<US dollars 5,620,000>.
+[MZBQ|00653]
+d:s# O<The unmet water needs> D<include> T<tubewell construction> and T<recovery> in Manica and Sofala, O<which> D<require> O<US dollars 645,000>.
+[MZBQ|00654]
+d:s# O<The unmet water needs> D<include> T<strengthening> O<central management capacity>, O<which> D<requires> O<US dollars 600,000>.
+[MZBQ|00655]
+d:s# O<The unmet water needs> D<include> T<drinking water borehole drilling> and T<recovery> in rural areas of Tete Province, O<which> D<require> O<US dollars 3,200,000>.
+[MZBQ|00656]
+d:s# O<The unmet water needs> D<include> T<recovery> of O<Tete City water supply>, O<which> D<requires> O<US dollars 600,000>.
+[MZBQ|00657]
+d:s# O<The unmet water needs> D<include> O<chemical support for safe drinking water>, O<which> D<requires> O<US dollars 575,000>.
+[MZBQ|00658]
+d:s# O<The unmet relief and survival item needs> D<total> O<US dollars 4,985,000>.
+[MZBQ|00659]
+d:s# O<The unmet relief and survival item needs> D<include> O<blankets>, O<clothing>, O<cooking utensils>, O<shoes>, and O<soap>.
+[MZBQ|00660]
+d:s# O<The unmet agricultural input needs> D<total> O<US dollars 8,448,000>.
+[MZBQ|00661]
+d:s# O<The unmet agricultural input needs> D<include> O<handtools>, O<which> D<require> O<US dollars 5,170,000>.
+[MZBQ|00662]
+d:s# O<The unmet agricultural input needs> D<include> O<seeds>, O<which> D<require> O<US dollars 2,408,000>.
+[MZBQ|00663]
+d:s# O<The unmet agricultural input needs> D<include> O<pesticides>, O<which> D<require> O<US dollars 100,000>.
+[MZBQ|00664]
+d:s# O<The unmet agricultural input needs> D<include> O<distribution and temporary storage costs>, O<which> D<require> O<US dollars 770,000>.
+[MZBQ|00665]
+d:t# +A<The Government> T<is seeking> O<contributions in kind> pr|towards the newly established emergency equipment and material stockpile|rp, O<which> D<is> initially in Maputo.
+[MZBQ|00666]
+d:t# +A<The emergency equipment and material stockpile> T<will make> O<basic relief supplies and equipment> available tm|immediately upon request|mt to O<needy groups of the population>, such as O<displaced people>, O<destitute people> O<who> D<are now accessible> cu|as a result of military operations|uc, and O<victims of natural disasters>.
+[MZBQ|00667]
+d:s# O<The items requested> D<include> O<canned food>, O<high-protein biscuits>, O<blankets>, O<shelter materials>, O<tents>, O<medicines>, O<medical equipment>, O<clothing>, O<household equipment>, O<agricultural tools>, O<education materials>, and O<generators>.
+[MZBQ|00668]
+d:s# O<A full list> D<is available> with O<UNSCERO> and O<UNDRO>.
+[MZBQ|00669]
+d:t# -A<A committee consisting of representatives from the Government, donors, the UN, and NGOs> T<is being set up> pr|to T<review> O<requests for the fund's resources> and O<the use of the fund's resources>|rp.
+[MZBQ|00670]
+d:t# +A<The Department of Prevention and Combat of Natural Disasters> T<will administer> O<the stockpile>.
+[MZBQ|00671]
+d:t# -A<Contributions> T<are to be addressed> to O<the Comissao Executiva Nacional de Emergencia, Gabinete de Operacoes de Emergencia>, attention O<Vice Minister Ratilal>, telephone 74-36-72, telex 6-636.
+[MZBQ|00672]
+d:t# +A<WFP> T<will have airlifted> O<765 metric tons of food and non-food commodities> lc|to six locations in Sofala Province|cl.
+[MZBQ|00673]
+d:t# +A<UNHCR> T<issued> O<a special appeal> pr|for T<the provision> of O<limited assistance>|rp tm|for one year|mt to O<15,000 Mozambican returnees>, mostly from Malawi.
+[MZBQ|00674]
+d:s# O<The appeal> D<covered> O<basic requirements> for O<food>, O<household items>, O<clothes>, O<sanitation>, O<water>, O<shelter>, O<health>, O<agricultural implements>, and O<transport>.
+[MZBQ|00675]
+d:t# -A<The financial requirement for such assistance> T<was> tm|initially|mt T<estimated> at O<US dollars 1.2 million>, but -A<this budget> T<is> tm|at present|mt T<being updated>.
+[MZBQ|00676]
+d:s# O<The returnees> D<are settled> lc|in three reception centres in the district of Moatize in Tete Province|cl.
+[MZBQ|00677]
+d:s# There D<are> O<5,000 returnees> in Moatize Site 1.
+[MZBQ|00678]
+d:s# There D<are> O<1,800 returnees> in Moatize Site 2.
+[MZBQ|00679]
+d:s# There D<are> O<1,800 returnees> in Benga.
+[MZBQ|00680]
+d:t# O<some 7,000 to 8,000 returnees> T<are estimated> lc|to be in Zobue, a border town with Malawi|cl.
+[MZBQ|00681]
+d:t# -A<A group of 1,281 returnees previously settled in Benga> T<was transferred> lc|to their previous area of residence in Maputo|cl mn|by airlift|nm tm|from 16 May to 23 May 1987|mt.
+[MZBQ|00682]
+d:t# O<This transfer> T<will allow> +A<the authorities> T<to move> OQ<some of the returnees> O<who> D<are at present living> under deplorable conditions in Site 1 and Site 2 in Moatize to Benga, where -A<additional shelter> T<is being constructed>.
+[MZBQ|00683]
+d:t# +A<UNHCR> T<has> tm|so far|mt T<received> O<contributions up to US dollars 1,321,131> from O<the Governments of Canada>, O<the Federal Republic of Germany>, O<Switzerland>, and O<the United Kingdom>.
+[MZBQ|00684]
+d:t# +A<WHO> T<is providing> O<a medical officer> lc|to O<the office of the WHO representative in Maputo>|cl.
+[MZBQ|00685]
+d:t# -A<Additional technical advice> T<will be given> to O<the Government> sp|in health information support and in monitoring of the health situation|ps.
+[MZBQ|00686]
+d:t# O<Medecins Sans Frontieres of Belgium> D<still requires> O<an amount of US dollars 700,000> pr|for T<carrying out> O<its medical and nutritional programme> in Inhambane Province up to June 1988|rp.
+[MZBQ|00687]
+d:t# +A<Save the Children (UK)>, ac|together with +A<UNDRO>|ca, T<is contributing> to T<upgrading> O<Quelimane port> mn|through T<the provision> of O<cables>, O<ropes>, O<oils>, and O<lubricants>|nm.
+[MZBQ|00688]
+d:t# +A<World Vision> D<intends> pr|T<to supply> O<agricultural inputs and training> to O<25,000 displaced families in Tete and Zambezia>|rp.
+[MZBQ|00689]
+d:s# O<The World Vision agricultural inputs and training> D<consist of> O<agricultural packages> O<that> D<include> O<food>, O<seeds>, and O<handtools>.
+[MZBQ|00690]
+d:t# +A<World Vision> T<is undertaking> O<fund-raising efforts> pr|T<to finance> O<this programme>|rp, and O<the value> D<is> O<US dollars 2,930,500>.
+[MZBQ|00691]
+d:t# -A<Spare parts> T<shall also be provided> pr|for O<irrigation pumps> in Tete Province|rp.
+[MZBQ|00692]
+d:s# O<Contributions reported to UNDRO since situation report number 6 of 23 June 1987> D<amount to> O<US dollars 4,824,000>.
+[MZBQ|00693]
+d:s# O<US dollars 1,529,000> D<came from> O<governments>, including O<Ireland>, O<Japan>, O<Norway>, O<Sweden>, O<Switzerland>, and O<the United Kingdom>.
+[MZBQ|00694]
+d:s# O<US dollars 1,365,000> D<came from> O<the UN system>, including O<UNHCR> and O<WHO>.
+[MZBQ|00695]
+d:s# O<US dollars 626,000> D<came from> O<Red Cross societies>, including O<Denmark>, O<Finland>, O<the Federal Republic of Germany>, O<Hungary>, O<the Netherlands>, O<Sweden>, and O<the United Kingdom>.
+[MZBQ|00696]
+d:s# O<US dollars 1,304,000> D<came from> O<other NGOs>, including O<the Canadian and Japanese UNICEF Committees>, O<ADRA>, O<Caritas Italy>, O<CARE (UK)>, O<LWF>, O<Oxfam (UK)>, and O<World Vision International>.
+[MZBQ|00697]
+d:s# O<Total emergency relief contributions reported to UNDRO since 1 January 1987> D<amount to> O<US dollars 222,237,000>.
+[MZBQ|00698]
+d:t# +A<governments> and +A<the EEC> T<contributed> O<US dollars 198,225,000>.
+[MZBQ|00699]
+d:t# O<The governments and the EEC> O<that> T<contributed> O<US dollars 198,225,000> D<are> O<Australia>, O<Austria>, O<Belgium>, O<Botswana>, O<Brazil>, O<Canada>, O<Cyprus>, O<Czeckoslovakia>, O<Denmark>, O<Finland>, O<France>, O<the German Democratic Republic>, O<the Federal Republic of Germany>, O<Ireland>, O<Italy>, O<Japan>, O<Kenya>, O<the Netherlands>, O<New Zealand>, O<Nigeria>, O<Norway>, O<Poland>, O<Portugal>, O<Sweden>, O<Switzerland>, O<the USSR>, O<the United Kingdom>, O<the USA>, and O<Yugoslavia>.
+[MZBQ|00700]
+d:t# +A<the UN system> T<contributed> O<US dollars 9,586,000>.
+[MZBQ|00701]
+d:t# sp|Of the total emergency relief contributions reported to UNDRO since 1 January 1987|ps, +A<Red Cross societies> T<contributed> O<US dollars 1,640,000>.
+[MZBQ|00702]
+d:t# sp|Of the total emergency relief contributions reported to UNDRO since 1 January 1987|ps, +A<other NGOs> T<contributed> O<US dollars 12,786,000>.
+[MZBQ|00703]
+d:t# +A<Donors> T<are requested> T<to inform> O<UNDRO> mn|directly, preferably by telex 28148 UNDR CH|nm, ac|with copy to O<UNSCERO> in Maputo at telex 6364 UNDEV|ca, of O<their contributions and value>.
+[MZBQ|00704]
+d:t# -A<Rebel attacks> T<were launched> lc|in Gaza, Inhambane, and Sofala Provinces|cl, and in particular lc|in Niassa Province|cl where +A<the attacks> T<hit> -A<the town of Mandimba>, O<which> D<is> O<an entry point> lc|from Malawi|cl, and -A<the roads linking Niassa with other provinces>.
+[MZBQ|00705]
+d:t# +A<An assessment mission> T<assessed> O<the northern part of Niassa Province>.
+[MZBQ|00706]
+d:t# lc|In the city of Mandimba|cl, +A<the attacks> T<caused> the T<destruction> of O<storage infrastructure>, O<trucks containing fuel>, O<500 metric tons of WFP maize>, and O<30 metric tons of school material>.
+[MZBQ|00707]
+d:s# O<The road between the towns of Mandimba and Lichinga> D<needs> O<repair> pr|to improve the capacity for road transport of supplies from Malawi|rp.
+[MZBQ|00708]
+d:s# O<The railway connection from Malawi through Entrelagos> D<is> O<in poor condition>.
+[MZBQ|00709]
+d:t# +A<DPCCN> T<has airlifted> O<60 metric tons of food> lc|from Nampula to Lichinga|cl.
+[MZBQ|00710]
+d:t# +A<Oxfam UK> T<continues> O<the airlift started tm|in May|mt lc|from Cuamba to Maua, Metarica, and Nipepe|cl>.
+[MZBQ|00711]
+d:t# tm|So far|mt, +A<the Oxfam UK airlift> T<has carried> O<1,600 metric tons of food and relief supplies>.
+[MZBQ|00712]
+d:s# tm|For the months of August and September|mt, O<12,286 metric tons of food> D<are destined> lc|to Niassa|cl.
+[MZBQ|00713]
+d:s# O<The donors for the food destined to Niassa> D<are> O<WFP>, O<EEC>, O<Australia>, O<the Federal Republic of Germany>, O<the Netherlands>, O<the United Kingdom>, and O<Oxfam>.
+[MZBQ|00714]
+d:s# sp|For the city of Mandimba|ps, O<750 cubic meters of fuel for trucks> D<are required>.
+[MZBQ|00715]
+d:t# +A<Oxfam> T<has pledged> O<200 cubic meters of fuel for trucks>.
+[MZBQ|00716]
+d:s# sp|For the city of Mandimba|ps, O<warehouses> D<are required>.
+[MZBQ|00717]
+d:t# +A<Oxfam> T<has pledged> O<2 warehouses>.
+[MZBQ|00718]
+d:t# +A<UNDRO> T<has pledged> O<5 storage tents>.
+[MZBQ|00719]
+d:t# +A<UNICEF> T<has pledged> O<school material>.
+[MZBQ|00720]
+d:t# +A<The Government> T<is preparing> O<military convoys> pr|to permit food transport from Malawi through Mandimba to Lichinga|rp.
+[MZBQ|00721]
+d:t# +A<A one-week WFP and UNDRO emergency mission tm|in early September|mt> T<will study> O<the possibility> of T<organizing> O<boat transport> lc|on Lake Niassa|cl lc|out of southern Tanzania|cl.
+[MZBQ|00722]
+d:t# +A<The Government> T<will carry out> O<a two-week survey> mn|with an UNDRO aircraft|nm lc|in all provinces|cl of O<available seed stocks> and T<will prepare> T<reallocation> to O<the displaced population>.
+[MZBQ|00723]
+d:t# -A<A national emergency coordination meeting> T<was held> lc|in Tete Province|cl tm|from 12 to 18 August|mt for OQ<all provincial emergency commissions>.
+[MZBQ|00724]
+d:t# +A<Vice Minister Ratilal> T<chaired> O<the meeting>.
+[MZBQ|00725]
+d:t# +A<Representatives of the international community> T<participated> tm|in the last session of the meeting|mt.
+[MZBQ|00726]
+d:s# O<The participants from the international community> D<included> O<the Office of the UN Special Coordinator in Maputo>, O<UNDRO>, O<UNICEF>, O<the Netherlands>, O<Sweden>, O<the United Kingdom>, O<CARE>, O<Save the Children UK>, and O<USA for Africa>.
+[MZBQ|00727]
+d:t# +A<The participants> T<visited>, mn|among other places|nm, O<the reception centre in Moatize> and O<the Estima Valley resettlement area>.
+[MZBQ|00728]
+d:t# +A<The meeting> T<approved> O<the master plan for provincial emergency relief>.
+[MZBQ|00729]
+d:t# +A<The meeting> T<adopted> O<a food and non-food needs assessment questionnaire>.
+[MZBQ|00730]
+d:t# cd|Once -A<the district-level survey> T<has been made> with the questionnaire|dc, +A<the central emergency cabinet> T<will release> O<the results>.
+[MZBQ|00731]
+d:t# +A<The meeting> T<agreed upon> O<the following emergency relief policies>.
+[MZBQ|00732]
+d:t# -A<Free food distribution> T<should be carried out> tm|only during a fixed period|mt lc|within a defined area|cl.
+[MZBQ|00733]
+d:t# -A<Means pr|to restart productive life|rp> T<should be made available> tm|as soon as possible|mt.
+[MZBQ|00734]
+d:s# +A<DPCCN> T<should deal> with T<distribution> to O<the affected people>.
+[MZBQ|00735]
+d:s# +A<The Ministry of Commerce> T<handles> T<distribution> to O<the market>.
+[MZBQ|00736]
+d:t# tm|After a maximum six-month period of relief assistance|mt, +A<displaced persons> T<should begin> O<the actual process of reinstallation>.
+[MZBQ|00737]
+d:t# The T<resettlement> lc|to Estima Valley|cl of -A<people living in railway cars in Moatize> T<will tm|soon|mt be launched>.
+[MZBQ|00738]
+d:t# +A<UNICEF> and +A<USA for Africa> T<have received> T<requests> for O<assistance> to this resettlement operation.
+[MZBQ|00739]
+d:t# cu|Further to the +A<Italian Government> T<pledge> at the Geneva meeting on humanitarian assistance to Mozambique on 31 March 1987|uc, -A<two Italian shipments> T<were delivered> tm|in August|mt lc|to the ports of Beira and Maputo|cl.
+[MZBQ|00740]
+d:s# O<The two Italian shipments> D<included> O<rice>, O<cloth>, O<sugar>, O<vehicles and equipment>, O<soap>, O<lyophilized food>, O<family kits>, and O<oil>.
+[MZBQ|00741]
+d:s# O<The two Italian shipments> D<were valued> O<at 12.1 billion lire>, O<which> D<is> O<US dollars 9,236,641>.
+[MZBQ|00742]
+d:s# O<The unmet food aid requirements tm|for May 1987 to April 1988|mt> D<are> O<334,681 metric tons of maize>, O<104,871 metric tons of pulses>, O<65,998 metric tons of oil>, and O<67,400 metric tons of sugar>.
+[MZBQ|00743]
+d:s# O<The food aid needs for rice and wheat> D<are met>.
+[MZBQ|00744]
+d:s# O<The data on unmet non-food aid requirements> sp|in situation report number 7 dated 29 July 1987, paragraph 10|ps D<are> O<still valid>.
+[MZBQ|00745]
+d:s# O<Coastal transport mn|by two WFP vessels|nm> D<covers> O<approximately 3,500 metric tons of food per month>.
+[MZBQ|00746]
+d:s# O<The names of the two WFP vessels> D<are> O<Cinq Juin> and O<Idun>.
+[MZBQ|00747]
+d:s# O<The coastal transport mn|by the two WFP vessels|nm> D<costs> O<US dollars 40 per metric ton>.
+[MZBQ|00748]
+d:s# O<Cash contributions> D<are required> pr|to reimburse funds advanced by WFP for transport already carried out and to finance transport until the end of 1987|rp.
+[MZBQ|00749]
+d:t# -A<797,041 metric tons of food and non-food items> T<have been airlifted>.
+[MZBQ|00750]
+d:t# +A<Cash contributions from UNDRO and Sweden> T<have financed> O<400 metric tons> tm|so far|mt.
+[MZBQ|00751]
+d:t# T<improvement> and T<maintenance> of O<road systems> T<are being carried out> mn|with, to the maximum extent possible, the use of locally available manpower and materials|nm.
+[MZBQ|00752]
+d:t# +A<German Agro Action> T<distributed> O<1,025 metric tons of food> as well as O<medicines> and O<other relief supplies> lc|in Tete Province|cl.
+[MZBQ|00753]
+d:t# The T<distribution> lc|in Tete Province|cl T<was cofinanced> by +A<the EEC>.
+[MZBQ|00754]
+d:t# +A<German Agro Action> T<distributed> O<1,062 metric tons of food> as well as O<blankets>, O<5 trucks>, and O<1 pick-up> lc|in Manica Province|cl.
+[MZBQ|00755]
+d:t# The T<distribution> lc|in Manica Province|cl T<was cofinanced> by +A<the Government of the Federal Republic of Germany>.
+[MZBQ|00756]
+d:t# tm|In August and September|mt, the T<distribution> of O<2,098 metric tons of food> and O<relief supplies> T<will be carried out> lc|in Manica Province|cl.
+[MZBQ|00757]
+d:s# The T<distribution> of O<2,098 metric tons of food> and O<relief supplies> lc|in Manica Province|cl T<is cofinanced> by +A<the EEC> and +A<the Government of the Federal Republic of Germany>.
+[MZBQ|00758]
+d:s# +A<ICRC> D<has> O<two aircraft> carrying relief supplies lc|to district capitals in Nampula, Niassa, Sofala, Tete, and Zambezia Provinces|cl.
+[MZBQ|00759]
+d:t# +A<The Mozambique Red Cross> T<is starting> O<a relief operation> for O<35,000 drought-affected people> lc|in Manica Province|cl.
+[MZBQ|00760]
+d:t# +A<LRCS> T<is appealing> for O<cash contributions of CHF 4,600,000>, O<which> D<is> O<US dollars 2,987,012>.
+[MZBQ|00761]
+d:t# +A<LRCS> T<is also appealing> for O<in-kind contributions> of O<3,000 metric tons of maize>, O<750 metric tons of beans>, O<300 metric tons of vegetable oil>, O<375 metric tons of brown sugar>, O<40 metric tons of salt>, O<135 metric tons of soap>, O<60 to 70 metric tons of used clothing>, O<25,000 blankets>, O<6,000 ring hoes>, O<12 metric tons of sorghum seed>, O<60 metric tons of bean seed>, and O<42 metric tons of maize seed>.
+[MZBQ|00762]
+d:t# -A<The in-kind contributions> T<should be forwarded> to O<the Mozambique Red Cross Society at Avenida 24 de Julho, Caixa Postal 2986, Maputo, Mozambique>.
+[MZBQ|00763]
+d:s# O<Contributions reported to UNDRO tm|since situation report number 7 dated 29 July 1987|mt> D<amounted to> O<US dollars 6,218,374>.
+[MZBQ|00764]
+d:s# O<US dollars 200,700> D<came from> O<the UN system> mn|through UNHCR|nm.
+[MZBQ|00765]
+d:s# O<US dollars 2,829,335> D<came from> O<the IGO EEC>.
+[MZBQ|00766]
+d:s# O<US dollars 2,269,998> D<came from> O<governments>, ac|including O<Canada>, O<Denmark>, O<France>, O<the German Democratic Republic>, O<the Federal Republic of Germany>, and O<Hungary>|ca.
+[MZBQ|00767]
+d:s# O<US dollars 563,607> D<came from> O<Red Cross societies in the United Kingdom>.
+[MZBQ|00768]
+d:s# O<US dollars 354,734> D<came from> O<other NGOs>, ac|including O<the Christian Council of Mozambique>, O<Food for the Hungry International>, and O<Save the Children Fund US>|ca.
+[MZBQ|00769]
+d:t# +A<Donors> T<are requested> to T<inform> O<UNDRO> mn|directly|nm, mn|preferably by telex 28148 UNDR CH|nm, ac|with copy to O<UNSCERO in Maputo at telex 6364 UNDEV>|ca, of O<their contributions> and O<value>.
+[MZBQ|00770]
+d:t# +A<the Government of Italy> T<is making> O<some US dollars 4.8 million> available to O<UNDRO> pr|for the emergency T<rerouting> and T<restoration> of O<the Beira-Mavuzi power supply line>|rp.
+[MZBQ|00771]
+d:s# +A<The 110 kilovolt transmission line> T<shall facilitate> the regular T<supply> of O<electricity> to O<the town and port of Beira> and the T<provision> of O<emergency assistance> to O<Sofala and Manica Provinces>.
+[MZBQ|00772]
+d:t# +A<The Dutch Government> T<contributed> O<mobile discharge and bagging equipment> pr|for O<the port of Maputo>|rp.
+[MZBQ|00773]
+d:s# O<The initial discharge rate of the equipment>, O<which> T<is expected> to be operational tm|at the end of September or in early October|mt, D<will be> O<about 800 metric tons per day>.
+[MZBQ|00774]
+d:s# O<Warehouse availability> lc|in Maputo|cl D<is> O<sufficient>.
+[MZBQ|00775]
+d:t# +A<The Italian Government> T<will finance> O<a project> to T<improve> O<the port of Quelimane>, as well as the T<rehabilitation> of O<the Quelimane-Mocuba railway line>, dg|at a total cost of US dollars 1.4 million|gd.
+[MZBQ|00776]
+d:t# +A<UNDRO> T<is financing> mn|with funds donated by the Australian Government|nm the local T<production> of O<1,000 pallets> pr|for O<Beira port>|rp, where +A<ongoing rehabilitation work> T<causes> O<some operation delays>.
+[MZBQ|00777]
+d:t# +A<UNDRO> T<is shipping> lc|from its warehouse in Pisa|cl O<5 storage tents> for O<Niassa>, as well as O<2,000 corrugated iron sheets>, O<tools>, and O<18 generators> pr|for O<the emergency equipment and material stockpile>|rp.
+[MZBQ|00778]
+d:t# +A<An UNDRO and Swiss Disaster Relief Unit mission> T<arrived> lc|in Maputo|cl tm|on 28 September|mt pr|to T<develop> further O<the computerized information system> for O<the Government emergency coordination centre>|rp.
+[MZBQ|00779]
+d:t# -A<The mission> T<will end> tm|in late December 1987|mt.
+[MZBQ|00780]
+d:s# O<The main tasks of the mission> D<are> to T<streamline> O<data on food aid and other donations>, to T<elaborate> O<computer programmes> for the T<production> of O<reports>, and to T<train> O<Government computer personnel>.
+[MZBQ|00781]
+d:s# O<The unmet food aid requirements> D<are> O<328,312 metric tons of maize>, O<97,404 metric tons of pulses>, O<66,784 metric tons of oil>, and O<57,229 metric tons of sugar>.
+[MZBQ|00782]
+d:s# O<The food aid needs for rice and wheat> D<are met>.
+[MZBQ|00783]
+d:t# +A<The Government> and +A<WFP> T<are proposing> a substantial T<strengthening> of O<coastal, river, and lake transport> pr|to T<improve> O<access> to O<the affected and displaced population> for the T<distribution> of O<food> and O<other items>|rp.
+[MZBQ|00784]
+d:t# cd|Once T<set up>|dc, +A<the network> T<will enable> +A<the authorities> T<to reach> O<approximately 4 million people> and T<will complement> and T<overcome> O<road transport limitations>.
+[MZBQ|00785]
+d:s# O<This plan> D<includes> the T<purchase> and T<deployment> of O<vessels>, O<barges>, and O<tugs> ac|in addition to those already available|ca.
+[MZBQ|00786]
+d:s# O<The approximate cost> of the T<purchase> and T<deployment> of O<vessels>, O<barges>, and O<tugs> D<is> O<US dollars 3 million>.
+[MZBQ|00787]
+d:t# +A<WFP> T<is appealing> for O<US dollars 330,000> pr|to T<continue> the T<airlift> of O<food aid> and O<other relief supplies>|rp.
+[MZBQ|00788]
+d:t# +A<the Government> T<is requesting> O<US dollars 2.4 million> pr|for the T<mobilization> of O<these stocks> to needy areas by road and sea|rp.
+[MZBQ|00789]
+d:t# ac|In addition to agricultural packages distributed by World Vision to 25,000 families in Tete and Zambezia|ca, +A<Oxfam UK> T<will contribute> O<US dollars 500,000> to O<the emergency seed programme for Niassa and Cabo Delgado>.
+[MZBQ|00790]
+d:t# +A<Bioforce>, mn|with EEC funds|nm, T<is distributing> O<seeds> and O<tools> to O<55,000 families> lc|in Inhambane Province|cl.
+[MZBQ|00791]
+d:t# +A<UNICEF> T<is providing> O<269 metric tons of seeds> lc|in Inhambane, Manica, and Tete Provinces|cl.
+[MZBQ|00792]
+d:s# O<The population of Niassa Province> D<is> O<approximately 570,000>, ac|including 127,000 displaced persons|ca.
+[MZBQ|00793]
+d:s# O<The population of Niassa Province> T<is facing> O<supply difficulties> cu|owing to isolation caused by the T<deterioration> of O<the security situation>|uc.
+[MZBQ|00794]
+d:t# +A<A joint WFP and UNDRO mission> T<determined> O<needs> sp|in the areas of O<food>, O<agriculture>, O<relief and survival items>, O<fuel and lubricants>, and O<logistics>|ps.
+[MZBQ|00795]
+d:s# O<Details of the needs> D<are available> with O<UNDRO>.
+[MZBQ|00796]
+d:t# +A<The joint mission> T<identified> O<the following points> pr|for the T<delivery> of O<relief supplies>|rp.
+[MZBQ|00797]
+d:s# O<The delivery points> D<are> O<East Niassa via Montepuez>, O<Lichinga>, O<Mandimba>, O<Entrelagos at the Malawi border>, and O<Cuamba>.
+[MZBQ|00798]
+d:s# O<Rail and road transport capacity> D<depend upon> O<the security situation> and O<road rehabilitation works>.
+[MZBQ|00799]
+d:t# +A<UNICEF> T<is resuming> the T<airlift> of O<high-value and low-volume emergency items>.
+[MZBQ|00800]
+d:t# -A<A quick action fund> T<has been established> pr|to T<allow> O<a rapid response> to O<immediate needs of a small-scale nature> arising from the work of the Emergency Operations Committee|rp.
+[MZBQ|00801]
+d:t# O<The first use of the fund> D<is> T<to provide> for O<the replacement of destroyed or robbed health equipment and supplies> to O<Homoine District>, O<which> T<was tm|recently|mt attacked>.
+[MZBQ|00802]
+d:t# +A<UNICEF> T<will also finance> O<the airlift lc|from Maputo to Niassa|cl of 25 metric tons of educational materials> pr|T<to replace> O<supplies destroyed in the rebel attack on the town of Mandimba>|rp.
+[MZBQ|00803]
+d:t# -A<The appeal for US dollars 2,798,000 launched by Caritas Internationalis tm|on 22 April 1987|mt> T<has been dg|fully|gd met>.
+[MZBQ|00804]
+d:t# Further to the appeal, T<registration> of O<beneficiaries> lc|in Manica Province|cl T<has been initiated>.
+[MZBQ|00805]
+d:s# O<The first airlift of 150 metric tons of relief supplies> D<is under preparation> ac|with the national airline LAM|ca.
+[MZBQ|00806]
+d:s# O<The response to the tm|12 August|mt appeal> D<includes> O<cash of CHF 330,466>, O<which> D<is> O<US dollars 220,310>, and O<in-kind contributions of 1,000 metric tons of maize, 100 metric tons of beans, 316 metric tons of oil, 300 metric tons of sugar, 40 metric tons of salt, 15,000 blankets, and 19 metric tons of clothing>.
+[MZBQ|00807]
+d:t# +A<The Christian Council of Mozambique> T<has decided> T<to continue> O<its development efforts> and T<to avoid> T<prolonging> O<its emergency programmes>.
+[MZBQ|00808]
+d:t# ac|With governmental cooperation|ca, -A<Christian Council of Mozambique offices> T<are being set up> lc|in Nampula, Zambezia, Tete, and Niassa|cl.
+[MZBQ|00809]
+d:s# sp|For these provinces|ps, O<4 seven-ton lorries> and O<4 pick-up trucks> D<are required>.
+[MZBQ|00810]
+d:s# O<Contributions reported to UNDRO tm|since situation report number 8 dated 31 August 1987|mt> D<amounted to> O<US dollars 6,926,000>.
+[MZBQ|00811]
+d:s# sp|Of these contributions|ps, O<US dollars 3,063,000> T<came from> O<governments>, ac|including O<the Federal Republic of Germany>, O<Italy>, O<Japan>, O<the Netherlands>, O<Norway>, and O<the United States>|ca.
+[MZBQ|00812]
+d:s# sp|Of these contributions|ps, O<US dollars 565,000> T<came from> O<Red Cross societies>, ac|including O<Australia>, O<Austria>, O<Canada>, O<Denmark>, O<Finland>, O<Iceland>, O<Japan>, O<the Republic of Korea>, O<Norway>, O<Switzerland>, and O<the United States>|ca.
+[MZBQ|00813]
+d:s# sp|Of these contributions|ps, O<US dollars 3,298,000> T<came from> O<other NGOs>, ac|including O<Caritas> and O<Oxfam UK>|ca.
+[MZBQ|00814]
+d:s# O<Total emergency relief contributions reported to UNDRO tm|since 1 January 1987|mt> D<amount to> O<US dollars 237,191,000>.
+[MZBQ|00815]
+d:t# sp|Of the total emergency relief contributions|ps, +A<governments> T<contributed> O<US dollars 191,749,000>.
+[MZBQ|00816]
+d:s# O<The contributing governments> D<are> O<Australia>, O<Austria>, O<Belgium>, O<Botswana>, O<Brazil>, O<Canada>, O<Cyprus>, O<Czechoslovakia>, O<Denmark>, O<Finland>, O<France>, O<the German Democratic Republic>, O<the Federal Republic of Germany>, O<Hungary>, O<Ireland>, O<Italy>, O<Japan>, O<Kenya>, O<the Netherlands>, O<New Zealand>, O<Nigeria>, O<Norway>, O<Poland>, O<Portugal>, O<Sweden>, O<Switzerland>, O<the USSR>, O<the United Kingdom>, O<the United States>, and O<Yugoslavia>.
+[MZBQ|00817]
+d:t# sp|Of the total emergency relief contributions|ps, +A<the UN system> T<contributed> O<US dollars 9,786,000>.
+[MZBQ|00818]
+d:t# sp|Of the total emergency relief contributions|ps, +A<the IGO EEC> T<contributed> O<US dollars 17,819,000>.
+[MZBQ|00819]
+d:t# sp|Of the total emergency relief contributions|ps, +A<Red Cross societies> T<contributed> O<US dollars 2,059,000>.
+[MZBQ|00820]
+d:t# sp|Of the total emergency relief contributions|ps, +A<other NGOs> T<contributed> O<US dollars 15,778,000>.
+[MZBQ|00821]
+n:t# +A<Donors> T<are requested> T<to inform> O<UNDRO> mn|directly|nm, mn|preferably by telex 28148 UNDR CH|nm, ac|with copy to O<UNSCERO> in Maputo at telex 6364 UNDEV|ca, of O<their contributions and value>.
+[MZBQ|00822]
+d:t# cu|Due to the deterioration of the security situation and infrastructure|uc, O<Niassa Province> T<is facing> O<an emergency> and T<risks> O<increasing isolation>.
+[MZBQ|00823]
+d:s# O<171,000 people>, O<that> D<is> O<30 percent of the provincial population of 570,000>, D<require> O<emergency assistance>.
+[MZBQ|00824]
+d:s# O<These people> D<include> O<127,000 displaced persons>, dg|mainly|gd lc|in the districts of Lago, Mandimba, Maua, Mecanhelas, Cuamba, Marrupa, and in Lichinga town|cl.
+[MZBQ|00825]
+d:t# +A<Two in-country missions by the Government of Mozambique, WFP, and UNDRO> T<assessed> O<the logistical situation> and O<needs> sp|at provincial level|ps as follows.
+[MZBQ|00826]
+d:s# O<The needs> D<include> O<5,100 metric tons of oil>, O<1,030 metric tons of sugar>, O<875 metric tons of pulses>, and O<1,120 metric tons of milk pr|for schools and health facilities|rp mn|through the Ministry of Health|nm>.
+[MZBQ|00827]
+d:s# cd|Given present transport conditions|dc, O<cereal pledges of some 20,000 metric tons> D<are adequate> tm|until April 1988|mt.
+[MZBQ|00828]
+d:s# O<The needs for relief and survival items> D<include> O<5,000 family-size tents>, O<60,000 blankets>, O<25,000 sets of cooking utensils>, and O<500 metric tons of soap>.
+[MZBQ|00829]
+d:s# O<The needs> D<also include> O<cash funds dg|up to US dollars 50,000|gd> pr|for mobilization from Nacala of agricultural seeds and tools|rp.
+[MZBQ|00830]
+d:s# O<The needs> D<also include> O<medicines pr|against malaria, tuberculosis, diarrhoea, measles, and skin diseases|rp>.
+[MZBQ|00831]
+d:s# O<A list of the medicines> D<is available> lc|with O<UNSCERO> in Maputo|cl.
+[MZBQ|00832]
+d:t# O<The needs> D<also include> O<195,000 litres of diesel fuel> and O<17,500 litres of oil and lubricants> pr|T<to carry out> the T<distribution> of O<food> and O<relief items> by road and lake transport|rp.
+[MZBQ|00833]
+d:t# O<The needs> D<also include> O<5 tractors of 80 horsepower> and O<trailers of 5 tons> pr|for the T<distribution> of O<aid> to remote areas|rp.
+[MZBQ|00834]
+d:t# cn|While O<the number of trucks> D<is> O<adequate>|nc, the T<donation> of O<4 Landrovers> and O<1 breakdown service lorry> T<would increase> O<the efficiency of the vehicle fleet>.
+[MZBQ|00835]
+d:s# O<The organizations active lc|in Niassa|cl> D<are> O<WFP>, O<UNICEF>, O<Caritas>, O<Eduardo Mondlane Foundation>, O<ICRC>, O<Medecins Sans Frontieres Netherlands>, O<Mozambique Red Cross>, O<Oxfam UK>, O<Redd Barna Norway>, and O<World Vision International>.
+[MZBQ|00836]
+d:s# O<The supply route lc|from Malawi through Entrelagos|cl mn|by rail|nm and lc|through Mecanhelas|cl mn|by road|nm> D<has> O<the delivery point lc|at Entrelagos|cl>.
+[MZBQ|00837]
+d:t# O<Transit lc|from Entrelagos to Mecanhelas|cl> D<is possible> only tm|until the end of November|mt cu|due to the start of the rainy season from November to March|uc.
+[MZBQ|00838]
+d:s# O<The supply route lc|from Malawi through Cuamba and Lichinga|cl mn|by rail|nm and lc|through Metarica, Maua, and N'gauma|cl mn|by road|nm> D<has> O<the delivery point lc|at Cuamba|cl>.
+[MZBQ|00839]
+d:t# O<The bridge lc|over the Luleio River|cl> D<needs> T<to be rebuilt>.
+[MZBQ|00840]
+d:s# In any case, O<transit lc|from Cuamba to Metarica and Maua|cl> D<is possible> only tm|until the end of November|mt.
+[MZBQ|00841]
+d:s# O<The supply route lc|from Malawi through Mandimba to Lichinga|cl mn|by road|nm> D<has> O<the delivery point lc|at Mandimba|cl>.
+[MZBQ|00842]
+d:t# lc|Between Mandimba and Lichinga|cl, O<rehabilitation works dg|over 150 kilometers|gd, ac|including 7 bridges|ca> D<are required>.
+[MZBQ|00843]
+d:s# In any case, O<transit> D<is possible> only tm|until the end of November|mt.
+[MZBQ|00844]
+d:s# O<The route lc|from Malawi to Metangula|cl> D<is> O<mn|by boat|nm lc|on Lake Niassa|cl>.
+[MZBQ|00845]
+d:s# O<The route lc|from Metangula to Lichinga|cl> D<is> O<mn|by road|nm lc|through Maniamba|cl>.
+[MZBQ|00846]
+d:s# O<The delivery point> D<is> O<Metangula>.
+[MZBQ|00847]
+d:t# +A<This route> T<deserves> O<priority attention> cu|because +A<this route> T<would allow> O<some 3,000 metric tons> T<to reach> O<Lichinga> monthly|uc, but O<this route> D<requires> O<prior agreement between Mozambican and Malawian authorities on the resumption of lake traffic>.
+[MZBQ|00848]
+d:t# pq|Subject to this agreement|qp, O<the following additional means pr|for the rehabilitation of the road from Metangula to Maniamba|rp> D<are required> pr|T<to make> O<this route> O<operational>|rp.
+[MZBQ|00849]
+d:s# O<14,000 litres of diesel fuel> D<are required>.
+[MZBQ|00850]
+d:s# O<2,000 litres of oil and lubricants> D<are required>.
+[MZBQ|00851]
+d:s# O<Spare parts valued at US dollars 200,000> D<are required>.
+[MZBQ|00852]
+d:s# O<5 family-size tents> D<are required>.
+[MZBQ|00853]
+d:s# O<2 SSB 100W radio transceivers> D<are required>.
+[MZBQ|00854]
+d:t# Furthermore, O<4 locally available 30-ton boats>, O<3 locally available 15-ton boats>, and O<1 locally available 20-ton boat> D<need to be chartered>.
+[MZBQ|00855]
+d:t# Furthermore, O<50,000 litres of diesel> and O<5,000 litres of oil and lubricants> D<need to be provided>.
+[MZBQ|00856]
+n:s# O<These fuel and lubricant requirements> D<are included> sp|in paragraph 7 above|ps.
+[MZBQ|00857]
+d:s# O<The present direct route to Malawi via Zimbabwe from Tete to Blantyre> D<is unlikely to have> O<spare transport capacity for Niassa>.
+[MZBQ|00858]
+d:s# O<The alternative route> D<passes lc|through Zimbabwe and Zambia to Lilongwe|cl> at O<an additional cost of US dollars 40 per ton>.
+[MZBQ|00859]
+d:s# O<The route from Pemba to Montepuez to Marrupa> D<is> O<by road>.
+[MZBQ|00860]
+d:s# O<The delivery point> D<is> O<Marrupa>.
+[MZBQ|00861]
+d:s# O<Transit between Montepuez and Marrupa> D<is possible> only tm|until the end of November|mt.
+[MZBQ|00862]
+d:s# O<only Lichinga and Cuamba airports> D<are expected to be operational>.
+[MZBQ|00863]
+d:s# O<UNDRO> D<is prepared> to T<assist> and T<advise> O<donors> on ways of implementing aid.
+[MZBQ|00864]
+n:t# +A<Donors> T<are requested> to T<inform> O<UNDRO>, mn|preferably by telex 28148 UNDR CH|nm, ac|with copy to UNSCERO in Maputo at telex 6364 UNDEV|ca, of O<their contributions and value>.
+[MZBQ|00865]
+n:s# O<The latest toll of attacks> D<is as follows>.
+[MZBQ|00866]
+d:t# tm|On 16 October|mt lc|at Taninga, 80 kilometers north of Maputo|cl, -A<53 casualties> T<occurred>, ac|including many children|ca.
+[MZBQ|00867]
+d:t# tm|On 29 October|mt lc|in about the same area|cl, -A<278 civilians> T<were killed>, and O<the majority> D<were> O<women and children>.
+[MZBQ|00868]
+d:t# +A<UNSCERO>, +A<UN agencies>, +A<donor governments>, and +A<NGOs> T<visited> O<the area> tm|on 1 November|mt.
+[MZBQ|00869]
+d:s# O<The material losses> D<are estimated at> O<approximately US dollars 3 million>.
+[MZBQ|00870]
+d:t# +A<Considerable delays in the delivery of cereals, mainly maize, from Zimbabwe> T<are affecting> -A<Inhambane>, -A<Manica>, -A<Sofala>, and -A<Tete Provinces>.
+[MZBQ|00871]
+d:t# tm|During the period from May to September 1987|mt, +AQ<only 25.6 percent of maize deliveries from Zimbabwe> T<could arrive> cm|as planned|mc.
+[MZBQ|00872]
+d:t# +A<A joint mission of WFP, UNDRO, and the Government of Mozambique> T<will visit> Harare and Blantyre pr|in order to T<make> O<proposals> to T<resolve> O<Zimbabwe supply bottlenecks>|rp.
+[MZBQ|00873]
+d:t# +A<The WFP airlift to Inhaminga> T<has carried> O<1,090 metric tons of food and relief goods> tm|until now|mt.
+[MZBQ|00874]
+d:t# +A<The airlift financed by Italy> T<will deliver> O<a total of 3,900 metric tons of relief supplies donated by Italy> lc|to Manica, Sofala, and Zambezia Provinces|cl.
+[MZBQ|00875]
+d:t# +A<ICRC> T<is airlifting> O<800 metric tons of beans> lc|to northern Sofala|cl.
+[MZBQ|00876]
+d:t# -A<The productivity of Maputo port> T<has risen> dg|from 800 metric tons to 1,300 metric tons|gd.
+[MZBQ|00877]
+d:t# +AQ<All equipment and material required for the rehabilitation of Beira port> T<have not yet arrived>.
+[MZBQ|00878]
+d:t# +A<Italian technicians> T<are working on> O<the improvement of Quelimane port>.
+[MZBQ|00879]
+d:t# -A<Ten cargo three-metric-ton rubber boats donated by Sweden through WFP> T<are being used> pr|to T<improve> O<river and lake operations>|rp.
+[MZBQ|00880]
+d:t# +A<The National Executive Commission for Emergency> T<will hold> O<a national meeting> tm|from 3 to 5 December|mt lc|in Inhambane|cl ac|with the participation of national and provincial DPCCN and emergency commissions|ca.
+[MZBQ|00881]
+d:t# +A<The meeting> T<will assess> O<the follow-up of decisions taken at the national emergency seminar in Tete in August>.
+[MZBQ|00882]
+d:s# O<International participation> D<will be possible> tm|on the last day of the meeting in Inhambane|mt.
+[MZBQ|00883]
+d:t# +A<The CENE unit for the diffusion of emergency information> T<plans> to T<publish> O<a monthly bulletin> pr|for distribution to the international donor community|rp.
+[MZBQ|00884]
+d:s# O<The cost> D<is> O<US dollars 103,620>.
+[MZBQ|00885]
+d:s# O<The contributions tm|so far|mt> D<are> O<US dollars 25,000 by UNDRO, US dollars 5,000 by Save the Children, and US dollars 5,000 by Oxfam UK>.
+[MZBQ|00886]
+d:t# +A<The High Commissioner's appeal of March 1987 for assistance to Mozambican returnees> T<covered> O<assistance for one year to 15,000 Mozambican returnees> with an initial estimated budget of US dollars 1.2 million.
+[MZBQ|00887]
+d:t# +A<New arrivals of returnees from Malawi and Zimbabwe> T<bring> O<the total estimated number of returnees> to approximately 42,800.
+[MZBQ|00888]
+d:t# tm|Since September|mt, +A<returnees> +A<who> T<had previously been living> lc|in Zimbabwe|cl T<have settled> lc|in Manica Province|cl, and O<the number> D<is> O<approximately 6,300>.
+[MZBQ|00889]
+d:t# +A<These returnees> T<have settled> dg|mainly|gd lc|in the Espungabera area|cl where +A<these returnees> T<receive> O<assistance from UNICEF and UNHCR>.
+[MZBQ|00890]
+d:s# O<Returnees lc|in Tete Province|cl>, and O<the number> D<is> O<approximately 29,500>, and O<returnees lc|in Niassa Province|cl>, and O<the number> D<is> O<approximately 7,000>, D<consist> dg|largely|gd of O<people> +A<who> T<had previously resided> lc|in Malawi|cl.
+[MZBQ|00891]
+d:t# -A<UNHCR assistance to returnees> T<is tm|currently|mt being revised>.
+[MZBQ|00892]
+d:s# O<The new requirements> D<are estimated at> O<US dollars 1,746,818>.
+[MZBQ|00893]
+d:s# O<The response to the UNHCR March appeal tm|so far|mt> D<totals> O<US dollars 1,751,696>.
+[MZBQ|00894]
+d:s# O<The response> D<comes from> O<the Governments of Canada, the Federal Republic of Germany, the Netherlands, Portugal, Switzerland, and the United Kingdom>, and from O<Stichting Vluchteling in the Netherlands>, and from O<private donations in Japan>.
+[MZBQ|00895]
+d:s# O<The food requirements tm|for October 1987 to April 1988|mt> D<are> O<233,700 metric tons of maize, 21,100 metric tons of pulses, and 47,800 metric tons of sugar>.
+[MZBQ|00896]
+d:s# O<The requirements for rice, wheat, and oil> D<are met>.
+[MZBQ|00897]
+n:t# sp|For non-food assistance|ps, it D<is very important> to T<contribute> O<to water transport> pr|to T<improve> O<access to the affected and displaced people>|rp.
+[MZBQ|00898]
+n:t# sp|For non-food assistance|ps, it D<is very important> to T<contribute> O<to the water and agricultural sectors> +A<that> T<promote> O<self-reliance>.
+[MZBQ|00999]
+n:s# O<The proposed principal channels for funding in addition to the Government, the requirements, the pledges and contributions, and the unmet requirements> D<are as follows>.
+[MZBQ|00900]
+n:s# sp|For logistics support|ps, O<the proposed principal channels> D<are> O<UNSCERO, UNDRO, UNICEF, and WFP>, O<the requirements> D<are> O<US dollars 12,747,000>, O<the pledges and contributions> D<are> O<US dollars 8,114,000>, and O<the unmet requirements> D<are> O<US dollars 4,633,000>.
+[MZBQ|00901]
+d:s# sp|For health|ps, O<the proposed principal channels> D<are> O<UNICEF> and O<WHO>, O<the requirements> D<are> O<US dollars 8,791,000>, O<the pledges and contributions> D<are> O<US dollars 5,688,000>, and O<the unmet requirements> D<are> O<US dollars 3,103,000>.
+[MZBQ|00902]
+d:s# sp|For water|ps, O<the proposed principal channel> D<is> O<UNICEF>, O<the requirements> D<are> O<US dollars 5,675,000>, O<the pledges and contributions> D<are> O<US dollars 286,000>, and O<the unmet requirements> D<are> O<US dollars 5,389,000>.
+[MZBQ|00903]
+d:s# sp|For relief and survival items|ps, O<the proposed principal channels> D<are> O<UNSCERO>, O<UNDRO>, and O<UNICEF>, O<the requirements> D<are> O<US dollars 6,354,000>, O<the pledges and contributions> D<are> O<US dollars 3,099,000>, and O<the unmet requirements> D<are> O<US dollars 3,255,000>.
+[MZBQ|00904]
+d:s# sp|For agriculture|ps, O<the proposed principal channels> D<are> O<UNSCERO>, O<UNDRO>, and O<FAO>, O<the requirements> D<are> O<US dollars 18,441,000>, O<the pledges and contributions> D<are> O<US dollars 6,459,000>, and O<the unmet requirements> D<are> O<US dollars 11,982,000>.
+[MZBQ|00905]
+d:s# O<The total requirements> D<are> O<US dollars 52,008,000>, O<the total pledges and contributions> D<are> O<US dollars 23,646,000>, and O<the total unmet requirements> D<are> O<US dollars 28,362,000>.
+[MZBQ|00906]
+d:s# +A<These estimates> T<exclude> O<estimates for warehousing needs> O<that> D<are under review>.
+[MZBQ|00907]
+d:s# +A<These estimates> T<exclude> O<contributions not yet allocated to specific needs>.
+[MZBQ|00908]
+d:s# O<The health estimates> D<include> O<two-year requirements> pr|for T<strengthening> O<health sector emergency management>|rp.
+[MZBQ|00909]
+d:s# O<The agriculture estimates> D<include> O<requirements of US dollars 9,105,000> pr|for O<six integrated rural development projects>|rp lc|in Sofala and Zambezia|cl sp|under the FAO appeal of 22 May 1987|ps.
+[MZBQ|00910]
+n:s# O<The breakdown of unmet needs by project> D<is> as follows.
+[MZBQ|00911]
+d:s# O<The unmet needs for logistics support> D<are> O<US dollars 4,633,000>.
+[MZBQ|00912]
+d:s# O<The unmet needs for logistics support> D<include> T<the continuation> of O<the WFP coastal operation>, O<which> D<requires> O<US dollars 750,000>.
+[MZBQ|00913]
+d:s# O<The unmet needs for logistics support> D<include> O<the governmental and WFP plan> pr|to T<strengthen> O<coastal, lake, and river transport>|rp, O<which> D<requires> O<US dollars 3 million>.
+[MZBQ|00914]
+d:s# O<The unmet needs for logistics support> D<include> O<UNICEF requirements> pr|for T<the airlift> of O<low-volume and high-value items>|rp, O<which> D<require> O<US dollars 683,000>.
+[MZBQ|00915]
+d:s# O<The unmet needs for logistics support> D<include> O<UNICEF requirements> pr|for T<technical assistance> and T<training> to O<DPCCN>|rp, O<which> D<require> O<US dollars 200,000>.
+[MZBQ|00916]
+d:s# O<The unmet needs for health> D<are> O<US dollars 3,103,000>.
+[MZBQ|00917]
+d:s# O<Funds> D<are required> pr|for T<the rehabilitation> and T<re-equipping> of O<basic health facilities>|rp and pr|for T<strengthening> O<health sector emergency management>|rp.
+[MZBQ|00918]
+d:s# O<UNICEF requirements> pr|for T<rehabilitation> of O<facilities> and T<assistance> to O<vulnerable groups>|rp dg|alone|gd D<amount to> O<US dollars 3.7 million>.
+[MZBQ|00919]
+d:s# O<The gap of US dollars 3.1 million> T<takes into account> O<other contributions to activities of NGOs and the Government in the same area>.
+[MZBQ|00920]
+d:t# -A<The requirements for vital medicines> T<are being covered>.
+[MZBQ|00921]
+d:s# -A<The medical needs in Niassa> T<are covered> by O<the UNICEF essential drugs programme>.
+[MZBQ|00922]
+d:s# O<The main problem> D<is> tm|still|mt T<to arrange> O<delivery> lc|to the affected provinces|cl.
+[MZBQ|00923]
+d:s# O<The unmet needs for water> D<are> O<US dollars 5,389,000>.
+[MZBQ|00924]
+d:s# O<The unmet needs for water> D<include> T<tubewell construction> and T<recovery> lc|in Sofala and Manica|cl, O<which> D<require> O<US dollars 645,000>.
+[MZBQ|00925]
+d:s# O<The unmet needs for water> D<include> T<strengthening> O<the National Water Authority>, O<which> D<requires> O<US dollars 600,000>.
+[MZBQ|00926]
+d:s# O<The unmet needs for water> D<include> T<borehole drilling> and T<recovery> lc|in rural areas of Tete|cl, O<which> D<require> O<US dollars 3,200,000>.
+[MZBQ|00927]
+d:s# O<The unmet needs for water> D<include> T<the recovery> of O<Tete City water supply>, O<which> D<requires> O<US dollars 369,000>.
+[MZBQ|00928]
+d:s# O<The unmet needs for water> D<include> O<chemical support> pr|for safe drinking water|rp, O<which> D<requires> O<US dollars 575,000>.
+[MZBQ|00929]
+d:s# O<The unmet needs for relief and survival items> D<are> O<US dollars 3,255,000>.
+[MZBQ|00930]
+d:s# O<These unmet needs> D<include> O<UNICEF needs of US dollars 1.7 million>.
+[MZBQ|00931]
+d:s# O<recurrent needs for clothing, soap, cooking utensils, and blankets> D<remain> O<acute>.
+[MZBQ|00932]
+d:s# O<The unmet needs for agricultural inputs> D<are> O<US dollars 11,982,000>.
+[MZBQ|00933]
+d:s# O<The unmet needs for agricultural inputs> D<include> T<the provision> and T<delivery> and T<distribution> of O<handtools> and O<seeds>, O<which> D<require> O<US dollars 3,021,000>.
+[MZBQ|00934]
+d:s# O<The unmet needs for agricultural inputs> D<include> O<pesticides>, O<which> D<require> O<US dollars 100,000>.
+[MZBQ|00935]
+d:s# O<The unmet needs for agricultural inputs> D<include> O<six integrated rural development projects> sp|under the FAO appeal|ps, O<which> D<require> O<US dollars 8,861,000>.
+[MZBQ|00936]
+d:t# +A<LWF> T<appeals> for O<US dollars 800,000> pr|for T<emergency assistance>|rp dg|mainly|gd lc|in Inhambane and Sofala Provinces|cl.
+[MZBQ|00937]
+d:s# O<This emergency assistance> D<includes> O<foodstuffs>, O<seeds>, O<tools>, O<kitchen utensils>, and O<general health assistance>.
+[MZBQ|00938]
+d:s# O<Contributions reported to UNDRO since situation report number 9 dated 29 September 1987> D<amounted to> O<US dollars 39,925,000>.
+[MZBQ|00939]
+d:s# O<US dollars 35,145,000> D<came from> O<governments>, ac|including O<Austria>, O<Denmark>, O<the Netherlands>, O<Sweden>, O<Switzerland>, O<the United Kingdom>, and O<the United States>|ca.
+[MZBQ|00940]
+d:s# O<US dollars 446,000> D<came from> O<the UN system>, ac|including O<UNICEF> and O<UNFPA>|ca.
+[MZBQ|00941]
+d:s# O<US dollars 339,000> D<came from> O<Red Cross societies>, ac|including O<ICRC>, O<LRCS>, O<the Federal Republic of Germany>, O<Ireland>, and O<the United Kingdom>|ca.
+[MZBQ|00942]
+d:s# O<US dollars 3,995,000> D<came from> O<NGOs>, ac|including O<Oxfam>, O<Save the Children Fund UK>, O<Africare>, O<ADRA>, and O<Caritas>|ca.
+[MZBQ|00943]
+d:s# O<The total emergency relief contributions reported to UNDRO since 1 January 1987> D<amount to> O<US dollars 276,632,000>.
+[MZBQ|00944]
+d:t# +A<governments> T<contributed> O<US dollars 226,409,000>.
+[MZBQ|00945]
+d:s# O<The contributing governments> D<are> O<Australia>, O<Austria>, O<Belgium>, O<Botswana>, O<Brazil>, O<Canada>, O<Cyprus>, O<Czechoslovakia>, O<Denmark>, O<Finland>, O<France>, O<the German Democratic Republic>, O<the Federal Republic of Germany>, O<Hungary>, O<Ireland>, O<Italy>, O<Japan>, O<Kenya>, O<the Netherlands>, O<New Zealand>, O<Nigeria>, O<Norway>, O<Poland>, O<Portugal>, O<Sweden>, O<Switzerland>, O<the USSR>, O<the United Kingdom>, O<the United States>, and O<Yugoslavia>.
+[MZBQ|00946]
+d:t# +A<the UN system> T<contributed> O<US dollars 10,232,000>.
+[MZBQ|00947]
+d:t# +A<the IGO EEC> T<contributed> O<US dollars 17,819,000>.
+[MZBQ|00948]
+d:t# +A<Red Cross societies> T<contributed> O<US dollars 2,398,000>.
+[MZBQ|00949]
+d:t# +A<other NGOs> T<contributed> O<US dollars 19,774,000>.
+[MZBQ|00950]
+d:t# +A<Donors> T<are requested> to T<inform> O<UNDRO> mn|directly|nm, mn|preferably by telex 28148 UNDR CH|nm, ac|with copy to O<UNSCERO in Maputo at telex 6364 UNDEV>|ca, of O<their contributions> and O<value>.
+[MZBQ|00951]
+d:t# lc|At the meeting organized in Inhambane by the National Executive Commission for Emergency|cl, -A<an increased number of affected and displaced people per province> T<was presented>.
+[MZBQ|00952]
+d:t# +A<Field missions made up of representatives of the Government, the UN system, ac|including UNICEF, UNDP, UNDRO, and WFP,|ca the EEC, bilateral donor governments, ac|including the Netherlands, Sweden, and the United States,|ca and NGOs active in the provinces visited> T<will update> and T<validate> O<the new figures>.
+[MZBQ|00953]
+d:t# O<The missions> D<are intended> T<to commence> tm|in the course of January 1988|mt.
+[MZBQ|00954]
+d:t# +A<WFP> T<is appealing> for O<cash and or in-kind contributions> pr|T<to meet> O<requirements totalling US dollars 3,970,000>|rp.
+[MZBQ|00955]
+d:s# O<The requirements> D<include> O<the continuation of coastal services mn|by up to two vessels|nm tm|to the end of 1988|mt>, and O<the requirement> D<is> O<40,000 metric tons dg|at US dollars 30 per metric ton|gd>, O<which> D<equals> O<US dollars 1,200,000>.
+[MZBQ|00956]
+d:s# O<The requirements> D<include> O<the rehabilitation of thirteen boats of 20 to 60 metric tons pr|to strengthen coastal transport|rp>, O<which> D<requires> O<US dollars 300,000>.
+[MZBQ|00957]
+d:s# O<The requirements> D<include> O<the provision of nine barges and three workboats or tugs pr|for discharging operations|rp>, O<which> D<requires> O<US dollars 2,220,000>.
+[MZBQ|00958]
+d:s# O<The requirements> D<include> O<the repair of three 120-metric-ton motorized shallow-draft barges pr|for river transport|rp>, O<which> D<requires> O<US dollars 250,000>.
+[MZBQ|00959]
+d:t# mn|With Canadian funds|nm, +A<UNDRO> T<is granting> O<US dollars 250,000> towards O<the continuation of coastal services> tm|in early 1988|mt.
+[MZBQ|00960]
+d:t# -A<Joint WFP and UNDRO missions> T<were carried out> lc|in Zambezia Province and in Zimbabwe, Tete Province, and Malawi|cl.
+[MZBQ|00961]
+d:t# +A<The mission to Zambezia> T<focused on> O<the channels of transport, ac|namely coast, river, railway, and air|ca>.
+[MZBQ|00962]
+d:t# +A<The second mission> T<contacted> O<the authorities concerned> pr|T<to improve> O<the delivery of maize lc|to Niassa and Tete Provinces|cl>|rp.
+[MZBQ|00963]
+n:s# O<The reports> D<are available> lc|with UNDRO|cl.
+[MZBQ|00964]
+d:t# -A<A cement bridge dg|of 275 meters in length|gd lc|over the Incomati River|cl built lc|at Moamba in Maputo Province|cl mn|with the Italian contribution of US dollars 2.9 million through UNDRO|nm> T<was inaugurated> tm|on 5 December 1987|mt.
+[MZBQ|00965]
+d:t# +A<The bridge> T<will facilitate> O<the distribution of relief supplies> and O<the implementation of aid projects> lc|in the region|cl.
+[MZBQ|00966]
+d:t# -A<The bridge> T<was completed> mn|under UNDRO supervision|nm tm|in twenty months|mt, O<which> D<is> O<cm|ten months ahead of schedule|mc>.
+[MZBQ|00967]
+d:s# +A<MSF Belgium> T<dg|urgently|gd requires> O<US dollars 400,000> pr|T<to complete> O<the rehabilitation programme of the sanitary network lc|in northern Inhambane Province|cl>|rp.
+[MZBQ|00968]
+d:s# O<The total emergency relief contributions reported lc|to UNDRO|cl tm|since 1 January 1987|mt lc|from governments, the UN system, IGO, Red Cross societies, and other NGOs|cl> D<amount to> O<US dollars 277,521,000>.
